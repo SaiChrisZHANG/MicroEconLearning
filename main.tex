@@ -1,0 +1,211 @@
+\documentclass[12pt,openany]{report}
+\setlength{\headheight}{52pt}
+\usepackage[a4paper,left=1in,right=1in,top=1in,bottom=1in, heightrounded, marginparwidth=2cm, marginparsep=3mm]{geometry}
+\usepackage[utf8x]{inputenc}
+\usepackage[english]{babel}
+\setlength{\parskip}{0.5em}
+\usepackage{url}
+\usepackage{titlesec}
+\setcounter{secnumdepth}{4}
+\usepackage{palatino}
+\usepackage{tocloft}
+\usepackage[nottoc]{tocbibind}
+\usepackage{marginnote}
+\usepackage{multirow}
+\usepackage[authoryear,round]{natbib}
+\usepackage{amssymb,amsmath,amsthm,amsfonts}
+\usepackage{mathtools}
+\usepackage{graphicx}
+\graphicspath{{./chapter1/outputs/}}
+\usepackage{hyperref}
+\usepackage{newpxtext,newpxmath}
+\usepackage{fancyhdr}
+\usepackage[Conny]{fncychap}
+    \ChNameVar{\centering\huge\fontfamily{ppl}\selectfont\rm\bfseries}
+    \ChNumVar{\huge\fontfamily{ppl}\selectfont}
+    \ChTitleVar{\centering\LARGE\fontfamily{ppl}\selectfont\rm}
+
+\usepackage{xcolor}
+
+\hypersetup{
+    colorlinks,
+    citecolor=red,
+    filecolor=black,
+    linkcolor=violet,
+    urlcolor=blue
+}
+
+\makeatletter
+\newtheoremstyle{indented}
+  {3pt}% space before
+  {3pt}% space after
+  {\addtolength{\@totalleftmargin}{3.5em}
+   \addtolength{\linewidth}{-3.5em}
+   \parshape 1 3.5em \linewidth}% body font
+  {}% indent
+  {\bfseries}% header font
+  {.}% punctuation
+  {.5em}% after theorem header
+  {}% header specification (empty for default)
+\makeatother
+
+\theoremstyle{indented}
+\newtheorem{definition}{Definition}
+\newtheorem{theorem}{Theorem}
+\numberwithin{definition}{chapter}
+\numberwithin{theorem}{chapter}
+
+\renewcommand\cftchapafterpnum{\vskip5pt}
+\renewcommand\cftsecafterpnum{\vskip0pt}
+
+\fancypagestyle{mystyle}{%
+  \fancyhf{}% Clear header/footer
+  \renewcommand{\headrulewidth}{1pt}% Remove header rule
+  \renewcommand{\footrulewidth}{1pt}% Remove footer rule
+  \fancyhead[R]{\href{https://github.com/SaiChrisZHANG/empirical-finance-literature}{Github Page}}
+  \fancyhead[L]{Empirical Finance: A Review}
+  \fancyfoot[L]{\hyperref[ToC-first-page]{To Contents}}
+  \fancyfoot[C]{\small \leftmark}
+  \fancyfoot[R]{\thepage}
+}
+
+\usepackage{minitoc}
+\newcommand{\sidenotes}[1]{\marginnote{\raggedright\scriptsize#1}}
+
+\usepackage{paralist}
+  \let\itemize\compactitem
+  \let\enditemize\endcompactitem
+  \let\enumerate\compactenum
+  \let\endenumerate\endcompactenum
+  \let\description\compactdesc
+  \let\enddescription\endcompactdesc
+  \pltopsep=1pt
+  \plitemsep=1pt
+  \plparsep=1pt
+
+\usepackage{etoolbox}
+\AtBeginEnvironment{quote}{\vspace{1pt}}
+\AtEndEnvironment{quote}{\vspace{1pt}}
+
+\begin{document}
+
+\begin{titlepage}
+    \begin{center}
+        \vspace*{1cm}
+        
+        \Huge
+        \textbf{Microeconomic Theory I: A Notebook}
+
+        \Large
+        \textit{With Jonathan Libgober}
+            
+        \vspace{2.5cm}
+        
+        \LARGE    
+        \textbf{Sai Zhang}
+            
+        \vfill
+        
+        \large    
+        Check my \href{https://github.com/SaiChrisZHANG}{Github Page}, or \href{mailto:saizhang.econ@gmail.com}{email me}!
+
+        \vspace{0.8cm}
+        \large
+        \today
+            
+    \end{center}
+\end{titlepage}
+
+%%%%%%%% Main content %%%%%%%%%%
+%%%%%%%% Chapters are called separately %%%%%%%%%%
+
+\chapter*{Here we go!}
+
+This is my learning notebook of Microeconomic Theory I (Course number: ECON601 at USC Economics). As one of the core courses in 
+an economic Ph.D. curriculum, Microeconomic Theory I is beyond important to my research. Therefore, I would love to use this notebook
+as a commitment mechanism, to document lecture notes, discuss session and office hour intuitions, reading summaries, my personal questions
+regarding the topics and more. By building a file from scratch, hopefull I could have a more systematic and sophisticated understanding on
+the content of this course.
+
+I thank Prof. Jonathan Libgober at USC Economics for leading the discussion of the course and providing intuitive ways to understand microeconomic theory.
+Please check his webpage \href{https://www.jonlib.com/}{here}, he is such fun.
+
+I also appreciate the time and effort my TA Qitong Wang put into this course, guiding me through discussing sessions and problem sets. When I have questions, he is 
+always there to help.
+
+Following the structure of the course, this notebook will cover three aspects of microeconomic theories: (a) individual decision making, (b) game theory, (c) mechanism design and contract theory. 
+Apart from Jonathan's lecture notes, I will also summarize the reading materials, including: 
+\cite{mas1995microeconomic}'s \textit{Microeconomic Theory}, \citet{mailath2018modeling}'s \textit{Modelling Strategic Behavior}\footnote{Latest version (May 2021) available \href{https://web.sas.upenn.edu/gmailath/books/modeling-strategic-behavior/}{here}.},
+\cite{tirole1991game}'s \textit{Game Theory}, \cite{myerson1991game}'s \textit{Game Theory: Analysis of Conflicts}, \cite{bolton2005contract}'s \textit{Contract Theory}, 
+\cite{Mailath2006repeated}'s \textit{Repeated Games and Reputation} and \cite{martin1994acourse}'s \textit{A Course in Game Theory}. Other materials will also be referred to along the way.
+
+
+Building this notebook is truly a memorable journey for me. I would love to share this review and all the related
+materials to anyone that finds them useful. And unavoidably, I would make some
+typos and other minor mistakes (hopefully not big ones). So I'd really appreciate
+any correction. If you find any mistakes, please send the mistakes to this email address \href{mailto:saizhang.econ@gmail.com}{saizhang.econ@gmail.com}, BIG thanks in advance!
+
+\newpage
+
+\dominitoc
+\phantomsection
+\label{ToC-first-page}
+\tableofcontents
+
+\pagestyle{mystyle}
+\part{Individual Decision Making}
+
+\chapter{Utilities, Preferences and Choices}
+%\input{chapter1/chapter1.tex}
+
+\chapter{Fundamentals of Consumer Theory}
+
+\chapter{Lagrange Maximization and Duality}
+
+\chapter{Monotone Comparative Statics}
+
+\chapter{Expected Utility and Decisionmaking under Uncertainty}
+
+\chapter{Aggregation and the Existence of a Representative Consumer}
+
+\chapter{Producer Theory}
+
+\chapter{Stochastic Choice}
+
+\part{Game Theory}
+
+\chapter{Nash Equilibrium and Bayesian Nash Equilibrium}
+
+\chapter{Rationalizability and DOminant Strategies}
+
+\chapter{Correlated Equilibrium}
+
+\chapter{Dynamic Games and Refinements}
+
+\chapter{Repeated Games/Folk Theorem}
+
+\chapter{Recursive Methods in Repeated Games}
+
+\part{Mechanism Design and Contract Theory}
+
+\chapter{Arrow's Theorem and Social Choice}
+
+\chapter{Boundaries of the Firm and Coase's Theorem}
+
+\chapter{Implementation Concepts}
+
+\chapter{The Revelation Principle}
+
+\chapter{Auctions and Optimal Auctions}
+
+\chapter{Efficient Implementation}
+
+\chapter{Moral Hazard}
+
+\chapter{Full Implementation}
+
+\newpage
+\bibliographystyle{plainnat}
+\bibliography{ref.bib}
+
+\end{document}

@@ -1,0 +1,50 @@
+\begin{thebibliography}{7}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Bolton and Dewatripont(2005)]{bolton2005contract}
+Patrick Bolton and Mathias Dewatripont.
+\newblock \emph{{Contract Theory}}, volume~1.
+\newblock The MIT Press, 2005.
+\newblock URL \url{https://ideas.repec.org/b/mtp/titles/0262025760.html}.
+
+\bibitem[Fudenberg and Tirole(1991)]{tirole1991game}
+Drew Fudenberg and Jean Tirole.
+\newblock \emph{Game Theory}.
+\newblock MIT Press, 1991.
+
+\bibitem[Mailath(2018)]{mailath2018modeling}
+George~J Mailath.
+\newblock \emph{Modeling Strategic Behavior: A Graduate Introduction to Game
+  Theory and Mechanism Design}, volume~6.
+\newblock World Scientific, 2018.
+
+\bibitem[Mailath and Samuelson(2006)]{Mailath2006repeated}
+George~J. Mailath and Larry Samuelson.
+\newblock \emph{{Repeated Games and Reputations: Long-Run Relationships}}.
+\newblock Oxford University Press, 2006.
+\newblock URL \url{https://ideas.repec.org/b/oxp/obooks/9780195300796.html}.
+
+\bibitem[Mas-Colell et~al.(1995)Mas-Colell, Whinston,
+  et~al.]{mas1995microeconomic}
+Andreu Mas-Colell, Michael~Dennis Whinston, et~al.
+\newblock \emph{Microeconomic theory}, volume~1.
+\newblock New York: Oxford university press, 1995.
+
+\bibitem[Myerson(1991)]{myerson1991game}
+Roger~B. Myerson.
+\newblock \emph{Game Theory: Analysis of Conflict}.
+\newblock Harvard University Press, 1991.
+\newblock ISBN 9780674341166.
+\newblock URL \url{http://www.jstor.org/stable/j.ctvjsf522}.
+
+\bibitem[Osborne and Rubinstein(1994)]{martin1994acourse}
+Martin~J. Osborne and Ariel Rubinstein.
+\newblock \emph{{A Course in Game Theory}}.
+\newblock The MIT Press, 1994.
+\newblock URL \url{https://ideas.repec.org/b/mtp/titles/0262650401.html}.
+
+\end{thebibliography}
