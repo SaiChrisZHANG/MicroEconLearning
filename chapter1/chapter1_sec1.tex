@@ -26,9 +26,31 @@ How to understand them? They are both strong assumptions:
 \begin{enumerate}
     \item[-] Completeness of $\succsim$ means it is well-defined between any two possible alternatives. From the perspective of an individual, completeness means that she will make choices, and only meditated choices.
     \item[-] Transitivity of $\succsim$ implies that the decision maker will not have a preference cycle, since whoever has a preference cycle would suffer economically for it\footnote{There are 2 types of violations of 
-    transitivity: irrational and mechanical. Irrational violations are easy to understand: decision makers simply do not follow transivity assumption. Mechanical violations means that decision makers are "forced" to violate transitivity. One 
+    transitivity: irrational and mechanical. Irrational violations are easy to understand: decision makers simply do not follow transivity assumption, many reasons have been raised, including mental account, menu effect, attraction effect, etc. Mechanical violations means that decision makers are "forced" to violate transitivity. One 
     example of this type of violation is aggregation of considerations: decision makers may aggregate several sub-preferences as together to make the choice, leading to violation of transitivity. Another example is when the preference
     is only defined for differences above a certain level. See \citet[Page 4-5]{ariel2012lecture} for details}.   
 \end{enumerate}
 
-With the definition of rational $\succsim$ in Def. \ref{def_succsim_rational}
+With the definition of rational $\succsim$ in Def. \ref{def_succsim_rational}, we can prove the following properites of $\succ$ and $\sim$ \textit{induced} by $\succsim$:
+\begin{theorem} If $\succsim$ is rational, then:
+    \begin{enumerate}
+        \item[i.] $\succ$ is irreflexive ($x\succ x$ never holds) and transitive ($x\succ y \land y\succ z\Rightarrow x\succ z$)
+        
+        \underline{Proof}:
+        \begin{enumerate}
+            \item[-] irreflexive: by Def. \ref{def_succ_and_sim}, $x\succ x\Rightarrow x\succsim x \land x\not\succsim x$, self contracdiction.
+            \item[-] transitive: $x\succ y \Rightarrow x\succsim y \land y\not\succsim x$, $y\succ z \Rightarrow y\succsim z \land z\not\succsim y$. By transitivity of $\succsim$, $x\succsim y\land y\succsim z\Rightarrow x\succsim z$. If $z\succsim x$, by transitivity of $\succsim$ and $x\succsim y$, we would have $z\succsim y$, contradicting $y\succ z$. Therefore $x\succsim z \land z\not\succsim x\Rightarrow x\succ z$. 
+        \end{enumerate}
+        \item[ii.] $\sim$ is reflexive ($x\sim x, \forall x$), transitive ($x\sim y\land y\sim z\Rightarrow x\sim z$) and symmetric ($x\sim y\Rightarrow y\sim x$)
+        
+        \underline{Proof}:
+        \begin{enumerate}
+            \item[-] reflexive: by completeness of $\succsim$, $\forall x, x\succsim x\Rightarrow x\sim x$
+            \item[-] transitive: $x\sim y\Rightarrow x\succsim y \land y\succsim x$, $y\sim z\Rightarrow y\succsim z, z\succsim y$, by the transitivity of $\succsim$, we have $x\succsim z \land z\succsim x$, hen $x\sim z$
+            \item[-] symmetric: $x\sim y \Rightarrow x\succsim y \land y\succsim x\Leftrightarrow y\succsim x \land x\succsim y\Rightarrow y\sim x$
+        \end{enumerate}
+        \item[iii.] $x\succ y\succsim z\Rightarrow x\succ z$ 
+        
+        \underline{Proof}:
+    \end{enumerate}
+\end{theorem}
