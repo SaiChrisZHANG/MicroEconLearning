@@ -1,4 +1,4 @@
-\begin{thebibliography}{7}
+\begin{thebibliography}{8}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -46,5 +46,11 @@ Martin~J. Osborne and Ariel Rubinstein.
 \newblock \emph{{A Course in Game Theory}}.
 \newblock The MIT Press, 1994.
 \newblock URL \url{https://ideas.repec.org/b/mtp/titles/0262650401.html}.
+
+\bibitem[Rubinstein(2012)]{ariel2012lecture}
+Ariel Rubinstein.
+\newblock \emph{Lecture Notes in Microeconomic Theory: The Economic Agent -
+  Second Edition}.
+\newblock Princeton University Press, rev - revised, 2 edition, 2012.
 
 \end{thebibliography}

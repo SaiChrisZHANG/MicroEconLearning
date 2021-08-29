@@ -5,7 +5,7 @@ We start from the basic: \textit{weak preference relation}, $\succsim$.
 
 A weak preference relation will induce two other types of relations on $X$:
 \begin{definition}\label{def_succ_and_sim}
-    With $\succsim$ defined by Def \ref{def_succsim}, we have
+    With $\succsim$ defined by Def. \ref{def_succsim}, we have
     \begin{enumerate}
         \item[-] the \textit{strict preference relation}, $\succ$ can be induced from $\succsim$ as: $x\succ y\Leftrightarrow x\succsim y \land y\not\succsim x$,
         or in words, $x$ if preferred to $y$.
@@ -14,7 +14,7 @@ A weak preference relation will induce two other types of relations on $X$:
 \end{definition}
 
 With the definition of these relations, we now define the central assumption of relations: \textit{\textbf{rationality}}. 
-\begin{definition}
+\begin{definition}\label{def_succsim_rational}
     A weak preference relation $\succsim$ is \textit{rational} if it is:
     \begin{enumerate}
         \item[-] Complete: $\forall x,y\in X$, $x\succsim y$ or $y\succsim x$ or both 
@@ -24,5 +24,11 @@ With the definition of these relations, we now define the central assumption of 
 
 How to understand them? They are both strong assumptions:
 \begin{enumerate}
-    \item[-] Completeness of 
+    \item[-] Completeness of $\succsim$ means it is well-defined between any two possible alternatives. From the perspective of an individual, completeness means that she will make choices, and only meditated choices.
+    \item[-] Transitivity of $\succsim$ implies that the decision maker will not have a preference cycle, since whoever has a preference cycle would suffer economically for it\footnote{There are 2 types of violations of 
+    transitivity: irrational and mechanical. Irrational violations are easy to understand: decision makers simply do not follow transivity assumption. Mechanical violations means that decision makers are "forced" to violate transitivity. One 
+    example of this type of violation is aggregation of considerations: decision makers may aggregate several sub-preferences as together to make the choice, leading to violation of transitivity. Another example is when the preference
+    is only defined for differences above a certain level. See \citet[Page 4-5]{ariel2012lecture} for details}.   
 \end{enumerate}
+
+With the definition of rational $\succsim$ in Def. \ref{def_succsim_rational}
