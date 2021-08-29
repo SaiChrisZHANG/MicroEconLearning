@@ -4,11 +4,25 @@ We start from the basic: \textit{weak preference relation}, $\succsim$.
 \end{definition}
 
 A weak preference relation will induce two other types of relations on $X$:
-\begin{definition}
+\begin{definition}\label{def_succ_and_sim}
     With $\succsim$ defined by Def \ref{def_succsim}, we have
     \begin{enumerate}
-        \item[-] the \textit{strict preference relation}, $\succ$ can be induced from $\succsim$ as: $x\succ y\Leftrightarrow x\succsim y \wedge y\not\succsim x$,
+        \item[-] the \textit{strict preference relation}, $\succ$ can be induced from $\succsim$ as: $x\succ y\Leftrightarrow x\succsim y \land y\not\succsim x$,
         or in words, $x$ if preferred to $y$.
-        \item[-] the \textit{indifference relation}, $\sim$ can be induced from $\succsim$ as: $x\sim y \Leftrightarrow x\succsim y \wedge y\succsim x$, or in words, $x$ is indifferent to $y$.
+        \item[-] the \textit{indifference relation}, $\sim$ can be induced from $\succsim$ as: $x\sim y \Leftrightarrow x\succsim y \land y\succsim x$, or in words, $x$ is indifferent to $y$.
     \end{enumerate}
 \end{definition}
+
+With the definition of these relations, we now define the central assumption of relations: \textit{\textbf{rationality}}. 
+\begin{definition}
+    A weak preference relation $\succsim$ is \textit{rational} if it is:
+    \begin{enumerate}
+        \item[-] Complete: $\forall x,y\in X$, $x\succsim y$ or $y\succsim x$ or both 
+        \item[-] Transitive: $\forall x,y,z\in X$, $x\succsim y\land y\succsim z\Rightarrow x\succsim z$
+    \end{enumerate}
+\end{definition}
+
+How to understand them? They are both strong assumptions:
+\begin{enumerate}
+    \item[-] Completeness of 
+\end{enumerate}
