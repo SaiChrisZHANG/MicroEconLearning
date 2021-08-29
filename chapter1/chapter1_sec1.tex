@@ -1,14 +1,14 @@
 We start from the basic: \textit{weak preference relation}, $\succsim$.
-\begin{definition}
+\begin{definition}\label{def_succsim}
     A weak preference relation $\succsim$ on a set $X$ is a subset of $X\times X$. If $(x,y)\in \succsim \Rightarrow$ $x$ is at least as good as $y$, written as $x\succsim y$
 \end{definition}
 
 A weak preference relation will induce two other types of relations on $X$:
 \begin{definition}
+    With $\succsim$ defined by Def \ref{def_succsim}, we have
     \begin{enumerate}
-        \item[-] The \textit{strict preference relation}, $\succ$ can be induced from $\succsim$ as: 
-        $$x\succ y\Leftrightarrow x\succsim y \wedge y\not\succsim x$$
-        i.e.,  $x$ if preferred to $y$.
-        \item[-]
+        \item[-] the \textit{strict preference relation}, $\succ$ can be induced from $\succsim$ as: $x\succ y\Leftrightarrow x\succsim y \wedge y\not\succsim x$,
+        or in words, $x$ if preferred to $y$.
+        \item[-] the \textit{indifference relation}, $\sim$ can be induced from $\succsim$ as: $x\sim y \Leftrightarrow x\succsim y \wedge y\succsim x$, or in words, $x$ is indifferent to $y$.
     \end{enumerate}
 \end{definition}
