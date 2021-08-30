@@ -56,10 +56,12 @@ With the definition of rational $\succsim$ in Def. \ref{def_succsim_rational}, w
 \end{theorem}
 
 We can also directly define a \textit{rational} $\succ$ (see \citet[Page 19-21]{kreps1990acourse}):
-\begin{definition}
+\begin{definition}\label{def_rational_succ}
     A strict preference ralation $\succ$ is rational if it is:
     \begin{enumerate}
         \item[-] asymmetric: $\nexists x,y\in X$ s.t. $x\succ y \land y\succ x$
         \item[-] negatively transitive: $x\succ y \Rightarrow \forall z\in X\setminus{x,y}$, $x\succ z\lor z\succ y \lor$both. 
     \end{enumerate}
 \end{definition}
+
+With Def. \ref{def_rational_succ} and Def. \ref{def_succsim_rational}, we can prove that $\succsim$ is rational iff $\succ$ is rational.
