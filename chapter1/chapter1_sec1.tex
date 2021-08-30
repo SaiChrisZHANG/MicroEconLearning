@@ -74,3 +74,67 @@ With Def. \ref{def_rational_succ} and Def. \ref{def_succsim_rational}, we can pr
 \end{theorem}
 
 Proof:
+\begin{description}
+    \item[Step 1] proof $\succsim$ is rational $\Rightarrow$ $\succ$ 
+    \begin{itemize}
+        \item[-] \textbf{asymmetric}
+        
+        if $\exists x,y$ s.t. $x\succ y$ and $y\succ x$, then by the definition of induced strict preference, the pair $x,y$ must satisfy 
+        $$\begin{cases}
+        x\succsim y\text{ and }y\not\succsim x & (x\succ y)\\
+        y\succsim x\text{ and }x\not\succsim y & (y\succ x)
+        \end{cases}$$
+        which is, by completeness of rational $\succsim$, impossible. Therefore, such pair $x,y$ don't exist. $\succ$ is proved to be asymetric.
+        
+        \item[-] \textbf{negatively transitive}
+        
+        First, $\forall z\notin\{x,y\}$, by completeness of rational $\succsim$, the relation between $x$ and $z$ is either $x\succsim z$ or $z\succsim x$.
+        Similarly, the relation between $y$ and $z$ is either $y\succsim z$ or $z\succsim y$.
+        
+        Second, given $x\succ y$, $x,y$ satisfies $x\succsim y$ and $y\not\succsim x$.
+        
+        Also, it is easy to prove that: $x\succ y \land y\succsim z \Rightarrow x\succ z$, $x\succ y \land z\succsim x\Rightarrow z\succ y$
+
+        \begin{itemize}
+       \item Using the same logic, it's easy to prove that if .
+        \item Again, with a similar deduction, it's easy to prove that if $x\succ y$
+        and $z\sim x$, $z\succ y$; $x\succ y$ and $y\sim z$.
+        \end{itemize}
+        now we have the following scenarios:
+        \begin{enumerate}
+        \item if $z\succsim x$ and $y\succsim z$, by transitivity of rational
+        $\succsim$, $y\succsim x$, contradicting the definition of $x\succ y$.
+        This scenario doesn't exist.
+        \item if $x\succsim z$ and $y\succsim z$, since $x\succ y$, with the
+        auxilary result proved above, we have $x\succ z$
+        \item if $z\succsim x$ and $z\succsim y$, since $x\succ y$, with the
+        auxilary result proved above, we have $z\succ y$
+        \item if $x\succsim z$ and $z\succsim y$, since $x\succ y$, suppose:
+        \begin{enumerate}
+        \item $z\succsim x$ as well, then $x\sim z$, in this case $z\succ y$;
+        \item $z\not\succsim x$, then $x\succ z$
+        \item $y\succsim z$ as well, then $y\sim z$, in this case $x\succ z$
+        \item $y\not\succsim z$, then $z\succ y$
+        \end{enumerate}
+        therefore, a complete summary of (a) to (d) would give:
+        
+        \begin{table}[h]
+        \begin{centering}
+        \begin{tabular}{ccc}
+        \hline 
+         & $z\succsim x$ & $z\not\succsim x$\tabularnewline
+        \hline 
+        $y\succsim z$ & $z\succ y$ \& $x\succ z$ & $x\succ z$\tabularnewline
+        $y\not\succsim z$ & $z\succ y$ & $x\succ z$ \& $z\succ y$\tabularnewline
+        \hline 
+        \end{tabular}
+        \par\end{centering}
+        \end{table}
+        
+        \end{enumerate}
+        Combining all above, we have proved negative transitivity of $\succ$.
+        \end{itemize}
+        With asymmetry and negative transitivity proved, we've proved that
+        $\succsim$ is rational $\Rightarrow$$\succ$ is rational
+        
+\end{description}
