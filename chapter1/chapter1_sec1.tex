@@ -26,9 +26,9 @@ How to understand them? They are both strong assumptions:
 \begin{enumerate}
     \item[-] Completeness of $\succsim$ means it is well-defined between any two possible alternatives. From the perspective of an individual, completeness means that she will make choices, and only meditated choices.
     \item[-] Transitivity of $\succsim$ implies that the decision maker will not have a preference cycle, since whoever has a preference cycle would suffer economically for it\footnote{There are 2 types of violations of 
-    transitivity: irrational and mechanical. Irrational violations are easy to understand: decision makers simply do not follow transivity assumption, many reasons have been raised, including mental account, menu effect, attraction effect, etc. Mechanical violations means that decision makers are "forced" to violate transitivity. One 
+    transitivity: irrational and mechanical. Irrational violations are easy to understand: decision makers simply do not follow transivity assumption, many reasons have been raised, including mental account, framing, menu effect, attraction effect, etc. Mechanical violations means that decision makers are "forced" to violate transitivity. One 
     example of this type of violation is aggregation of considerations: decision makers may aggregate several sub-preferences as together to make the choice, leading to violation of transitivity. Another example is when the preference
-    is only defined for differences above a certain level. See \citet[Page 4-5]{ariel2012lecture} for details}.   
+    is only defined for differences above a certain level (problem of perceptible differences). See \citet[Page 7-8]{mas1995microeconomic}, \citet[Page 4-5]{ariel2012lecture} for details}.   
 \end{enumerate}
 
 With the definition of rational $\succsim$ in Def. \ref{def_succsim_rational}, we can prove the following properites of $\succ$ and $\sim$ \textit{induced} by $\succsim$:
@@ -54,3 +54,12 @@ With the definition of rational $\succsim$ in Def. \ref{def_succsim_rational}, w
         \underline{Proof}: $x\succ y\Rightarrow x\succsim y\land y\not\succsim x$, hence $x\succ y\succsim z\Rightarrow x\succsim z$. If $z\succsim x$, by transitivity of $\succsim$, $y\succsim x$, contradicting $x\succ y$. Therefore, $z\not\succsim x$
     \end{enumerate}
 \end{theorem}
+
+We can also directly define a \textit{rational} $\succ$ (see \citet[Page 19-21]{kreps1990acourse}):
+\begin{definition}
+    A strict preference ralation $\succ$ is rational if it is:
+    \begin{enumerate}
+        \item[-] asymmetric: $\nexists x,y\in X$ s.t. $x\succ y \land y\succ x$
+        \item[-] negatively transitive: $x\succ y \Rightarrow \forall z\in X\setminus{x,y}$, $x\succ z\lor z\succ y \lor$both. 
+    \end{enumerate}
+\end{definition}
