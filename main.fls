@@ -645,6 +645,9 @@ INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/newpx/zplexa.tfm
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/newpx/zplexa.tfm
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/newpx/zplexa.tfm
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/newpx/zpl-Italic-tlf-t1.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/vf/public/newpx/zplsy.vf
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/newpx/pxsys.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/newtx/txex-bar.tfm
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/vf/public/newpx/zplmi.vf
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/pxfonts/pxmi.tfm
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/vf/public/pxfonts/pxmi.vf
