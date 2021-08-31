@@ -131,5 +131,45 @@ Proof:
         \end{itemize}
         With asymmetry and negative transitivity proved, we've proved that
         $\succsim$ is rational $\Rightarrow$$\succ$ is rational
+    
+    \item[Step 2] proof $\succ$ is rational $\Rightarrow$$\succsim$ is
+    rational. Again, the proof is done separately for the two properties.
+    \begin{itemize}
+    \item[-] Complete: with a rational $x\succ y$, we know $\nexists x,y$ s.t.
+    $x\succ y$ and $y\succ x$ by asymmetry. Therefore, $\forall x,y$,
+    we have two possibilities.
+    \begin{itemize}
+    \item $x\succ y$ and $y\not\succ x$, which would naturally induce a weak
+    preference $x\succsim y$
+    \item $y\succ x$ and $x\not\succ y$, which would naturally induce a weak
+    preference $y\succsim x$
+    \end{itemize}
+    therefore, $\forall x,y$, either $x\succsim y$ or $y\succsim x$ completeness of $\succsim$ is proven.
+
+    \item[-] Transitive: with a rational $x\succ y$, negative transivity gives
+    $\forall z\notin\{x,y\},$ either $x\succ z$, $z\succ y$, or both.
+    By negative transitivity, we have:
+    \begin{itemize}
+    \item $x\succ z$: following same procedure, we know $x\succsim z$. If:
+    \begin{itemize}
+    \item $y\succsim z$, since $x\succ z\Rightarrow z\not\succsim x$, by completeness
+    we have $x\succsim z$, thus $x\succsim y\land y\succsim z\Rightarrow x\succsim z$
+    \item $z\succsim y$, since $x\succ y\Rightarrow x\not\succsim y$, by completeness
+    we have $x\succsim y$, thus $x\succsim z\land z\succsim y\Rightarrow x\succsim y$
+    \end{itemize}
+    \item $z\succ y$: again, we know $z\succsim y$. If:
+    \begin{itemize}
+    \item $x\succsim z$, since $x\succ y\Rightarrow y\not\succsim x$, by completeness
+    we have $x\succsim y$, thus $z\succsim y\land x\succsim z\Rightarrow x\succsim y$
+    \item $z\succsim x$, with $x\succsim y$, suppose $y\succsim z$, this
+    contradicts $z\succ y$, thus $z\succsim x\land x\succsim y\Rightarrow z\succsim y$
+    \end{itemize}
+    \item $x\succ z$ and $z\succ y$: again we know $x\succsim z$ and $z\succsim y$.
+    Suppose $y\succsim x$, this contradicts $x\succ y$, therefore $x\succsim z\land z\succsim y\Rightarrow x\succsim y$
+    \end{itemize}
+    In all three scenarios, transitivity is proved.
+    \end{itemize}
+    With completeness and transitivity proved, we've proved that $\succ$
+    is rational $\Rightarrow\succsim$ is rational.
         
 \end{description}
