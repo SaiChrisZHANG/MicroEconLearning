@@ -60,7 +60,7 @@ We can also directly define a \textit{rational} $\succ$ (see \citet[Page 19-21]{
     A strict preference ralation $\succ$ is rational if it is:
     \begin{enumerate}
         \item[-] asymmetric: $\nexists x,y\in X$ s.t. $x\succ y \land y\succ x$
-        \item[-] negatively transitive: $x\succ y \Rightarrow \forall z\in X\setminus{x,y}$, $x\succ z\lor z\succ y \lor$both. 
+        \item[-] negatively transitive: $x\succ y \Rightarrow \forall z\in X\setminus\{x,y\}$, $x\succ z\lor z\succ y \lor$ both. 
     \end{enumerate}
 \end{definition}
 
@@ -75,7 +75,7 @@ With Def. \ref{def_rational_succ} and Def. \ref{def_succsim_rational}, we can pr
 
 Now we prove this theorem:
 \begin{description}
-    \item[Step 1] proof $\succsim$ is rational $\Rightarrow$ $\succ$ 
+    \item[Step 1] proof $\succsim$ is rational $\Rightarrow$ $\succ$ is rational
     \begin{itemize}
         \item[-] \textbf{asymmetric}
         
@@ -132,8 +132,7 @@ Now we prove this theorem:
         With asymmetry and negative transitivity proved, we've proved that
         $\succsim$ is rational $\Rightarrow$$\succ$ is rational
     
-    \item[Step 2] proof $\succ$ is rational $\Rightarrow$$\succsim$ is
-    rational. Again, the proof is done separately for the two properties.
+    \item[Step 2] proof $\succ$ is rational $\Rightarrow$$\succsim$ is rational.
     \begin{itemize}
     \item[-] Complete: with a rational $x\succ y$, we know $\nexists x,y$ s.t.
     $x\succ y$ and $y\succ x$ by asymmetry. Therefore, $\forall x,y$,
@@ -174,4 +173,6 @@ Now we prove this theorem:
         
 \end{description}
 
-We can do
+Notice that negative positivity in Def. \ref{def_rational_succ}, is logically equivalent to its \textit{contrapositive}: 
+$\exists z\in X\setminus\{x,y\}$ s.t. $x\not\succ z \land z\not\succ y\Rightarrow x\not\succ y$. This is percisely why 
+the definition is called negative transitivity.
