@@ -691,6 +691,7 @@ INPUT /Users/admin/Desktop/LearningNotes/MicroEconLearning/main.mtc1
 INPUT /Users/admin/Desktop/LearningNotes/MicroEconLearning/main.aux
 INPUT /Users/admin/Desktop/LearningNotes/MicroEconLearning/main.out
 INPUT /Users/admin/Desktop/LearningNotes/MicroEconLearning/main.out
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/newpx/tgpdiff.enc
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc
@@ -710,3 +711,4 @@ INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/newpx/zplb.pfb
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/newpx/zplbi.pfb
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/newpx/zplr.pfb
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/newpx/zplri.pfb
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/newpx/zplx-regular.pfb
