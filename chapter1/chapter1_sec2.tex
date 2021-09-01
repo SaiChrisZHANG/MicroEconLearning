@@ -30,6 +30,8 @@ One thing to remember is that $\succsim^*$ need not be either complete or transi
 
 An example is:
 \begin{example}
-    Consider a choice structure $(\mathcal{B},C(\cdot))$ from $X=\{x,y,z\}$, where $\mathcal{B}=\{\{x,y\},\{x,y,z\}\}$. Under WARP, we can NOT have $C(\{x,y,z\})=\{x,y\}$ and $C\{x,y\}=\{x\}$ at the same time.
-    $C(\{x,y,z\})=\{x,y\}$ means that $x\succsim^* y,x\succsim^* z,y\succsim^* x, y\succsim^* z$; $C(\{x,y\})=\{x\}$ means that $y\not\succsim^* x$. Under WARP, the contradiction can not 
+    Consider a choice structure $(\mathcal{B},C(\cdot))$ from $X=\{x,y,z\}$, where $\mathcal{B}=\{\{x,y\},\{x,y,z\}\}$. Under WARP, $C\{x,y\}=\{x\}\Rightarrow y\notin C\{x,y,z\}$.
+    BUT, we can have $z\in C(\{x,y,z\})$.
 \end{example}
+
+This is why the induced preference is called \textit{revealed}: you don't know what else is going on.
