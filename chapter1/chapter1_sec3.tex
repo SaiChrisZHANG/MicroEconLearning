@@ -11,8 +11,12 @@ First, $\textbf{rational}\succsim \Rightarrow (\mathcal{B},C(\cdot))\textbf{ sat
     \textit{induced choice correspondence}: $C^*(B,\succsim)=\{x\in B:x\succsim y, \forall y\in B\}$
 \end{definition}
 
-The induced choice correspondence $C^*(B,\succsim)$ has an important property: if $X$ is finite, or continuity conditions hold, $C^*(B,\succsim)$ will be \textbf{nonempty}. A brief proof of this proposition is:
+The induced choice correspondence $C^*(B,\succsim)$ has an important property: if $X$ is finite, $C^*(B,\succsim)$ will be \textbf{nonempty}. A brief proof of this proposition is:
+If $X$ is finite, $B$ is finite as well. We will prove by induction. Starting from $|B|=1$, the only element of $B$ is in $C^*(B,\succsim)$. Now suppose $C^*(B,\succsim)$ is nonempty when $|B_n|=n$, 
+let $x^*\in C^*(B_n,\succsim)$; when $|B_{n+1}|=n+1$, let the $n+1$th element $y$ $(\{y\}=B_{n+1}\setminus B_n)$. By the completeness of a rational $\succsim$, either $y\succsim x^*$ or $x^*\succsim y$:
 \begin{enumerate}
-    \item[-] If $X$ is finite, $B$ is finite as well. We will prove by induction. Starting from $|B|=1$, the only element of $B$ is in $C^*(B,\succsim)$. Now suppose $C^*(B,\succsim)$ is nonempty when $|B_n|=n$, 
-    let $x^*\in C^*(B_n,\succsim)$; when $|B_{n+1}|=n+1$, let the $n+1$th element $y$ $(\{y\}=B_{n+1}\setminus B_n)$. By the completeness of a rational $\succsim$, either $y\succsim x^*$ or $x^*\succsim y$ 
+    \item[i.] $y\succsim x^*$: since $x^*\in C^*(B_n,\succsim)\Rightarrow x^*\succsim x, \forall x\in B_n$. By transitivity of $\succsim$, $y\succsim x,\forall\in B_n$. By completeness, $y\succsim y$ as well. Hence, $y\in C^*(B_{n+1},\succsim)$.
+    \item[ii.] $x^*\succsim y$: since $x^*\in C^*(B_n,\succsim)\Rightarrow x^*\succsim x, \forall x\in B_n$, hence $x^*\succsim x, \forall x\in B_n\cup{y}\Rightarrow x^*\in C^*(B_{n+1},\succsim)$
 \end{enumerate}
+
+But 
