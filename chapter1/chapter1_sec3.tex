@@ -1,10 +1,14 @@
 Now we have two major approaches of decision making process: preference relations in Section \ref{chap1:sec1} and choice rules in Section \ref{chap1:sec2},
 what we need to do is to link them. This linkage will emerge when we examine two central assumptions: \textbf{rationality} and \textbf{WARP}. So the major question here is: 
 $$\textbf{rational}\succsim\xLeftrightarrow{???} (\mathcal{B},C(\cdot))\textbf{ satisfies WARP}$$
-And the answer is: \textit{YES!} but not exactly.
+And the answer is: \textit{YES!} but not exactly. Now let's dig in.
+
+\subsection*{Rational $\succsim\Rightarrow(\mathcal{B},C(\cdot))$ satisfies WARP}
 
 First, $\textbf{rational}\succsim \Rightarrow (\mathcal{B},C(\cdot))\textbf{ satisfies WARP}$ is a big YES. To prove this, we need to define \textit{induced choice correspondence}:
 \begin{definition}
     Given a \textbf{rational} $\succsim$ on $X$, if the decision maker faces a nonempty subset of alternatives $B\subset X$, by maximizing her preference, she would choose any one of the elements in the 
-    \textit{induced choice correspondence}: 
+    \textit{induced choice correspondence}: $C^*(B,\succsim)=\{x\in B:x\succsim y, \forall y\in B\}$
 \end{definition}
+
+The induced choice correspondence $C^*(B,\succsim)$ has an important property: if $X$ if finite, or continuity conditions hold, $C^*(B,\succsim)$ will be \textbf{nonempty}. 
