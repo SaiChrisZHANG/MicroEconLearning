@@ -23,11 +23,15 @@ let $x^*\in C^*(B_n,\succsim)$; when $|B_{n+1}|=n+1$, let the $n+1$th element $y
     \item[ii.] $x^*\succsim y$: since $x^*\in C^*(B_n,\succsim)\Rightarrow x^*\succsim x, \forall x\in B_n$, hence $x^*\succsim x, \forall x\in B_n\cup{y}\Rightarrow x^*\in C^*(B_{n+1},\succsim)$
 \end{enumerate}
 
-Notice that when $B$ is finite, a stronger condition of $\succsim$ being acyclic is not enough for an induced choice rule $C^*(B,\succsim)\neq \varnothing$. Instead, 
-\begin{theorem}
+Notice that when $B$ is finite, a stronger condition of $\succsim$ being acyclic and complete is equilavent to an induced choice rule $C^*(B,\succsim)\neq \varnothing$: 
+\begin{theorem}\label{theo_acyclic_choice}
     For a finite $B$, $\succsim$ is complete and \textbf{acyclic} $\Leftrightarrow C^*(B,\succsim)\neq \varnothing$
 \end{theorem}
 $\succsim$ is acyclic mean that: $a_1\succsim a_2,a_2\succsim a_3,\cdots, a_{n-1}\succsim a_n\Rightarrow a_n\not\succsim a_1$. An example of transitive but not \textit{acyclic} relations is indifference $\sim$: $a_1\sim a_2\sim \cdots\sim a_n\Rightarrow a_n\sim a_1$.
+A brief proof of Theorem \ref{theo_acyclic_choice} is:
+\begin{enumerate}
+    \item[i.] acyclic $\succsim\Rightarrow C^*(B,\succsim)$ satisfies WARP: 
+\end{enumerate}
 
 With induced choice correspondence $C^*(B,\succsim)$ defined and non-emptyness proved, we can then say:
 \begin{theorem}
