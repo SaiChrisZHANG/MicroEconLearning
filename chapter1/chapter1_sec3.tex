@@ -6,7 +6,7 @@ And the answer is: \textit{YES!} but not exactly. Now let's dig in.
 \subsection*{Rational $\succsim\Rightarrow(\mathcal{B},C(\cdot))$ satisfies WARP}
 
 First, $\textbf{rational}\succsim \Rightarrow (\mathcal{B},C(\cdot))\textbf{ satisfies WARP}$ is a big YES. To prove this, we need to define \textit{induced choice correspondence}:
-\begin{definition}
+\begin{definition}\label{def_induced_choice}
     Given a \textbf{rational} $\succsim$ on $X$, if the decision maker faces a nonempty subset of alternatives $B\subset X$, by maximizing her preference, she would choose any one of the elements in the 
     \textit{induced choice correspondence}: $C^*(B,\succsim)=\{x\in B:x\succsim y, \forall y\in B\}$
 \end{definition}
@@ -78,8 +78,10 @@ Now let's prove it, by examing the natural candidate for a rationalizing prefere
     
     Now, we need to show $\forall B\in\mathcal{B}, C(B)=C^*(B,\succsim^*)$. Logically, this means the revealed preference $\succsim^*$ inferred from $C(\cdot)$ actually generates $C(\cdot)$. Formally, we prove it in 2 steps:
     \begin{enumerate}
-        \item[a.] Suppose $x\in C(B)$, meaning that $\forall y\in B, x\succsim^* y$ (see Def.\ref{def_revealed_pref}), hence $x\in C^*(\{B,\succsim^*\})$
-        \item[b.]  
+        \item[a.] Suppose $x\in C(B)$, which means that $\forall y\in B, x\succsim^* y$ (by Def.\ref{def_revealed_pref}), hence $x\in C^*(B,\succsim^*)$ (by Def.\ref{def_induced_choice}). This proves $C(B)\subseteq C^*(B,\succsim^*)$
+        \item[b.] Suppose $x\in C^*(B,\succsim^*)$, which means that $\forall y\in B, x\succsim^* y$ (by Def.\ref{def_induced_choice}). Therefore, $\forall y\in B$, there must exist a set $B_y\in\mathcal{B}$ s.t.
+         $x,y\in B_y\Rightarrow x\in C(B_y)$. Since $C(B)\neq \varnothing$, suppose $z\in C(B)$, since $x\in C(B_z)$, WARP implies that $x\in C(B)$. This proves $C^*(B,\succsim^*)\subseteq C(B)$
     \end{enumerate}
+    Together, we have $C(B)=C^*(B,\succsim^*)$.
     \item[\textbf{Step 3}] Prove $\succsim^*$ is the unique choice
 \end{enumerate}
