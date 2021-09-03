@@ -66,8 +66,16 @@ Now let's prove it, by examing the natural candidate for a rationalizing prefere
     \item[\textbf{Step 1}] Prove that $\succsim^*$ is rational
     \begin{enumerate}
         \item[-] Completeness: By (ii) of Def.\ref{def_rationalize_choice}, all binary subsets of $X$ are in $\mathcal{B}$. Hence, $\{x,y\}\in\mathcal{B}$. For this binary menu, $C(\{x,y\})$ must contain either $x$ or $y$, therefore, $x\succsim^*y$ or $y\succsim^* x$ or both. Completeness proved.
-        \item[-] Transitivity: $\forall\{x,y,z\}\in \mathcal{B}$
+        \item[-] Transitivity: $\forall\{x,y,z\}\in \mathcal{B}$, $C(\{x,y,z\})\neq \varnothing$. Suppose $x\succsim^*y,y\succsim^*z$, which implies that $x\in C(\{x,y\}),y\in C(\{y,z\})$, we then have three cases for $C(\{x,y,z\})$:
+        \begin{enumerate}
+            \item[a.] $x\in C(\{x,y,z\})$, WARP gives that $x\in C(\{x,z\})\Rightarrow x\succsim^*z$
+            \item[b.] $y\in C(\{x,y,z\})$, we have $x\in C(\{x,y\})$. WARP gives $x\in C(\{x,y,z\})$ $\Rightarrow x\succsim^* z$
+            \item[c.] $z\in C(\{x,y,z\})$, we have $y\in C(\{y,z\})$. WARP gives $y\in C(\{x,y,z\})$, and $x\in C(\{x,y\})$, WARP gives $x\in C(\{x,y,z\})\Rightarrow x\succsim^*z$
+        \end{enumerate} 
+        Hence, $x\succsim^*y,y\succsim^*z\Rightarrow x\succsim^* z$
     \end{enumerate} 
     \item[\textbf{Step 2}] Prove that $\succsim^*$ rationalizes $C(\cdot)$ on $\mathcal{B}$
+    
+    Now, we need to show $\forall B\in\mathcal{B}, C(B)=C^*(B,\succsim^*)$. Logically, this means the revealed preference $\succsim^*$ inferred from $C(\cdot)$ actually generates $C(\cdot)$
     \item[\textbf{Step 3}] Prove $\succsim^*$ is the unique choice
 \end{enumerate}
