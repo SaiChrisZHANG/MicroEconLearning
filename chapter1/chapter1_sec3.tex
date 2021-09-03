@@ -91,4 +91,13 @@ Now let's prove it, by examing the natural candidate for a rationalizing prefere
 Now, it is \textbf{proved}! Notice that the main assumption(restriction) here is \textbf{$\mathcal{B}$ includes all subsets of $X$ of up to 3 elements}, this gives completeness, which is fundamental.
 
 \subsection*{Two things to keep in mind}
-We have proved two 
+We have proved the twoway links of preferences and choices:
+\begin{enumerate}
+    \item[-] Rational $\succsim\Rightarrow (\mathcal{B},C^*(\cdot,\succsim))$ satisfies WARP (see Thm.\ref{thm_rational_leadto_WARP})
+    \item[-] A WARP-satisfying, up-to-3-element $(\mathcal{B},C(\cdot))$ can be uniquely rationalized by a rational $\succsim$ (see Thm.\ref{theorem_rationalizing_exist})
+\end{enumerate}
+However, there are still something to keep in mind.
+
+First, for a given choice structure $(\mathcal{B},C(\cdot))$, there my be \textbf{more than one} rationalizing preference relation $\succsim$ in general. Here is the simplest example:
+For $X=\{x,y\},\mathcal{B}\{\{x\},\{y\}\}$ and the choice structure $C(\{x\})=\{x\}, C(\{y\}=\{y\})$. In this case, \textbf{ANY} relation preference relation of $X$ can rationalize $C(\cdot)$
+This is related to both Def.\ref{def_rationalize_choice} and (ii) of Thm.\ref{theorem_rationalizing_exist}. Thm.\ref{theorem_rationalizing_exist} requires that 
