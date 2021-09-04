@@ -39,12 +39,24 @@ This is why the induced preference is called \textit{revealed}: you don't know w
 There are 3 interesting properties of choice rules to keep in mind:
 \begin{enumerate}
     \item[-] Property $\alpha$: $x\in A \subseteq B,x\in C(B)\Rightarrow x\in C(A)$.
-    \item[-] Property $\beta$: $x,y\in C(A), A\subset B, y\in C(B)\Rightarrow x\in C(B)$
+    \item[-] Property $\beta$: $x,y\in C(A), A\subseteq B, y\in C(B)\Rightarrow x\in C(B)$
     \item[-] Property $\gamma$: $x\in C(B_1),x\in C(B_2) \cdots x\in C(B_n)\Rightarrow x\in C(B_1\cup B_2\cup\cdots\cup B_n)$
 \end{enumerate}
 
-For a preference relation $\succsim$, we can prove that $\alpha$ and $\gamma$ hold:
+For a rational preference relation $\succsim$, its induced choice function $C(\cdot,\succsim)$ satisfies the three properties:
 \begin{enumerate}
-    \item[$\alpha$:] For $x\in A \subseteq B,x\in C(B)$, suppose $x\notin C(A)$, then $\exists y\in C(A)$ s.t. $x \not\succsim y$. However, $y\in B\Rightarrow x\notin C(B)$, contradicting.
-    \item[$\gamma$:] $x\in C(B_i),i=1,\cdots,n\Rightarrow \forall b^i_k \in B_i, x\succsim b_i\Rightarrow \forall b\in \{b^i_k\}, i=1,\cdots,n, x_i\succsim b_i\Rightarrow x\in C(B_1\cup B_2\cup\cdots\cup B_n)$
+    \item[$\alpha$:] For $x\in A \subseteq B,x\in C(B,\succsim)$, $x\succsim y, \forall y\in B$, and $A\subseteq B\Leftrightarrow \forall z\in A,z\in B$, hence $\forall z\in A,x\succsim z\Rightarrow x\in C(A,\succsim)$
+    \item[$\beta$:] For $x,y\in C(A,\succsim), A\subseteq B, y\in C(B,\succsim)$, $x\succsim y$ and $\forall z\in B,y\succsim z$, by transitivity, $\forall z\in B, x\succsim z\Rightarrow x\in C(B,\succsim)$
+    \item[$\gamma$:] $x\in C(B_i,\succsim),i=1,\cdots,n\Rightarrow \forall b^i_k \in B_i, x\succsim b_i\Rightarrow \forall b\in \{b^i_k\}, i=1,\cdots,n, x_i\succsim b_i\Rightarrow x\in C(B_1\cup B_2\cup\cdots\cup B_n,\succsim)$
+\end{enumerate}
+
+With Sen's $\alpha$ and $\beta$ defined, we have:
+\begin{theorem}
+    For a non-empty $C$, $C$ satisfies $\alpha$ and $\beta$ $\Leftrightarrow$ $C$ satisfies WARP
+\end{theorem}
+
+Now, let's prove this.
+\begin{enumerate}
+    \item[-] \textbf{Sen's $\alpha$ and $\beta \Rightarrow$ WARP}: Suppose $x,y\in A\cap B, x\in C(A), y\in C(B)$. Let $\tilde{A}=A\cap B$, since $\tilde{A}\subset A$ and $\tilde{A} \subset B$, Sen's $\alpha$ gives $x,y\in C(\tilde{A})$. Now we have $\tilde{A}\subset B, y\in C(B), x,y\in C(\tilde{A})$, by Sen's $\beta$, $x\in C(B)$. Thus, WARP holds.
+    \item[-] \textbf{WARP $\Rightarrow$ Sen's $\alpha$ and $\beta$}: WARP gives $x,y\in A\cap B,x\in C(B), y\in C(A)\Rightarrow x\in C(A)$, in the special case of $A\subset B$, WARP will be reduced to Sen's $\alpha$ and $\beta$.\footnote{Another way of proving this is to introduce rationalizing preference relation (Def.\ref{def_rationalize_choice}). In fact, for $\mathcal{B}$ includes all subsets of $X$ of up to 3 elements, WARP $\Leftrightarrow$ $C$ is rationalizable $\Leftrightarrow$ Sen's $\alpha$ and $\beta$ are satisfied.}
 \end{enumerate}
