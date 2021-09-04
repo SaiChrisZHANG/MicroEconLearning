@@ -45,6 +45,6 @@ There are 3 interesting properties of choice rules to keep in mind:
 
 For a preference relation $\succsim$, we can prove that $\alpha$ and $\gamma$ hold:
 \begin{enumerate}
-    \item[$\alpha$] 
-    \item[$\gamma$]  
+    \item[$\alpha$:] For $x\in A \subseteq B,x\in C(B)$, suppose $x\notin C(A)$, then $\exists y\in C(A)$ s.t. $x \not\succsim y$. However, $y\in B\Rightarrow x\notin C(B)$, contradicting.
+    \item[$\gamma$:] $x\in C(B_i),i=1,\cdots,n\Rightarrow \forall b^i_k \in B_i, x\succsim b_i\Rightarrow \forall b\in \{b^i_k\}, i=1,\cdots,n, x_i\succsim b_i\Rightarrow x\in C(B_1\cup B_2\cup\cdots\cup B_n)$
 \end{enumerate}
