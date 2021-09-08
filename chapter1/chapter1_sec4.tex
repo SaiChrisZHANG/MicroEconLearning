@@ -1,9 +1,28 @@
 Now, with preferences and choices defined, and the linkage between the two established, we need to transfer these concepts into math for analytic studies.
 This is exactly why utility functions are introduced: to assign a number and rank the elements in $X$ according to preferences.
 
-\begin{definition}
+\begin{definition}\label{def_utility}
     A function $u:X\rightarrow\mathbb{R}$ is a \textit{utility function representing relation} $\succsim$ if $\forall x,y\in X,x\succsim y\Leftrightarrow u(x)\geq u(y)$
 \end{definition}
 
 Notice that a utility function representing a preference relation $\succsim$ is NOT unique. \textbf{Rank-preserving} is the only requirement, hence, any 
-strictly increasing function $f:\mathbb{R}\rightarrow\mathbb{R},v(x)=f(u(x))$ will also represent $\succsim$ as $u(\cdot)$.
+strictly increasing function $f:\mathbb{R}\rightarrow\mathbb{R},v(x)=f(u(x))$ will also represent $\succsim$ as $u(\cdot)$. The logic is quite straight forward: for $x,y\in X$ and $u(\cdot)$ represents $\succsim$, then $x\succsim y \Leftrightarrow u(x)\geq u(y)$, for a strictly increasing $f(\cdot)$, $u(x)\geq u(y)\Leftrightarrow f(u(x))\geq f(u(y))\Leftrightarrow v(x)\geq v(y)$, hence $v(\cdot)$ represents $\succsim$ as well.
+The major requirement here is \textbf{strictly increasing $f(\cdot)$}.
+
+Two concepts to keep in mind:
+\begin{enumerate}
+    \item \textbf{Ordinal} properties of utility functions: the \textbf{invariant} properties of $u(\cdot)$ across all of its strictly increasing transformations $f(u(\cdot))$. Ranking (i.e. the preference represented by utility functions) is ordinal.
+    \item \textbf{Cardinal} properties of utility functions: the \textbf{variant} properties of $u(\cdot)$ across all of its strictly increasing transformation $f(u(\cdot))$. Numerical values associated with the alternatives in $X$ (i.e. the magnitude of the differences between alternatives) is cardinal.
+\end{enumerate}
+
+The central theorem of utility functions is closely linked to rationality:
+\begin{theorem}\label{thm_utility_is_rational}
+    A preference relation $\succsim$ can be represented by a utility function $\Rightarrow$ $\succsim$ is rational
+\end{theorem}
+
+The proof is
+\begin{enumerate}
+    \item \textit{Completeness}. Since $u(\cdot)$ represents preference relations between alternatives, and $u:X\rightarrow\mathbb{R}$, thus $\forall x,y\in X$, either $u(x)\geq u(y)$ or $u(y) \geq u(x)$. By Def.\ref{def_utility}, we have either $x\succsim y$ or $y\succsim x$, hence $\succsim$ is complete.
+    \item \textit{Transitivity}. For $x\succsim y,y\succsim z$. By Def.\ref{def_utility}, $u(x)\geq u(y),u(y)\geq u(z)$, hence $u(x)\geq u(z)\Rightarrow x\succsim z$.
+\end{enumerate}
+
