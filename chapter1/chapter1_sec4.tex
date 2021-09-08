@@ -2,5 +2,8 @@ Now, with preferences and choices defined, and the linkage between the two estab
 This is exactly why utility functions are introduced: to assign a number and rank the elements in $X$ according to preferences.
 
 \begin{definition}
-    A function $u:X\rightarrow\mathbb{R}$ is a \textit{utility function representing}
+    A function $u:X\rightarrow\mathbb{R}$ is a \textit{utility function representing relation} $\succsim$ if $\forall x,y\in X,x\succsim y\Leftrightarrow u(x)\geq u(y)$
 \end{definition}
+
+Notice that a utility function representing a preference relation $\succsim$ is NOT unique. \textbf{Rank-preserving} is the only requirement, hence, any 
+strictly increasing function $f:\mathbb{R}\rightarrow\mathbb{R},v(x)=f(u(x))$ will also represent $\succsim$ as $u(\cdot)$.
