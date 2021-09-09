@@ -15,6 +15,8 @@ Two concepts to keep in mind:
     \item \textbf{Cardinal} properties of utility functions: the \textbf{variant} properties of $u(\cdot)$ across all of its strictly increasing transformation $f(u(\cdot))$. Numerical values associated with the alternatives in $X$ (i.e. the magnitude of the differences between alternatives) is cardinal.
 \end{enumerate}
 
+The numerical value, or even the size of relative differences have no particular meaning. Only ranking is "real", since the "level of utility" is \textbf{unobservable} and anything required to know the "level of utility" is \textbf{untestable}.
+
 The central theorem of utility functions is closely linked to rationality:
 \begin{theorem}\label{thm_utility_is_rational}
     A preference relation $\succsim$ can be represented by a utility function $\Rightarrow$ $\succsim$ is rational
@@ -43,3 +45,14 @@ The major prerequisite here is $X$ being \textbf{finite}. The proof is done by i
     In all 3 scenarios, $u(\cdot)$ represents $\succsim$ on $X=\{x_1,\cdots,x_{N-1},x_N\}$ as well.
 \end{enumerate}
 With this induction, we prove Thm.\ref{thm_rational_has_utility}\footnote{Another way of proof is: Start with $x^{start}\in X$, define $W_{x}=\{y:y\prec x^{start}\}$ then $W_x$ is either empty or not: If not empty, pick $\tilde{x}\in W_{x}$, shrink $W_{x}$ to $\{y:y\prec \tilde{x}\}$ and repeat this procedure till $a\sim x^{stop}$ where $u(a)=0$, then $x^{stop}$ is the “lower bound” of the set. With this process, we can generate a utility function for any finite set $X$ that is rational.}.
+
+It is natural that if we start from $\succ$, we would have the same logic \citep[See][Page 30]{kreps1990acourse}:
+
+\begin{enumerate}
+    \item[-] similar definition: $x\succ y\Leftrightarrow u(x)>u(y)$
+    \item[-] similar theorems: 
+    \begin{enumerate}
+        \item[i] $\exists u(\cdot)$ representing $\succ$ $\Rightarrow$ rational $\succ$ (asymmetric and negatively transitive)
+        \item[ii] If $X$ is finite or at least countably infinite, $\exists u(\cdot)$ representing $\succ$ $\Leftrightarrow$ rational $\succ$
+    \end{enumerate} 
+\end{enumerate}

@@ -58,7 +58,7 @@ Intuitiviely, more budget sets $B\in\mathcal{B}$ would mean that, to satisfy WAR
         \item[i.] WARP is satisfied
         \item[ii.] $\mathcal{B}$ includes \textbf{all} subsets of $X$ of \textbf{up to 3} elements 
     \end{enumerate}
-    then there exists a rational preference relation $\succsim$ s.t. $C(B)=C^*(B,\succsim),\forall B\in\mathcal{B}$. And this rational $\succsim$ is the \textbf{only} preference relation that can rationalize $(\mathcal{B},C(\cdot))$.
+    then there exists a rational preference relation $\succsim$ s.t. $C(B)=C^*(B,\succsim),\forall B\in\mathcal{B}$. And this rational $\succsim$ is the \textbf{only} preference relation that can rationalize $(\mathcal{B},C(\cdot))$\footnote{The existence of a rationalizing preference relation $\succsim$ brings many interesting properties, one of them is \textit{path-invariance}: $\forall B_1,B_2\in\mathcal{B}, B_1\cup B_2 \in\mathcal{B}\land C(B_1)\cup C(B_2)\in\mathcal{B}\Rightarrow C(B_1\cup B_2)=C(C(B_1)\cup C(B_2))$, meaning that the decision problem can safely be subdivided. A proof is: for $x\in C(B_1\cup B_2)$ and $y\in C(B_1)\cup C(B_2)$, }
 \end{theorem}
 
 Now let's prove it, by examing the natural candidate for a rationalizing preference relation: the \textbf{revealed preference relation $\succsim^*$}:
@@ -90,7 +90,7 @@ Now let's prove it, by examing the natural candidate for a rationalizing prefere
 
 Now, it is \textbf{proved}! Notice that the main assumption(restriction) here is \textbf{$\mathcal{B}$ includes all subsets of $X$ of up to 3 elements}, this gives completeness, which is fundamental.
 
-\subsection*{Two things to keep in mind}
+\subsection*{Things to keep in mind}
 We have proved the twoway links of preferences and choices:
 \begin{enumerate}
     \item[-] Rational $\succsim\Rightarrow (\mathcal{B},C^*(\cdot,\succsim))$ satisfies WARP (see Thm.\ref{thm_rational_leadto_WARP})
@@ -98,7 +98,7 @@ We have proved the twoway links of preferences and choices:
 \end{enumerate}
 However, there are still something to keep in mind.
 
-First, for a given choice structure $(\mathcal{B},C(\cdot))$, there my be \textbf{more than one} rationalizing preference relation $\succsim$ in general. Here is the simplest example:
+First, for a given choice structure $(\mathcal{B},C(\cdot))$, there may be \textbf{more than one} rationalizing preference relation $\succsim$ in general. Here is the simplest example:
 For $X=\{x,y\},\mathcal{B}\{\{x\},\{y\}\}$ and the choice structure $C(\{x\})=\{x\}, C(\{y\}=\{y\})$. In this case, \textbf{ANY} relation preference relation of $X$ can rationalize $C(\cdot)$
 This is related to both Def.\ref{def_rationalize_choice} and (ii) of Thm.\ref{theorem_rationalizing_exist}. Thm.\ref{theorem_rationalizing_exist} gives that if $\mathcal{B}$ contains \textbf{ALL binary} menus of $X$,
 then there could be at most one rationalizing preference relation.
