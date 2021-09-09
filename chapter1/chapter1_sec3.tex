@@ -58,7 +58,9 @@ Intuitiviely, more budget sets $B\in\mathcal{B}$ would mean that, to satisfy WAR
         \item[i.] WARP is satisfied
         \item[ii.] $\mathcal{B}$ includes \textbf{all} subsets of $X$ of \textbf{up to 3} elements 
     \end{enumerate}
-    then there exists a rational preference relation $\succsim$ s.t. $C(B)=C^*(B,\succsim),\forall B\in\mathcal{B}$. And this rational $\succsim$ is the \textbf{only} preference relation that can rationalize $(\mathcal{B},C(\cdot))$\footnote{The existence of a rationalizing preference relation $\succsim$ brings many interesting properties, one of them is \textit{path-invariance}: $\forall B_1,B_2\in\mathcal{B}, B_1\cup B_2 \in\mathcal{B}\land C(B_1)\cup C(B_2)\in\mathcal{B}\Rightarrow C(B_1\cup B_2)=C(C(B_1)\cup C(B_2))$, meaning that the decision problem can safely be subdivided. A proof is: for $x\in C(B_1\cup B_2)$ and $y\in C(B_1)\cup C(B_2)$, }
+    then there exists a rational preference relation $\succsim$ s.t. $C(B)=C^*(B,\succsim),\forall B\in\mathcal{B}$. And this rational $\succsim$ is the \textbf{only} preference relation that can rationalize
+     $(\mathcal{B},C(\cdot))$\footnote{The existence of a rationalizing preference relation $\succsim$ brings many interesting properties, one of them is \textit{path-invariance}: $\forall B_1,B_2\in\mathcal{B}, B_1\cup B_2 \in\mathcal{B}\land C(B_1)\cup C(B_2)\in\mathcal{B}\Rightarrow C(B_1\cup B_2)=C(C(B_1)\cup C(B_2))$, meaning that the decision problem can safely be subdivided. 
+     A proof is: for $x\in C(B_1\cup B_2)$ and $y\in C(B_1)\cup C(B_2)$, since $C(B_1)\cup C(B_2) \subset B_1\cup B_2$, thus $x\in C(B_1\cup B_2)\Rightarrow x\in C(C(B_1)\cup C(B_2))$; for $x\in C(C(B_1)\cup C(B_2))$ and $y\in B_1\cup B_2$, we have $x\succsim z,\forall z\in C(B_1),C(B_2)\Rightarrow x\succsim w,\forall w\in B_1\cup B_2\Rightarrow x\in C(B_1\cup B_2)$}.
 \end{theorem}
 
 Now let's prove it, by examing the natural candidate for a rationalizing preference relation: the \textbf{revealed preference relation $\succsim^*$}:
