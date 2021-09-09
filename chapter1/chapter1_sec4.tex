@@ -22,11 +22,22 @@ The central theorem of utility functions is closely linked to rationality:
 
 The proof is
 \begin{enumerate}
-    \item \textit{Completeness}. Since $u(\cdot)$ represents preference relations between alternatives, and $u:X\rightarrow\mathbb{R}$, thus $\forall x,y\in X$, either $u(x)\geq u(y)$ or $u(y) \geq u(x)$. By Def.\ref{def_utility}, we have either $x\succsim y$ or $y\succsim x$, hence $\succsim$ is complete.
-    \item \textit{Transitivity}. For $x\succsim y,y\succsim z$. By Def.\ref{def_utility}, $u(x)\geq u(y),u(y)\geq u(z)$, hence $u(x)\geq u(z)\Rightarrow x\succsim z$.
+    \item[-] \textit{Completeness}. Since $u(\cdot)$ represents preference relations between alternatives, and $u:X\rightarrow\mathbb{R}$, thus $\forall x,y\in X$, either $u(x)\geq u(y)$ or $u(y) \geq u(x)$. By Def.\ref{def_utility}, we have either $x\succsim y$ or $y\succsim x$, hence $\succsim$ is complete.
+    \item[-] \textit{Transitivity}. For $x\succsim y,y\succsim z$. By Def.\ref{def_utility}, $u(x)\geq u(y),u(y)\geq u(z)$, hence $u(x)\geq u(z)\Rightarrow x\succsim z$.
 \end{enumerate}
 
 What about the other way? It is true, subject to some prerequisites:
 \begin{theorem}\label{thm_rational_has_utility}
-    d
+    $\succsim$ is rational and $X$ is \textbf{finite} $\Rightarrow$ there is a utility function representing $\succsim$.
 \end{theorem}
+
+The major prerequisite here is $X$ being \textbf{finite}. The proof is done by induction: Suppose there are $N$ elements in $X$:
+\begin{enumerate}
+    \item[-] When $N=1$, any number could be assigned to that element as its utility.
+    \item[-] Suppose a rational $\succsim$ on $X={x_1,x_2,\cdots,x_{N-1 }}$ could be represented by a utility function $u(\cdot)$. Without losing generality, we can assume $u(x_1)\leq u(x_2)\leq\cdots\leq u(x_{N-1})$. For the $N$th element $x_N$, by the rationality of $\succsim$, we have
+    \begin{enumerate}
+        \item[i] 
+        \item[ii]
+        \item[iii]   
+    \end{enumerate} 
+\end{enumerate}
