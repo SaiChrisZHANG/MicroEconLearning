@@ -34,10 +34,12 @@ What about the other way? It is true, subject to some prerequisites:
 The major prerequisite here is $X$ being \textbf{finite}. The proof is done by induction: Suppose there are $N$ elements in $X$:
 \begin{enumerate}
     \item[-] When $N=1$, any number could be assigned to that element as its utility.
-    \item[-] Suppose a rational $\succsim$ on $X={x_1,x_2,\cdots,x_{N-1 }}$ could be represented by a utility function $u(\cdot)$. Without losing generality, we can assume $u(x_1)\leq u(x_2)\leq\cdots\leq u(x_{N-1})$. For the $N$th element $x_N$, by the rationality of $\succsim$, we have
+    \item[-] Suppose a rational $\succsim$ on $X={x_1,x_2,\cdots,x_{N-1}}$ could be represented by a utility function $u(\cdot)$. Without losing generality, we can assume $u(x_1)\leq u(x_2)\leq\cdots\leq u(x_{N-1})$. For the $N$th element $x_N$, by the rationality of $\succsim$, we have three scenarios:
     \begin{enumerate}
-        \item[i] 
-        \item[ii]
-        \item[iii]   
-    \end{enumerate} 
+        \item[i] $\forall i\in {1,\cdots,N-1}, x_N\succsim x_i$: by Def.\ref{def_utility}, $u(x_N)\geq u(x_i)$.
+        \item[ii] $\forall i\in {1,\cdots,N-1}, x_i\succsim x_N$:, $u(x_N)\leq u(x_i)$.
+        \item[iii] $\exists i,j\in {1,\cdots,N-1}, i\neq j, x_j \succsim x_N\succsim x_i$: $u(x_j)\geq u(x_N)\geq u(x_i)$. By completeness and transitivity, ${x_1,x_2,\cdots,x_{N-1}}$ can be "divided" by $x_N$, meaning that for $I=\{i:x_N\succsim x_i\}$ and $J=\{j:s_j\succsim x_N\}$, $I\cup J=\{1,\cdots,N-1\}$. Note that we have assumed the index as the ranking, hence let $i^*=\max I,j^*=\min J$, $i^*+1=j^*$, hence we must have $u(x_i)\leq u(x_{i^*})\leq u(x_N)\leq u(x_{j^*})\leq u(x_j)$
+    \end{enumerate}
+    In all 3 scenarios, $u(\cdot)$ represents $\succsim$ on $X=\{x_1,\cdots,x_{N-1},x_N\}$ as well.
 \end{enumerate}
+With this induction, we prove Thm.\ref{thm_rational_has_utility}\footnote{Another way of proof is: Start with $x\in X$, Step1: define $W_{x}=\{y:y\prec x\}$, Step2: $W_x$ is either empty or not, if not empty, pick $\tilde{x}\in W_{x}$, repeat till Step3: define $u(a)=0$ if $a\sim x^{stop}$ where $x^{stop}$ is the “lower bound” of the utility. With this process, we can generate a utility function for any finite set $X$ that is rational}.
