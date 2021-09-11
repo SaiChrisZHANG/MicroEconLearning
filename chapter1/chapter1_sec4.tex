@@ -57,9 +57,18 @@ where $NBT(x^*)$ is the set of all elements that are \textbf{n}ot \textbf{b}ette
 rest of the proof is trivial: $\forall x,y\in X$, $x\succsim y\Rightarrow NBT(x)\supseteq NBT(y)$, which means that $NBT(x)$ has at least as many elements as $NBT(y)$, by the constructed utility function, it is easy to see $u(x)\geq u(y)$; Conversely, $u(x)\geq u(y)$ simply means that $NBT(x)$ contains at least as many elements as $NBT(y)$ does, which directly leads to $x\succsim y$.
 
 Now, let's figure out the difficult question: what about uncountable sets? Here is a very general proposition:
-\begin{theorem}
-    For a 
+\begin{theorem}\label{thm_rational_utility_incountable}
+    For a rational preference $\succsim$ on a set $X$, $\succsim$ can be represented by $u(\cdot)$ if and only if some countable set $X^*$ of $X$ has the property that $\forall x,y\in X, x\succ y\Rightarrow \exists x^*\in X^*$ s.t. $x\succsim x^*\succ y$.
 \end{theorem}
+The proof of Thm.\ref{thm_rational_utility_incountable} is not that difficult:
+\begin{enumerate}
+    \item[Step 1:] such $X^*$ exists $\Rightarrow$ rational $\succsim$ can be represented by $u(\cdot)$.
+
+    Suppose $X^*$ exists, let it be $X^*=\{x_1^*,x_2^*,\cdots\}$. Again, define $d(x_n^*)=\frac{1}{2^n}$, we can then construct a utility function as 
+    $$\forall x\in X, u(x)=\sum_{\tilde{x}_i^*\in X^*\cap NBT(x)}d(\tilde{x}^*_i)$$
+    Since $x\succsim y\Leftrightarrow NBT(x)\supseteq NBT(y)$, hence $NBT(x)\cap X^*\supseteq NBT(y)\cap X^*$, which, by the construction of $\sum\frac{1}{2^n}$, leading to $u(x)\geq u(y)$.
+    \item[Step 2:] rational $\succsim$ can be represented by $u(\cdot)$ $\Rightarrow$ such $X^*$ exists
+\end{enumerate}
 
 It is natural that if we start from $\succ$, we would have the same logic \citep[See][Page 30]{kreps1990acourse}:
 
