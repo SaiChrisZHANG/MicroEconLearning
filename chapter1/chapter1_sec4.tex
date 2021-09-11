@@ -48,11 +48,18 @@ With this induction, we prove Thm.\ref{thm_rational_has_utility}\footnote{Anothe
 
 Now extend Thm.\ref{thm_rational_has_utility} from finite $X$ to countable infinite $X$:
 \begin{theorem}\label{thm_rational_has_utility_countable}
-    $\succsim$ is rational and $X$ is \textbf{countable} $\Rightarrow$ there is a utility function with range $(-1,1)$ representing $\succsim$.
+    $\succsim$ is rational and $X$ is \textbf{countable} $\Rightarrow$ there is a utility function representing $\succsim$.
 \end{theorem}
 
-To prove Thm.\ref{thm_rational_has_utility_countable}, we can construct a utility function as:
+To prove Thm.\ref{thm_rational_has_utility_countable}, we can construct a utility function: for any set $S$, its emuneration $\{s_1,s_2,\cdots\}$ (which exists if $S$ is countable), define an auxilary function $d:S\rightarrow \mathbb{R}$ as $d(s_i)=\left(\frac{1}{2}\right)^n$, then for a countable set $X=\{x_1,x_2,\cdots\}$, the utility of any element $\tilde{x}\in X$ can be defined as 
+$$u(x^*)=\sum_{\tilde{x}_i\in NBT(x^*)}d(\tilde{x}_i)$$\footnote{Notice that $\lim_{n\rightarrow\infty}\sum_{i=1}^n\frac{1}{2^i}=1$, utility is bounded to $[0,1)$.}
+where $NBT(x^*)$ is the set of all elements that are \textbf{n}ot \textbf{b}etter \textbf{t}han $x^*$, i.e. $NBT(x^*)=\{\tilde{x}_i:\tilde{x}_i\in X \land x^*\succsim \tilde{x}_i\}$. It is easy to see that $NBT(x^*)$ is a countable subset of $X$. Suppose $NBT(x^*)$ has $k$ elements ($k<n$), we can calculate the utility $u(x^*)=\sum_{i=1}^k\left(\frac{1}{2}\right)^i$. After this construction,
+rest of the proof is trivial: $\forall x,y\in X$, $x\succsim y\Rightarrow NBT(x)\supseteq NBT(y)$, which means that $NBT(x)$ has at least as many elements as $NBT(y)$, by the constructed utility function, it is easy to see $u(x)\geq u(y)$; Conversely, $u(x)\geq u(y)$ simply means that $NBT(x)$ contains at least as many elements as $NBT(y)$ does, which directly leads to $x\succsim y$.
 
+Now, let's figure out the difficult question: what about uncountable sets? Here is a very general proposition:
+\begin{theorem}
+    For a 
+\end{theorem}
 
 It is natural that if we start from $\succ$, we would have the same logic \citep[See][Page 30]{kreps1990acourse}:
 
