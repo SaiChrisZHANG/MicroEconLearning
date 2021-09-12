@@ -63,11 +63,26 @@ Now, let's figure out the difficult question: what about uncountable sets? Here 
 The proof of Thm.\ref{thm_rational_utility_incountable} is not that difficult:
 \begin{enumerate}
     \item[Step 1:] such $X^*$ exists $\Rightarrow$ rational $\succsim$ can be represented by $u(\cdot)$.
+    \begin{enumerate}
+        \item[-]Given such $X^*$, $x\succsim y\Rightarrow u(x)\geq u(y)$
+        
+        Suppose $X^*$ exists, let it be $X^*=\{x_1^*,x_2^*,\cdots\}$. Again, define $d(x_n^*)=\frac{1}{2^n}$, we can then construct a utility function as 
+        $$\forall x\in X, u(x)=\sum_{\tilde{x}_i^*\in X^*\cap NBT(x)}d(\tilde{x}^*_i)$$
+        Since $x\succsim y\Leftrightarrow NBT(x)\supseteq NBT(y)$, hence $NBT(x)\cap X^*\supseteq NBT(y)\cap X^*$, which, by the construction of $\sum\frac{1}{2^n}$, leading to $u(x)\geq u(y)$.
 
-    Suppose $X^*$ exists, let it be $X^*=\{x_1^*,x_2^*,\cdots\}$. Again, define $d(x_n^*)=\frac{1}{2^n}$, we can then construct a utility function as 
-    $$\forall x\in X, u(x)=\sum_{\tilde{x}_i^*\in X^*\cap NBT(x)}d(\tilde{x}^*_i)$$
-    Since $x\succsim y\Leftrightarrow NBT(x)\supseteq NBT(y)$, hence $NBT(x)\cap X^*\supseteq NBT(y)\cap X^*$, which, by the construction of $\sum\frac{1}{2^n}$, leading to $u(x)\geq u(y)$.
+        \item[-] Given such $X^*$, $u(x)\geq u(y)\Rightarrow x\succsim y$
+        
+        We can prove the contrapositive: $ y\not\succsim x\Rightarrow u(y)\not\geq u(x)$. Given the rationality of $\succsim$, $y\not\succsim x \Rightarrow x\succ y$, then $\exists x^*\in X^*$ s.t. $x\succsim x^* \succ y$, hence we know $NBT(x)$ is strictly larger then $NBT(y)$ ($NBT(x)$ includes $x^*$), therefore, by definition, $u(x)>u(y)\Rightarrow u(y)\not\geq u(x)$.
+    \end{enumerate}
+    
     \item[Step 2:] rational $\succsim$ can be represented by $u(\cdot)$ $\Rightarrow$ such $X^*$ exists
+    We want to prove this, but it is very difficult to prove in general, so we construct a special case: Let $\{I_n\}$ be a set of all closed intervals with rantional endpoints, that is, each $I_n$ is an interval of $[\underline{q}_n,\bar{q}_n]$ where $\bar{q}_n>\underline{q}_n$ are rational numbers.
+    The set of rational numbers is countable, the cross product of two countable sets is also countable, hence $\{I_n\}$ is countable as well. Let $u(X)$ denote the set of real numbers $\{r\in \mathbb{R}: \exists x\in X, r=u(x)\}$, there will be 3 possible scenarios:
+    \begin{enumerate}
+        \item[i.] $u(X)\cap I_n\neq \varnothing$: for each $I_n$, pick one $x\in X$ s.t. $u(x)\in I_n$ and name it $x_n$
+        \item[ii.] $u(X)\cap I_n =\varnothing$: let $\bar{r}_n=\inf \{r\in u(X):r>\bar{q}_n\}$. If $\exists x\in X$ s.t. $u(x)=\bar{r}_n$, choose one such $x$ and name it $x_n$
+        \item[iii.] $u(X)\cap I_n=\varnothing\land \forall x\in X, \bar{r}_n\neq u(x)$, no $x$ will be defined as $x_n$
+    \end{enumerate}
 \end{enumerate}
 
 It is natural that if we start from $\succ$, we would have the same logic \citep[See][Page 30]{kreps1990acourse}:
