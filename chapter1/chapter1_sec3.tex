@@ -34,13 +34,15 @@ A brief proof of Theorem \ref{theo_acyclic_choice} is:
     \item[ii.] $C^*(B,\succsim)\neq\varnothing\Rightarrow$ acyclic $\succsim$: Suppose $\succsim$ is not acyclic, then there exists $b_1\succsim b_2\succsim \cdots\succsim b_n\succsim b_1$, then for set $B=\{b_1,b_2,\cdots,b_n\}$, $\nexists b^*$ s.t. $b^*\succsim b_i \forall b_i\in B$, i.e., $C^*(B,\succsim)=\varnothing$.
 \end{enumerate}
 
-Of course, we want to extend this to the situation where $B$ is infinite. However, in general, it is possible that $C^*(B,\succsim)$ is empty (if you set the most preferred side of $B$ open, it would be impossible to choose based on the preferences). However, we can add some assumptions to finite non-emptiness and choice coherence, to ensure that choice function $C(\cdot)$ is well-behaved on infinite sets as well. The simplest assumption is:
-For a choice function $C(\cdot)$ that satisfies finite non-emptiness and choice coherence, let the corresponding preference relation be $\succsim_C$, this preference will generate a no-better-than subset for $x$: $NBT_{\succsim_C}(x)=\{x'\in X:x \succsim_C x'\}$. With this setting, we can have:
-$$x \in A \subseteq NBT_{\succsim_C}(x)\Rightarrow C(A)\neq \varnothing$$
-This means that if everything in $A$ is revealed to be no better than $x$ and $x$ is also in $A$, \textit{some} choice will be made out of $A$. This assumption is equivalment to the conclusion that for the infinite set $A$, we also have $C(\cdot)\equiv C(\cdot)_{\succsim_C}$. And of course, if we reverse the 
-assumption above, we would have:
-$$\forall x\in A, A\not\subseteq NBT_{\succsim_C}(x)\Rightarrow C(A)=\varnothing$$.
-This is easy to understand: in this case, $x$ is the least preferred one in $A$, since $A$ is infinite, you can never find an alternative that is preferred over all others.
+Of course, we want to extend this to the situation where $B$ is infinite. However, in general, it is possible that $C^*(B,\succsim)$ is empty (if you set the most preferred side of $B$ open, it would be impossible to choose based on the preferences). However, we can add some assumptions to finite non-emptiness and choice coherence, to ensure that choice function $C(\cdot)$ is well-behaved on infinite sets as well.\footnote{
+    The simplest assumption is:
+    For a choice function $C(\cdot)$ that satisfies finite non-emptiness and choice coherence, let the corresponding preference relation be $\succsim_C$, this preference will generate a no-better-than subset for $x$: $NBT_{\succsim_C}(x)=\{x'\in X:x \succsim_C x'\}$. With this setting, we can have:
+    $$x \in A \subseteq NBT_{\succsim_C}(x)\Rightarrow C(A)\neq \varnothing$$
+    This means that if everything in $A$ is revealed to be no better than $x$ and $x$ is also in $A$, \textit{some} choice will be made out of $A$. This assumption is equivalment to the conclusion that for the infinite set $A$, we also have $C(\cdot)\equiv C(\cdot)_{\succsim_C}$. And of course, if we reverse the 
+    assumption above, we would have:
+    $$\forall x\in A, A\not\subseteq NBT_{\succsim_C}(x)\Rightarrow C(A)=\varnothing$$.
+    This is easy to understand: in this case, $x$ is the least preferred one in $A$, since $A$ is infinite, you can never find an alternative that is preferred over all others.  
+}
 
 With induced choice correspondence $C^*(B,\succsim)$ defined and non-emptyness proved, we can then say:
 \begin{theorem}\label{thm_rational_leadto_WARP}
