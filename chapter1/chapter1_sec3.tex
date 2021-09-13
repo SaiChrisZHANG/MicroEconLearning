@@ -36,7 +36,9 @@ A brief proof of Theorem \ref{theo_acyclic_choice} is:
 
 Of course, we want to extend this to the situation where $B$ is infinite. However, in general, it is possible that $C^*(B,\succsim)$ is empty (if you set the most preferred side of $B$ open, it would be impossible to choose based on the preferences). However, we can add some assumptions to finite non-emptiness and choice coherence, to ensure that choice function $C(\cdot)$ is well-behaved on infinite sets as well. For example:
 \begin{enumerate}
-    \item[A.]  
+    \item[A.] For a choice function $C(\cdot)$ that satisfies finite non-emptiness and choice coherence, let the corresponding preference relation be $\succsim_C$, this preference will generate a no-better-than subset for $x$: $NBT_{\succsim_C}(x)=\{x'\in X:x \succsim_C x'\}$. With this setting, we can have:
+    $$x \in A \subseteq NBT_{\succsim_C}(x)\Rightarrow C(A)\neq \varnothing$$
+    This means that if everything in $A$ is revealed to be no better than $x$ and $x$ is also in $A$, \textit{some} choice will be made out of $A$.
 \end{enumerate}
 
 With induced choice correspondence $C^*(B,\succsim)$ defined and non-emptyness proved, we can then say:
