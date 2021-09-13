@@ -567,7 +567,6 @@ INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/newpx/zplexa.tfm
 INPUT /Users/admin/Desktop/LearningNotes/MicroEconLearning/main.mtc1
 INPUT /Users/admin/Desktop/LearningNotes/MicroEconLearning/main.mtc1
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/newpx/zpl-Bold-tlf-t1.tfm
-INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/newpx/zpl-BoldItalic-tlf-t1.tfm
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/vf/adobe/palatino/pplb8t.vf
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/adobe/palatino/pplb8r.tfm
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/vf/public/newpx/zplmi.vf
@@ -575,6 +574,7 @@ INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/pxfonts/pxmi.tfm
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/vf/public/pxfonts/pxmi.vf
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/pxfonts/rpxmi.tfm
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/pxfonts/rpxpplri.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/newpx/zpl-BoldItalic-tlf-t1.tfm
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/newpx/zpl-Bold-tlf-t1.tfm
 INPUT /Users/admin/Desktop/LearningNotes/MicroEconLearning/chapter1/chapter1_sec1.tex
 INPUT /Users/admin/Desktop/LearningNotes/MicroEconLearning/chapter1/chapter1_sec1.tex
