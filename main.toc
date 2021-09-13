@@ -7,13 +7,6 @@
 \contentsline {section}{\numberline {1.3}Linking Preferences with Choices}{10}{section.1.3}
 \contentsline {section}{\numberline {1.4}Introducing Utility}{14}{section.1.4}
 \contentsline {section}{\numberline {1.5}Commentary}{17}{section.1.5}
-\contentsline {subsection}{\numberline {1.5.1}Preference model as a descriptive model}{17}{subsection.1.5.1}
-\contentsline {subsection}{\numberline {1.5.2}Empirical limits}{18}{subsection.1.5.2}
-\contentsline {subsection}{\numberline {1.5.3}Framing}{18}{subsection.1.5.3}
-\contentsline {subsection}{\numberline {1.5.4}Indecision}{18}{subsection.1.5.4}
-\contentsline {subsection}{\numberline {1.5.5}Inconsistency and probabilistic choice}{18}{subsection.1.5.5}
-\contentsline {subsection}{\numberline {1.5.6}Determinants of preference}{19}{subsection.1.5.6}
-\contentsline {subsection}{\numberline {1.5.7}Range of choices as a value}{19}{subsection.1.5.7}
 \contentsline {chapter}{\numberline {2}Fundamentals of Consumer Theory}{20}{chapter.2}
 \contentsline {chapter}{\numberline {3}Lagrange Maximization and Duality}{21}{chapter.3}
 \contentsline {chapter}{\numberline {4}Monotone Comparative Statics}{22}{chapter.4}
