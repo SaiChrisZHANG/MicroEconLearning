@@ -83,6 +83,13 @@ The proof of Thm.\ref{thm_rational_utility_incountable} is not that difficult:
         \item[ii.] $u(X)\cap I_n =\varnothing$: let $\bar{r}_n=\inf \{r\in u(X):r>\bar{q}_n\}$. If $\exists x\in X$ s.t. $u(x)=\bar{r}_n$, choose one such $x$ and name it $x_n$
         \item[iii.] $u(X)\cap I_n=\varnothing\land \forall x\in X, \bar{r}_n\neq u(x)$, no $x$ will be defined as $x_n$
     \end{enumerate}
+    If we define $X^*$ as the collection of all $x_n$ in case i) and ii). Notice there is less than one $x_n$ for each $I_n$ and $I_n$ is countable, hence $X^*$ is countable as well.
+
+    Suppose $x\succ y$ for $x,y\in X$, we have $u(\cdot)$ representing $\succsim$, hence $u(x)>u(y)$. Choose some rational number $q$ in the open interval $(u(y),u(x))$ and let $\bar{r}=\inf \{r\in u(X):r>q\}$. Given this setup, we have $u(x)\geq \bar{r}$ since $u(x)>q$. If:
+    \begin{enumerate}
+        \item[-] $u(x)>\bar{r}$: we can always find a rational number $q'$ s.t. $u(x)>q'>\bar{r}$. Let $n$ be the index of the interval $[q,q']$, since $q<\bar{r}<q'$, $\bar{r}\in u(X)\cap[q,q']\Rightarrow u(X)\cap[q,q']\neq \varnothing$. Therefore, $\exists x^*\in X^*$, namely $x_n$, s.t. $u(x^*)\in [q,q']$, leading to $u(x)\succ u(x^*)\succ u(y)$.
+        \item[-] $u(x)=\bar{r}$: we can always find a rational number $q'$ s.t. $q>q'>u(y)$. Let $n$ be the index of the interval $[q,q']$. If $u(X)\cap [q',q]\neq \varnothing$, then $\exists x^*\in X^*$ s.t. $u(x)\geq q\geq u(x^)\geq q'\geq u(y)$, then $x\succsim x^*\succ y$. If $u(X)\cap [q,q']=\varnothing$, then $[q,q']$ fits into category (ii) above, and $\exists x^*\in X^*$, namely $x_n$, such that $u(x^*)=\bar{r}=u(x)$. With this $x^*$, we have $u(x^*)=u(x)>u(y)\Rightarrow x\succsim x^*\succ y$.
+    \end{enumerate}
 \end{enumerate}
 
 It is natural that if we start from $\succ$, we would have the same logic \citep[See][Page 30]{kreps1990acourse}:
