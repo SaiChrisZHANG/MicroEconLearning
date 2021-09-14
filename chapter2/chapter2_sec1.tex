@@ -1,0 +1,29 @@
+First, we introduce the basic settings of a consumer's problem in a market economy. These concepts will keep reoccuring in the following sections.
+
+\subsection{Commodities}
+First, we need to define the goods and services the consumers consume. We do not actually care about what they specifically are, instead, we use a very abstract concept \textit{commodities}
+to summarize and analyze them.
+\begin{definition}
+    Assume there are $L<\infty$ different commodities, a \textit{commodity vector} or \textit{commodity bundle} is a list of amounts of the different commodities:$$x=\left[x_1,\cdots,x_L\right]^T$$
+\end{definition}
+$x$ can be view as a point in an $\mathbb{R}^L$ space, i.e., the commodity space. Each entry $x_l$ of $x$ ($l=1,\cdots,L$) represents the amount of commodity $l$ consumed, hence, the vector is referred to
+as \textit{consumption vector} or \textit{consumption bundle}.
+
+Three things to keep in mind:
+\begin{enumerate}
+    \item[-] Time can be incorporated into this setting, namely, today's commodity is distinct from tomorrow's commodity, even if they are otherwise the same. The value of time will come back in later chapters and is crucial in a large strand of behavioral economic literature. Same logic applies to other limitations that are easily neglected, like geographic ones.
+    \item[-] Negative entries can exists in a commodity vector, indicating debits or net outflows of goods. In a producing problem or exchange problem, negative entries of commodity vectors are not rare.
+    \item[-] Consumption is quite flexible and comes in many format empirically, for the sake of data collection conveniency, consumption data are often aggregated monthly, quarterly for even annually. Meanwhle, some consumptions in the commodity vectors may not actually occur in the market.
+\end{enumerate}
+
+\subsection{The Consumption Set}
+Consumptions are limited by a number of constraints, which will form a subset of commodity space $X\subset \mathcal{R}^L$. With in this subset, all possible commodity bundles can be 
+consumed, this is exactly the definition of consumption sets (see \citet[Page 19-20]{mas1995microeconomic} for some simple examples of consumption sets).
+
+For now, we will focus on the simplest consumption set: all possible non-negative commodity bundles:
+$$X=\mathbb{R}^L_+=\{x\in \mathbb{R}^L: x_l\geq 0,\forall l=1,\cdots, L\}$$
+
+It is easy to show that
+$$\mathbb{R}^L_+ \text{ is a }\textbf{convex} \text{ set}$$
+
+A brief proof: $\forall x,x'\in \mathbb{R}^L_+$
