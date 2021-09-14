@@ -1,4 +1,4 @@
-\begin{thebibliography}{10}
+\begin{thebibliography}{11}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -25,6 +25,12 @@ Daniel Kahneman and Amos Tversky.
 David~M. Kreps.
 \newblock \emph{A Course in Microeconomic Theory}.
 \newblock Princeton University Press, 1990.
+
+\bibitem[Kreps(2013)]{kreps2013microeconomic}
+David~M Kreps.
+\newblock \emph{Microeconomic foundations I: choice and competitive markets},
+  volume~1.
+\newblock Princeton university press, 2013.
 
 \bibitem[Mailath(2018)]{mailath2018modeling}
 George~J Mailath.
