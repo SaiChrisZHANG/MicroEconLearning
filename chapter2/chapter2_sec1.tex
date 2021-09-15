@@ -25,5 +25,24 @@ $$X=\mathbb{R}^L_+=\{x\in \mathbb{R}^L: x_l\geq 0,\forall l=1,\cdots, L\}$$
 
 It is easy to show that
 $$\mathbb{R}^L_+ \text{ is a }\textbf{convex} \text{ set}$$
+A brief proof: $\forall \vec{x},\vec{y}\in \mathbb{R}^L_+$ and $\forall\alpha \in [0,1]$, $\alpha\vec{x}+(1-\alpha)\vec{y}=\left[\alpha x_1+(1-\alpha)y_1,\cdots,\alpha x_L+(1-\alpha)y_L\right]$. Since $x_i\geq 0,y_i\geq 0$, $\alpha x_i+(1-\alpha)y_i\geq $ leading to $\alpha\vec{x}+(1-\alpha)\vec{y}\in \mathbb{R}^L_+$.
 
-A brief proof: $\forall x,x'\in \mathbb{R}^L_+$
+Convexity of consumption sets is an essential assumption here, but some of the results do survive without the assumption fo convexity.
+
+Although consuption sets are formed due to some constraints, but these constraints have nothing to do with consumers' budget (exogenous constraints). It is intuitive that with a large enough budget (infinitely large if you may), you can always afford any consumption bundle in a give consumption set. But what if consumers, as in reality, do have a budget constraint and cannot afford every bundle in the consumption set?
+
+\subsection{Competitive Budgets}
+Budget constraints are an important economic constraint faced by consumers: one can only consume the commodity bundles that she can afford.
+
+To formalize this constraint, we need to introduce the \textit{price vector}: 
+$$\vec{p}=\left[p_1,\cdots,p_L\right]\in \mathbb{R}^L$$
+This price vector contains unit price information for each of the $L$ commodities. They are all traded in the market and the price information of them is publicly quoted (the \textit{principle of completeness of markets}).
+For simplicity, we assume $\vec{p}\gg 0$ i.e. $\forall l,p_l>0$\footnote{Of course, price can be negative, meaning that consumers are actually paid to consume the "bad "commodity, such as pollution.}
+
+Another important assumption for competitive budgets is the \textit{price-taking assumption}: consumers do NOT have the power to influence the prices. Here, each consumer only buys a small (neglectable) fraction of the total demand for commodities.
+
+With prices defined, we can finally define the \textbf{economic-affordability constraint} of consumers:
+\begin{definition}
+    For a consumer with wealth $w$, a consumption bundle $\vec{x}\in \mathbb{R}^L_+$ is affordable if its total cost does NOT exceed the consumer's wealth level $w$, formally:
+    $$\vec{p}\cdot \vec{x}=p_1x_1+p_2x_2+\cdots+p_Lx_L\leq w$$
+\end{definition}
