@@ -1,0 +1,17 @@
+In this section, we will study the more general/mathematical form of optimization. Specifically, we are interested in the general optimization method when a set of constraints are presented.
+Chapter 8 of \citet{luenberger1997optimization} illustrates the problem quite elegantly. It will be the main reference of this section.
+
+\subsection{Lagrange multiplier vector}
+We start from Lagrange multipliers, which are extremely common in optimization problems. Here, instead of studying indiviudal Lagrange multipliers, we would want to understand Lagrange in the vector space. For example, this problem:
+$$\min f(x)\ \text{s.t.}\ H(x)=\theta$$
+where $H$ is a mapping from a normed space $\mathbb{X}$ into a normed space $\mathbb{Z}$, have Lagrangian:
+$$\mathcal{L}(x,z^*)=f(x)+\langle H(x),z^*\rangle$$
+where $z^*\in \mathbb{Z}^*$ is the Lagrange multiplier. 
+
+Geogmetrically, we can interpret the problem above as:
+\begin{enumerate}
+    \item[i.] Study the contours of $f(\cdot)$ in the space $\mathbb{X}$ (or graph of $f(\cdot)$ in the space $\mathbb{R}\times \mathbb{X}$)
+    \item[\textbf{ii.}] \underline{Study the contours/graph of $f(\cdot)$ in the \textbf{constraint} space $\mathbb{Z}$ (or graph of $f(\cdot)$ in the constraint space $\mathbb{R}\times \mathbb{Z}$)}
+\end{enumerate}
+
+The second interpretation will help us understand Lagrange multiplier since the Lagrange multiplier is an element of $\mathbb{Z}^*$ and appears directly as a \textbf{hyperplane} in $\mathbb{Z}$.
