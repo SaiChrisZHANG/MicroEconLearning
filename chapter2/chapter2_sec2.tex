@@ -1,19 +1,19 @@
 We have already defined the economic-affordability constraint of consumers, if we also limit consumption bundle $x$ to be non-negative, we would have the Walrasian, or competitive budget:
 
 \begin{definition}
-    The Walrasian, or competitive budget set $$B_{\vec{p},w}=\{x\in\mathbb{R}^L_+:\vec{p}\cdot\vec{x}\leq w\}$$ is the set of all feasible consumption bundles give market prices $\vec{p}$ and wealth $w$.
+    The Walrasian, or competitive budget set $$B_{\mathbf{p},w}=\{x\in\mathbb{R}^L_+:\mathbf{p}\cdot\mathbf{x}\leq w\}$$ is the set of all feasible consumption bundles give market prices $\mathbf{p}$ and wealth $w$.
 \end{definition}
 
-From a Walrasian budget's point of view, a consumer can only choose a consumption bundle $x$ from $B_{\vec{p},w}$. An underlining assumption here is $w>0$, otherwise consumers cannot afford anything. We can also
+From a Walrasian budget's point of view, a consumer can only choose a consumption bundle $x$ from $B_{\mathbf{p},w}$. An underlining assumption here is $w>0$, otherwise consumers cannot afford anything. We can also
 separately define the "edge" of a Walrasian budget set as:
 \begin{definition}
-    The \textit{budget hyperplane} is the set $\{x\in\mathbb{R}^L_+:\vec{p}\cdot\vec{x}=w\}$
+    The \textit{budget hyperplane} is the set $\{x\in\mathbb{R}^L_+:\mathbf{p}\cdot\mathbf{x}=w\}$
 \end{definition}
-It determines the upper bound of the budget set: with prices of other commodities ($\vec{p}_{-i}$) and wealth level $w$ fixed, the change of commodity $i$'s price $p_i$ will enlarge/shrink the budget set by moving the budget hyperplane.
-Geometrically, the price vector $\vec{p}$ must be orthogonal to the budget hyperplane, we can think it this way: for any two bundles $\vec{x}$ and $\vec{x}'$ one the budget hyperplane, we must have $\vec{p}\cdot\vec{x}=\vec{p}\cdot\vec{x}'=w$, hence
-$\vec{p}\cdot\Delta\vec{x}=\vec{p}\cdot(\vec{x}'-\vec{x})=0$ is always true.
+It determines the upper bound of the budget set: with prices of other commodities ($\mathbf{p}_{-i}$) and wealth level $w$ fixed, the change of commodity $i$'s price $p_i$ will enlarge/shrink the budget set by moving the budget hyperplane.
+Geometrically, the price vector $\mathbf{p}$ must be orthogonal to the budget hyperplane, we can think it this way: for any two bundles $\mathbf{x}$ and $\mathbf{x}'$ one the budget hyperplane, we must have $\mathbf{p}\cdot\mathbf{x}=\mathbf{p}\cdot\mathbf{x}'=w$, hence
+$\mathbf{p}\cdot\Delta\mathbf{x}=\mathbf{p}\cdot(\mathbf{x}'-\mathbf{x})=0$ is always true.
 
-A core feature of the Walrasian budget set is that it is \textbf{convex}: $\forall \vec{x},\vec{y}\in B_{\vec{p},w}, \alpha\in[0,1], \alpha\vec{x}+(1-\alpha)\vec{y}\in B_{\vec{p},w}$. This is very easy to prove: $\vec{x}\in\mathbb{R}^L_+\land\vec{y}\in\mathbb{R}^L_+\Rightarrow \alpha\vec{x}+(1-\alpha)\vec{y}\in \mathbb{R}^L_+$, $\vec{p}\cdot\vec{x}\leq w\land\vec{p}\cdot \vec{y}\leq w\Rightarrow \alpha(\vec{p}\cdot\vec{x})+(1-\alpha)(\vec{p}\cdot\vec{y})\leq w$.
+A core feature of the Walrasian budget set is that it is \textbf{convex}: $\forall \mathbf{x},\mathbf{y}\in B_{\mathbf{p},w}, \alpha\in[0,1], \alpha\mathbf{x}+(1-\alpha)\mathbf{y}\in B_{\mathbf{p},w}$. This is very easy to prove: $\mathbf{x}\in\mathbb{R}^L_+\land\mathbf{y}\in\mathbb{R}^L_+\Rightarrow \alpha\mathbf{x}+(1-\alpha)\mathbf{y}\in \mathbb{R}^L_+$, $\mathbf{p}\cdot\mathbf{x}\leq w\land\mathbf{p}\cdot \mathbf{y}\leq w\Rightarrow \alpha(\mathbf{p}\cdot\mathbf{x})+(1-\alpha)(\mathbf{p}\cdot\mathbf{y})\leq w$.
 Notice that the Walrasian budget set is not automatically convex. Its convexity is induced from the convexity of its superset (the consumption set), in this case $\mathbb{R}^L_+$. In general, it is easy to show that the Walrasian budget set will convex as long as its corresponding consumption set is convex.
 
 Of course, it is perfectly possible that a consumer's budget is NOT convex (and not Walrasian, in that sense), the brilliant work of \citet[]{deaton1980economics} has documented and discussed many complicated consumption sets that are not convex.
