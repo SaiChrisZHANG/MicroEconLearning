@@ -22,14 +22,22 @@ Of course, it is perfectly possible that a consumer's budget is NOT convex (and 
 \subsection{Walrasian Demand Function}
 With Walrasian budgets defined, we can define \textit{Walrasian demand correspondence} and \textit{Walrasian demand function} as:
 \begin{definition}
-    For each \textit{price-wealth} pair $(\mathbf{p},w)$, Walrasian demand correspondence is the set of chosen consumption bundles, written as $\mathbf{x}(\mathbf{p},w)$. When $\mathbf{x}(\mathbf{p},w)$ is single-valued, it will be referred to as a \textbf{Walrasian demand function}.
+    For each \textit{price-wealth} pair $(\mathbf{p},w)$, Walrasian demand correspondence is the set of chosen consumption bundles, written as $x(\mathbf{p},w)$. When $x(\mathbf{p},w)$ is single-valued, it will be referred to as a \textbf{Walrasian demand function}.
 \end{definition}
 
-The two main assumptions of $\mathbf{x}(\mathbf{p},w)$ are:
+The two main assumptions of $x(\mathbf{p},w)$ are:
 \begin{definition}
-    For a Walrasian demand correspondence $\mathbf{x}(\mathbf{p},w)$, we assume it is:
+    For a Walrasian demand correspondence $x(\mathbf{p},w)$, we assume it is:
     \begin{enumerate}
-        \item[1.] \textbf{Homogeneous of degree zero}: $\forall \mathbf{p},w$ and $\alpha >0$, $x(\alpha \mathbf{p},\alpha w)=\mathbf{x}(\mathbf{p},w)$. This means that if wealth and prices change in the same proportion at the same time, consumer would not change her choice.
-        \item[2.] \textbf{Walras' law}: $\forall \gg 0,w>0$, $\mathbf{p}\cdot\mathbf{x}=w$ for every $\mathbf{x}\in \mathbf{x}(\mathbf{p},w)$. Walras' law means that a consumer want to spend all her wealth for consumption, every consumption bundle hence will exhaust $w$. Notice that this is implicitly intertemporal, meaning that Walras' law consider lifetime resource allocation.
+        \item[1.] \textbf{Homogeneous of degree zero}: $\forall \mathbf{p},w$ and $\alpha >0$, $x(\alpha \mathbf{p},\alpha w)=x(\mathbf{p},w)$. This means that if wealth and prices change in the same proportion at the same time, consumer would not change her choice. 
+        There are two implications of homogeneous of degree zero assumption:
+        \begin{enumerate}
+            \item[-] \textbf{Dimension reduction}: With this assumption, we can reduce $x(\mathbf{p},w)$ to $x(\tilde{\mathbf{p}},1)$ where $\tilde{\mathbf{p}}=\frac{1}{w}\mathbf{p}$, hence to a $L$-argument problem.
+            \item[-] \textbf{Choice structure}: By homogeneity of degree zero, $x(\mathbf{p},w)$ depends only on $\mathbf{p}$ and $w$, i.e. the budget set, then for the family of Walrasian budget sets $\mathcal{B}^*=\{B_{\mathbf{p},w}:\mathbf{p}\gg 0,w>0\}$, $(\mathcal{B}^*,x(\cdot))$ is a choice structure. This choice structure does NOT include all possible subsets of $X$, in particular, not all two- and three-element subsets of $X$, therefore, requires more assumptions to have a rationalizing preference.
+        \end{enumerate}
+             
+        \item[2.] \textbf{Walras' law}: $\forall \gg 0,w>0$, $\mathbf{p}\cdot\mathbf{x}=w$ for every $\mathbf{x}\in x(\mathbf{p},w)$. Walras' law means that a consumer want to spend all her wealth for consumption, every consumption bundle hence will exhaust $w$. Notice that this is implicitly intertemporal, meaning that Walras' law consider lifetime resource allocation.
     \end{enumerate}
 \end{definition}
+
+There are several basic definitions induced from the Walrasian demand function:
