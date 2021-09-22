@@ -17,11 +17,11 @@
 \contentsline {section}{\numberline {2.4}Introducing Utility}{23}{section.2.4}
 \contentsline {section}{\numberline {2.5}Commentary}{23}{section.2.5}
 \contentsline {chapter}{\numberline {3}Lagrange Maximization and Duality}{25}{chapter.3}
-\contentsline {chapter}{\numberline {4}Monotone Comparative Statics}{26}{chapter.4}
-\contentsline {chapter}{\numberline {5}Expected Utility and Decisionmaking under Uncertainty}{27}{chapter.5}
-\contentsline {chapter}{\numberline {6}Aggregation and the Existence of a Representative Consumer}{28}{chapter.6}
-\contentsline {chapter}{\numberline {7}Producer Theory}{29}{chapter.7}
-\contentsline {chapter}{\numberline {8}Stochastic Choice}{30}{chapter.8}
+\contentsline {chapter}{\numberline {4}Stochastic Choice}{26}{chapter.4}
+\contentsline {chapter}{\numberline {5}Monotone Comparative Statics}{27}{chapter.5}
+\contentsline {chapter}{\numberline {6}Expected Utility and Decisionmaking under Uncertainty}{28}{chapter.6}
+\contentsline {chapter}{\numberline {7}Aggregation and the Existence of a Representative Consumer}{29}{chapter.7}
+\contentsline {chapter}{\numberline {8}Producer Theory}{30}{chapter.8}
 \contentsline {part}{II\hspace {1em}Game Theory}{31}{part.2}
 \contentsline {xpart}{Game Theory}{32}{part.2}
 \contentsline {chapter}{\numberline {9}Nash Equilibrium and Bayesian Nash Equilibrium}{32}{chapter.9}
