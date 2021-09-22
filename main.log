@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.1.7)  22 SEP 2021 13:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.1.7)  22 SEP 2021 13:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -873,21 +873,10 @@ LaTeX Font Info:    Try loading font information for T1+ppl on input line 124.
  (/usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/t1ppl.fd
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
 )
-LaTeX Font Info:    Font shape `T1/zpltlf/bx/n' in size <12> not available
-(Font)              Font shape `T1/zpltlf/b/n' tried instead on input line 140.
-LaTeX Font Info:    Font shape `T1/zpltlf/b/n' will be
-(Font)              scaled to size 12.0pt on input line 140.
-
-
-Package natbib Warning: Citation `mas1995microeconomic' on page 1 undefined on input line 140.
-
 LaTeX Font Info:    Font shape `T1/zpltlf/m/it' will be
 (Font)              scaled to size 12.0pt on input line 140.
-
-Package natbib Warning: Citation `mailath2018modeling' on page 1 undefined on input line 140.
-
 LaTeX Font Info:    Try loading font information for T1+zplsups on input line 140.
-(/usr/local/texlive/2018/texmf-dist/tex/latex/newpx/t1zplsups.fd
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/newpx/t1zplsups.fd
 File: t1zplsups.fd 2015/01/17 v1.0
 )
 LaTeX Font Info:    Font shape `T1/zplsups/m/n' will be
@@ -896,22 +885,6 @@ LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
 (Font)              scaled to size 10.0pt on input line 140.
 LaTeX Font Info:    Font shape `T1/zplsups/m/n' will be
 (Font)              scaled to size 10.0pt on input line 140.
-
-
-Package natbib Warning: Citation `tirole1991game' on page 1 undefined on input line 141.
-
-
-Package natbib Warning: Citation `myerson1991game' on page 1 undefined on input line 141.
-
-
-Package natbib Warning: Citation `bolton2005contract' on page 1 undefined on input line 141.
-
-
-Package natbib Warning: Citation `Mailath2006repeated' on page 1 undefined on input line 142.
-
-
-Package natbib Warning: Citation `martin1994acourse' on page 1 undefined on input line 142.
-
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -1009,6 +982,10 @@ Package minitoc Info: I0033
 (minitoc)             Writing main.mtc22.
 \openout3 = `main.mtc22'.
 
+Package minitoc Info: I0033
+(minitoc)             Writing main.mtc23.
+\openout3 = `main.mtc23'.
+
  (/Users/admin/Desktop/LearningNotes/MicroEconLearning/main.toc
 LaTeX Font Info:    Font shape `T1/zpltlf/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/zpltlf/b/n' tried instead on input line 2.
@@ -1044,6 +1021,10 @@ LaTeX Font Info:    Try loading font information for U+npxsyc on input line 2.
  (/usr/local/texlive/2018/texmf-dist/tex/latex/newpx/unpxsyc.fd
 File: unpxsyc.fd 2013/03/24 Fontinst v1.933 font definitions for U/npxsyc.
 )
+LaTeX Font Info:    Font shape `T1/zpltlf/bx/n' in size <12> not available
+(Font)              Font shape `T1/zpltlf/b/n' tried instead on input line 4.
+LaTeX Font Info:    Font shape `T1/zpltlf/b/n' will be
+(Font)              scaled to size 12.0pt on input line 4.
 LaTeX Font Info:    Font shape `OT1/zpltlf/m/n' will be
 (Font)              scaled to size 12.0pt on input line 4.
 LaTeX Font Info:    Font shape `OT1/zpltlf/m/n' will be
@@ -1081,40 +1062,23 @@ LaTeX Font Info:    Font shape `T1/zpltlf/bx/n' in size <10.95> not available
 LaTeX Font Info:    Font shape `T1/zpltlf/b/n' will be
 (Font)              scaled to size 10.95pt on input line 1.
 )
-
-Package natbib Warning: Citation `mas1995microeconomic' on page 5 undefined on input line 4.
-
 LaTeX Font Info:    Font shape `T1/zpltlf/bx/it' in size <12> not available
 (Font)              Font shape `T1/zpltlf/b/it' tried instead on input line 24.
 LaTeX Font Info:    Font shape `T1/zpltlf/b/it' will be
 (Font)              scaled to size 12.0pt on input line 24.
+ [5
+
+]
 LaTeX Font Info:    Font shape `T1/zpltlf/bx/n' in size <17.28> not available
 (Font)              Font shape `T1/zpltlf/b/n' tried instead on input line 27.
 LaTeX Font Info:    Font shape `T1/zpltlf/b/n' will be
 (Font)              scaled to size 17.28pt on input line 27.
-(/Users/admin/Desktop/LearningNotes/MicroEconLearning/chapter1/chapter1_sec1.tex [5
-
-]
-LaTeX Font Info:    Font shape `T1/zpltlf/bx/n' in size <10> not available
-(Font)              Font shape `T1/zpltlf/b/n' tried instead on input line 31.
-LaTeX Font Info:    Font shape `T1/zpltlf/b/n' will be
-(Font)              scaled to size 10.0pt on input line 31.
-
-
-Package natbib Warning: Citation `mas1995microeconomic' on page 6 undefined on input line 31.
-
-
-Package natbib Warning: Citation `ariel2012lecture' on page 6 undefined on input line 31.
-
-[6]
-
-Package natbib Warning: Citation `kreps1990acourse' on page 7 undefined on input line 58.
-
+ (/Users/admin/Desktop/LearningNotes/MicroEconLearning/chapter1/chapter1_sec1.tex [6]
 LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
 (Font)              scaled to size 8.8pt on input line 84.
 LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
 (Font)              scaled to size 6.6pt on input line 84.
-[7]
+ [7]
 LaTeX Font Info:    Try loading font information for TS1+zpltlf on input line 154.
  (/usr/local/texlive/2018/texmf-dist/tex/latex/newpx/ts1zpltlf.fd
 File: ts1zpltlf.fd 2015/01/18 v1.0 fd file for TS1/zpltlf
@@ -1132,62 +1096,28 @@ LaTeX Font Info:    Font shape `T1/zpltlf/m/it' will be
 (Font)              scaled to size 10.0pt on input line 5.
  [9]) (/Users/admin/Desktop/LearningNotes/MicroEconLearning/chapter1/chapter1_sec3.tex [10] [11] [12]) [13] (/Users/admin/Desktop/LearningNotes/MicroEconLearning/chapter1/chapter1_sec4.tex [14] (/usr/local/texlive/2018/texmf-dist/tex/latex/ucs/data/uni-32.def
 File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
-) [15] [16]
-
-Package natbib Warning: Citation `kreps1990acourse' on page 17 undefined on input line 97.
-
-) (/Users/admin/Desktop/LearningNotes/MicroEconLearning/chapter1/chapter1_sec5.tex
-
-Package natbib Warning: Citation `kai1979prospect' on page 17 undefined on input line 22.
-
-[17]) [18]
-
-Package natbib Warning: Citation `mas1995microeconomic' on page 19 undefined on input line 45.
-
-
-Package natbib Warning: Citation `kreps1990acourse' on page 19 undefined on input line 45.
-
-
-Package natbib Warning: Citation `mas1995microeconomic' on page 19 undefined on input line 46.
-
-
-Package natbib Warning: Citation `kreps2013microeconomic' on page 19 undefined on input line 46.
-
-
-Package natbib Warning: Citation `ariel2012lecture' on page 19 undefined on input line 46.
-
-) [19]
+) [15] [16]) (/Users/admin/Desktop/LearningNotes/MicroEconLearning/chapter1/chapter1_sec5.tex [17]) [18]) [19]
 Chapter 2.
 (/Users/admin/Desktop/LearningNotes/MicroEconLearning/chapter2/chapter2.tex
 \openout3 = `main.mtc'.
 
 \openout3 = `main.mtc'.
 
- (/Users/admin/Desktop/LearningNotes/MicroEconLearning/main.mtc2)
+ (/Users/admin/Desktop/LearningNotes/MicroEconLearning/main.mtc2) [20
 
-Package natbib Warning: Citation `mas1995microeconomic' on page 20 undefined on input line 4.
-
-[20
-
-] (/Users/admin/Desktop/LearningNotes/MicroEconLearning/chapter2/chapter2_sec1.tex
-
-Package natbib Warning: Citation `mas1995microeconomic' on page 21 undefined on input line 21.
-
-[21]) (/Users/admin/Desktop/LearningNotes/MicroEconLearning/chapter2/chapter2_sec2.tex [22]
+] (/Users/admin/Desktop/LearningNotes/MicroEconLearning/chapter2/chapter2_sec1.tex [21]) (/Users/admin/Desktop/LearningNotes/MicroEconLearning/chapter2/chapter2_sec2.tex [22]
 LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
 (Font)              scaled to size 12.0pt on input line 5.
 LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
 (Font)              scaled to size 8.8pt on input line 5.
 LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
 (Font)              scaled to size 6.6pt on input line 5.
-
-
-Package natbib Warning: Citation `deaton1980economics' on page 23 undefined on input line 20.
-
-[23]
+ [23]
+Package marginnote Info: Margin note 25.1 is on absolute page 25
+(marginnote)              on input line 37.
 Package marginnote Info: right page because not two side mode on input line 37.
-Package marginnote Info: xpos not known,
-(marginnote)             using \marginnoterightadjust on input line 37.
+Package marginnote Info: xpos seems to be 179.02235pt,
+(marginnote)             \marginnoterightadjust ignored on input line 37.
 LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
 (Font)              scaled to size 8.0pt on input line 37.
 LaTeX Font Info:    Font shape `OT1/zpltlf/m/n' will be
@@ -1202,23 +1132,7 @@ LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
 (Font)              scaled to size 10.0pt on input line 37.
 LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
 (Font)              scaled to size 7.3pt on input line 37.
-)
-
-Package natbib Warning: Citation `mas1995microeconomic' on page 24 undefined on input line 47.
-
-
-Package natbib Warning: Citation `kreps1990acourse' on page 24 undefined on input line 47.
-
-
-Package natbib Warning: Citation `mas1995microeconomic' on page 24 undefined on input line 48.
-
-
-Package natbib Warning: Citation `kreps2013microeconomic' on page 24 undefined on input line 48.
-
-
-Package natbib Warning: Citation `ariel2012lecture' on page 24 undefined on input line 48.
-
-) [24] [25]
+) [24]) [25]
 Chapter 3.
 (/Users/admin/Desktop/LearningNotes/MicroEconLearning/chapter3/chapter3.tex) [26
 
@@ -1310,13 +1224,11 @@ File: t1npxtt.fd 2000/12/14 v1.0
 LaTeX Font Info:    Font shape `T1/npxtt/m/n' will be
 (Font)              scaled to size 12.0pt on input line 12.
 )
-
-Package natbib Warning: There were undefined citations.
-
 Package minitoc Info: I0009
 (minitoc)             Listing minitoc auxiliary files. 
 (minitoc)             Creating the main.maf file.
 \openout3 = `main.maf'.
+
 
 
 Package minitoc(hints) Warning: W0024
@@ -1328,41 +1240,26 @@ Package atveryend Info: Empty hook `BeforeClearDocument' on input line 215.
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 215.
- (/Users/admin/Desktop/LearningNotes/MicroEconLearning/main.aux
-
-Package natbib Warning: Citation(s) may have changed.
-(natbib)                Rerun to get citations correct.
-
-)
+ (/Users/admin/Desktop/LearningNotes/MicroEconLearning/main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 215.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 215.
-
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: 795C6627D703296A93645274C1227EEB;2821
-(rerunfilecheck)             After:  E7D43027516A03DFD2848D0FA77F2607;2876.
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: E7D43027516A03DFD2848D0FA77F2607;2876.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 215.
  ) 
 Here is how much of TeX's memory you used:
- 14196 strings out of 492649
- 201963 string characters out of 6129623
+ 14195 strings out of 492649
+ 201930 string characters out of 6129623
  338049 words of memory out of 5000000
- 17270 multiletter control sequences out of 15000+600000
- 169326 words of font info for 271 fonts, out of 8000000 for 9000
+ 17268 multiletter control sequences out of 15000+600000
+ 166435 words of font info for 270 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 33i,12n,43p,1030b,634s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 33i,12n,43p,1030b,607s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/newpx/tgpdiff.enc}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/newpx/ecsups.enc}</usr/local/texlive/2018/texmf-dist/fonts/type1/public/newtx/ntxsyralt.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/pxfonts/pxmia.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/newpx/pxsys.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/tex-gyre/qplr.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/pxfonts/rpxmi.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/newtx/txexs.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/txfonts/txsya.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/txfonts/txsyb.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/txfonts/txsyc.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/newpx/zplb.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/newpx/zplbi.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/newpx/zplr.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/newpx/zplri.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/newpx/zplx-regular.pfb>
-Output written on /Users/admin/Desktop/LearningNotes/MicroEconLearning/main.pdf (49 pages, 276894 bytes).
+Output written on /Users/admin/Desktop/LearningNotes/MicroEconLearning/main.pdf (49 pages, 280627 bytes).
 PDF statistics:
- 700 PDF objects out of 1000 (max. 8388607)
- 625 compressed objects within 7 object streams
+ 757 PDF objects out of 1000 (max. 8388607)
+ 682 compressed objects within 7 object streams
  151 named destinations out of 1000 (max. 500000)
- 321 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 329 words of extra memory for PDF output out of 10000 (max. 10000000)
 
