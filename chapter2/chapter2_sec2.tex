@@ -20,7 +20,16 @@ Notice that the Walrasian budget set is not automatically convex. Its convexity 
 Of course, it is perfectly possible that a consumer's budget is NOT convex (and not Walrasian, in that sense), the brilliant work of \citet{deaton1980economics} has documented and discussed many complicated consumption sets that are not convex.
 
 \subsection{Walrasian Demand Function}
-With Walrasian budgets defined, we can then infer that:
+With Walrasian budgets defined, we can define \textit{Walrasian demand correspondence} and \textit{Walrasian demand function} as:
 \begin{definition}
-    For each \textit{price-wealth} pair $(p,w)$
+    For each \textit{price-wealth} pair $(\mathbf{p},w)$, Walrasian demand correspondence is the set of chosen consumption bundles, written as $\mathbf{x}(\mathbf{p},w)$. When $\mathbf{x}(\mathbf{p},w)$ is single-valued, it will be referred to as a \textbf{Walrasian demand function}.
+\end{definition}
+
+The two main assumptions of $\mathbf{x}(\mathbf{p},w)$ are:
+\begin{definition}
+    For a Walrasian demand correspondence $\mathbf{x}(\mathbf{p},w)$, we assume it is:
+    \begin{enumerate}
+        \item[1.] \textbf{Homogeneous of degree zero}: $\forall \mathbf{p},w$ and $\alpha >0$, $x(\alpha \mathbf{p},\alpha w)=\mathbf{x}(\mathbf{p},w)$. This means that if wealth and prices change in the same proportion at the same time, consumer would not change her choice.
+        \item[2.] \textbf{Walras' law}: $\forall \gg 0,w>0$, $\mathbf{p}\cdot\mathbf{x}=w$ for every $\mathbf{x}\in \mathbf{x}(\mathbf{p},w)$. Walras' law means that a consumer want to spend all her wealth for consumption, every consumption bundle hence will exhaust $w$. Notice that this is implicitly intertemporal, meaning that Walras' law consider lifetime resource allocation.
+    \end{enumerate}
 \end{definition}
