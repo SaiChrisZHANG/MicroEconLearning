@@ -826,6 +826,8 @@ INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/newpx/zplsyc.tfm
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/newpx/zplsyc.tfm
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/newpx/zplexa.tfm
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/newpx/zplexa.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/vf/public/newpx/zplexa.vf
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/newtx/txexas.tfm
 INPUT /Users/admin/Desktop/LearningNotes/MicroEconLearning/chapter3/chapter3.tex
 INPUT /Users/admin/Desktop/LearningNotes/MicroEconLearning/chapter3/chapter3.tex
 INPUT /Users/admin/Desktop/LearningNotes/MicroEconLearning/main.bbl
@@ -873,6 +875,7 @@ INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/newpx/pxsys.pfb
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/tex-gyre/qplr.pfb
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/pxfonts/rpxmi.pfb
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/newtx/txexas.pfb
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/newtx/txexs.pfb
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/txfonts/txsya.pfb
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/txfonts/txsyb.pfb
