@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.1.7)  23 SEP 2021 00:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.1.7)  23 SEP 2021 01:09
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1132,89 +1132,89 @@ LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
 (Font)              scaled to size 10.0pt on input line 37.
 LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
 (Font)              scaled to size 7.3pt on input line 37.
- [24] [25])) [26]
+ [24] [25])) [26] [27]
 Chapter 3.
-(/Users/admin/Desktop/LearningNotes/MicroEconLearning/chapter3/chapter3.tex) [27
+(/Users/admin/Desktop/LearningNotes/MicroEconLearning/chapter3/chapter3.tex) [28
 
 ]
 Chapter 4.
-[28
-
-]
-Chapter 5.
 [29
 
 ]
-Chapter 6.
+Chapter 5.
 [30
 
 ]
-Chapter 7.
+Chapter 6.
 [31
 
 ]
-Chapter 8.
+Chapter 7.
 [32
 
-] [33
+]
+Chapter 8.
+[33
+
+] [34
 
 ]
 Chapter 9.
-[34
-
-]
-Chapter 10.
 [35
 
 ]
-Chapter 11.
+Chapter 10.
 [36
 
 ]
-Chapter 12.
+Chapter 11.
 [37
 
 ]
-Chapter 13.
+Chapter 12.
 [38
 
 ]
-Chapter 14.
+Chapter 13.
 [39
 
-] [40
+]
+Chapter 14.
+[40
+
+] [41
 
 ]
 Chapter 15.
-[41
-
-]
-Chapter 16.
 [42
 
 ]
-Chapter 17.
+Chapter 16.
 [43
 
 ]
-Chapter 18.
+Chapter 17.
 [44
 
 ]
-Chapter 19.
+Chapter 18.
 [45
 
 ]
-Chapter 20.
+Chapter 19.
 [46
 
 ]
-Chapter 21.
+Chapter 20.
 [47
 
 ]
-Chapter 22.
+Chapter 21.
 [48
+
+]
+Chapter 22.
+[49
 
 ] (/Users/admin/Desktop/LearningNotes/MicroEconLearning/main.bbl
 LaTeX Font Info:    Try loading font information for T1+npxtt on input line 12.
@@ -1236,7 +1236,7 @@ Package minitoc(hints) Warning: W0024
 (minitoc(hints))                in the main.log file.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 215.
-[49
+[50
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 215.
@@ -1248,18 +1248,18 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 215.
  ) 
 Here is how much of TeX's memory you used:
- 14251 strings out of 492649
- 203004 string characters out of 6129623
+ 14252 strings out of 492649
+ 203011 string characters out of 6129623
  338049 words of memory out of 5000000
  17319 multiletter control sequences out of 15000+600000
  186004 words of font info for 314 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  33i,13n,43p,1030b,607s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/newpx/tgpdiff.enc}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/newpx/ecsups.enc}</usr/local/texlive/2018/texmf-dist/fonts/type1/public/newtx/ntxsyralt.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/pxfonts/pxmia.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/newpx/pxsys.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/tex-gyre/qplr.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/pxfonts/rpxmi.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/newtx/txexs.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/txfonts/txsya.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/txfonts/txsyb.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/txfonts/txsyc.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/newpx/zplb.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/newpx/zplbi.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/newpx/zplr.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/newpx/zplri.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/newpx/zplx-regular.pfb>
-Output written on /Users/admin/Desktop/LearningNotes/MicroEconLearning/main.pdf (50 pages, 289048 bytes).
+Output written on /Users/admin/Desktop/LearningNotes/MicroEconLearning/main.pdf (51 pages, 290314 bytes).
 PDF statistics:
- 778 PDF objects out of 1000 (max. 8388607)
- 701 compressed objects within 8 object streams
- 156 named destinations out of 1000 (max. 500000)
+ 786 PDF objects out of 1000 (max. 8388607)
+ 708 compressed objects within 8 object streams
+ 157 named destinations out of 1000 (max. 500000)
  337 words of extra memory for PDF output out of 10000 (max. 10000000)
 
