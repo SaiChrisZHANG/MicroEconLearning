@@ -118,7 +118,7 @@ It is easy to show that this definition is a special case of Def.\ref{def_WARP}:
 
 \subsubsection*{WARP and compensated price changes}
 WARP can also be stated in terms of compensated price changes. At $(\mathbf{p},w)$, the consumer chooses $\mathbf{x}(\mathbf{p},w)$, if she still want to afford $\mathbf{x}(\mathbf{p},w)$ at a new price $\mathbf{p}'$, she would need to adjust her wealth to $w'=\mathbf{p}'\cdot \mathbf{x}(\mathbf{p},w)$, this gives \textit{Slutsky wealth compensation} $\Delta w=w'-w=\Delta \mathbf{p}\cdot\mathbf{x}(\mathbf{p},w)=(\mathbf{p}'-\mathbf{p})\mathbf{x}(\mathbf{p},w)$, $\Delta \mathbf{p}$ is referred to as \textit{compensated price changes}. With these concepts defined, WARP implies:
-\begin{theorem}
+\begin{theorem}\label{thm_WARP_to_lawofdemand}
     For any $\Delta \mathbf{p}$ from initial situation $(\mathbf{p},w)$ to $(\mathbf{p}',w')=(\mathbf{p}',\mathbf{p}'\cdot(\mathbf{x},w))$, if WARP holds, we have
     $$(\mathbf{p}'-\mathbf{p})\cdot[\mathbf{x}(\mathbf{p}',w')-\mathbf{x}(\mathbf{p},w)]\leq 0$$
     with strict inequality unless $\mathbf{x}(\mathbf{p},w)=\mathbf{x}(\mathbf{p}',w')$.
@@ -126,5 +126,11 @@ WARP can also be stated in terms of compensated price changes. At $(\mathbf{p},w
 
 Here is a proof: rewrite the left-side, get
 $$(\mathbf{p}'-\mathbf{p})\cdot[\mathbf{x}(\mathbf{p}',w')-\mathbf{x}(\mathbf{p},w)]=\mathbf{p}'\cdot[\mathbf{x}(\mathbf{p}',w')-\mathbf{x}(\mathbf{p},w)]-\mathbf{p}\cdot[\mathbf{x}(\mathbf{p}',w')-\mathbf{x}(\mathbf{p},w)]$$
-By Walras' law, $\mathbf{p}'\cdot\mathbf{x}(\mathbf{p}',w')=w'$, $\mathbf{p}\cdot \mathbf{x}(\mathbf{p},w)=w$, also by assumption of compensated price changes, $\mathbf{p}'\cdot\mathbf{x}(\mathbf{p},w)=w'$, if WARP holds, since $\mathbf{x}(\mathbf{p},w)$ is affordable at $(\mathbf{p}',w')$, $\mathbf{x}(\mathbf{p}',w')$ must NOT be affordable at $(\mathbf{p},w)$, i.e., $\mathbf{p}\cdot \mathbf{x}(\mathbf{p}',w')>w$, therefore, we have:
+By Walras' law, $\mathbf{p}'\cdot\mathbf{x}(\mathbf{p}',w')=w'$, $\mathbf{p}\cdot \mathbf{x}(\mathbf{p},w)=w$, also by assumption of compensated price changes, $\mathbf{p}'\cdot\mathbf{x}(\mathbf{p},w)=w'$, if if WARP holds, since $\mathbf{x}(\mathbf{p},w)$ is affordable at $(\mathbf{p}',w')$, $\mathbf{x}(\mathbf{p}',w')$ must NOT be affordable at $(\mathbf{p},w)$, i.e., $\mathbf{p}\cdot \mathbf{x}(\mathbf{p}',w')>w$, therefore, we have:
 $$(\mathbf{p}'-\mathbf{p})\cdot[\mathbf{x}(\mathbf{p}',w')-\mathbf{x}(\mathbf{p},w)]= \underbrace{\mathbf{p}'\cdot[\mathbf{x}(\mathbf{p}',w')-\mathbf{x}(\mathbf{p},w)]}_{=0} - \underbrace{\mathbf{p}\cdot[\mathbf{x}(\mathbf{p}',w')-\mathbf{x}(\mathbf{p},w)]}_{>0}<0$$
+
+This Theorem goes both way, that is
+\begin{theorem}\label{thm_lawofdemand_to_WARP}
+    If for any compensated price changes, $(\mathbf{p}'-\mathbf{p})\cdot[\mathbf{x}(\mathbf{p}',w')-\mathbf{x}(\mathbf{p},w)]\leq 0$ holds, the WARP is satisfied.
+\end{theorem}
+We proof 
