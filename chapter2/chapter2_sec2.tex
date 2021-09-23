@@ -86,7 +86,7 @@ this is true for any $\alpha$, if we take $\alpha=1$, we get $D_{\mathbf{p}}\mat
 Intuitively, this implies the price (substitution) effects and wealth (income) effects induced by the price change of one commodity, when weighted by the prices of other commodities and wealth, will cancel out.
 
 Another theorem is induced from Walras' law:
-\begin{theorem}
+\begin{theorem}\label{thm_walraslaw_waldemand_thm2}
     If the Walrasian emand function $\mathbf{x}(\mathbf{p},w)$ satisfies \textbf{Walras' law}, then for all $\mathbf{p},w$:
     $$\sum^L_{l=1}p_l\frac{\partial x_l(\mathbf{p},w)}{\partial p_k}+x_k(\mathbf{p},w)=0,\forall k=1,\cdots,L$$
     and
@@ -94,3 +94,11 @@ Another theorem is induced from Walras' law:
 \end{theorem}
 
 The proof is also easy: Walras' law gives $\mathbf{p}\cdot \mathbf{x}(\mathbf{p},w)=w$, take derivatives with respect to $\mathbf{p}$, get $\mathbf{p}\cdot D_{\mathbf{p}}\mathbf{x}(\mathbf{p},w)+\mathbf{x}(\mathbf{p},w)^T=\mathbf{0}^T$; take derivatives with repsect to $w$, get $\mathbf{p}\cdot D_{w}(\mathbf{p},w)=1$. The intuition is: a change in prices do NOT change the total expenditure, and the total expenditure will change by the same amount with the change in wealth.
+
+If we define elasticities as:
+\begin{align*} 
+    \epsilon_{lk}=\frac{\partial x_l(\mathbf{p},w)/x_l(\mathbf{p},w)}{\partial p_k /p_k} && \text{ \% change in demand for $l$ per \% change in the price of $k$} \\ 
+    \epsilon_{lw}=\frac{\partial x_l(\mathbf{p},w)/x_l(\mathbf{p},w)}{\partial w/w} && \text{ \% change in demand for $l$ per \% change in wealth $w$}
+\end{align*}
+
+We can rewrite Thm.\ref{thm_homo_waldemand_thm1} as $\sum^L_{k=1}\epsilon_{lk}(\mathbf{p},w)+\epsilon_{lw}(\mathbf{p},w)=0$ for $l=1,\cdots,L$: this directly expresses that an equal \% change in all prices and wealth leads to no change in demand, i.e., the homogeneity of degree zero.
