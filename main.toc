@@ -15,9 +15,9 @@
 \contentsline {section}{\numberline {2.2}Choice Based Consumer Thoery}{23}{section.2.2}
 \contentsline {subsection}{\numberline {2.2.1}Walrasian Budgets}{23}{subsection.2.2.1}
 \contentsline {subsection}{\numberline {2.2.2}Walrasian Demand Function}{23}{subsection.2.2.2}
-\contentsline {section}{\numberline {2.3}Linking Preferences with Choices}{25}{section.2.3}
-\contentsline {section}{\numberline {2.4}Introducing Utility}{25}{section.2.4}
-\contentsline {section}{\numberline {2.5}Commentary}{25}{section.2.5}
+\contentsline {section}{\numberline {2.3}Linking Preferences with Choices}{26}{section.2.3}
+\contentsline {section}{\numberline {2.4}Introducing Utility}{26}{section.2.4}
+\contentsline {section}{\numberline {2.5}Commentary}{26}{section.2.5}
 \contentsline {chapter}{\numberline {3}Lagrange Maximization and Duality}{27}{chapter.3}
 \contentsline {chapter}{\numberline {4}Stochastic Choice}{28}{chapter.4}
 \contentsline {chapter}{\numberline {5}Monotone Comparative Statics}{29}{chapter.5}
