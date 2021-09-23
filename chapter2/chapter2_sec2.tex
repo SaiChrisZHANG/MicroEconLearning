@@ -47,11 +47,21 @@ Next, we disucess several basic definitions induced from the Walrasian demand fu
 $$\mathbf{x}(\mathbf{p},w)=\left[x_1 (\mathbf{p},w),x_2 (\mathbf{p},w),\cdots, x_L(\mathbf{p},w) \right]^T$$ we have the following two effects:
 
 \begin{description}
-    \item[Wealth effects] Take the partial derivative of demand function on wealth: $$D_w x(\mathbf{x},w)=\left[\frac{\partial x_1(\mathbf{p},w)}{\partial w}, \frac{\partial x_2(\mathbf{p},w)}{\partial w},\cdots, \frac{\partial x_L(\mathbf{p},w)}{\partial w} \right]^T$$, then $\frac{\partial x_l(\mathbf{p},w)}{\partial w}$ is the \textit{wealth effect} for the $l$th commodity.
+    \item[Wealth effects] \underline{Fix $\mathbf{p}$, get a function of $x(w)$}.
+    
+    Take the partial derivative of demand function on wealth: $$D_w x(\mathbf{x},w)=\left[\frac{\partial x_1(\mathbf{p},w)}{\partial w}, \frac{\partial x_2(\mathbf{p},w)}{\partial w},\cdots, \frac{\partial x_L(\mathbf{p},w)}{\partial w} \right]^T$$, then $\frac{\partial x_l(\mathbf{p},w)}{\partial w}$ is the \textit{wealth effect} for the $l$th commodity.
     Wealth effects can classify commodities into two types:
     \begin{enumerate}
         \item[-] \textbf{normal}: $\partial x_l(\mathbf{p},w)/\partial w\geq 0$
         \item[-] \textbf{inferior}: $\partial x_l(\mathbf{p},w)/\partial w <0$
     \end{enumerate} 
-    \item[Price effects]  
+    \item[Price effects] \underline{For commodity $l$, fix $\mathbf{p}_{-l}$ and $w$, get a function of $x(p_l)$}.
+    
+    Take the partial derivative of demand function on price vector:
+    $$D_{\mathbf{p}}x(\mathbf{p},w)=\left[\nabla_{\mathbf{p}}x_1(\mathbf{p},w),\cdots,\nabla_{\mathbf{p}}x_L(\mathbf{p},w) \right]^T = 
+    \begin{bmatrix}
+        \frac{\partial x_1(\mathbf{p},w)}{\partial p_1} & \cdots & \frac{\partial x_1(\mathbf{p},w)}{\partial p_L}\\
+        \vdots & \ddots & \vdots\\
+        \frac{\partial x_L(\mathbf{p},w)}{\partial p_1} & \cdots &\frac{\partial x_L(\mathbf{p},w)}{\partial p_L}
+        \end{bmatrix}$$
 \end{description}
