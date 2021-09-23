@@ -37,7 +37,7 @@ The two main assumptions of $\mathbf{x}(\mathbf{p},w)$ are:
             \item[-] \textbf{Choice structure}: By homogeneity of degree zero, $\mathbf{x}(\mathbf{p},w)$ depends only on $\mathbf{p}$ and $w$, i.e. the budget set, then for the family of Walrasian budget sets $\mathcal{B}^*=\{B_{\mathbf{p},w}:\mathbf{p}\gg 0,w>0\}$, $(\mathcal{B}^*,\mathbf{x}(\cdot))$ is a choice structure. This choice structure does NOT include all possible subsets of $X$\sidenotes{$\leftarrow X$ is the set of all possible bundles}, in particular, not all two- and three-element subsets of $X$\footnote{This relates to the argument that when one consumption bundle $\mathbf{x^*}$ is infeasible, it not being chosen does NOT mean it is less preferred. This will be dealt with more carefully with more assumptions of preference-based demand.}, therefore, requires more assumptions to have a rationalizing preference.
         \end{enumerate}
              
-        \item[2.] \textbf{Walras' law}: $\forall \gg 0,w>0$, $\mathbf{p}\cdot\mathbf{x}=w$ for every $\mathbf{x}\in \mathbf{x}(\mathbf{p},w)$. Walras' law means that a consumer want to spend all her wealth for consumption, every consumption bundle hence will exhaust $w$. 
+        \item[2.] \textbf{Walras' law}: $\forall \gg 0,w>0$, $\mathbf{p}\cdot\mathbf{x}=w$ for every $\mathbf{x}\in \mathbf{x}(\mathbf{p},w)$. Walras' law means that a consumer want to spend all her wealth for consumption, every consumption bundle hence will exhaust $w$. Walras' law implies that goods are continuous.
         
         Notice that this is implicitly intertemporal, meaning that Walras' law consider lifetime resource allocation.
     \end{enumerate}
@@ -103,3 +103,13 @@ If we define elasticities as:
 
 We can rewrite Thm.\ref{thm_homo_waldemand_thm1} as $\sum^L_{k=1}\epsilon_{lk}(\mathbf{p},w)+\epsilon_{lw}(\mathbf{p},w)=0$ for $l=1,\cdots,L$: this directly expresses that an equal \% change in all prices and wealth leads to no change in demand, i.e., the homogeneity of degree zero.
 And we can rewrite the two equations in Thm.\ref{thm_walraslaw_waldemand_thm2} as $\sum^L_{l=1}\frac{p_lx_l(\mathbf{p},w)}{w}\epsilon_{lk}(\mathbf{p},w)+\frac{p_kx_k(\mathbf{p},w)}{w}=0$ for $k=1,\cdots,L$ and $\sum^L_{l=1}\frac{p_lx_l(\mathbf{p},w)}{w}\epsilon_{lw}(\mathbf{p},w)=1$.
+
+\subsection{WARP and Law of Demand}
+Since for the family of Walrasian budget sets $\mathcal{B}^*=\{B_{\mathbf{p},w}:\mathbf{p}\gg 0,w>0\}$, $(\mathcal{B}^*,\mathbf{p}(\cdot))$ is a choice structure, naturally, we would like to check when WARP holds for this choice structure.
+
+\begin{definition}\label{def_walrasian_WARP}
+    A Walrasian demand function $\mathbf{x}(\mathbf{p},w)$ satisfies WARP if any two price-wealth conditions $(\mathbf{p},w)$ and $(\mathbf{p}',w')$ satisfies:
+    $$\mathbf{p}\cdot \mathbf{x}(\mathbf{p}',w')\leq w\text{ and }\mathbf{x}(\mathbf{p}',w')\neq \mathbf{x}(\mathbf{p},w)\Rightarrow \mathbf{p}'\cdot\mathbf{x}(\mathbf{p},w)>w'$$
+\end{definition}
+
+It is easy to show that this definition is a special case of Def.\ref{def_WARP}: here we consider single-valued $C(\cdot)$ (function), then Def.\ref{def_WARP} gives that $\forall B,B'$ and $x,y\in B\cap B'$, $x=C(B),y=C(B')\Rightarrow x\in C(B')\Rightarrow x=y$. Rewrite this in the context of Walrasian demand functions, we have: for any $(\mathbf{p},w),(\mathbf{p}',w')$, if $\mathbf{p}\cdot\mathbf{x}(\mathbf{p}',w')\leq w$ and $\mathbf{p}'\cdot \mathbf{x}(\mathbf{p},w)\leq w'$
