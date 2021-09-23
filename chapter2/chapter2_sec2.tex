@@ -58,10 +58,16 @@ $$\mathbf{x}(\mathbf{p},w)=\left[x_1 (\mathbf{p},w),x_2 (\mathbf{p},w),\cdots, x
     \item[Price effects] \underline{For commodity $l$, fix $\mathbf{p}_{-l}$ and $w$, get a function of $x(p_l)$}.
     
     Take the partial derivative of demand function on price vector:
-    $$D_{\mathbf{p}}x(\mathbf{p},w)=\left[\nabla_{\mathbf{p}}x_1(\mathbf{p},w),\cdots,\nabla_{\mathbf{p}}x_L(\mathbf{p},w) \right]^T = 
+    $$D_{\mathbf{p}}x(\mathbf{p},w)= \begin{bmatrix}
+        \nabla_{\mathbf{p}}x_1(\mathbf{p},w)\\
+        \vdots\\
+        \nabla_{\mathbf{p}}x_L(\mathbf{p},w) \end{bmatrix} 
+    =
     \begin{bmatrix}
         \frac{\partial x_1(\mathbf{p},w)}{\partial p_1} & \cdots & \frac{\partial x_1(\mathbf{p},w)}{\partial p_L}\\
         \vdots & \ddots & \vdots\\
         \frac{\partial x_L(\mathbf{p},w)}{\partial p_1} & \cdots &\frac{\partial x_L(\mathbf{p},w)}{\partial p_L}
         \end{bmatrix}$$
 \end{description}
+
+For most goods, the price effects would be negative: you would buy more if the price is lower. However, 
