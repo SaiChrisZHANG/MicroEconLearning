@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.1.7)  25 SEP 2021 23:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.1.7)  25 SEP 2021 23:48
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1271,182 +1271,134 @@ LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
 (Font)              scaled to size 10.0pt on input line 37.
 LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
 (Font)              scaled to size 7.3pt on input line 37.
- [24] [25] [26]
-/Users/admin/Desktop/LearningNotes/MicroEconLearning/chapter2/chapter2_sec2.tex:166: Missing } inserted.
-<inserted text> 
-                }
-l.166        0 & 0 & 1 & \ddots & \v\\
-                                      
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
+ [24] [25] [26])) [27] [28]
+Chapter 3.
+(/Users/admin/Desktop/LearningNotes/MicroEconLearning/chapter3/chapter3.tex) [29
 
-/Users/admin/Desktop/LearningNotes/MicroEconLearning/chapter2/chapter2_sec2.tex:166: Missing } inserted.
-<inserted text> 
-                }
-l.166        0 & 0 & 1 & \ddots & \v\\
-                                      
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
+]
+Chapter 4.
+[30
 
-/Users/admin/Desktop/LearningNotes/MicroEconLearning/chapter2/chapter2_sec2.tex:166: Improper \spacefactor.
-<recently read> \spacefactor 
-                             
-l.166        0 & 0 & 1 & \ddots & \v\\
-                                      
-You can refer to \spacefactor only in horizontal mode;
-you can refer to \prevdepth only in vertical mode; and
-neither of these is meaningful inside \write. So
-I'm forgetting what you said and using zero instead.
+]
+Chapter 5.
+[31
 
-/Users/admin/Desktop/LearningNotes/MicroEconLearning/chapter2/chapter2_sec2.tex:166: Extra }, or forgotten $.
-\add@accent ... \accent@spacefactor \spacefactor }
-                                                  \accent #1 #2\egroup \spac...
-l.166        0 & 0 & 1 & \ddots & \v\\
-                                      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
+]
+Chapter 6.
+[32
 
-/Users/admin/Desktop/LearningNotes/MicroEconLearning/chapter2/chapter2_sec2.tex:166: Please use \mathaccent for accents in math mode.
-\add@accent ...@spacefactor \spacefactor }\accent 
-                                                  #1 #2\egroup \spacefactor ...
-l.166        0 & 0 & 1 & \ddots & \v\\
-                                      
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
+]
+Chapter 7.
+[33
 
-/Users/admin/Desktop/LearningNotes/MicroEconLearning/chapter2/chapter2_sec2.tex:166: Missing { inserted.
-<to be read again> 
-                   $
-l.166        0 & 0 & 1 & \ddots & \v\\
-                                      
-A left brace was mandatory here, so I've put one in.
-You might want to delete and/or insert some corrections
-so that I will find a matching right brace soon.
-(If you're confused by all this, try typing `I}' now.)
+]
+Chapter 8.
+[34
 
-/Users/admin/Desktop/LearningNotes/MicroEconLearning/chapter2/chapter2_sec2.tex:166: Missing } inserted.
-<inserted text> 
-                }
-l.166        0 & 0 & 1 & \ddots & \v\\
-                                      
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
+] [35
 
-/Users/admin/Desktop/LearningNotes/MicroEconLearning/chapter2/chapter2_sec2.tex:166: You can't use `\spacefactor' in internal vertical mode.
-\add@accent ...}\accent #1 #2\egroup \spacefactor 
-                                                  \accent@spacefactor 
-l.166        0 & 0 & 1 & \ddots & \v\\
-                                      
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
+]
+Chapter 9.
+[36
 
-/Users/admin/Desktop/LearningNotes/MicroEconLearning/chapter2/chapter2_sec2.tex:166: Missing $ inserted.
-<inserted text> 
-                $
-l.166        0 & 0 & 1 & \ddots & \v\\
-                                      
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
+]
+Chapter 10.
+[37
 
-/Users/admin/Desktop/LearningNotes/MicroEconLearning/chapter2/chapter2_sec2.tex:167: Missing $ inserted.
-<inserted text> 
-                $
-l.167        \vdots &
-                      \ddots & 0 & \ddots & 0\\
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
+]
+Chapter 11.
+[38
 
-/Users/admin/Desktop/LearningNotes/MicroEconLearning/chapter2/chapter2_sec2.tex:167: Missing \endgroup inserted.
-<inserted text> 
-                \endgroup 
-l.167        \vdots &
-                      \ddots & 0 & \ddots & 0\\
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
+]
+Chapter 12.
+[39
 
-/Users/admin/Desktop/LearningNotes/MicroEconLearning/chapter2/chapter2_sec2.tex:167: Missing } inserted.
-<inserted text> 
-                }
-l.167        \vdots &
-                      \ddots & 0 & \ddots & 0\\
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
+]
+Chapter 13.
+[40
+
+]
+Chapter 14.
+[41
+
+] [42
+
+]
+Chapter 15.
+[43
+
+]
+Chapter 16.
+[44
+
+]
+Chapter 17.
+[45
+
+]
+Chapter 18.
+[46
+
+]
+Chapter 19.
+[47
+
+]
+Chapter 20.
+[48
+
+]
+Chapter 21.
+[49
+
+]
+Chapter 22.
+[50
+
+] (/Users/admin/Desktop/LearningNotes/MicroEconLearning/main.bbl
+LaTeX Font Info:    Try loading font information for T1+npxtt on input line 12.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/newpx/t1npxtt.fd
+File: t1npxtt.fd 2000/12/14 v1.0
+)
+LaTeX Font Info:    Font shape `T1/npxtt/m/n' will be
+(Font)              scaled to size 12.0pt on input line 12.
+)
+Package minitoc Info: I0009
+(minitoc)             Listing minitoc auxiliary files. 
+(minitoc)             Creating the main.maf file.
+\openout3 = `main.maf'.
 
 
-/Users/admin/Desktop/LearningNotes/MicroEconLearning/chapter2/chapter2_sec2.tex:168: LaTeX Error: \begin{bmatrix} on input line 162 ended by \end{matrix}.
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.168     \end{matrix}
-                       &
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
+Package minitoc(hints) Warning: W0024
+(minitoc(hints))                Some hints have been written 
+(minitoc(hints))                in the main.log file.
 
-/Users/admin/Desktop/LearningNotes/MicroEconLearning/chapter2/chapter2_sec2.tex:168: Missing \right. inserted.
-<inserted text> 
-                \right .
-l.168     \end{matrix}
-                       &
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 216.
+[51
 
-/Users/admin/Desktop/LearningNotes/MicroEconLearning/chapter2/chapter2_sec2.tex:168: Misplaced alignment tab character &.
-l.168     \end{matrix} &
-                        
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 216.
+ (/Users/admin/Desktop/LearningNotes/MicroEconLearning/main.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 216.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 216.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: C7D8B9A590F145DC11E260D026E1568D;2952.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 216.
+ ) 
+Here is how much of TeX's memory you used:
+ 14684 strings out of 492649
+ 209062 string characters out of 6129623
+ 345631 words of memory out of 5000000
+ 17733 multiletter control sequences out of 15000+600000
+ 186358 words of font info for 315 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 33i,13n,43p,1030b,607s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/newpx/tgpdiff.enc}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/newpx/ecsups.enc}</usr/local/texlive/2018/texmf-dist/fonts/type1/public/newtx/ntxsyralt.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/pxfonts/pxmia.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/newpx/pxsys.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/tex-gyre/qplr.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/pxfonts/rpxmi.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/newtx/txexas.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/newtx/txexs.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/txfonts/txsya.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/txfonts/txsyb.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/txfonts/txsyc.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/newpx/zplb.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/newpx/zplbi.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/newpx/zplr.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/newpx/zplri.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/newpx/zplx-regular.pfb>
+Output written on /Users/admin/Desktop/LearningNotes/MicroEconLearning/main.pdf (52 pages, 297387 bytes).
+PDF statistics:
+ 798 PDF objects out of 1000 (max. 8388607)
+ 718 compressed objects within 8 object streams
+ 160 named destinations out of 1000 (max. 500000)
+ 337 words of extra memory for PDF output out of 10000 (max. 10000000)
 
-/Users/admin/Desktop/LearningNotes/MicroEconLearning/chapter2/chapter2_sec2.tex:173: Misplaced \crcr.
-\adl@endarray ->\crcr 
-                      \noalign { \ifdim \adl@height =\z@ \ifdim \adl@depth =...
-l.173 \end{bmatrix}
-                   $$
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-/Users/admin/Desktop/LearningNotes/MicroEconLearning/chapter2/chapter2_sec2.tex:173: Misplaced \noalign.
-\adl@endarray ->\crcr \noalign 
-                               { \ifdim \adl@height =\z@ \ifdim \adl@depth =...
-l.173 \end{bmatrix}
-                   $$
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-/Users/admin/Desktop/LearningNotes/MicroEconLearning/chapter2/chapter2_sec2.tex:173: Undefined control sequence.
-\adl@makevlr ...pandafter \adl@imakevlr \adl@rows 
-                                                  \@nil ;\adl@addvl \edef \a...
-l.173 \end{bmatrix}
-                   $$
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you h
