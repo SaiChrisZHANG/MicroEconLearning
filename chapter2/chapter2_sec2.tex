@@ -152,4 +152,11 @@ We proof the contrapositive: if WARP is violated, there exists a compensated pri
         \end{align*}
         hence, either $\mathbf{p}'\cdot \mathbf{x}(\mathbf{p},w)<w'$ or $\mathbf{p}''\cdot \mathbf{x}(\mathbf{p},w)<w''$. If $\mathbf{p}'\cdot\mathbf{x}(\mathbf{p},w)<w'$, we know $\mathbf{x}(\mathbf{p}',w')$ is on the constructed line $(\mathbf{p},w)$, therefore, $\mathbf{p}\cdot \mathbf{x}(\mathbf{p}',w')=w$. However, we already have $\mathbf{p}'\cdot \mathbf{x}(\mathbf{p},w)<w'$, the two conditions constitute a violation of WARP.
     \end{enumerate} 
+
+    Now we know, we can only consider compensated price changes to test WARP, we can move to Step 2.
+    \item[Step 2] With Step 1 done, we know that if WARP does NOT hold, there exists a compensated price change from $(\mathbf{p}',w')$ to $(\mathbf{p},w)$ such that $\mathbf{x}(\mathbf{p},w)\neq \mathbf{x}(\mathbf{p}',w')$, $\mathbf{p}\cdot \mathbf{x}(\mathbf{p}',w')=w$ and $\mathbf{p'}\cdot (\mathbf{p},w)\leq w'$. 
+    Meanwhile, Walras' law gives $w= \mathbf{p}\cdot\mathbf{x}(\mathbf{p},w),w'=\mathbf{p}'\cdot\mathbf{x}(\mathbf{p}',w')$, leading to 
+    $$\mathbf{p}\cdot\left[\mathbf{x}(\mathbf{p}',w')-\mathbf{x}(\mathbf{p},w)\right]=0,\ \mathbf{p}'\cdot\left[\mathbf{x}(\mathbf{p}',w')-\mathbf{x}(\mathbf{p},w)\right]\geq 0$$
+    Hence, we have
+    $$(\mathbf{p}'-\mathbf{p})\cdot\left[\mathbf{x}(\mathbf{p}',w')-\mathbf{x}(\mathbf{p},w)\right]\geq 0$$, which is a contradiction (when $\mathbf{x}(\mathbf{p},w)\neq \mathbf{x}(\mathbf{p}',w')$) to the condition in Thm.\ref{thm_lawofdemand_to_WARP}: $(\mathbf{p}'-\mathbf{p})\cdot[\mathbf{x}(\mathbf{p}',w')-\mathbf{x}(\mathbf{p},w)] \leq 0$. 
 \end{description}
