@@ -139,11 +139,17 @@ We proof the contrapositive: if WARP is violated, there exists a compensated pri
     
     If any two price-wealth pairs $(\mathbf{p},w),(\mathbf{p}',w')$, $\mathbf{p}\cdot\mathbf{x}(\mathbf{p}',w')=w,\mathbf{x}(\mathbf{p}',w')\neq \mathbf{x}(\mathbf{p},w)\Rightarrow \mathbf{p}'\cdot \mathbf{x}(\mathbf{p},w)>w'$, then WARP holds. 
     
-    Again, we prove the contrapositive of this proposition. Let $(\mathbf{p}',w')$ and $(\mathbf{p}'',w'')$ violates WARP such that $\mathbf{x}(\mathbf{p}',w')\neq \mathbf{x}(\mathbf{p}'',w''),\mathbf{p}'\cdot\mathbf{x}(\mathbf{p}'',w'')\leq w'$ and $\mathbf{p}''\cdot\mathbf{x}(\mathbf{p}',w')\leq w''$. We have two scenarios:
+    Again, we prove the contrapositive of this proposition: If WARP is violated, there exists a compensated price change violating WARP. Let $(\mathbf{p}',w')$ and $(\mathbf{p}'',w'')$ violates WARP such that $\mathbf{x}(\mathbf{p}',w')\neq \mathbf{x}(\mathbf{p}'',w''),\mathbf{p}'\cdot\mathbf{x}(\mathbf{p}'',w'')\leq w'$ and $\mathbf{p}''\cdot\mathbf{x}(\mathbf{p}',w')\leq w''$. We have two scenarios:
     \begin{enumerate}
         \item[-] $\mathbf{p}'\cdot\mathbf{x}(\mathbf{p}'',w'')= w'$ or $\mathbf{p}''\cdot\mathbf{x}(\mathbf{p}',w')= w''$ or both: It is easy to show that the condition of the price-wealth pairs are violated.
         \item[-] $\mathbf{p}'\cdot\mathbf{x}(\mathbf{p}'',w'')> w'$ and $\mathbf{p}''\cdot\mathbf{x}(\mathbf{p}',w')>w''$: we can construct a price-wealth pair $(\mathbf{p},w)$ such that both $\mathbf{x}(\mathbf{p}',x')$ and $\mathbf{x}(\mathbf{p}'',x'')$ are affordable. By picking an $\alpha \in (0,1)$ to linearly combine $p'$ and $p''$, we can have:
-        $$(\alpha \mathbf{p}'+(1-\alpha)\mathbf{p}'')\cdot \mathbf{x}(\mathbf{p}',w')= (\alpha \mathbf{p}'+(1-\alpha)\mathbf{p}'')\cdot \mathbf{x}(\mathbf{p}'',w'')$$\footnote{Why this construction works? Since $A = \mathbf{p}'\cdot \mathbf{x}(\mathbf{p}',w')= w'< \mathbf{p}'\cdot \mathbf{x}(\mathbf{p}'',w'')=A'$, $B=\mathbf{p}''\cdot \mathbf{x}(\mathbf{p}',w')>w''= \mathbf{p}''\cdot \mathbf{x}(\mathbf{p}'',w'')=B'$, therefore if $\alpha$ is properly chosen, we can achieve $\alpha A+(1-\alpha)B = \alpha A'+(1-\alpha) B'$ with $A<A',B>B'$.}
-        let $\mathbf{p}=\alpha \mathbf{p}'+(1-\alpha)\mathbf{p}''$, $w=(\alpha \mathbf{p}'+(1-\alpha)\mathbf{p}'')\cdot \mathbf{x}(\mathbf{p}',w')$. Now, both $\mathbf{x}(\mathbf{p},w)$ and $\mathbf{x}'(\mathbf{p}',w')$ are on the constructed budget line $(\mathbf{p},w)$
+        $$(\alpha \mathbf{p}'+(1-\alpha)\mathbf{p}'')\cdot \mathbf{x}(\mathbf{p}',w')= (\alpha \mathbf{p}'+(1-\alpha)\mathbf{p}'')\cdot \mathbf{x}(\mathbf{p}'',w'')$$\footnote{Why this construction works? Since $A = \mathbf{p}'\cdot \mathbf{x}(\mathbf{p}',w')= w'> \mathbf{p}'\cdot \mathbf{x}(\mathbf{p}'',w'')=A'$, $B=\mathbf{p}''\cdot \mathbf{x}(\mathbf{p}',w')<w''= \mathbf{p}''\cdot \mathbf{x}(\mathbf{p}'',w'')=B'$, therefore if $\alpha$ is properly chosen, we can achieve $\alpha A+(1-\alpha)B = \alpha A'+(1-\alpha) B'$ with $A>A',B<B'$.}
+        let $\mathbf{p}=\alpha \mathbf{p}'+(1-\alpha)\mathbf{p}''$, $w=(\alpha \mathbf{p}'+(1-\alpha)\mathbf{p}'')\cdot \mathbf{x}(\mathbf{p}',w')$. Now, both $\mathbf{x}(\mathbf{p},w)$ and $\mathbf{x}'(\mathbf{p}',w')$ are on the constructed budget line $(\mathbf{p},w)$. It is easy to show that
+        \begin{align*}
+            \alpha w'+(1-\alpha)w'' &> \alpha \mathbf{p}'\cdot\mathbf{x}(\mathbf{p}',w')+(1-\alpha) \mathbf{p}''\cdot \mathbf{x}(\mathbf{p}',w') \\
+            & = w=\mathbf{p}\cdot \mathbf{x}(\mathbf{p},w)\\
+            & = \left[ \alpha \mathbf{p}+(1-\alpha) \mathbf{p}''\right]\cdot \mathbf{x}(\mathbf{p},w)
+        \end{align*}
+        hence, either $\mathbf{p}'\cdot \mathbf{x}(\mathbf{p},w)<w'$ or $\mathbf{p}''\cdot \mathbf{x}(\mathbf{p},w)<w''$. If $\mathbf{p}'\cdot\mathbf{x}(\mathbf{p},w)<w'$, we know $\mathbf{x}(\mathbf{p}',w')$ is on the constructed line $(\mathbf{p},w)$, therefore, $\mathbf{p}\cdot \mathbf{x}(\mathbf{p}',w')=w$. However, we already have $\mathbf{p}'\cdot \mathbf{x}(\mathbf{p},w)<w'$, the two conditions constitute a violation of WARP.
     \end{enumerate} 
 \end{description}
