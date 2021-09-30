@@ -16,9 +16,10 @@
 \contentsline {subsection}{\numberline {2.2.1}Walrasian Budgets}{23}{subsection.2.2.1}
 \contentsline {subsection}{\numberline {2.2.2}Walrasian Demand Function}{24}{subsection.2.2.2}
 \contentsline {subsection}{\numberline {2.2.3}WARP and Law of Demand}{26}{subsection.2.2.3}
-\contentsline {section}{\numberline {2.3}Linking Preferences with Choices}{28}{section.2.3}
-\contentsline {section}{\numberline {2.4}Introducing Utility}{28}{section.2.4}
-\contentsline {section}{\numberline {2.5}Commentary}{28}{section.2.5}
+\contentsline {subsection}{\numberline {2.2.4}Slutsky Matrix}{28}{subsection.2.2.4}
+\contentsline {section}{\numberline {2.3}Linking Preferences with Choices}{29}{section.2.3}
+\contentsline {section}{\numberline {2.4}Introducing Utility}{29}{section.2.4}
+\contentsline {section}{\numberline {2.5}Commentary}{29}{section.2.5}
 \contentsline {chapter}{\numberline {3}Lagrange Maximization and Duality}{30}{chapter.3}
 \contentsline {chapter}{\numberline {4}Stochastic Choice}{31}{chapter.4}
 \contentsline {chapter}{\numberline {5}Monotone Comparative Statics}{32}{chapter.5}
