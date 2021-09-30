@@ -163,7 +163,7 @@ We proof the contrapositive: if WARP is violated, there exists a compensated pri
 Now we have completed the prove of the contrapositive of Thm.\ref{thm_lawofdemand_to_WARP}.
 
 Notice that so far, we have only linked WARP to \textbf{compensated} price changes, which means that we are focusing on the case that the budget line rotates through one point (not the end point) $\mathbf{x}(\mathbf{p},w)$ from $(\mathbf{p},w)$ to $(\mathbf{p}',w')$. A brilliant graphic presentation can be found in Figure 2.F.4 on \citet[Page 33]{mas1995microeconomic}: after a compensated price change, WARP requires that the demand for the commodity that experiences a price drop must increase, which is exactly the law of demand:
-\begin{theorem}
+\begin{theorem}\label{thm_compensated_lawofdemand}
     For a compensated price change from $\mathbf{p}$ to $\mathbf{p}'$ (wealth changing accordingly from $w$ to $w'$ s.t. $\mathbf{p}'\mathbf{x}(\mathbf{p},w)=w'$), the law of demand requires demand and price move in opposite directions, i.e.
     $$\Delta \mathbf{x}\cdot \Delta \mathbf{p} = (\mathbf{p}'-\mathbf{p})\cdot [\mathbf{x}(\mathbf{p}',w')-\mathbf{x}(\mathbf{p},w)]\leq 0$$
 \end{theorem}
@@ -171,4 +171,4 @@ Notice that so far, we have only linked WARP to \textbf{compensated} price chang
 And of course, if the price changes are NOT compensated, meaning that wealth does NOT change accordingly, in this case \citep[Figure 2.F.5, Page 33]{mas1995microeconomic}, the new budget line would be either completely above the original one (more generous) or completetly below (less generous), and WARP would impose NO restrictions on the new consumption bundle.
 
 \subsection{Slutsky Matrix}
-When consumer demand $\mathbf{x}(\mathbf{p},w)$ is differentiable with respect to both prices and wealth.
+When consumer demand $\mathbf{x}(\mathbf{p},w)$ is differentiable with respect to both prices and wealth, we can rewrite the inequality in Thm.\ref{thm_compensated_lawofdemand}: $\diff p\cdot \diff x\leq 0$
