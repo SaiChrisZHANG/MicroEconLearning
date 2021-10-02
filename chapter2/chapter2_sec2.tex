@@ -173,4 +173,10 @@ And of course, if the price changes are NOT compensated, meaning that wealth doe
 \subsection{Slutsky Matrix}
 When consumer demand $\mathbf{x}(\mathbf{p},w)$ is differentiable with respect to both prices and wealth, we can rewrite the inequality in Thm.\ref{thm_compensated_lawofdemand}: $\diff \mathbf{p}\cdot \diff \mathbf{x}\leq 0$. In the spirit of compensated price changes, we know the change in wealth related to $\diff p$ is $\diff w=\mathbf{x}(\mathbf{p},w)\cdot \diff \mathbf{p}$.
 Use the chain rule, we can get
-$$\diff x= \mdiff_{\mathbf{p}}\mathbf{x}(\mathbf{p},w)\diff \mathbf{p}$$
+$$\diff x= \mdiff_{\mathbf{p}}\mathbf{x}(\mathbf{p},w)\diff \mathbf{p} + \mdiff_w \mathbf{x}(\mathbf{p},w)\diff w$$
+and we can plug in the induced wealth difference $\diff w=\mathbf{x}(\mathbf{p},w)\diff \mathbf{p}$, get
+\begin{align*}
+    \diff x & = \mdiff_{\mathbf{p}}\mathbf{x}(\mathbf{p},w)\diff \mathbf{p} + \mdiff_w \mathbf{x}(\mathbf{p},w) \cdot \left[\mathbf{x}(\mathbf{p},w)\diff \mathbf{p}\right]\\
+    & =\left[ \mdiff_{\mathbf{p}}\mathbf{x}(\mathbf{p},w) + \mdiff_w \mathbf{x}(\mathbf{p},w)\mathbf{x}(\mathbf{p},w)^T\right] \diff \mathbf{p}
+\end{align*}
+and, plug this back into the law of demand $ \diff \mathbf{p}\cdot \diff \mathbf{x}\leq 0$
