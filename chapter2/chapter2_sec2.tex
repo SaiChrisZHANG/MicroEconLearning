@@ -183,5 +183,15 @@ and, plug this back into the law of demand $ \diff \mathbf{p}\cdot \diff \mathbf
 $$
 \diff \mathbf{p} \underbrace{\left[ \mdiff_{\mathbf{p}}\mathbf{x}(\mathbf{p},w) + \mdiff_w \mathbf{x}(\mathbf{p},w)\mathbf{x}(\mathbf{p},w)^T\right]}_{\equiv \mathbf{S}(\mathbf{p},w)} \diff \mathbf{p}\leq 0
 $$
-where $\mathbf{S}(\mathbf{p},w)$ is the \textbf{Slutsky} matrix, or \textit{substitution} matrix.
+where $\mathbf{S}(\mathbf{p},w)$ is the \textbf{Slutsky} matrix, or \textit{substitution} matrix. 
 
+To write it explicitly:
+$$
+S(\mathbf{p},w)=
+\begin{bmatrix}
+    s_{11}(\mathbf{p},w) & \cdots & s_{1L}(\mathbf{p},w)\\
+    \vdots & \ddots & \vdots \\
+    s_{L1}(\mathbf{p},w) & \cdots & s_{LL}(\mathbf{p},w)
+\end{bmatrix}
+$$
+where $s_{lk}(\mathbf{p},w)=\frac{\partial x_l(\mathbf{p},w)}{\partial p_k} +\frac{\partial x_l (p,w)}{\partial w}x_k(\mathbf{p},w)$.
