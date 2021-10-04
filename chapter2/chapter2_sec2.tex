@@ -194,9 +194,10 @@ S(\mathbf{p},w)=
     s_{L1}(\mathbf{p},w) & \cdots & s_{LL}(\mathbf{p},w)
 \end{bmatrix}
 $$
-where $$s_{lk}(\mathbf{p},w)=\frac{\partial x_l(\mathbf{p},w)}{\partial p_k} +\frac{\partial x_l (p,w)}{\partial w}x_k(\mathbf{p},w)$$
+where $$s_{lk}(\mathbf{p},w)=\underbrace{\frac{\partial x_l(\mathbf{p},w)}{\partial p_k}}_{\text{direct effect of }\diff p_k} +\underbrace{\frac{\partial x_l (p,w)}{\partial w}x_k(\mathbf{p},w)}_{\text{effect through wealth compensation due to }\diff p_k}$$
 This term measures the differential change in $x_l$ (consumption of $l$) due to a differential change in $p_k$ (the price of $k$), when wealth is adjusted so that the consumer can still afford the pre-change consumption bundle. We can interpret the two sub-terms as:
 \begin{enumerate}
     \item[-] $\frac{\partial x_l(\mathbf{p},w)}{\partial p_k}$: the change in demand for $l$ due to the change of $k$'s price is $\frac{\partial x_l(\mathbf{p},w)}{\partial p_k}\diff p_k$
-    \item[-]  
+    \item[-] $\frac{\partial x_l (p,w)}{\partial w}x_k(\mathbf{p},w)$: the wealth change that makes the consumer able to just afford the original consumption bundle is $x_k(\mathbf{p},w)\diff p_k$, the effect of this wealth change on the demand for $l$ is $\frac{\partial x_l (p,w)}{\partial w}x_k(\mathbf{p},w)\diff p_k$
 \end{enumerate}
+In short, the price change of $k$ influences the demand of $l$ in 2 ways: directly (through partial derivatives) and indirectly (through wealth compensation). Slutsky matrix documents this influence, i.e., \textbf{substitution effect}, for each possible pair of goods, 
