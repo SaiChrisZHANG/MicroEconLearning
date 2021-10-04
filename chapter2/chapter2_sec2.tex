@@ -200,4 +200,11 @@ This term measures the differential change in $x_l$ (consumption of $l$) due to 
     \item[-] $\frac{\partial x_l(\mathbf{p},w)}{\partial p_k}$: the change in demand for $l$ due to the change of $k$'s price is $\frac{\partial x_l(\mathbf{p},w)}{\partial p_k}\diff p_k$
     \item[-] $\frac{\partial x_l (p,w)}{\partial w}x_k(\mathbf{p},w)$: the wealth change that makes the consumer able to just afford the original consumption bundle is $x_k(\mathbf{p},w)\diff p_k$, the effect of this wealth change on the demand for $l$ is $\frac{\partial x_l (p,w)}{\partial w}x_k(\mathbf{p},w)\diff p_k$
 \end{enumerate}
-In short, the price change of $k$ influences the demand of $l$ in 2 ways: directly (through partial derivatives) and indirectly (through wealth compensation). Slutsky matrix documents this influence, i.e., \textbf{substitution effect}, for each possible pair of goods, 
+In short, the price change of $k$ influences the demand of $l$ in 2 ways: directly (through partial derivatives) and indirectly (through wealth compensation). Slutsky matrix documents this influence, i.e., \textbf{substitution effect}, for each possible pair of goods. 
+
+Here, we have the core feature of Slutsky matrix: 
+\begin{theorem}
+    If a differentiable Walrasian demand function $\mathbf{x}(\mathbf{p},w)$ satisfies Walras' law, homogeneity of degree 0, and the weak axiom, then at any $(\mathbf{p},w)$, $S(\mathbf{p},w)$ satisfies
+    $$\mathbf{v}\cdot S(\mathbf{p},w)\mathbf{v}\leq 0, \forall \mathbf{v}\in\mathbb{R}^L$$
+    i.e., Slutsky matrix is negative semidefinite\footnote{Notice that "semidefnite" is an abbreviation, in fact, Slutsky is not required to be symmetric here. Symmetry of $S(\mathbf{p},w)$ has more meanings later}.
+\end{theorem}

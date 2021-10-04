@@ -17,31 +17,31 @@
 \contentsline {subsection}{\numberline {2.2.2}Walrasian Demand Function}{24}{subsection.2.2.2}
 \contentsline {subsection}{\numberline {2.2.3}WARP and Law of Demand}{26}{subsection.2.2.3}
 \contentsline {subsection}{\numberline {2.2.4}Slutsky Matrix}{28}{subsection.2.2.4}
-\contentsline {section}{\numberline {2.3}Linking Preferences with Choices}{29}{section.2.3}
-\contentsline {section}{\numberline {2.4}Introducing Utility}{29}{section.2.4}
-\contentsline {section}{\numberline {2.5}Commentary}{29}{section.2.5}
-\contentsline {chapter}{\numberline {3}Lagrange Maximization and Duality}{30}{chapter.3}
-\contentsline {chapter}{\numberline {4}Stochastic Choice}{31}{chapter.4}
-\contentsline {chapter}{\numberline {5}Monotone Comparative Statics}{32}{chapter.5}
-\contentsline {chapter}{\numberline {6}Expected Utility and Decisionmaking under Uncertainty}{33}{chapter.6}
-\contentsline {chapter}{\numberline {7}Aggregation and the Existence of a Representative Consumer}{34}{chapter.7}
-\contentsline {chapter}{\numberline {8}Producer Theory}{35}{chapter.8}
-\contentsline {part}{II\hspace {1em}Game Theory}{36}{part.2}
-\contentsline {xpart}{Game Theory}{37}{part.2}
-\contentsline {chapter}{\numberline {9}Nash Equilibrium and Bayesian Nash Equilibrium}{37}{chapter.9}
-\contentsline {chapter}{\numberline {10}Rationalizability and DOminant Strategies}{38}{chapter.10}
-\contentsline {chapter}{\numberline {11}Correlated Equilibrium}{39}{chapter.11}
-\contentsline {chapter}{\numberline {12}Dynamic Games and Refinements}{40}{chapter.12}
-\contentsline {chapter}{\numberline {13}Repeated Games/Folk Theorem}{41}{chapter.13}
-\contentsline {chapter}{\numberline {14}Recursive Methods in Repeated Games}{42}{chapter.14}
-\contentsline {part}{III\hspace {1em}Mechanism Design and Contract Theory}{43}{part.3}
-\contentsline {xpart}{Mechanism Design and Contract Theory}{44}{part.3}
-\contentsline {chapter}{\numberline {15}Arrow's Theorem and Social Choice}{44}{chapter.15}
-\contentsline {chapter}{\numberline {16}Boundaries of the Firm and Coase's Theorem}{45}{chapter.16}
-\contentsline {chapter}{\numberline {17}Implementation Concepts}{46}{chapter.17}
-\contentsline {chapter}{\numberline {18}The Revelation Principle}{47}{chapter.18}
-\contentsline {chapter}{\numberline {19}Auctions and Optimal Auctions}{48}{chapter.19}
-\contentsline {chapter}{\numberline {20}Efficient Implementation}{49}{chapter.20}
-\contentsline {chapter}{\numberline {21}Moral Hazard}{50}{chapter.21}
-\contentsline {chapter}{\numberline {22}Full Implementation}{51}{chapter.22}
-\contentsline {chapter}{Bibliography}{52}{chapter.22}
+\contentsline {section}{\numberline {2.3}Linking Preferences with Choices}{30}{section.2.3}
+\contentsline {section}{\numberline {2.4}Introducing Utility}{30}{section.2.4}
+\contentsline {section}{\numberline {2.5}Commentary}{30}{section.2.5}
+\contentsline {chapter}{\numberline {3}Lagrange Maximization and Duality}{31}{chapter.3}
+\contentsline {chapter}{\numberline {4}Stochastic Choice}{32}{chapter.4}
+\contentsline {chapter}{\numberline {5}Monotone Comparative Statics}{33}{chapter.5}
+\contentsline {chapter}{\numberline {6}Expected Utility and Decisionmaking under Uncertainty}{34}{chapter.6}
+\contentsline {chapter}{\numberline {7}Aggregation and the Existence of a Representative Consumer}{35}{chapter.7}
+\contentsline {chapter}{\numberline {8}Producer Theory}{36}{chapter.8}
+\contentsline {part}{II\hspace {1em}Game Theory}{37}{part.2}
+\contentsline {xpart}{Game Theory}{38}{part.2}
+\contentsline {chapter}{\numberline {9}Nash Equilibrium and Bayesian Nash Equilibrium}{38}{chapter.9}
+\contentsline {chapter}{\numberline {10}Rationalizability and DOminant Strategies}{39}{chapter.10}
+\contentsline {chapter}{\numberline {11}Correlated Equilibrium}{40}{chapter.11}
+\contentsline {chapter}{\numberline {12}Dynamic Games and Refinements}{41}{chapter.12}
+\contentsline {chapter}{\numberline {13}Repeated Games/Folk Theorem}{42}{chapter.13}
+\contentsline {chapter}{\numberline {14}Recursive Methods in Repeated Games}{43}{chapter.14}
+\contentsline {part}{III\hspace {1em}Mechanism Design and Contract Theory}{44}{part.3}
+\contentsline {xpart}{Mechanism Design and Contract Theory}{45}{part.3}
+\contentsline {chapter}{\numberline {15}Arrow's Theorem and Social Choice}{45}{chapter.15}
+\contentsline {chapter}{\numberline {16}Boundaries of the Firm and Coase's Theorem}{46}{chapter.16}
+\contentsline {chapter}{\numberline {17}Implementation Concepts}{47}{chapter.17}
+\contentsline {chapter}{\numberline {18}The Revelation Principle}{48}{chapter.18}
+\contentsline {chapter}{\numberline {19}Auctions and Optimal Auctions}{49}{chapter.19}
+\contentsline {chapter}{\numberline {20}Efficient Implementation}{50}{chapter.20}
+\contentsline {chapter}{\numberline {21}Moral Hazard}{51}{chapter.21}
+\contentsline {chapter}{\numberline {22}Full Implementation}{52}{chapter.22}
+\contentsline {chapter}{Bibliography}{53}{chapter.22}
