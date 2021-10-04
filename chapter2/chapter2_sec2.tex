@@ -87,7 +87,7 @@ Intuitively, this implies the price (substitution) effects and wealth (income) e
 
 Another theorem is induced from Walras' law:
 \begin{theorem}\label{thm_walraslaw_waldemand_thm2}
-    If the Walrasian emand function $\mathbf{x}(\mathbf{p},w)$ satisfies \textbf{Walras' law}, then for all $\mathbf{p},w$:
+    If the Walrasian demand function $\mathbf{x}(\mathbf{p},w)$ satisfies \textbf{Walras' law}, then for all $\mathbf{p},w$:
     $$\sum^L_{l=1}p_l\frac{\partial x_l(\mathbf{p},w)}{\partial p_k}+x_k(\mathbf{p},w)=0,\forall k=1,\cdots,L$$
     and
     $$\sum^L_{l=1}p_l\frac{\partial x_l(\mathbf{p},w)}{\partial w}=1$$
@@ -143,8 +143,9 @@ We proof the contrapositive: if WARP is violated, there exists a compensated pri
     \begin{enumerate}
         \item[-] $\mathbf{p}'\cdot\mathbf{x}(\mathbf{p}'',w'')= w'$ or $\mathbf{p}''\cdot\mathbf{x}(\mathbf{p}',w')= w''$ or both: It is easy to show that the condition of the price-wealth pairs are violated.
         \item[-] $\mathbf{p}'\cdot\mathbf{x}(\mathbf{p}'',w'')> w'$ and $\mathbf{p}''\cdot\mathbf{x}(\mathbf{p}',w')>w''$: we can construct a price-wealth pair $(\mathbf{p},w)$ such that both $\mathbf{x}(\mathbf{p}',x')$ and $\mathbf{x}(\mathbf{p}'',x'')$ are affordable. By picking an $\alpha \in (0,1)$ to linearly combine $p'$ and $p''$, we can have:
-        $$(\alpha \mathbf{p}'+(1-\alpha)\mathbf{p}'')\cdot \mathbf{x}(\mathbf{p}',w')= (\alpha \mathbf{p}'+(1-\alpha)\mathbf{p}'')\cdot \mathbf{x}(\mathbf{p}'',w'')$$\footnote{Why this construction works? Since $A = \mathbf{p}'\cdot \mathbf{x}(\mathbf{p}',w')= w'> \mathbf{p}'\cdot \mathbf{x}(\mathbf{p}'',w'')=A'$, $B=\mathbf{p}''\cdot \mathbf{x}(\mathbf{p}',w')<w''= \mathbf{p}''\cdot \mathbf{x}(\mathbf{p}'',w'')=B'$, therefore if $\alpha$ is properly chosen, we can achieve $\alpha A+(1-\alpha)B = \alpha A'+(1-\alpha) B'$ with $A>A',B<B'$.}
-        let $\mathbf{p}=\alpha \mathbf{p}'+(1-\alpha)\mathbf{p}''$, $w=(\alpha \mathbf{p}'+(1-\alpha)\mathbf{p}'')\cdot \mathbf{x}(\mathbf{p}',w')$. Now, both $\mathbf{x}(\mathbf{p},w)$ and $\mathbf{x}'(\mathbf{p}',w')$ are on the constructed budget line $(\mathbf{p},w)$. It is easy to show that
+        $$(\alpha \mathbf{p}'+(1-\alpha)\mathbf{p}'')\cdot \mathbf{x}(\mathbf{p}',w')= (\alpha \mathbf{p}'+(1-\alpha)\mathbf{p}'')\cdot \mathbf{x}(\mathbf{p}'',w'')$$
+        let $\mathbf{p}=\alpha \mathbf{p}'+(1-\alpha)\mathbf{p}''$, $w=(\alpha \mathbf{p}'+(1-\alpha)\mathbf{p}'')\cdot \mathbf{x}(\mathbf{p}',w')$\footnote{Why this construction works? Since $A = \mathbf{p}'\cdot \mathbf{x}(\mathbf{p}',w')= w'> \mathbf{p}'\cdot \mathbf{x}(\mathbf{p}'',w'')=A'$, $B=\mathbf{p}''\cdot \mathbf{x}(\mathbf{p}',w')<w''= \mathbf{p}''\cdot \mathbf{x}(\mathbf{p}'',w'')=B'$, therefore if $\alpha$ is properly chosen, we can achieve $\alpha A+(1-\alpha)B = \alpha A'+(1-\alpha) B'$ with $A>A',B<B'$.}.
+         Now, both $\mathbf{x}(\mathbf{p},w)$ and $\mathbf{x}'(\mathbf{p}',w')$ are on the constructed budget line $(\mathbf{p},w)$. It is easy to show that
         \begin{align*}
             \alpha w'+(1-\alpha)w'' &> \alpha \mathbf{p}'\cdot\mathbf{x}(\mathbf{p}',w')+(1-\alpha) \mathbf{p}''\cdot \mathbf{x}(\mathbf{p}',w') \\
             & = w=\mathbf{p}\cdot \mathbf{x}(\mathbf{p},w)\\
@@ -206,5 +207,17 @@ Here, we have the core feature of Slutsky matrix:
 \begin{theorem}
     If a differentiable Walrasian demand function $\mathbf{x}(\mathbf{p},w)$ satisfies Walras' law, homogeneity of degree 0, and the weak axiom, then at any $(\mathbf{p},w)$, $S(\mathbf{p},w)$ satisfies
     $$\mathbf{v}\cdot S(\mathbf{p},w)\mathbf{v}\leq 0, \forall \mathbf{v}\in\mathbb{R}^L$$
-    i.e., Slutsky matrix is negative semidefinite\footnote{Notice that "semidefnite" is an abbreviation, in fact, Slutsky is not required to be symmetric here. Symmetry of $S(\mathbf{p},w)$ has more meanings later}.
+    i.e., Slutsky matrix is negative semidefinite\footnote{Notice that "semidefnite" is an abbreviation, in fact, Slutsky is not required to be symmetric here. Symmetry of $S(\mathbf{p},w)$ has more meanings later. See }.
+\end{theorem}
+
+There are several implications worth noticing:
+\begin{theorem} If $S(\mathbf{p},w)$ is negative semidefinite, then
+    \begin{enumerate}
+        \item[(a)] $s_{ll}(\mathbf{p},w)\leq 0$: the \textit{substitution effect} of good $l$ with respect to its own price is always \textbf{non-positive}.
+        \item[(b)] Giffen good must be inferior: $s_{ll}(\mathbf{p},w)=\frac{\partial x_l(\mathbf{p},w)}{\partial p_l}+\frac{\partial x_l(\mathbf{p},w)}{\partial w}x_l(\mathbf{p},w)\leq 0$, then it is easy to see that at $(\mathbf{p},w)$, $\frac{\partial x_l(\mathbf{p},w)}{\partial p_l}>0\Rightarrow \frac{\partial x_l(\mathbf{p},w)}{\partial w}<0$.
+        \item[(c)] If $\mathbf{x}(\mathbf{p},w)$ is differentiable, homogeneous of degree 0 and satisfies Walras' law, then $\forall (\mathbf{p},w), \mathbf{p}\cdot S(\mathbf{p},w)=0, S(\mathbf{p},w)\mathbf{p}=0.$
+        It is easy to prove: 
+        Thm.\ref{thm_walraslaw_waldemand_thm2} gives $\mathbf{p}\cdot S(\mathbf{p},w)=\mathbf{p}\cdot \mdiff_{\mathbf{p}}\mathbf{x}(\mathbf{p},w)+\mathbf{p}\cdot \mdiff_w \mathbf{x}(\mathbf{p},w)\mathbf{x}(\mathbf{p},w)^T =\mathbf{p}\mdiff_{\mathbf{p}}\mathbf{x}(\mathbf{p},w)+\mathbf{x}(\mathbf{p},w)^T=0$;
+        Thm.\ref{thm_homo_waldemand_thm1} gives $S(\mathbf{p},w)\mathbf{p}=\mdiff_{\mathbf{p}}\mathbf{x}(\mathbf{p},w)\mathbf{p}+\mdiff_w\mathbf{x}(\mathbf{p},w)\mathbf{x}(\mathbf{p},w)^T\mathbf{p}=\mdiff_{\mathbf{p}}\mathbf{x}(\mathbf{p},w)\mathbf{p}+\mdiff_w\mathbf{x}(\mathbf{p},w)w=0$.
+    \end{enumerate}
 \end{theorem}
