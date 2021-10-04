@@ -215,8 +215,10 @@ There are several implications worth noticing:
     \begin{enumerate}
         \item[(a)] $s_{ll}(\mathbf{p},w)\leq 0$: the \textit{substitution effect} of good $l$ with respect to its own price is always \textbf{non-positive}.
         \item[(b)] Giffen good must be inferior: $s_{ll}(\mathbf{p},w)=\frac{\partial x_l(\mathbf{p},w)}{\partial p_l}+\frac{\partial x_l(\mathbf{p},w)}{\partial w}x_l(\mathbf{p},w)\leq 0$, then it is easy to see that at $(\mathbf{p},w)$, $\frac{\partial x_l(\mathbf{p},w)}{\partial p_l}>0\Rightarrow \frac{\partial x_l(\mathbf{p},w)}{\partial w}<0$.
-        \item[(c)] If $\mathbf{x}(\mathbf{p},w)$ is differentiable, homogeneous of degree 0 and satisfies Walras' law, then $\forall (\mathbf{p},w), \mathbf{p}\cdot S(\mathbf{p},w)=0, S(\mathbf{p},w)\mathbf{p}=0.$
-        It is easy to prove: 
+        \item[(c)] If $\mathbf{x}(\mathbf{p},w)$ is differentiable, homogeneous of degree 0 and satisfies Walras' law, then $\forall (\mathbf{p},w), \mathbf{p}\cdot S(\mathbf{p},w)=0, S(\mathbf{p},w)\mathbf{p}=0$. This means that $S(\mathbf{p},w)$ is always singular (its rank is less than $L$).
+        
+        It is easy to prove:
+         
         Thm.\ref{thm_walraslaw_waldemand_thm2} gives $\mathbf{p}\cdot S(\mathbf{p},w)=\mathbf{p}\cdot \mdiff_{\mathbf{p}}\mathbf{x}(\mathbf{p},w)+\mathbf{p}\cdot \mdiff_w \mathbf{x}(\mathbf{p},w)\mathbf{x}(\mathbf{p},w)^T =\mathbf{p}\mdiff_{\mathbf{p}}\mathbf{x}(\mathbf{p},w)+\mathbf{x}(\mathbf{p},w)^T=0$;
         Thm.\ref{thm_homo_waldemand_thm1} gives $S(\mathbf{p},w)\mathbf{p}=\mdiff_{\mathbf{p}}\mathbf{x}(\mathbf{p},w)\mathbf{p}+\mdiff_w\mathbf{x}(\mathbf{p},w)\mathbf{x}(\mathbf{p},w)^T\mathbf{p}=\mdiff_{\mathbf{p}}\mathbf{x}(\mathbf{p},w)\mathbf{p}+\mdiff_w\mathbf{x}(\mathbf{p},w)w=0$.
     \end{enumerate}
