@@ -172,12 +172,12 @@ Notice that so far, we have only linked WARP to \textbf{compensated} price chang
 And of course, if the price changes are NOT compensated, meaning that wealth does NOT change accordingly, in this case \citep[Figure 2.F.5, Page 33]{mas1995microeconomic}, the new budget line would be either completely above the original one (more generous) or completetly below (less generous), and WARP would impose NO restrictions on the new consumption bundle.
 
 \subsection{Slutsky Matrix}
-When consumer demand $\mathbf{x}(\mathbf{p},w)$ is differentiable with respect to both prices and wealth, we can rewrite the inequality in Thm.\ref{thm_compensated_lawofdemand}: $\diff \mathbf{p}\cdot \diff \mathbf{x}\leq 0$. In the spirit of compensated price changes, we know the change in wealth related to $\diff p$ is $\diff w=\mathbf{x}(\mathbf{p},w)\cdot \diff \mathbf{p}$.
+When consumer demand $\mathbf{x}(\mathbf{p},w)$ is differentiable with respect to both prices and wealth, we can rewrite the inequality in Thm.\ref{thm_compensated_lawofdemand}: $\diff \mathbf{p}\cdot \diff \mathbf{x}\leq 0$. In the spirit of compensated price changes, we know the change in wealth related to $\diff \mathbf{p}$ is $\diff w=\mathbf{x}(\mathbf{p},w)\cdot \diff \mathbf{p}$.
 Use the chain rule, we can get
-$$\diff x= \mdiff_{\mathbf{p}}\mathbf{x}(\mathbf{p},w)\diff \mathbf{p} + \mdiff_w \mathbf{x}(\mathbf{p},w)\diff w$$
+$$\diff \mathbf{x}= \mdiff_{\mathbf{p}}\mathbf{x}(\mathbf{p},w)\diff \mathbf{p} + \mdiff_w \mathbf{x}(\mathbf{p},w)\diff w$$
 and we can plug in the induced wealth difference $\diff w=\mathbf{x}(\mathbf{p},w)\diff \mathbf{p}$, get
 \begin{align*}
-    \diff x & = \mdiff_{\mathbf{p}}\mathbf{x}(\mathbf{p},w)\diff \mathbf{p} + \mdiff_w \mathbf{x}(\mathbf{p},w) \cdot \left[\mathbf{x}(\mathbf{p},w)\diff \mathbf{p}\right]\\
+    \diff \mathbf{x} & = \mdiff_{\mathbf{p}}\mathbf{x}(\mathbf{p},w)\diff \mathbf{p} + \mdiff_w \mathbf{x}(\mathbf{p},w) \cdot \left[\mathbf{x}(\mathbf{p},w)\diff \mathbf{p}\right]\\
     & =\left[ \mdiff_{\mathbf{p}}\mathbf{x}(\mathbf{p},w) + \mdiff_w \mathbf{x}(\mathbf{p},w)\mathbf{x}(\mathbf{p},w)^T\right] \diff \mathbf{p}
 \end{align*}
 and, plug this back into the law of demand $ \diff \mathbf{p}\cdot \diff \mathbf{x}\leq 0$, we will have a very important expression:
@@ -227,8 +227,28 @@ There are several implications worth noticing:
 Finally, we can have a little discussion on WARP and the negative semidefiniteness of the Slutsky matrix.
 
 \begin{enumerate}
-    \item[-] WARP $\Rightarrow$ the Slutsky matrix being negative semidefinite
+    \item[-] WARP $\Rightarrow$ the Slutsky matrix being negative semidefinite.
+    
+    The Slutsky matrix is constructed from WARP and compensated law of demand $\mathrm{d}\mathbf{x}\cdot \mathrm{d}\mathbf{p}\leq 0$, hence WARP implying semi-definite Slutsky matrices is vacuous.
+
     \item[-] the Slutsky matrix being negative semidefinite $\not\Rightarrow$ WARP
+    
+    Negative semidefiniteness of the Slutsky matrix itself is NOT sufficient for WARP,
+    
 \end{enumerate}
 
-Here is the proof and discussion of this relationship:
+For the 5 conditions:
+    \begin{enumerate}
+        \item[(1)] \textbf{WARP}: $\mathbf{p}\cdot \mathbf{x}(\mathbf{p}',w')\leq w\text{ and }\mathbf{x}(\mathbf{p}',w')\neq \mathbf{x}(\mathbf{p},w)\Rightarrow \mathbf{p}'\cdot\mathbf{x}(\mathbf{p},w)>w'$
+        \item[(2)] \textbf{WWARP} (weaker WARP): $\mathbf{p}\cdot \mathbf{x}(\mathbf{p}',w')< w\text{ and }\mathbf{x}(\mathbf{p}',w')\neq \mathbf{x}(\mathbf{p},w)\Rightarrow \mathbf{p}'\cdot\mathbf{x}(\mathbf{p},w)>w'$
+        \item[(3)] Slutsky matrix being \textbf{negative semidefinite} (NSD): $\mathbf{v}\cdot S(\mathbf{p},w)\mathbf{v}\leq 0, \forall \mathbf{v}\in\mathbb{R}^L$
+        \item[(4)] Slutsky matrix being \textbf{negative definite} (ND): $\mathbf{v}\cdot S(\mathbf{p},w)\mathbf{v}< 0, \forall \mathbf{v}\in\mathbb{R}^L$
+        \item[(5)] Slutksy matrix being \textbf{symmetric} 
+    \end{enumerate}
+
+    they have the following relations:
+    \begin{enumerate}
+        \item[-] \textbf{WWARP} $\Rightarrow$ Slutsky matrix is NSD 
+    \end{enumerate}
+    
+    This is discussed rather thoroughly by \citet{kihlstrom1976demand}.
