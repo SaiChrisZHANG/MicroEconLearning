@@ -155,7 +155,7 @@ We proof the contrapositive: if WARP is violated, there exists a compensated pri
     \end{enumerate} 
 
     Now we know, we can only consider compensated price changes to test WARP, we can move to Step 2.
-    \item[Step 2] With Step 1 done, we know that if WARP does NOT hold, there exists a compensated price change from $(\mathbf{p}',w')$ to $(\mathbf{p},w)$ such that $\mathbf{x}(\mathbf{p},w)\neq \mathbf{x}(\mathbf{p}',w')$, $\mathbf{p}\cdot \mathbf{x}(\mathbf{p}',w')=w$ and $\mathbf{p'}\cdot (\mathbf{p},w)\leq w'$. 
+    \item[Step 2] With Step 1 done, we know that if WARP does NOT hold, there exists a compensated price change from $(\mathbf{p}',w')$ to $(\mathbf{p},w)$ such that $\mathbf{x}(\mathbf{p},w)\neq \mathbf{x}(\mathbf{p}',w')$, $\mathbf{p}\cdot \mathbf{x}(\mathbf{p}',w')=w$ and $\mathbf{p'}\cdot \mathbf{x}(\mathbf{p},w)\leq w'$. 
     Meanwhile, Walras' law gives $w= \mathbf{p}\cdot\mathbf{x}(\mathbf{p},w),w'=\mathbf{p}'\cdot\mathbf{x}(\mathbf{p}',w')$, leading to 
     $$\mathbf{p}\cdot\left[\mathbf{x}(\mathbf{p}',w')-\mathbf{x}(\mathbf{p},w)\right]=0,\ \mathbf{p}'\cdot\left[\mathbf{x}(\mathbf{p}',w')-\mathbf{x}(\mathbf{p},w)\right]\geq 0$$
     Hence, combined with the condition $\mathbf{x}(\mathbf{p},w)\neq \mathbf{x}(\mathbf{p}',w')$, we have
@@ -233,7 +233,7 @@ Finally, we can have a little discussion on WARP and the negative semidefinitene
 
     \item[-] the Slutsky matrix being negative semidefinite $\not\Rightarrow$ WARP
     
-    Negative semidefiniteness of the Slutsky matrix itself is NOT sufficient for WARP, the Slutsky matrix must be negative definite for all vectors other than those that are proportional to $\mathbf{p}$, that is $\forall \mathbf{v}\neq \alpha \mathbf{p} $
+    Negative semidefiniteness of the Slutsky matrix itself is NOT sufficient for WARP, the Slutsky matrix must be negative definite for all vectors other than those that are proportional to $\mathbf{p}$, that is $\forall \mathbf{v}\neq \alpha \mathbf{p}, \mathbf{v}\cdot S(\mathbf{p},w)\mathbf{v}<0$.
     
 \end{enumerate}
 
@@ -248,7 +248,9 @@ For the 5 conditions:
 
     they have the following relations:
     \begin{enumerate}
-        \item[-] \textbf{WWARP} $\Rightarrow$ Slutsky matrix is NSD 
+        \item[-] \textbf{WWARP} $\Leftrightarrow$ Slutsky matrix is \textbf{NSD} 
+        \item[-] Slutsky matrix is ND $\Rightarrow$ \textbf{WARP} 
+        \item[-] Slutsky matrix is \textbf{symmetric} and \textbf{NSD} $\Leftrightarrow$ \textbf{WWARP} $\Leftrightarrow$ \textbf{WARP}
     \end{enumerate}
     
-    This is discussed rather thoroughly by \citet{kihlstrom1976demand}.
+    This is discussed rather thoroughly by \citet{kihlstrom1976demand}. Symmetry of Slutsky matrix will play an important role in the preference based consumer theory.
