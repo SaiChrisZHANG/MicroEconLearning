@@ -17,9 +17,9 @@
 \contentsline {subsection}{\numberline {2.2.2}Walrasian Demand Function}{24}{subsection.2.2.2}
 \contentsline {subsection}{\numberline {2.2.3}WARP and Law of Demand}{26}{subsection.2.2.3}
 \contentsline {subsection}{\numberline {2.2.4}Slutsky Matrix}{28}{subsection.2.2.4}
-\contentsline {section}{\numberline {2.3}Linking Preferences with Choices}{30}{section.2.3}
-\contentsline {section}{\numberline {2.4}Introducing Utility}{30}{section.2.4}
-\contentsline {section}{\numberline {2.5}Commentary}{30}{section.2.5}
+\contentsline {section}{\numberline {2.3}Linking Preferences with Choices}{31}{section.2.3}
+\contentsline {section}{\numberline {2.4}Introducing Utility}{31}{section.2.4}
+\contentsline {section}{\numberline {2.5}Commentary}{31}{section.2.5}
 \contentsline {chapter}{\numberline {3}Lagrange Maximization and Duality}{32}{chapter.3}
 \contentsline {chapter}{\numberline {4}Stochastic Choice}{33}{chapter.4}
 \contentsline {chapter}{\numberline {5}Monotone Comparative Statics}{34}{chapter.5}

@@ -72,7 +72,7 @@ $$\mathbf{x}(\mathbf{p},w)=\left[x_1 (\mathbf{p},w),x_2 (\mathbf{p},w),\cdots, x
 
 For most goods, the price effects would be negative: you would buy more if the price is lower. However, there \textit{Giffen} goods (often low quality) and \textit{Veblen} goods (often luxurious) that have positive price effects.
 
-Regarding wealth effects $\partial x_l(\mathbf{p},w)/partial w$ and price effects $\partial x_l(\mathbf{p},w)/\partial p_k$, we have the following two theorems:
+Regarding wealth effects $\partial x_l(\mathbf{p},w)/\partial w$ and price effects $\partial x_l(\mathbf{p},w)/\partial p_k$, we have the following two theorems:
 
 \begin{theorem}\label{thm_homo_waldemand_thm1}
     If the Walrasian demand function $\mathbf{x}(\mathbf{p},w)$ is \textbf{homogeneous of degree zero}, the $\forall \mathbf{p},w$:
@@ -80,8 +80,8 @@ Regarding wealth effects $\partial x_l(\mathbf{p},w)/partial w$ and price effect
 \end{theorem}
 
 This is easy to proof: homogeneity of degree zero gives $\mathbf{x}(\alpha \mathbf{p},\alpha w)-\mathbf{x}(\mathbf{p},w)=0$, differentiating with respect to $\alpha$, get:
-$$D_{\alpha \mathbf{p}}\mathbf{x}(\alpha \mathbf{p},\alpha w)\cdot \mathbf{p} + D_{\alpha w} \mathbf{x}(\alpha \mathbf{p},\alpha w)w=0$$
-this is true for any $\alpha$, if we take $\alpha=1$, we get $D_{\mathbf{p}}\mathbf{x}(\mathbf{p}, w)\cdot \mathbf{p} + D_{ w} \mathbf{x}( \mathbf{p}, w)w=\mathbf{0}$, which is just the matrix notation of Thm.\ref{thm_homo_waldemand_thm1}.
+$$\mathrm{D}_{\alpha \mathbf{p}}\mathbf{x}(\alpha \mathbf{p},\alpha w)\cdot \mathbf{p} + \mathrm{D}_{\alpha w} \mathbf{x}(\alpha \mathbf{p},\alpha w)w=0$$
+this is true for any $\alpha$, if we take $\alpha=1$, we get $\mathrm{D}_{\mathbf{p}}\mathbf{x}(\mathbf{p}, w)\cdot \mathbf{p} + \mathrm{D}_{w} \mathbf{x}( \mathbf{p}, w)w=\mathbf{0}$, which is just the matrix notation of Thm.\ref{thm_homo_waldemand_thm1}.
 
 Intuitively, this implies the price (substitution) effects and wealth (income) effects induced by the price change of one commodity, when weighted by the prices of other commodities and wealth, will cancel out.
 
@@ -93,7 +93,7 @@ Another theorem is induced from Walras' law:
     $$\sum^L_{l=1}p_l\frac{\partial x_l(\mathbf{p},w)}{\partial w}=1$$
 \end{theorem}
 
-The proof is also easy: Walras' law gives $\mathbf{p}\cdot \mathbf{x}(\mathbf{p},w)=w$, take derivatives with respect to $\mathbf{p}$, get $\mathbf{p}\cdot D_{\mathbf{p}}\mathbf{x}(\mathbf{p},w)+\mathbf{x}(\mathbf{p},w)^T=\mathbf{0}^T$; take derivatives with repsect to $w$, get $\mathbf{p}\cdot D_{w}(\mathbf{p},w)=1$. The intuition is: a change in prices do NOT change the total expenditure, and the total expenditure will change by the same amount with the change in wealth.
+The proof is also easy: Walras' law gives $\mathbf{p}\cdot \mathbf{x}(\mathbf{p},w)=w$, take derivatives with respect to $\mathbf{p}$, get $\mathbf{p}\cdot \mathrm{D}_{\mathbf{p}}\mathbf{x}(\mathbf{p},w)+\mathbf{x}(\mathbf{p},w)^T=\mathbf{0}^T$\footnote{This will give: $\mathbf{p}\cdot \mathrm{D}_{\mathbf{p}}\mathbf{x}(\mathbf{p},w)\mathbf{p}+\mathbf{x}(\mathbf{p},w)^T\mathbf{p}=\mathbf{0}^T\Rightarrow \mathbf{p}\cdot \mathrm{D}_{\mathbf{p}}\mathbf{x}(\mathbf{p},w)\mathbf{p}=-w$}; take derivatives with repsect to $w$, get $\mathbf{p}\cdot \mathrm{D}_{w}(\mathbf{p},w)=1$. The intuition is: a change in prices do NOT change the total expenditure, and the total expenditure will change by the same amount with the change in wealth.
 
 If we define elasticities as:
 \begin{align*} 
@@ -169,7 +169,8 @@ Notice that so far, we have only linked WARP to \textbf{compensated} price chang
     $$\Delta \mathbf{x}\cdot \Delta \mathbf{p} = (\mathbf{p}'-\mathbf{p})\cdot [\mathbf{x}(\mathbf{p}',w')-\mathbf{x}(\mathbf{p},w)]\leq 0$$
 \end{theorem}
 
-And of course, if the price changes are NOT compensated, meaning that wealth does NOT change accordingly, in this case \citep[Figure 2.F.5, Page 33]{mas1995microeconomic}, the new budget line would be either completely above the original one (more generous) or completetly below (less generous), and WARP would impose NO restrictions on the new consumption bundle.
+And of course, if the price changes are NOT compensated, meaning that wealth does NOT change accordingly, in this case \citep[Figure 2.F.5, Page 33]{mas1995microeconomic}, the new budget line would be either completely above the original one (more generous) or completetly below (less generous), and WARP would impose NO restrictions on the new consumption bundle.\footnote{In
+one condition, we can actually }
 
 \subsection{Slutsky Matrix}
 When consumer demand $\mathbf{x}(\mathbf{p},w)$ is differentiable with respect to both prices and wealth, we can rewrite the inequality in Thm.\ref{thm_compensated_lawofdemand}: $\diff \mathbf{p}\cdot \diff \mathbf{x}\leq 0$. In the spirit of compensated price changes, we know the change in wealth related to $\diff \mathbf{p}$ is $\diff w=\mathbf{x}(\mathbf{p},w)\cdot \diff \mathbf{p}$.
