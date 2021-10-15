@@ -16,7 +16,7 @@
 \contentsline {subsection}{\numberline {2.2.1}Walrasian Budgets}{23}{subsection.2.2.1}
 \contentsline {subsection}{\numberline {2.2.2}Walrasian Demand Function}{24}{subsection.2.2.2}
 \contentsline {subsection}{\numberline {2.2.3}WARP and Law of Demand}{26}{subsection.2.2.3}
-\contentsline {subsection}{\numberline {2.2.4}Slutsky Matrix}{28}{subsection.2.2.4}
+\contentsline {subsection}{\numberline {2.2.4}Slutsky Matrix}{29}{subsection.2.2.4}
 \contentsline {section}{\numberline {2.3}Linking Preferences with Choices}{31}{section.2.3}
 \contentsline {section}{\numberline {2.4}Introducing Utility}{31}{section.2.4}
 \contentsline {section}{\numberline {2.5}Commentary}{31}{section.2.5}

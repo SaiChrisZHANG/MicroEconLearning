@@ -170,7 +170,22 @@ Notice that so far, we have only linked WARP to \textbf{compensated} price chang
 \end{theorem}
 
 And of course, if the price changes are NOT compensated, meaning that wealth does NOT change accordingly, in this case \citep[Figure 2.F.5, Page 33]{mas1995microeconomic}, the new budget line would be either completely above the original one (more generous) or completetly below (less generous), and WARP would impose NO restrictions on the new consumption bundle.\footnote{In
-one condition, we can actually }
+In fact, if $\mathbf{x}(\cdot,\cdot)$ is homogeneous of degree one w.r.t. $w$, then the law of demand actually still holds for \textit{uncompensated} price changes: $\mathrm{d}p\cdot\mathrm{D}_\mathbf{p}\mathbf{x}(p,w)\mathrm{d}\mathbf{p}\leq 0,\forall \mathrm{d}\mathbf{p}$. A brief proof is: by homogeneity of degree one w.r.t. w, $\mathbf{x}(\mathbf{p},\alpha w)=\alpha \mathbf{x}(\mathbf{p},w)$,
+differentiate w.r.t. $\alpha$ and evaluate at $\alpha =1$, get $\mathrm{D}_w \mathbf{x}(\mathbf{p}, w)w =\mathbf{x}(\mathbf{p},w)$, then the Slutsky matrix is $S(\mathbf{p},w)=\mathrm{D}_{\mathbf{p}}\mathbf{x}(\mathbf{p},w)+\mathrm{D}_w\mathbf{x}(\mathbf{p},w)\cdot \mathbf{x}(\mathbf{p},w)^T=\mathrm{D}_{\mathbf{p}}\mathbf{x}(\mathbf{p},w)+\frac{1}{w}\mathbf{x}(\mathbf{p},w)\mathbf{x}(\mathbf{p},w)^T$.
+Hence $\mathrm{D}_{\mathbf{p}}\mathbf{x}(\mathbf{p},w)=S(\mathbf{p},w)-\frac{1}{w}\mathbf{x}(\mathbf{p},w)\mathbf{x}(\mathbf{p},w)^T$ is a negative semidefinite matrix, the proof is complete.}
+
+\subsubsection*{WARP and multivalued $\mathrm{x}(\mathrm{p},w)$}
+Here, we (briefly) extended WARP into multivalued $\mathbf{x}(\mathbf{p},w)$, Walrasian demand \textbf{correspondences}, which is a generalization of single-valued demand functions.
+
+First, we have the generalized version of WARP:
+\begin{definition}\label{def_walrasian_WARP_general}
+    (Generalizing \ref{def_walrasian_WARP}) For any $(\mathbf{p},w)$ and $(\mathbf{p'},w')$, if $\mathbf{x}\in\mathbf{x}(\mathbf{p},w)$, $\mathbf{x}'\in\mathbf{x}(\mathbf{p}',w'), \mathbf{p}'\cdot \mathbf{x}\leq w'$ and $\mathbf{x}'\notin \mathbf{x}(\mathbf{p},w)$ lead to $\mathbf{p}\cdot\mathbf{x}' > w$, then the Walrasian demand correspondence satisfies WARP.
+\end{definition}
+
+and we have a generalized version of the compensated law of demand:
+\begin{definition}\ref{thm_compensated_lawofdemand}
+    
+\end{definition}
 
 \subsection{Slutsky Matrix}
 When consumer demand $\mathbf{x}(\mathbf{p},w)$ is differentiable with respect to both prices and wealth, we can rewrite the inequality in Thm.\ref{thm_compensated_lawofdemand}: $\diff \mathbf{p}\cdot \diff \mathbf{x}\leq 0$. In the spirit of compensated price changes, we know the change in wealth related to $\diff \mathbf{p}$ is $\diff w=\mathbf{x}(\mathbf{p},w)\cdot \diff \mathbf{p}$.
