@@ -183,9 +183,16 @@ First, we have the generalized version of WARP:
 \end{definition}
 
 and we have a generalized version of the compensated law of demand:
-\begin{definition}\label{thm_compensated_lawofdemand_general}
-    (Generalizing \ref{thm_compensated_lawofdemand}) From any initial position $(\mathbf{p},w)$
-\end{definition}
+\begin{theorem}\label{thm_compensated_lawofdemand_general}
+    (Generalizing \ref{thm_compensated_lawofdemand}) From any initial position $(\mathbf{p},w)$ with demand $\mathbf{x}\in \mathbf{x}(\mathbf{p},w)$ for compensated price change to new prices $\mathbf{p}'$ and wealth level $w'=\mathbf{p}'\cdots \mathbf{x}$, we have
+    $$ (\mathbf{p}'-\mathbf{p})\cdot(\mathbf{x}'-\mathbf{x})\begin{cases}
+        < 0, & \mathbf{x}'\notin\mathbf{x}(\mathbf{p},w)\\
+        =0, & \mathbf{x}'\in\mathbf{x}(\mathbf{p},w)
+    \end{cases}$$
+\end{theorem}
+
+Again, if the multivalued demand correspondence $\mathbf{x}(\mathbf{p},w)$ satisfies Walras' law and compensated law of demand (Def.\ref{thm_compensated_lawofdemand_general}), this $\mathbf{x}(\mathbf{p},w)$ satisfies the generalized WARP (Def.\ref{def_walrasian_WARP_general}), the proof follows the same logic of the single-valued version:
+We only need to show for all compensated price changes, generalized WARP holds. We can prove its contrapositive, if WARP does not hold, there exists a compensated price violates the generalized compensated law of demand. Suppose $\mathbf{x}\in \mathbf{x}(\mathbf{p},w),\mathbf{x}'\in \mathbf{x}(\mathbf{p}',w')$, $\mathbf{p}'\cdot\mathbf{x}=w'$ and $\mathbf{p}\cdot\mathbf{x}'\leq w$, then it is easy to show that $(\mathbf{p}'-\mathbf{p})\cdot (\mathbf{x}'-\mathbf{x})=w-\mathbf{p}\cdot \mathbf{x}'\geq 0$, it violates the compensated law of demand, except for the case that $\mathbf{x}'\in \mathbf{x}(\mathbf{p},w)$, where $(\mathbf{p}'-\mathbf{p})\cdot (\mathbf{x}'-\mathbf{x})=0$.
 
 \subsection{Slutsky Matrix}
 When consumer demand $\mathbf{x}(\mathbf{p},w)$ is differentiable with respect to both prices and wealth, we can rewrite the inequality in Thm.\ref{thm_compensated_lawofdemand}: $\diff \mathbf{p}\cdot \diff \mathbf{x}\leq 0$. In the spirit of compensated price changes, we know the change in wealth related to $\diff \mathbf{p}$ is $\diff w=\mathbf{x}(\mathbf{p},w)\cdot \diff \mathbf{p}$.
