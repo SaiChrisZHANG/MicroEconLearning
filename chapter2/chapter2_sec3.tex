@@ -1,2 +1,22 @@
- \subsection{Properties of Preferences Required}
- 
+\subsection{Properties of Preferences Required}
+To analyze demand with preferences (and later, utility), we first need some assumptions on preferences $\succsim$:
+
+\begin{enumerate}
+    \item[-] $\succsim$ is \textbf{rational}:
+    \begin{enumerate}
+        \item[-] \textbf{completeness}: $\forall \mathbf{x},\mathbf{y}\in X$, it must be either $\mathbf{x}\succsim \mathbf{y}$ or $\mathbf{y}\succsim \mathbf{x}$ or both
+        \item[-] \textbf{transitivity}: $\forall \mathbf{x},\mathbf{y},\mathbf{z} \in X$ $\mathbf{x} \succsim \mathbf{y},\mathbf{y}\succsim \mathbf{z}\Rightarrow \mathbf{x}\succsim \mathbf{z}$ 
+    \end{enumerate}
+
+    \item[-] $\succsim$ is desirable. It is reasonable to assume that larger amounts of commodities are preferred. So basically, the more the better.
+    Here, we have two common assumption, a stronger one, and a weaker one:
+    \begin{enumerate}
+        \item[-] \textbf{monotone} (\textit{stronger}): if $\textbf{x},\textbf{y}\in X$, $\textbf{y}\gg \textbf{x}\Rightarrow \textbf{y}\succ \textbf{x}$
+        
+        \textbf{strongly monotone} (\textit{even stronger}): if $\textbf{x},\textbf{y}\in X$, $\textbf{y}\geq \textbf{x}$ and $\textbf{y}\neq \textbf{x}\Rightarrow \textbf{y}\succ \textbf{x}$
+        \item[-] \textbf{locally nonsatiated} (\textit{weaker}): $\forall \mathbf{x} \in X, \forall \varepsilon >0$, $\exists \mathbf{y}\in X$ s.t. $\left\Vert \mathbf{y}-\mathbf{x} \right\Vert \leq \varepsilon$ and $\mathbf{y}\succ \mathbf{x}$
+    \end{enumerate}
+    Local nonsatiation is the common used one, since it poses minimal constraints. It is easy to see that \textbf{strongly monotone} $\Rightarrow$ \textbf{monotone} $\Rightarrow$ \textbf{locally nonsatiated}, here is a proof:
+    If $\succsim$ is strongly monotone and $\mathbf{x} \gg \mathbf{y}$, then $\mathbf{x}\geq \mathbf{y}$ and $\mathbf{x}\neq \mathbf{y}$ and $x\succ y$, thus $\succsim$ is monotone; 
+    if $\succsim$ is monotone, $\mathbf{x}\in X$ and $\varepsilon>0$, let $\mathbf{y}=\mathbf{x}+\frac{\varepsilon}{\sqrt{L}}\mathbf{e}$ where $\mathbf{e}=(1,\cdots,1)\in \mathbb{R}^L$, then $\left\Vert \mathbf{y}-\mathbf{x}\right\Vert\leq \varepsilon$ and $y\succ x$, hence $\succsim$ is locally nonsatiated.
+\end{enumerate}
