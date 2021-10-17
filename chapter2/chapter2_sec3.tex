@@ -52,6 +52,48 @@ To guarantee utility representability, $\succsim$ needs to be continuous: $\succ
 
 Continuity can also be expressed as: $\forall \mathbf{x}$, the upper contour set $\left\{\mathbf{y}\in X\mid \mathbf{y}\succsim \mathbf{x} \right\}$ and the lower contour set $\left\{\mathbf{y}\in X\mid \mathbf{x}\succsim \mathbf{y} \right\}$ are both \textbf{closed}. Here is the proof of this equivalence: 
 \begin{enumerate}
-    \item[-] continuity $\rightarrow$ contour set closedness: $\forall \left\{y^n\right\}^{\infty}_{n=1}$, let $x^n=x,\forall n$, then if $x^n=x\succsim y^n$, by continuity, $y=\lim_{n\rightarrow \infty}y^n$, we have $x\succsim y$, hence the lower contour set is closed; the upper contour set can be proved the same way.
-    \item[-] contour set closedness $\rightarrow$ continuity: Suppose $\exists \left\{x^n\right\},\left\{y^n\right\}\in X$ s.t. $\forall n, x^n\succsim y^n$, $x^n\rightarrow x\in X, y^n\rightarrow y\in X$ and $y\succ x$. We know both $\left\{z\in X\mid y\succ z \right\}$ and $\left\{z\in X\mid z\succ x \right\}$ are open, hence $\exists N_1,N_2\in \mathbb{Z}^+$ s.t. $y\succ x^n,\forall n>N_1$,
+    \item[-] continuity $\Rightarrow$ contour set closedness: $\forall \left\{y^n\right\}^{\infty}_{n=1}$, let $x^n=x,\forall n$, then if $x^n=x\succsim y^n$, by continuity, $y=\lim_{n\rightarrow \infty}y^n$, we have $x\succsim y$, hence the lower contour set is closed; the upper contour set can be proved the same way.
+    \item[-] contour set closedness $\Rightarrow$ continuity: Suppose $\exists \left\{x^n\right\},\left\{y^n\right\}\in X$ s.t. $\forall n, x^n\succsim y^n$, $x^n\rightarrow x\in X, y^n\rightarrow y\in X$ and $y\succ x$. We know both $\left\{z\in X\mid y\succ z \right\}$ and $\left\{z\in X\mid z\succ x \right\}$ are open, hence $\exists N_1,N_2\in \mathbb{Z}^+$ s.t. $y\succ x^n,\forall n>N_1; y^n\succ x,\forall n>N_2$, conceivably, there are two cases on $\left\{y^n\right\}$:
+    \begin{enumerate}
+        \item[-] $\exists N_3 \in \mathbb{Z}^+$ s.t. $y^n\succsim y, \forall n>N_3$: then we have $y^n\succ x^n,\forall n>\max\{N_1,N_3\}$, contradiction.
+        \item[-] $\exists \left\{y^{k(n)}\right\}$ s.t. $y\succ y^{k(n)},\forall n$: then $\exists m\in \mathbb{Z}^+$ s.t. $k(m)>N_2$, we know $\left\{z\in X\mid z\succ y^{k(m)}\right\}$ is open, $\exists N_4\in \mathbb{Z}^+$ s.t. $y^n\succ y^{k(m)}, \forall n>N_4$. Since $\left\{z\mid z\succsim y^{k(m)}\right\}$ is closed, $x\succsim y^{k(m)}$, however, since $k(m)>N_2$, $y^{k(m)}\succ x$ is assumed, hence contradiction.
+    \end{enumerate} 
+    Another way of proving this is to assume $\succsim$ to be monotone.
+\end{enumerate}
+
+\subsection{Utility representing preference}
+Given the assumption of continuity, we can finally have the following thoerem:
+\begin{theorem}
+    If a preference relation $\succsim$ is rational and \textbf{continuous}, then there is a continuous utility function $u(x)$ that represents $\succsim$.
+\end{theorem}
+
+Here is the proof:
+\begin{enumerate}
+    \item[-] \underline{\textbf{continuous $u(\cdot)$ $\Rightarrow$ continuous preference}}: 
+    
+    suppose $\left\{x_n\right\}\rightarrow x^*,\left\{y_n\right\}\rightarrow y^*$, $u(\cdot)$ represents $\succsim$, hence $u(x_n)\geq u(y_n)$. If $u(\cdot)$ is continuous, $u(x_n)\rightarrow u(x^*),u(y_n)\rightarrow u(y^*)$, hence $u(x^*)\geq u(y^*)$, leading to $x^*\succsim y^*$.
+    \item[-] \underline{\textbf{continuous preference $\Rightarrow$ continuous $u(\cdot)$}}: 
+    
+    The proof is done in 3 steps:
+    \begin{enumerate}
+        \item[Step 1] First, we construct the utility function.
+        
+        Since preferences are continuous, and if monotone is assumed, for each $\mathbf{x}\in \mathbb{R}^L$, define a function $\alpha(\mathbf{x}):\mathbb{R}^L\rightarrow \mathbb{R}$ such that $\alpha(\mathbf{x})=\inf\{a\mid a\cdot \mathbf{e}\succsim \mathbf{x}\}$ where $\mathbf{e}=(1,\cdots,1)^T$. By the continuity of $\succsim$, $\{a\mid a\cdot \mathbf{e}\succsim \mathbf{x}\}$ is non-empty and bounded below, hence $\inf$ exists.
+        Also, continuity of $\succsim$ implies the upper contour set of $\mathbf{x}$ is closed, hence $\exists \underline{a}\in \mathbb{R}$ s.t. $\underline{a}=\inf\{a\mid a\cdot \mathbf{e}\succsim \mathbf{x}\}$. Let $\alpha(\mathbf{x})=\underline{a}$, $\alpha(\mathbf{x})\mathbf{e}\succsim \mathbf{x}$, also $x\succ (\alpha(x)-\frac{1}{n})\mathbf{e}$, by continuity, $x\succsim \alpha(\mathbf{x})$. Hence, $\mathbf{x}\sim \alpha(\mathbf{x})\mathbf{e}$\footnote{
+            $\mathbf{x}\sim \alpha(\mathbf{x})\mathbf{e}$ can also be proven as: by continuity, $A^{up}=\{\alpha\in \mathbf{R}_+\mid \alpha\mathbf{e}\succsim \mathbf{x}\}$ and $A^{low}\{\alpha\in \mathbf{R}_+\mid \mathbf{x}\succsim\alpha\mathbf{e}\}$ are both non-empty and closed. By completeness of $\succsim$, $\mathbb{R}_+\subset A^{up}\cup A^{low}$; $\mathbb{R}_+$ is connected, hence $A^{up}\cap A^{low}\neq \varnothing$, thus there exists $\alpha$ s.t. $\alpha \mathbf{e}\sim \mathbf{x}$. And by monotonicity, $\alpha_1>\alpha_2\Rightarrow\alpha_1\mathbf{e}\succ \alpha_2\mathbf{e}$, hence the scalar $\alpha\mathbf{e}\sim\mathbf{x} is unique$.
+            }, then, we can take $\alpha(\mathbf{x})$ as the utility function $u(\mathbf{x})=\alpha(\mathbf{x})$.
+
+        \item[Step 2] Next, we prove $\alpha(\mathbf{x})\geq \alpha(\mathbf{y})\Leftrightarrow \mathbf{x}\succsim\mathbf{y}$
+            \begin{enumerate}
+                \item[-] $\alpha(\mathbf{x})\geq \alpha(\mathbf{y})\Rightarrow \mathbf{x}\succsim\mathbf{y}$: Suppose $\alpha(\mathbf{x})\geq \alpha(\mathbf{y})$, by monotonicity, $\alpha(\mathbf{x})\mathbf{e}\succsim \alpha(\mathbf{y})\mathbf{e}$. Since $\mathbf{x}\sim \alpha(\mathbf{x})\mathbf{e},\mathbf{y}\sim\alpha(\mathbf{y})\mathbf{e}$, we have $x\succsim y$
+                \item[-] $\alpha(\mathbf{x})\geq \alpha(\mathbf{y})\Leftarrow \mathbf{x}\succsim\mathbf{y}$: Suppose $\mathbf{x}\succsim \mathbf{y}$, then $\alpha(\mathbf{x})\mathbf{e}\sim\mathbf{x}\succsim \mathbf{y}\sim\alpha(\mathbf{y})\mathbf{e}$, by monotonicity, $\alpha(\mathbf{x})\geq \alpha(\mathbf{y})$
+            \end{enumerate}
+        
+        \item[Step 3] Finally, we prove $\alpha(\mathbf{x})$ is continuous: $\lim_{n\rightarrow\infty}\mathbf{x}^n=\mathbf{x}\Rightarrow \lim_{n\rightarrow\infty}\alpha(\mathbf{x}^n)=\alpha(\mathbf{x}),\forall \{\mathbf{x}^n\}^{\infty}_{n=1}$
+        \begin{enumerate}
+            \item[-] $\{\alpha(\mathbf{x}^n)\}^{\infty}_{n=1}$ must have a convergent subsequence: by monotonicity, $\forall\epsilon>0$, $\forall \mathbf{x}'$ s.t. $\left\Vert\mathbf{x}'-\mathbf{x}\right\Vert\leq \epsilon$, $\alpha(\mathbf{x}')$ lies in a compact subset of $\mathbb{R}_+$, $[\alpha_0,\alpha_1]$. Since $\{\mathbf{x}^n\}^{\infty}_{n=1}$ converges to $\mathbf{x}$, then $\exists N$ s.t. $\forall n>N$, $\alpha(\mathbf{x}^n)$ lies in this compact set, hence, this infinite sequence must have a convergent subsequence.
+            \item[-] all convergent subsequences of $\left\{\alpha(x^n)\right\}^{\infty}_{n=1}$ converge to $\alpha(\mathbf{x})$. 
+        \end{enumerate}
+    \end{enumerate}
+    
 \end{enumerate}
