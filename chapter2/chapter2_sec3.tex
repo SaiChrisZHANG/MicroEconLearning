@@ -46,4 +46,12 @@ So far, we have rationality, local nonsatiation and convexity, but these are NOT
 %    This is my first \textbf{tcolorbox}.
 %\end{tcolorbox}
 
-The lexicographic preference relation is defined as $\mathbf{x}\succsim \mathbf{y}$
+The lexicographic preference relation is $\mathbf{x}\succsim \mathbf{y}\Leftrightarrow \left(x_1>y_1 \right) \lor \left( x_1=y_1 \land x_2> y_2\right) \lor \cdots \lor \left( x_1=y_1 \land \cdots x_{L-1}=y_{L-1} \land x_L\geq y_L \right)$. It is complete, transitive, strongly monotone and strictly convex; BUT, there is \textbf{NO} utility function
+representing it\footnote{Here is a brief proof: Suppose there is a utility function $u(\cdot)$, then for every $x_1$, we can pick a rational number $r(x_1)$ s.t. $u(x_1,2)>r(x_1)>u(x_1,1)$, if $x_1 >x_1'$, then $r(x_1)>u(x_1,1)>u(x_1',2)>r(x_1')$. Hence $r(\cdot)$ is a one-to-one function from the set of real numbers (uncountably infinite) to the set of rational numbers (countably infinite), which is mathematically impossible. Another way of proving it is: suppose there is a utility function $u(\cdot)$, $[\inf u(x,\cdot),\sup u(x,\cdot)]$ is an interval, hence if $x<y$, $\sup u(x,\cdot)<\inf u(y,\cdot)$, which is impossible}.
+To guarantee utility representability, $\succsim$ needs to be continuous: $\succsim$ is continuous if it is preserved under limits, that is, $\forall \left\{\{x^n,y^n\}\right\}^{\infty}_{n=1}$ with $x^n\succsim y^n, \forall n$, $x=\lim_{n\rightarrow\infty}x^n,y=\lim_{n\rightarrow\infty}y^n\Rightarrow x\succsim y$.
+
+Continuity can also be expressed as: $\forall \mathbf{x}$, the upper contour set $\left\{\mathbf{y}\in X\mid \mathbf{y}\succsim \mathbf{x} \right\}$ and the lower contour set $\left\{\mathbf{y}\in X\mid \mathbf{x}\succsim \mathbf{y} \right\}$ are both \textbf{closed}. Here is the proof of this equivalence: 
+\begin{enumerate}
+    \item[-] continuity $\rightarrow$ contour set closedness: $\forall \left\{y^n\right\}^{\infty}_{n=1}$, let $x^n=x,\forall n$, then if $x^n=x\succsim y^n$, by continuity, $y=\lim_{n\rightarrow \infty}y^n$, we have $x\succsim y$, hence the lower contour set is closed; the upper contour set can be proved the same way.
+    \item[-] contour set closedness $\rightarrow$ continuity: Suppose $\exists \left\{x^n\right\},\left\{y^n\right\}\in X$ s.t. $\forall n, x^n\succsim y^n$, $x^n\rightarrow x\in X, y^n\rightarrow y\in X$ and $y\succ x$. We know both $\left\{z\in X\mid y\succ z \right\}$ and $\left\{z\in X\mid z\succ x \right\}$ are open, hence $\exists N_1,N_2\in \mathbb{Z}^+$ s.t. $y\succ x^n,\forall n>N_1$,
+\end{enumerate}
