@@ -80,7 +80,7 @@ Here is the proof:
         
         Since preferences are continuous, and if monotone is assumed, for each $\mathbf{x}\in \mathbb{R}^L$, define a function $\alpha(\mathbf{x}):\mathbb{R}^L\rightarrow \mathbb{R}$ such that $\alpha(\mathbf{x})=\inf\{a\mid a\cdot \mathbf{e}\succsim \mathbf{x}\}$ where $\mathbf{e}=(1,\cdots,1)^T$. By the continuity of $\succsim$, $\{a\mid a\cdot \mathbf{e}\succsim \mathbf{x}\}$ is non-empty and bounded below, hence $\inf$ exists.
         Also, continuity of $\succsim$ implies the upper contour set of $\mathbf{x}$ is closed, hence $\exists \underline{a}\in \mathbb{R}$ s.t. $\underline{a}=\inf\{a\mid a\cdot \mathbf{e}\succsim \mathbf{x}\}$. Let $\alpha(\mathbf{x})=\underline{a}$, $\alpha(\mathbf{x})\mathbf{e}\succsim \mathbf{x}$, also $x\succ (\alpha(x)-\frac{1}{n})\mathbf{e}$, by continuity, $x\succsim \alpha(\mathbf{x})$. Hence, $\mathbf{x}\sim \alpha(\mathbf{x})\mathbf{e}$\footnote{
-            $\mathbf{x}\sim \alpha(\mathbf{x})\mathbf{e}$ can also be proven as: by continuity, $A^{up}=\{\alpha\in \mathbf{R}_+\mid \alpha\mathbf{e}\succsim \mathbf{x}\}$ and $A^{low}\{\alpha\in \mathbf{R}_+\mid \mathbf{x}\succsim\alpha\mathbf{e}\}$ are both non-empty and closed. By completeness of $\succsim$, $\mathbb{R}_+\subset A^{up}\cup A^{low}$; $\mathbb{R}_+$ is connected, hence $A^{up}\cap A^{low}\neq \varnothing$, thus there exists $\alpha$ s.t. $\alpha \mathbf{e}\sim \mathbf{x}$. And by monotonicity, $\alpha_1>\alpha_2\Rightarrow\alpha_1\mathbf{e}\succ \alpha_2\mathbf{e}$, hence the scalar $\alpha\mathbf{e}\sim\mathbf{x} is unique$.
+            $\mathbf{x}\sim \alpha(\mathbf{x})\mathbf{e}$ can also be proven as: by continuity, $A^{up}=\{\alpha\in \mathbf{R}_+\mid \alpha\mathbf{e}\succsim \mathbf{x}\}$ and $A^{low}\{\alpha\in \mathbf{R}_+\mid \mathbf{x}\succsim\alpha\mathbf{e}\}$ are both non-empty and closed. By completeness of $\succsim$, $\mathbb{R}_+\subset A^{up}\cup A^{low}$; $\mathbb{R}_+$ is connected, hence $A^{up}\cap A^{low}\neq \varnothing$, thus there exists $\alpha$ s.t. $\alpha \mathbf{e}\sim \mathbf{x}$. And by monotonicity, $\alpha_1>\alpha_2\Rightarrow\alpha_1\mathbf{e}\succ \alpha_2\mathbf{e}$, hence the scalar $\alpha\mathbf{e}\sim\mathbf{x}$ is unique.
             }, then, we can take $\alpha(\mathbf{x})$ as the utility function $u(\mathbf{x})=\alpha(\mathbf{x})$.
 
         \item[Step 2] Next, we prove $\alpha(\mathbf{x})\geq \alpha(\mathbf{y})\Leftrightarrow \mathbf{x}\succsim\mathbf{y}$
@@ -92,8 +92,31 @@ Here is the proof:
         \item[Step 3] Finally, we prove $\alpha(\mathbf{x})$ is continuous: $\lim_{n\rightarrow\infty}\mathbf{x}^n=\mathbf{x}\Rightarrow \lim_{n\rightarrow\infty}\alpha(\mathbf{x}^n)=\alpha(\mathbf{x}),\forall \{\mathbf{x}^n\}^{\infty}_{n=1}$
         \begin{enumerate}
             \item[-] $\{\alpha(\mathbf{x}^n)\}^{\infty}_{n=1}$ must have a convergent subsequence: by monotonicity, $\forall\epsilon>0$, $\forall \mathbf{x}'$ s.t. $\left\Vert\mathbf{x}'-\mathbf{x}\right\Vert\leq \epsilon$, $\alpha(\mathbf{x}')$ lies in a compact subset of $\mathbb{R}_+$, $[\alpha_0,\alpha_1]$. Since $\{\mathbf{x}^n\}^{\infty}_{n=1}$ converges to $\mathbf{x}$, then $\exists N$ s.t. $\forall n>N$, $\alpha(\mathbf{x}^n)$ lies in this compact set, hence, this infinite sequence must have a convergent subsequence.
-            \item[-] all convergent subsequences of $\left\{\alpha(x^n)\right\}^{\infty}_{n=1}$ converge to $\alpha(\mathbf{x})$. 
+            \item[-] all convergent subsequences of $\left\{\alpha(\mathbf{x}^n)\right\}^{\infty}_{n=1}$ converge to $\alpha(\mathbf{x})$: suppose otherwise, then there is a strictly increasing function $m(\cdot)$ that assigns to each $n$ a positive integer $m(n)$, and the subsequence $\left\{\alpha(x^{m(n)}) \right\}^{\infty}_{n=1}$ converges to $\alpha'\neq \alpha(\mathbf{x})$. Without losing generality, let $\alpha'>\alpha(\mathbf{x})$, then by monotonicity, $\alpha'\mathbf{e}\succ \alpha(\mathbf{x})\mathbf{e}$. 
+            Let $\hat{\alpha}=\frac{1}{2}[\alpha'+\alpha(\mathbf{x})]$, then $\hat{\alpha}(\mathbf{e})\succ \alpha(\mathbf{x})\mathbf{e}$. Since $\alpha(\mathbf{x}^{m(n)})\rightarrow\alpha'>\hat{\alpha}$, then $\exists \bar{N}$ s.t. $\forall n>\bar{N}$, $\alpha(\mathbf{x}^{m(n)})>\hat{\alpha}$, thus $\mathbf{x}^{m(n)}\sim \alpha(\mathbf{x}^{m(n)})\mathbf{e}\succ \hat{\alpha}\mathbf{e}$. By continuity of $\succsim$, we get $\mathbf{x}\sim \alpha(\mathbf{x})\mathbf{e}\succsim \hat{\alpha}\mathbf{e}$, leading to a contradiction. 
+            With the same logic, $\alpha'<\alpha(\mathbf{x})$ is ruled out as well. Hence, all convergent subsequences $\left\{\alpha(x^n)\right\}^{\infty}_{n=1}$ converge to $\alpha(\mathbf{x})$. Hence, $\lim_{n\rightarrow\infty}\alpha(\mathbf{x}^n)=\alpha(\mathbf{x})$.
         \end{enumerate}
     \end{enumerate}
-    
 \end{enumerate}
+
+Now a continuous utility function can represent a continuous preference relation, there are several results on how they relate to each other:
+\begin{enumerate}
+    \item[-] continuous $u(\cdot)$ can represent $\succsim$, but any strictly increasing yet discontinuous transformation of $u(\cdot)$ may also represents $\succsim$
+    \item[-] preference $\succsim$ is monotone $\Rightarrow$ utiity function $u(\cdot)$ is increasing: $\mathbf{x}\gg \mathbf{y}\Rightarrow u(\mathbf{x})>u(\mathbf{y})$ 
+    \item[-] preference $\succsim$ is convex $\Rightarrow$ utility function $u(\cdot)$ is quasiconcave: the upper contour set of $\mathbf{x}$, 
+    $\left\{\mathbf{y}\in\mathbb{R}^L_+\mid \mathbf{y}\succsim \mathbf{x} \right\}$ is convex $\Rightarrow$ $u(\alpha\mathbf{x}+(1-\alpha)\mathbf{y})\geq \min\{u(\mathbf{x}),u(\mathbf{y})\}$. 
+    It is \textbf{quasiconcave}, NOT concave.
+\end{enumerate}
+Increasingness and quasiconcavity are both ordinal properties of $u(\cdot)$, preserved for any increasing transformation.
+
+\subsection{UMP (Utility Maximizing Problem)}
+A consumer's problem is to choose a feasible consumption bundle given a positive price-wealth combination $(\mathbf{p},w)$ to maximize her utility:
+$$\max_{\mathbf{x}\geq 0} u(\mathbf{x}),\ \text{s.t.}\ \mathbf{p}\cdot\mathbf{x}\leq w$$
+if $\mathbf{p}\gg 0$, $u(\cdot)$ is continuous, then this problem has a solution: the Walrasian budget set $B_{\mathbf{p},w}=\left\{\mathbf{x}\in\mathbb{R}^L_+\mid \mathbf{p}\cdot\mathbf{x}\leq w\right\}$ is a compact set, hence a continuous function on it always has a maximum value.
+
+This problem will induce two objects: Walrasian demand correspondence/function $\mathbf{x}(\mathbf{p},w)\in \mathbb{R}^L_+$ and the value function $V(\mathbf{p},w)$.
+
+\subsubsection*{$\mathbf{x}(\mathbf{p},w)$}
+
+
+\subsection{EMP (Expenditure Minimizing Problem)}
