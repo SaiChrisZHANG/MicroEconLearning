@@ -116,7 +116,20 @@ if $\mathbf{p}\gg 0$, $u(\cdot)$ is continuous, then this problem has a solution
 
 This problem will induce two objects: Walrasian demand correspondence/function $\mathbf{x}(\mathbf{p},w)\in \mathbb{R}^L_+$ and the value function $V(\mathbf{p},w)$.
 
-\subsubsection*{$\mathbf{x}(\mathbf{p},w)$}
-
+\subsubsection*{Walrasian demand $\mathbf{x}(\mathbf{p},w)$}
+Suppose continuous $u(\cdot)$, representing locally nonsatiated $\succsim$, $\mathbf{x}(\mathbf{p},w)$ has the following properties:
+\begin{enumerate}
+    \item homogeneity of degree zero in $(\mathbf{p},w)$: $\mathbf{x}(\alpha\mathbf{p},\alpha w)=\mathbf{x}(\mathbf{p},w),\forall \mathbf{p}\gg 0,w>0,\alpha>0$
+    \item Walras' law: $\mathbf{p}\cdot \mathbf{x}(\mathbf{p},w)=w$ 
+    \item convexity/uniqueness:
+    \begin{enumerate}
+        \item[(a)] if $\succsim$ is convex, then $u(\cdot)$ is quasiconcave, hence $\mathbf{x}(\mathbf{p},w)$ is a convex set
+        
+        \textit{Proof}: suppose two maximizers $\mathbf{x}_1,\mathbf{x}_2\in\mathbf{x}(\mathbf{p},w)$, since Walrasian budget set is convex, hence $\alpha \mathbf{x}_1+(1-\alpha)\mathbf{x}_2$ is feasible. $u(\mathbf{x}_1)=u(\mathbf{x}_2)=u_{\max}$, hence by quasiconcavity of $u(\cdot)$, $u(\alpha \mathbf{x}_1+(1-\alpha)\mathbf{x}_2)\geq u_{\max}$, hence $\alpha \mathbf{x}_1+(1-\alpha)\mathbf{x}_2\in \mathbf{x}(\mathbf{p},w)$.
+        \item[(b)] if $\succsim$ is strictly convex, then $u(\cdot)$ is strictly quasiconcave, hence $\mathbf{x}(\mathbf{p},w)$ is single-valued
+        
+        \textit{Proof}: suppose two maximizers $\mathbf{x}_1,\mathbf{x}_2\in\mathbf{x}(\mathbf{p},w)$, again $\alpha \mathbf{x}_1+(1-\alpha)\mathbf{x}_2$ is feasible. $u(\mathbf{x}_1)=u(\mathbf{x}_2)=u_{\max}$, hence by stirct quasiconcavity of $u(\cdot)$, $u(\alpha \mathbf{x}_1+(1-\alpha)\mathbf{x}_2)> u_{\max}$, hence $\mathbf{x}_1,\mathbf{x}_2$ are not maximizers, i.e., there are at most one maximizer (and there must be a maximizer in the compact Walrasian set).
+    \end{enumerate}
+\end{enumerate}
 
 \subsection{EMP (Expenditure Minimizing Problem)}
