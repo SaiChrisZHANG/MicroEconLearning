@@ -142,7 +142,9 @@ In general, with the Lagrangean $\mathcal{L}=u(\mathbf{x})+\lambda (w-\mathbf{p}
 
 The Lagrange multiplier $\lambda$ itself is very interesting as well. $\lambda$ gives the marginal value of relaxing the constraint in the UMP, hence it is the consumer's \textbf{marginal utility value of wealth} at the optimum: $$\nabla u(\textbf{x}(\textbf{p},w))\cdot \mathrm{D}_w\mathbf{x}(\mathbf{p},w)=\underbrace{\lambda \mathbf{p}\cdot \mathrm{D}_w\mathbf{x}(\mathbf{p},w)=\lambda}_{\text{By Walras' law: }\mathbf{p}\cdot\mathbf{x}(\mathbf{p},w)=w}$$ where $\mathrm{D}_w\mathbf{x}(\mathbf{p},w)=\left[\partial x_1(\mathbf{p},w)/\partial w,\cdots, \partial x_L(\mathbf{p},w)/\partial w\right]$
 
-But here we assume the Lagrangean multiplier is fixed across all commodities, which is a very strict assumption. Think Lagrangean multiplier as a penalty mechanism,  An alternative way of setting the Lagrange multiplier is 
+But here we assume the Lagrangean multiplier is fixed across all commodities, which is a very strong assumption. Hence, we could perhaps think of another way to select $\lambda$: 
+Think Lagrangean multiplier as a penalty mechanism such that any deviation from the constraint will decrease utility, hence, $\lambda$ can only be chosen from $\left\{\frac{\partial u(\mathbf{x})}{\partial x_l}\cdot\frac{1}{p_l} \right\}^L_{l=1}$; at the same time, $\lambda$ reflects the marginal utility of wealth, 
+so it is reasonable to choose a value that is as large as possible. Therefore, we can choose $\lambda = \max_l \frac{\partial u(\mathbf{x})}{\partial x_l}\cdot \frac{1}{p_l}$. Choosing such $\lambda$, we have the Lagrangean as: $$ \mathcal{L} = u(\mathbf{x}) + \frac{\partial u(\mathbf{x})}{\partial x_{l^*}}\cdot\frac{1}{p_{l^*}}\left(w-\mathbf{p}\cdot\mathbf{x} \right) = \frac{\partial u(\mathbf{x})}{\partial x_{l^*}}\cdot\frac{1}{p_{l^*}}w + u(\mathbf{x}) - \frac{\partial u(\mathbf{x})}{x_{l^*}p_{l^*}}$$
 
 
 \subsection{EMP (Expenditure Minimizing Problem)}
