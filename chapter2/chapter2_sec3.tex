@@ -119,9 +119,9 @@ This problem will induce two objects: Walrasian demand correspondence/function $
 \subsubsection*{Walrasian demand $\mathbf{x}(\mathbf{p},w)$}
 Suppose continuous $u(\cdot)$, representing locally nonsatiated $\succsim$, $\mathbf{x}(\mathbf{p},w)$ has the following properties:
 \begin{enumerate}
-    \item homogeneity of degree zero in $(\mathbf{p},w)$: $\mathbf{x}(\alpha\mathbf{p},\alpha w)=\mathbf{x}(\mathbf{p},w),\forall \mathbf{p}\gg 0,w>0,\alpha>0$
-    \item Walras' law: $\mathbf{p}\cdot \mathbf{x}(\mathbf{p},w)=w$. This is guaranteed by the local nonsatiation assumption.
-    \item convexity/uniqueness:
+    \item \textit{\textbf{homogeneity of degree zero}} in $(\mathbf{p},w)$: $\mathbf{x}(\alpha\mathbf{p},\alpha w)=\mathbf{x}(\mathbf{p},w),\forall \mathbf{p}\gg 0,w>0,\alpha>0$
+    \item \textit{\textbf{Walras' law}}: $\mathbf{p}\cdot \mathbf{x}(\mathbf{p},w)=w$. This is guaranteed by the local nonsatiation assumption.
+    \item \textit{\textbf{convexity/uniqueness}}:
     \begin{enumerate}
         \item[(a)] if $\succsim$ is convex, then $u(\cdot)$ is quasiconcave, hence $\mathbf{x}(\mathbf{p},w)$ is a convex set
         
@@ -130,9 +130,11 @@ Suppose continuous $u(\cdot)$, representing locally nonsatiated $\succsim$, $\ma
         
         \textit{Proof}: suppose two maximizers $\mathbf{x}_1,\mathbf{x}_2\in\mathbf{x}(\mathbf{p},w)$, again $\alpha \mathbf{x}_1+(1-\alpha)\mathbf{x}_2$ is feasible. $u(\mathbf{x}_1)=u(\mathbf{x}_2)=u_{\max}$, hence by stirct quasiconcavity of $u(\cdot)$, $u(\alpha \mathbf{x}_1+(1-\alpha)\mathbf{x}_2)> u_{\max}$, hence $\mathbf{x}_1,\mathbf{x}_2$ are not maximizers, i.e., there are at most one maximizer (and there must be a maximizer in the compact Walrasian set).
     \end{enumerate}
-    \item continuity: Walrasian demand $\mathbf{x}(\mathbf{p},w)$ is the solution of the utility maximizing problem, then by maximum theorem, if the utility function is continuous (preference is continuous), its maximizer $\mathbf{x}(\mathbf{p},w)$ is also continuous. 
+    \item \textit{\textbf{continuity}}: Walrasian demand $\mathbf{x}(\mathbf{p},w)$ is the solution of the utility maximizing problem, then by maximum theorem, if the utility function is continuous (preference is continuous), its maximizer $\mathbf{x}(\mathbf{p},w)$ is also continuous. 
     
-    This property can also be proved in a more "economic" way: If $\mathbf{x}(\mathbf{p},w)$ is not continuous, then $\exists\left\{p^n\right\}\rightarrow p^*$ such that $\mathbf{x}(\mathbf{p}^*,w)=\mathbf{x}^*$, but $\mathbf{x}(p^n,w)\not\rightarrow \mathbf{x}^*$, or in an $\epsilon$ representation: $\exists \epsilon>0$ s.t. $\left\Vert \mathbf{x}(\mathbf{p}^n,w),\mathbf{x}^* \right\Vert >\epsilon$. We know $\mathbf{x}(\mathbf{p}^n,w)$ is in a compact set ($p^n$ is bounded away from 0 and by wealth $w$), hence we can assume, without loss of generality, $\exists \mathbf{y}^*\neq \mathbf{x}^*, \mathbf{x}(\mathbf{p}^n,w)\rightarrow \mathbf{y}^*$.
+    This property can also be proved in a more "economic" way: If $\mathbf{x}(\mathbf{p},w)$ is not continuous, then $\exists\left\{p^n\right\}\rightarrow p^*$ such that $\mathbf{x}(\mathbf{p}^*,w)=\mathbf{x}^*$, but $\mathbf{x}(p^n,w)\not\rightarrow \mathbf{x}^*$, or in an $\epsilon$ representation: $\exists \epsilon>0$ s.t. $\left\Vert \mathbf{x}(\mathbf{p}^n,w),\mathbf{x}^* \right\Vert >\epsilon$. 
+    We know $\mathbf{x}(\mathbf{p}^n,w)$ is in a compact set ($p^n$ is bounded away from 0 and by wealth $w$), hence we can assume, without loss of generality, $\exists \mathbf{y}^*\neq \mathbf{x}^*, \mathbf{x}(\mathbf{p}^n,w)\rightarrow \mathbf{y}^*$. Since $\forall n,\mathbf{p}^n\mathbf{x}(\mathbf{p}^n,w)\leq w$, $\mathbf{p}^*\mathbf{y}^* \leq w$, at the same time, $\mathbf{x}^*$ is the utility maximizer given the Walrasian budget, hence $\mathbf{x}^*\succ \mathbf{y}^*$.
+    By the continuity of preferences, this $\succ$ is preserved in the small neighborhoods of $\mathbf{x}^*$ and $\mathbf{y}^*$: for sufficiently large $n$, $\mathbf{x}(\mathbf{p}^n,w)$ is in the neighborhodd of $y^*$; we can choose a bundle $\mathbf{z}^*$ in the neighorhood of $\mathbf{x}^*$ s.t. $\mathbf{p}^* \mathbf{z}^*<w$. For sufficiently large $n$, we have $\mathbf{p}^n\mathbf{z}^*<w$; and at the same time $\mathbf{z}^*\succ \mathbf{x}(\mathbf{p}^n,w)$. These two: $\mathbf{p}^n\mathbf{z}^*<w,\mathbf{z}^*\succ \mathbf{x}(\mathbf{p}^n,w)$ are directly contradicting each other (monotonicity).
 \end{enumerate}
 
 In general, with the Lagrangean $\mathcal{L}=u(\mathbf{x})+\lambda (w-\mathbf{p}\cdot\mathbf{x})$, there are two cases of optimum $\mathbf{x}(\mathbf{p},w)$:
@@ -154,5 +156,17 @@ If we choose $t=1$, thus $x'_l=x_l$, we would have Euler's theorem.}, we have
 this will be an upper bound for utility, it is achieved when the agent spends everything on commodity $l^*$, i.e., purchase $\frac{w}{p_{l^*}}$. This is feasible, and achieves the upper bound.
 
 In general, solving for $\mathbf{x}(\mathbf{p},w)$ is a constrained optimization problem, I will discuss it more thoroughly in the later chapter.
+
+\subsubsection*{Indirect utility function $v(\mathbf{p},w)$}
+The indirect utility function $v(\mathbf{p},w)\in \mathbb{R}$ is the maximized utility, i.e., 
+$$v(\mathbf{p},w)=u(\mathbf{x}^*),\forall \mathbf{x}^*\in \mathbf{x}(\mathbf{p},w)$$
+it has the following properties, closely related to those of Walrasian demand $\mathbf{x}(\mathbf{p},w)$:
+
+\begin{enumerate}
+    \item \textit{\textbf{homogeneity of degree zero}} in $(\mathbf{p},w)$: $\mathbf{x}(\alpha\mathbf{p},\alpha w)=\mathbf{x}(\mathbf{p},w),\forall \mathbf{p}\gg 0,w>0,\alpha>0$
+    \item \textit{\textbf{Walras' law}}: $\mathbf{p}\cdot \mathbf{x}(\mathbf{p},w)=w$. This is guaranteed by the local nonsatiation assumption.
+    \item \textit{\textbf{convexity/uniqueness}}:
+    \item \textit{\textbf{continuity}}:
+\end{enumerate}
 
 \subsection{EMP (Expenditure Minimizing Problem)}
