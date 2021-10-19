@@ -130,6 +130,7 @@ Suppose continuous $u(\cdot)$, representing locally nonsatiated $\succsim$, $\ma
         
         \textit{Proof}: suppose two maximizers $\mathbf{x}_1,\mathbf{x}_2\in\mathbf{x}(\mathbf{p},w)$, again $\alpha \mathbf{x}_1+(1-\alpha)\mathbf{x}_2$ is feasible. $u(\mathbf{x}_1)=u(\mathbf{x}_2)=u_{\max}$, hence by stirct quasiconcavity of $u(\cdot)$, $u(\alpha \mathbf{x}_1+(1-\alpha)\mathbf{x}_2)> u_{\max}$, hence $\mathbf{x}_1,\mathbf{x}_2$ are not maximizers, i.e., there are at most one maximizer (and there must be a maximizer in the compact Walrasian set).
     \end{enumerate}
+    \item continuity: Walrasian demand $\mathbf{x}(\mathbf{p},w)$ is the solution of the utility maximizing problem,   by maximum theorem, 
 \end{enumerate}
 
 In general, with the Lagrangean $\mathcal{L}=u(\mathbf{x})+\lambda (w-\mathbf{p}\cdot\mathbf{x})$, there are two cases of optimum $\mathbf{x}(\mathbf{p},w)$:
@@ -144,9 +145,12 @@ The Lagrange multiplier $\lambda$ itself is very interesting as well. $\lambda$ 
 
 But here we assume the Lagrangean multiplier is fixed across all commodities, which is a very strong assumption. Hence, we could perhaps think of another way to select $\lambda$: 
 Think Lagrangean multiplier as a penalty mechanism such that any deviation from the constraint will decrease utility, hence, $\lambda$ can only be chosen from $\left\{\frac{\partial u(\mathbf{x})}{\partial x_l}\cdot\frac{1}{p_l} \right\}^L_{l=1}$; at the same time, $\lambda$ reflects the marginal utility of wealth, 
-so it is reasonable to choose a value that is as large as possible. Therefore, we can choose $\lambda = \max_l \frac{\partial u(\mathbf{x})}{\partial x_l}\cdot \frac{1}{p_l}$. Choosing such $\lambda$, we have the Lagrangean as: $$ \mathcal{L} = u(\mathbf{x}) + \frac{\partial u(\mathbf{x})}{\partial x_{l^*}}\cdot\frac{1}{p_{l^*}}\left(w-\mathbf{p}\cdot\mathbf{x} \right) = \underbrace{\frac{\partial u(\mathbf{x})}{\partial x_{l^*}}\cdot\frac{1}{p_{l^*}}w + u(\mathbf{x})}_{\equiv U^*} - \frac{\partial u(\mathbf{x})}{\partial x_{l^*}}\cdot\frac{1}{p_{l^*}}\cdot \mathbf{p}\cdot\mathbf{x}$$
+so it is reasonable to choose a value that is as large as possible. Therefore, we can choose $\lambda = \max_l \frac{\partial u(\mathbf{x})}{\partial x_l}\cdot \frac{1}{p_l}$. Choosing such $\lambda$, we have the Lagrangean as: $$ \mathcal{L} = u(\mathbf{x}) + \frac{\partial u(\mathbf{x})}{\partial x_{l^*}}\cdot\frac{1}{p_{l^*}}\left(w-\mathbf{p}\cdot\mathbf{x} \right) = \underbrace{\frac{\partial u(\mathbf{x})}{\partial x_{l^*}}\cdot\frac{1}{p_{l^*}}w}_{\equiv U^*} + u(\mathbf{x}) - \frac{\partial u(\mathbf{x})}{\partial x_{l^*}}\cdot\frac{1}{p_{l^*}}\cdot \mathbf{p}\cdot\mathbf{x}$$
 If $u(\mathbf{x})$ is homogeneous of degree $m$, then by Euler's theorem\footnote{Euler's theorem: For a function $f(\mathbf{x})$ homogeneous of degree $m$ (i.e. $f(t\mathbf{x})=t^mf(\mathbf{x}),\forall t\neq 0$), if $f$ has all partial derivatives of first order, then $\sum^L_{l=1}x_l\frac{\partial f}{\partial x_l}=mf(\mathbf{x})$. A brief proof is: define $x'_l=x_l t,\forall l$, then $t^mf(\mathbf{x})=f(t\mathbf{x})\xRightarrow{\partial t} mt^{m-1}f(\mathbf{x})=\sum^L_{l=1}\frac{\partial f}{\partial x'_l}\frac{\partial x'_l}{\partial t}=\sum^L_{l=1}\frac{\partial f}{\partial x'_l}x_l$.
 If we choose $t=1$, thus $x'_l=x_l$, we would have Euler's theorem.}, we have 
-    $$\mathcal{L} = U^* - \frac{\partial u(\mathbf{x})}{\partial x_{l^*}}\cdot\frac{1}{p_{l^*}}\cdot \left(\sum_{l=1}^L p_lx_l \right) \leq U^* - \frac{\partial u(\mathbf{x})}{\partial x_{l^*}}\cdot x_{l^*} - \left(\sum_{l=1,l\neq l^*}^L \frac{\partial u(\mathbf{x})}{\partial x_{l}} x_l\right)$$
+    $$\mathcal{L} = U^* +u(\mathbf{x})- \frac{\partial u(\mathbf{x})}{\partial x_{l^*}}\cdot\frac{1}{p_{l^*}}\cdot \left(\sum_{l=1}^L p_lx_l \right) \leq U^* + u(\mathbf{x})- \left(\sum_{l=1}^L \frac{\partial u(\mathbf{x})}{\partial x_{l}} x_l\right) = U^* +(1-m)u(\mathbf{x})$$
+this will be an upper bound for utility, it is achieved when the agent spends everything on commodity $l^*$, i.e., purchase $\frac{w}{p_{l^*}}$. This is feasible, and achieves the upper bound.
+
+In general, solving for $\mathbf{x}(\mathbf{p},w)$ is a constrained optimization problem, I will discuss it more thoroughly in the later chapter.
 
 \subsection{EMP (Expenditure Minimizing Problem)}
