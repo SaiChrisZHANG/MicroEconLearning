@@ -1,11 +1,11 @@
 We start from the basic: \textit{weak preference relation}, $\succsim$.
-\begin{definition}\label{def_succsim}
+\begin{definition}{weak preference $\succsim$}{succsim}
     A weak preference relation $\succsim$ on a set $X$ is a subset of $X\times X$. If $(x,y)\in \succsim \Rightarrow$ $x$ is at least as good as $y$, written as $x\succsim y$
 \end{definition}
 
 A weak preference relation will induce two other types of relations on $X$:
-\begin{definition}\label{def_succ_and_sim}
-    With $\succsim$ defined by Def. \ref{def_succsim}, we have
+\begin{definition}{strict preference $\succ$ and indifference $\sim$}{succ_and_sim}
+    With $\succsim$ defined by Def. \ref{def:succsim}, we have
     \begin{enumerate}
         \item[-] the \textit{strict preference relation}, $\succ$ can be induced from $\succsim$ as: $x\succ y\Leftrightarrow x\succsim y \land y\not\succsim x$,
         or in words, $x$ if preferred to $y$.
@@ -14,7 +14,7 @@ A weak preference relation will induce two other types of relations on $X$:
 \end{definition}
 
 With the definition of these relations, we now define the central assumption of relations: \textit{\textbf{rationality}}. 
-\begin{definition}\label{def_succsim_rational}
+\begin{definition}{Rationality of $\succsim$}{succsim_rational}
     A weak preference relation $\succsim$ is \textit{rational} if it is:
     \begin{enumerate}
         \item[-] Complete: $\forall x,y\in X$, $x\succsim y$ or $y\succsim x$ or both 
@@ -31,14 +31,15 @@ How to understand them? They are both strong assumptions:
     is only defined for differences above a certain level (problem of perceptible differences). See \citet[Page 7-8]{mas1995microeconomic}, \citet[Page 4-5]{ariel2012lecture} for details}.   
 \end{enumerate}
 
-With the definition of rational $\succsim$ in Def. \ref{def_succsim_rational}, we can prove the following properites of $\succ$ and $\sim$ \textit{induced} by $\succsim$:
-\begin{theorem} If $\succsim$ is rational, then:
+With the definition of rational $\succsim$ in Def. \ref{def:succsim_rational}, we can prove the following properites of $\succ$ and $\sim$ \textit{induced} by $\succsim$:
+\begin{theorem}{Properties of $\succ$ and $\sim$}{}
+    If $\succsim$ is rational, then:
     \begin{enumerate}
         \item[i.] $\succ$ is irreflexive ($x\succ x$ never holds) and transitive ($x\succ y \land y\succ z\Rightarrow x\succ z$)
         
         \underline{Proof}:
         \begin{enumerate}
-            \item[-] irreflexive: by Def. \ref{def_succ_and_sim}, $x\succ x\Rightarrow x\succsim x \land x\not\succsim x$, self contracdiction.
+            \item[-] irreflexive: by Def. \ref{def:succ_and_sim}, $x\succ x\Rightarrow x\succsim x \land x\not\succsim x$, self contracdiction.
             \item[-] transitive: $x\succ y \Rightarrow x\succsim y \land y\not\succsim x$, $y\succ z \Rightarrow y\succsim z \land z\not\succsim y$. By transitivity of $\succsim$, $x\succsim y\land y\succsim z\Rightarrow x\succsim z$. If $z\succsim x$, by transitivity of $\succsim$ and $x\succsim y$, we would have $z\succsim y$, contradicting $y\succ z$. Therefore $x\succsim z \land z\not\succsim x\Rightarrow x\succ z$. 
         \end{enumerate}
         \item[ii.] $\sim$ is reflexive ($x\sim x, \forall x$), transitive ($x\sim y\land y\sim z\Rightarrow x\sim z$) and symmetric ($x\sim y\Rightarrow y\sim x$)
@@ -56,7 +57,7 @@ With the definition of rational $\succsim$ in Def. \ref{def_succsim_rational}, w
 \end{theorem}
 
 We can also directly define a \textit{rational} $\succ$ (see \citet[Page 19-21]{kreps1990acourse}):
-\begin{definition}\label{def_rational_succ}
+\begin{definition}{}{rational_succ}
     A strict preference ralation $\succ$ is rational if it is:
     \begin{enumerate}
         \item[-] asymmetric: $\nexists x,y\in X$ s.t. $x\succ y \land y\succ x$
@@ -64,8 +65,8 @@ We can also directly define a \textit{rational} $\succ$ (see \citet[Page 19-21]{
     \end{enumerate}
 \end{definition}
 
-With Def. \ref{def_rational_succ} and Def. \ref{def_succsim_rational}, we can prove that $\succsim$ is rational iff $\succ$ is rational:
-\begin{theorem}
+With Def. \ref{def:rational_succ} and Def. \ref{def:succsim_rational}, we can prove that $\succsim$ is rational iff $\succ$ is rational:
+\begin{theorem}{}{}
     $\succsim$ is rational $\Leftrightarrow$ $\succ$ is rational, specifically:
     \begin{enumerate}
         \item[-] $\succsim$ is complete $\Leftrightarrow$ $\succ$ is asymmetric
@@ -173,6 +174,6 @@ Now we prove this theorem:
         
 \end{description}
 
-Notice that negative positivity in Def. \ref{def_rational_succ}, is logically equivalent to its \textit{contrapositive}: 
+Notice that negative positivity in Def. \ref{def:rational_succ}, is logically equivalent to its \textit{contrapositive}: 
 $\exists z\in X\setminus\{x,y\}$ s.t. $x\not\succ z \land z\not\succ y\Rightarrow x\not\succ y$. This is percisely why 
 the definition is called negative transitivity.

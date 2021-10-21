@@ -52,13 +52,48 @@
   {}% header specification (empty for default)
 \makeatother
 
-\theoremstyle{indented}
-\newtheorem{definition}{Definition}
-\newtheorem{theorem}{Theorem}
-\newtheorem{example}{Example}
-\numberwithin{definition}{section}
-\numberwithin{theorem}{section}
-\numberwithin{example}{section}
+%\theoremstyle{indented}
+%\newtheorem{definition}{Definition}
+%\newtheorem{theorem}{Theorem}
+%\newtheorem{example}{Example}
+%\numberwithin{definition}{section}
+%\numberwithin{theorem}{section}
+%\numberwithin{example}{section}
+
+\theoremstyle{definition}
+\newtheorem{defin}{Definition}[section] % Creates a new counter, number within section
+\newtheorem{prt}[defin]{Remark} 
+\newtheorem{prts}[defin]{Remarks} % Again share defin's counter
+\newtheorem{exmp}[defin]{Example} % etc.
+\newtheorem{exmps}[defin]{Examples}
+\newtheorem*{note}{Note}
+\tcbuselibrary{theorems}
+
+% use counter*=defin to make each tcbtheorem share defin's counter
+
+\newtcbtheorem[use counter*=defin, number within=section]{definition}{Definition}{enhanced, breakable,
+    colback = white, colframe = red!55!black, colbacktitle = red!55!black, attach boxed title to top left = {yshift = -2.5mm, xshift = 3mm}, boxed title style = {sharp corners},fonttitle=\bfseries}{def}
+
+\newtcbtheorem[use counter*=defin, number within=section]{theorem}{Theorem}{enhanced, breakable,
+    colback = white, colframe = teal, colbacktitle = teal, attach boxed title to top left = {yshift = -2.5mm, xshift = 3mm}, boxed title style = {sharp corners},fonttitle=\bfseries}{thm}
+    
+\newtcbtheorem[use counter*=defin, number within=section]{example}{Example}{enhanced, breakable,
+    colback = white, colframe = blue!45!black, colbacktitle = blue!45!black, attach boxed title to top left = {yshift = -2.5mm, xshift = 3mm}, boxed title style = {sharp corners},fonttitle=\bfseries}{emp}
+
+\newtcbtheorem[use counter*=defin, number within=section]{lemma}{Lemma}{enhanced, breakable,
+    colback = white, colframe = orange!85!black, colbacktitle = orange!85!black, attach boxed title to top left = {yshift = -2.5mm, xshift = 3mm}, boxed title style = {sharp corners},fonttitle=\bfseries}{lm}
+
+%\newtcbtheorem[use counter*=defin, number within=section]{corrollary}{Corollary}{colback=black!5,colframe=red!35!black,fonttitle=\bfseries}{crly}
+
+\newtcbox{\myhl}[1][white]
+  {on line, arc = 0pt, outer arc = 0pt,
+    colback = #1!20!white, colframe = #1!50!black,
+    boxsep = 0pt, left = 1pt, right = 1pt, top = 1pt, bottom = 1pt, boxrule = 0pt, bottomrule =0pt, toprule =0pt}
+    
+\newtcbox{\myhlrule}[1][white]
+  {on line, arc = 0pt, outer arc = 0pt,
+    colback = #1!20!white, colframe = #1!50!black,
+    boxsep = 0pt, left = 1pt, right = 1pt, top = 1pt, bottom = 1pt, boxrule = 0pt, bottomrule =0.5pt, toprule =0.5pt}
 
 \newcommand*\diff{\mathop{}\!\mathrm{d}}
 \newcommand*\mdiff{\mathop{}\!\mathrm{D}}
@@ -168,10 +203,10 @@ any correction. If you find any mistakes, please send the mistakes to this email
 \input{chapter1/chapter1.tex}
 
 \chapter{Fundamentals of Consumer Theory}
-\input{chapter2/chapter2.tex}
+%\input{chapter2/chapter2.tex}
 
 \chapter{Lagrange Maximization and Duality}
-\input{chapter3/chapter3.tex}
+%\input{chapter3/chapter3.tex}
 
 \chapter{Stochastic Choice}
 
