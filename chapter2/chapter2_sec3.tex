@@ -175,7 +175,11 @@ it has the following properties, closely related to those of Walrasian demand $\
     \textit{Proof}: this follows Walras' law $\mathbf{x}(\mathbf{p},w)\cdot \mathbf{p}=w$ and $v(\mathbf{p},w)=u(\mathbf{x}(\mathbf{p},w))$ where $u(\cdot)$ is increasing.
     \item \textit{\textbf{quasiconvexity}}: $\forall \bar{v}$, the set $\left\{(\mathbf{p},w):v(\mathbf{p},w)\leq \bar{v}\right\}$ is convex
     
-    \textit{Proof}: suppose $v(\mathbf{p},w), v(\mathbf{p}',w')\leq \bar{v}$. Then $\forall \alpha\in[0,1]$, consider $(\mathbf{p}'',w'')=\left( \alpha\mathbf{p}+(1-\alpha)\mathbf{p}',\alpha w+(1-\alpha)w' \right)$
+    \textit{Proof}: suppose $v(\mathbf{p},w), v(\mathbf{p}',w')\leq \bar{v}$. Then $\forall \alpha\in[0,1]$, consider $(\mathbf{p}'',w'')=\left( \alpha\mathbf{p}+(1-\alpha)\mathbf{p}',\alpha w+(1-\alpha)w' \right)$, 
+    first, we have $$ \mathbf{p}''\cdot\mathbf{x}\leq w''\Rightarrow \alpha \mathbf{p}\cdot\mathbf{x}+(1-\alpha)\mathbf{p}'\cdot \mathbf{x}\leq \alpha w+(1-\alpha)w'$$ hence, either $\mathbf{p}\cdot\mathbf{x}\leq w$ 
+    or $\mathbf{p}'\cdot\mathbf{x}\leq w'$ or both. Intuitively, if $\mathbf{x}$ can be afforded at $(\mathbf{p}'',w'')$, it must be affordable at either $(\mathbf{p},w)$ or $(\mathbf{p}',w')$ or both. And $v(\mathbf{p},w)$ 
+    is the maximum utility under $(\mathbf{p},w)$ (same for $v(\mathbf{p}',w')$ and $(\mathbf{p}',w')$), hence $u(\mathbf{x})\leq v(\mathbf{p},w)\leq \bar{v}$ or $u(\mathbf{x})\leq v(\mathbf{p}',w')\leq \bar{v}$ must hold. 
+    Therefore $ v(\mathbf{p}'',w'')\leq \bar{v}$.
     \item \textit{\textbf{continuity}}: $v(\mathbf{p},w)$ is continuous in $\mathbf{p}$ and $w$.
 \end{enumerate}
 
