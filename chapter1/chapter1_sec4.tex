@@ -1,7 +1,7 @@
 Now, with preferences and choices defined, and the linkage between the two established, we need to transfer these concepts into math for analytic studies.
 This is exactly why utility functions are introduced: to assign a number and rank the elements in $X$ according to preferences.
 
-\begin{definition}\label{def_utility}
+\begin{definition}{utility function $u(\cdot)$}{utility}
     A function $u:X\rightarrow\mathbb{R}$ is a \textit{utility function representing relation} $\succsim$ if $\forall x,y\in X,x\succsim y\Leftrightarrow u(x)\geq u(y)$
 \end{definition}
 
@@ -18,18 +18,18 @@ Two concepts to keep in mind:
 The numerical value, or even the size of relative differences have no particular meaning. Only ranking is "real", since the "level of utility" is \textbf{unobservable} and anything required to know the "level of utility" is \textbf{untestable}.
 
 The central theorem of utility functions is closely linked to rationality:
-\begin{theorem}\label{thm_utility_is_rational}
+\begin{theorem}{representable by $u(\cdot)$ $\Rightarrow$ rational $\succsim$}{utility_is_rational}
     A preference relation $\succsim$ can be represented by a utility function $\Rightarrow$ $\succsim$ is rational
 \end{theorem}
 
 The proof is
 \begin{enumerate}
-    \item[-] \textit{Completeness}. Since $u(\cdot)$ represents preference relations between alternatives, and $u:X\rightarrow\mathbb{R}$, thus $\forall x,y\in X$, either $u(x)\geq u(y)$ or $u(y) \geq u(x)$. By Def.\ref{def_utility}, we have either $x\succsim y$ or $y\succsim x$, hence $\succsim$ is complete.
-    \item[-] \textit{Transitivity}. For $x\succsim y,y\succsim z$. By Def.\ref{def_utility}, $u(x)\geq u(y),u(y)\geq u(z)$, hence $u(x)\geq u(z)\Rightarrow x\succsim z$.
+    \item[-] \textit{Completeness}. Since $u(\cdot)$ represents preference relations between alternatives, and $u:X\rightarrow\mathbb{R}$, thus $\forall x,y\in X$, either $u(x)\geq u(y)$ or $u(y) \geq u(x)$. By Def.\ref{def:utility}, we have either $x\succsim y$ or $y\succsim x$, hence $\succsim$ is complete.
+    \item[-] \textit{Transitivity}. For $x\succsim y,y\succsim z$. By Def.\ref{def:utility}, $u(x)\geq u(y),u(y)\geq u(z)$, hence $u(x)\geq u(z)\Rightarrow x\succsim z$.
 \end{enumerate}
 
 What about the other way? It is true, subject to some prerequisites:
-\begin{theorem}\label{thm_rational_has_utility}
+\begin{theorem}{rational $\succsim$ $\Rightarrow$ representable by $u(\cdot)$ (finite)}{rational_has_utility}
     $\succsim$ is rational and $X$ is \textbf{finite} $\Rightarrow$ there is a utility function representing $\succsim$.
 \end{theorem}
 
@@ -38,29 +38,29 @@ The major prerequisite here is $X$ being \textbf{finite}. The proof is done by i
     \item[-] When $N=1$, any number could be assigned to that element as its utility.
     \item[-] Suppose a rational $\succsim$ on $X={x_1,x_2,\cdots,x_{N-1}}$ could be represented by a utility function $u(\cdot)$. Without losing generality, we can assume $u(x_1)\leq u(x_2)\leq\cdots\leq u(x_{N-1})$. For the $N$th element $x_N$, by the rationality of $\succsim$, we have three scenarios:
     \begin{enumerate}
-        \item[i] $\forall i\in {1,\cdots,N-1}, x_N\succsim x_i$: by Def.\ref{def_utility}, $u(x_N)\geq u(x_i)$.
+        \item[i] $\forall i\in {1,\cdots,N-1}, x_N\succsim x_i$: by Def.\ref{def:utility}, $u(x_N)\geq u(x_i)$.
         \item[ii] $\forall i\in {1,\cdots,N-1}, x_i\succsim x_N$:, $u(x_N)\leq u(x_i)$.
         \item[iii] $\exists i,j\in {1,\cdots,N-1}, i\neq j, x_j \succsim x_N\succsim x_i$: $u(x_j)\geq u(x_N)\geq u(x_i)$. By completeness and transitivity, ${x_1,x_2,\cdots,x_{N-1}}$ can be "divided" by $x_N$, meaning that for $I=\{i:x_N\succsim x_i\}$ and $J=\{j:s_j\succsim x_N\}$, $I\cup J=\{1,\cdots,N-1\}$. Note that we have assumed the index as the ranking, hence let $i^*=\max I,j^*=\min J$, $i^*+1=j^*$, hence we must have $u(x_i)\leq u(x_{i^*})\leq u(x_N)\leq u(x_{j^*})\leq u(x_j)$
     \end{enumerate}
     In all 3 scenarios, $u(\cdot)$ represents $\succsim$ on $X=\{x_1,\cdots,x_{N-1},x_N\}$ as well.
 \end{enumerate}
-With this induction, we prove Thm.\ref{thm_rational_has_utility}\footnote{Another way of proof is: Start with $x^{start}\in X$, define $W_{x}=\{y:y\prec x^{start}\}$ then $W_x$ is either empty or not: If not empty, pick $\tilde{x}\in W_{x}$, shrink $W_{x}$ to $\{y:y\prec \tilde{x}\}$ and repeat this procedure till $a\sim x^{stop}$ where $u(a)=0$, then $x^{stop}$ is the “lower bound” of the set. With this process, we can generate a utility function for any finite set $X$ that is rational.}.
+With this induction, we prove Thm.\ref{thm:rational_has_utility}\footnote{Another way of proof is: Start with $x^{start}\in X$, define $W_{x}=\{y:y\prec x^{start}\}$ then $W_x$ is either empty or not: If not empty, pick $\tilde{x}\in W_{x}$, shrink $W_{x}$ to $\{y:y\prec \tilde{x}\}$ and repeat this procedure till $a\sim x^{stop}$ where $u(a)=0$, then $x^{stop}$ is the “lower bound” of the set. With this process, we can generate a utility function for any finite set $X$ that is rational.}.
 
-Now extend Thm.\ref{thm_rational_has_utility} from finite $X$ to countable infinite $X$:
-\begin{theorem}\label{thm_rational_has_utility_countable}
+Now extend Thm.\ref{thm:rational_has_utility} from finite $X$ to countable infinite $X$:
+\begin{theorem}{rational $\succsim$ $\Rightarrow$ representable by $u(\cdot)$ (countably infinite)}{rational_has_utility_countable}
     $\succsim$ is rational and $X$ is \textbf{countable} $\Rightarrow$ there is a utility function representing $\succsim$.
 \end{theorem}
 
-To prove Thm.\ref{thm_rational_has_utility_countable}, we can construct a utility function: for any set $S$, its emuneration $\{s_1,s_2,\cdots\}$ (which exists if $S$ is countable), define an auxilary function $d:S\rightarrow \mathbb{R}$ as $d(s_i)=\left(\frac{1}{2}\right)^n$, then for a countable set $X=\{x_1,x_2,\cdots\}$, the utility of any element $\tilde{x}\in X$ can be defined as 
+To prove Thm.\ref{thm:rational_has_utility_countable}, we can construct a utility function: for any set $S$, its emuneration $\{s_1,s_2,\cdots\}$ (which exists if $S$ is countable), define an auxilary function $d:S\rightarrow \mathbb{R}$ as $d(s_i)=\left(\frac{1}{2}\right)^n$, then for a countable set $X=\{x_1,x_2,\cdots\}$, the utility of any element $\tilde{x}\in X$ can be defined as 
 $$u(x^*)=\sum_{\tilde{x}_i\in NBT(x^*)}d(\tilde{x}_i)$$\footnote{Notice that $\lim_{n\rightarrow\infty}\sum_{i=1}^n\frac{1}{2^i}=1$, utility is bounded to $[0,1)$.}
 where $NBT(x^*)$ is the set of all elements that are \textbf{n}ot \textbf{b}etter \textbf{t}han $x^*$, i.e. $NBT(x^*)=\{\tilde{x}_i:\tilde{x}_i\in X \land x^*\succsim \tilde{x}_i\}$. It is easy to see that $NBT(x^*)$ is a countable subset of $X$. Suppose $NBT(x^*)$ has $k$ elements ($k<n$), we can calculate the utility $u(x^*)=\sum_{i=1}^k\left(\frac{1}{2}\right)^i$. After this construction,
 rest of the proof is trivial: $\forall x,y\in X$, $x\succsim y\Rightarrow NBT(x)\supseteq NBT(y)$, which means that $NBT(x)$ has at least as many elements as $NBT(y)$, by the constructed utility function, it is easy to see $u(x)\geq u(y)$; Conversely, $u(x)\geq u(y)$ simply means that $NBT(x)$ contains at least as many elements as $NBT(y)$ does, which directly leads to $x\succsim y$.
 
 Now, let's figure out the difficult question: what about uncountable sets? Here is a very general proposition:
-\begin{theorem}\label{thm_rational_utility_incountable}
+\begin{theorem}{rational $\succsim$ $\Rightarrow$ representable by $u(\cdot)$ (infinite)}{rational_utility_incountable}
     For a rational preference $\succsim$ on a set $X$, $\succsim$ can be represented by $u(\cdot)$ if and only if some countable set $X^*$ of $X$ has the property that $\forall x,y\in X, x\succ y\Rightarrow \exists x^*\in X^*$ s.t. $x\succsim x^*\succ y$.
 \end{theorem}
-The proof of Thm.\ref{thm_rational_utility_incountable} is not that difficult:
+The proof of Thm.\ref{thm:rational_utility_incountable} is not that difficult:
 \begin{enumerate}
     \item[Step 1:] such $X^*$ exists $\Rightarrow$ rational $\succsim$ can be represented by $u(\cdot)$.
     \begin{enumerate}
