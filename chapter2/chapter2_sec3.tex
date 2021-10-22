@@ -42,12 +42,10 @@ $\succsim$ is \textbf{strictly convex} if $\forall \mathbf{x}\in X$, $\mathbf{y}
 
 \paragraph*{$\succsim$ is continuous}
 So far, we have rationality, local nonsatiation and convexity, but these are NOT enough to guarantee a preference $\succsim$ to be representable by a utility funciton. An example is \textbf{lexicographic preference relation}.
-%\begin{tcolorbox}[title = {lexicographic preference relation},colframe = black, colback = white]
-%    This is my first \textbf{tcolorbox}.
-%\end{tcolorbox}
-
-The lexicographic preference relation is $\mathbf{x}\succsim \mathbf{y}\Leftrightarrow \left(x_1>y_1 \right) \lor \left( x_1=y_1 \land x_2> y_2\right) \lor \cdots \lor \left( x_1=y_1 \land \cdots x_{L-1}=y_{L-1} \land x_L\geq y_L \right)$. It is complete, transitive, strongly monotone and strictly convex; BUT, there is \textbf{NO} utility function
+\begin{example}{lexicographic preferences}{}
+    The lexicographic preference relation is $\mathbf{x}\succsim \mathbf{y}\Leftrightarrow \left(x_1>y_1 \right) \lor \left( x_1=y_1 \land x_2> y_2\right) \lor \cdots \lor \left( x_1=y_1 \land \cdots x_{L-1}=y_{L-1} \land x_L\geq y_L \right)$. It is complete, transitive, strongly monotone and strictly convex; BUT, there is \textbf{NO} utility function
 representing it\footnote{Here is a brief proof: Suppose there is a utility function $u(\cdot)$, then for every $x_1$, we can pick a rational number $r(x_1)$ s.t. $u(x_1,2)>r(x_1)>u(x_1,1)$, if $x_1 >x_1'$, then $r(x_1)>u(x_1,1)>u(x_1',2)>r(x_1')$. Hence $r(\cdot)$ is a one-to-one function from the set of real numbers (uncountably infinite) to the set of rational numbers (countably infinite), which is mathematically impossible. Another way of proving it is: suppose there is a utility function $u(\cdot)$, $[\inf u(x,\cdot),\sup u(x,\cdot)]$ is an interval, hence if $x<y$, $\sup u(x,\cdot)<\inf u(y,\cdot)$, which is impossible}.
+\end{example}
 To guarantee utility representability, $\succsim$ needs to be continuous: $\succsim$ is continuous if it is preserved under limits, that is, $\forall \left\{\{x^n,y^n\}\right\}^{\infty}_{n=1}$ with $x^n\succsim y^n, \forall n$, $x=\lim_{n\rightarrow\infty}x^n,y=\lim_{n\rightarrow\infty}y^n\Rightarrow x\succsim y$.
 
 Continuity can also be expressed as: $\forall \mathbf{x}$, the upper contour set $\left\{\mathbf{y}\in X\mid \mathbf{y}\succsim \mathbf{x} \right\}$ and the lower contour set $\left\{\mathbf{y}\in X\mid \mathbf{x}\succsim \mathbf{y} \right\}$ are both \textbf{closed}. Here is the proof of this equivalence: 
@@ -63,7 +61,7 @@ Continuity can also be expressed as: $\forall \mathbf{x}$, the upper contour set
 
 \subsection{Utility representing preference}
 Given the assumption of continuity, we can finally have the following thoerem:
-\begin{theorem}
+\begin{theorem}{rational and continuous $\succsim$ $\Leftrightarrow$ continuous $u(\cdot)$}{}
     If a preference relation $\succsim$ is rational and \textbf{continuous}, then there is a continuous utility function $u(x)$ that represents $\succsim$.
 \end{theorem}
 
@@ -118,21 +116,27 @@ This problem will induce two objects: Walrasian demand correspondence/function $
 
 \subsubsection*{Walrasian demand $\mathbf{x}(\mathbf{p},w)$}
 Suppose continuous $u(\cdot)$, representing locally nonsatiated $\succsim$, $\mathbf{x}(\mathbf{p},w)$ has the following properties:
+\begin{theorem}{properties of $\mathbf{x}(\mathbf{p},w)$}{properties_walrasian_demand}
+    \begin{enumerate}
+        \item \textit{\textbf{homogeneity of degree zero}} in $(\mathbf{p},w)$: $\mathbf{x}(\alpha\mathbf{p},\alpha w)=\mathbf{x}(\mathbf{p},w),\forall \mathbf{p}\gg 0,w>0,\alpha>0$
+        \item \textit{\textbf{Walras' law}}: $\mathbf{p}\cdot \mathbf{x}(\mathbf{p},w)=w$
+        \item \textit{\textbf{convexity/uniqueness}}:
+        \begin{enumerate}
+            \item[(a)] if $\succsim$ is convex, then $u(\cdot)$ is quasiconcave, hence $\mathbf{x}(\mathbf{p},w)$ is a convex set
+            \item[(b)] if $\succsim$ is strictly convex, then $u(\cdot)$ is strictly quasiconcave, hence $\mathbf{x}(\mathbf{p},w)$ is single-valued    
+        \end{enumerate}
+        \item \textit{\textbf{continuity}}: Walrasian demand $\mathbf{x}(\mathbf{p},w)$ is continuous (preference is continuous). 
+    \end{enumerate}
+\end{theorem}
+
+We can prove these properties: 
 \begin{enumerate}
-    \item \textit{\textbf{homogeneity of degree zero}} in $(\mathbf{p},w)$: $\mathbf{x}(\alpha\mathbf{p},\alpha w)=\mathbf{x}(\mathbf{p},w),\forall \mathbf{p}\gg 0,w>0,\alpha>0$
-    
-    \textit{Proof}: $\forall \alpha >0$, we always have $\left\{\mathbf{x}\mid \alpha\mathbf{p}\cdot\mathbf{x}\leq \alpha w\right\}=\left\{\mathbf{x}\mid \mathbf{p}\cdot\mathbf{x}\leq w\right\}$, this is, the set of feasible $\mathbf{x}$ does NOT change when both $\mathbf{p}$ and $w$ are multiplied by $\alpha$. The utility-maximizing $\mathbf{x}(\mathbf{p},w)$ is in these sets, hence $\mathbf{x}(\mathbf{p},w)=\mathbf{x}(\alpha\mathbf{p},\alpha w)$.
-    \item \textit{\textbf{Walras' law}}: $\mathbf{p}\cdot \mathbf{x}(\mathbf{p},w)=w$. 
-    
-    \textit{Proof}: This is guaranteed by the local nonsatiation assumption. If $\exists \mathbf{x}$ s.t $\mathbf{p}\cdot \mathbf{x}<w$, then in the sufficiently small neighborhood of $\mathbf{x}$, $\exists\mathbf{y}$ s.t. $\mathbf{p}\mathbf{y}<w$ and $\mathbf{y}\succ \mathbf{x}$, contradicting $\mathbf{x}$ being optimal.
+    \item \textit{\textbf{homogeneity of degree zero}} in $(\mathbf{p},w)$: $\forall \alpha >0$, we always have $\left\{\mathbf{x}\mid \alpha\mathbf{p}\cdot\mathbf{x}\leq \alpha w\right\}=\left\{\mathbf{x}\mid \mathbf{p}\cdot\mathbf{x}\leq w\right\}$, this is, the set of feasible $\mathbf{x}$ does NOT change when both $\mathbf{p}$ and $w$ are multiplied by $\alpha$. The utility-maximizing $\mathbf{x}(\mathbf{p},w)$ is in these sets, hence $\mathbf{x}(\mathbf{p},w)=\mathbf{x}(\alpha\mathbf{p},\alpha w)$.
+    \item \textit{\textbf{Walras' law}}: This is guaranteed by the local nonsatiation assumption. If $\exists \mathbf{x}$ s.t $\mathbf{p}\cdot \mathbf{x}<w$, then in the sufficiently small neighborhood of $\mathbf{x}$, $\exists\mathbf{y}$ s.t. $\mathbf{p}\mathbf{y}<w$ and $\mathbf{y}\succ \mathbf{x}$, contradicting $\mathbf{x}$ being optimal.
     \item \textit{\textbf{convexity/uniqueness}}:
     \begin{enumerate}
-        \item[(a)] if $\succsim$ is convex, then $u(\cdot)$ is quasiconcave, hence $\mathbf{x}(\mathbf{p},w)$ is a convex set
-        
-        \textit{Proof}: suppose two maximizers $\mathbf{x}_1,\mathbf{x}_2\in\mathbf{x}(\mathbf{p},w)$, since Walrasian budget set is convex, hence $\alpha \mathbf{x}_1+(1-\alpha)\mathbf{x}_2$ is feasible. $u(\mathbf{x}_1)=u(\mathbf{x}_2)=u_{\max}$, hence by quasiconcavity of $u(\cdot)$, $u(\alpha \mathbf{x}_1+(1-\alpha)\mathbf{x}_2)\geq u_{\max}$, hence $\alpha \mathbf{x}_1+(1-\alpha)\mathbf{x}_2\in \mathbf{x}(\mathbf{p},w)$.
-        \item[(b)] if $\succsim$ is strictly convex, then $u(\cdot)$ is strictly quasiconcave, hence $\mathbf{x}(\mathbf{p},w)$ is single-valued
-        
-        \textit{Proof}: suppose two maximizers $\mathbf{x}_1,\mathbf{x}_2\in\mathbf{x}(\mathbf{p},w)$, again $\alpha \mathbf{x}_1+(1-\alpha)\mathbf{x}_2$ is feasible. $u(\mathbf{x}_1)=u(\mathbf{x}_2)=u_{\max}$, hence by stirct quasiconcavity of $u(\cdot)$, $u(\alpha \mathbf{x}_1+(1-\alpha)\mathbf{x}_2)> u_{\max}$, hence $\mathbf{x}_1,\mathbf{x}_2$ are not maximizers, i.e., there are at most one maximizer (and there must be a maximizer in the compact Walrasian set).
+        \item[(a)] convex $\succsim$ $\Rightarrow$ convex $\mathbf{x}(\mathbf{p},w)$: suppose two maximizers $\mathbf{x}_1,\mathbf{x}_2\in\mathbf{x}(\mathbf{p},w)$, since Walrasian budget set is convex, hence $\alpha \mathbf{x}_1+(1-\alpha)\mathbf{x}_2$ is feasible. $u(\mathbf{x}_1)=u(\mathbf{x}_2)=u_{\max}$, hence by quasiconcavity of $u(\cdot)$, $u(\alpha \mathbf{x}_1+(1-\alpha)\mathbf{x}_2)\geq u_{\max}$, hence $\alpha \mathbf{x}_1+(1-\alpha)\mathbf{x}_2\in \mathbf{x}(\mathbf{p},w)$.
+        \item[(b)] strictly convex $\succsim$ $\Rightarrow$ unique $\mathbf{x}(\mathbf{p},w)$: suppose two maximizers $\mathbf{x}_1,\mathbf{x}_2\in\mathbf{x}(\mathbf{p},w)$, again $\alpha \mathbf{x}_1+(1-\alpha)\mathbf{x}_2$ is feasible. $u(\mathbf{x}_1)=u(\mathbf{x}_2)=u_{\max}$, hence by stirct quasiconcavity of $u(\cdot)$, $u(\alpha \mathbf{x}_1+(1-\alpha)\mathbf{x}_2)> u_{\max}$, hence $\mathbf{x}_1,\mathbf{x}_2$ are not maximizers, i.e., there are at most one maximizer (and there must be a maximizer in the compact Walrasian set).
     \end{enumerate}
     \item \textit{\textbf{continuity}}: Walrasian demand $\mathbf{x}(\mathbf{p},w)$ is the solution of the utility maximizing problem, then by maximum theorem, if the utility function is continuous (preference is continuous), its maximizer $\mathbf{x}(\mathbf{p},w)$ is also continuous. 
     
@@ -164,7 +168,16 @@ In general, solving for $\mathbf{x}(\mathbf{p},w)$ is a constrained optimization
 \subsubsection*{Indirect utility function $v(\mathbf{p},w)$}
 The indirect utility function $v(\mathbf{p},w)\in \mathbb{R}$ is the maximized utility, i.e., 
 $$v(\mathbf{p},w)=u(\mathbf{x}^*),\forall \mathbf{x}^*\in \mathbf{x}(\mathbf{p},w)$$
-it has the following properties, closely related to those of Walrasian demand $\mathbf{x}(\mathbf{p},w)$:
+it has the following properties, closely related to those of Walrasian demand $\mathbf{x}(\mathbf{p},w)$ in \ref{thm:properties_walrasian_demand}:
+
+\begin{theorem}{properties of $v(\mathbf{p},w)$}{properties_indirect_u}
+    \begin{enumerate}
+        \item \textit{\textbf{homogeneity of degree zero}} in $(\mathbf{p},w)$: $\mathbf{x}(\alpha\mathbf{p},\alpha w)=\mathbf{x}(\mathbf{p},w),\forall \mathbf{p}\gg 0,w>0,\alpha>0$
+        \item \textit{\textbf{strictly increasing in $w$, nonincreasing in $p_l,\forall l$}}
+        \item \textit{\textbf{quasiconvexity}}: $\forall \bar{v}$, the set $\left\{(\mathbf{p},w):v(\mathbf{p},w)\leq \bar{v}\right\}$ is convex
+        \item \textit{\textbf{continuity}}: $v(\mathbf{p},w)$ is continuous in $\mathbf{p}$ and $w$.
+    \end{enumerate}
+\end{theorem}
 
 \begin{enumerate}
     \item \textit{\textbf{homogeneity of degree zero}} in $(\mathbf{p},w)$: $\mathbf{x}(\alpha\mathbf{p},\alpha w)=\mathbf{x}(\mathbf{p},w),\forall \mathbf{p}\gg 0,w>0,\alpha>0$

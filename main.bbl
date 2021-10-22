@@ -1,4 +1,4 @@
-\begin{thebibliography}{11}
+\begin{thebibliography}{13}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -11,6 +11,11 @@ Patrick Bolton and Mathias Dewatripont.
 \newblock The MIT Press, 2005.
 \newblock URL \url{https://ideas.repec.org/b/mtp/titles/0262025760.html}.
 
+\bibitem[Deaton and Muellbauer(1980)]{deaton1980economics}
+Angus Deaton and John Muellbauer.
+\newblock \emph{Economics and consumer behavior}.
+\newblock Cambridge university press, 1980.
+
 \bibitem[Fudenberg and Tirole(1991)]{tirole1991game}
 Drew Fudenberg and Jean Tirole.
 \newblock \emph{Game Theory}.
@@ -20,6 +25,13 @@ Drew Fudenberg and Jean Tirole.
 Daniel Kahneman and Amos Tversky.
 \newblock Prospect theory: An analysis of decision under risk.
 \newblock \emph{Econometrica}, 47\penalty0 (2):\penalty0 363--391, 1979.
+
+\bibitem[Kihlstrom et~al.(1976)Kihlstrom, Mas-Colell, and
+  Sonnenschein]{kihlstrom1976demand}
+Richard Kihlstrom, Andreu Mas-Colell, and Hugo Sonnenschein.
+\newblock The demand theory of the weak axiom of revealed preference.
+\newblock \emph{Econometrica: Journal of the Econometric Society}, pages
+  971--978, 1976.
 
 \bibitem[Kreps(1990)]{kreps1990acourse}
 David~M. Kreps.
