@@ -1,5 +1,5 @@
 Next, we approach the theory of decision making from choice behavior itself. Formally, choice behavior is represented by means of a \textit{choice structure} $(\mathcal{B},C(\cdot))$. Now, we define choice structure $(\mathcal{B},C(\cdot))$:
-\begin{definition}
+\begin{definition}{choice structure $(\mathcal{B},C(\cdot))$}{}
     A choice structure $(\mathcal{B},C(\cdot))$ has two ingredients:
     \begin{enumerate}
         \item[-] $\mathcal{B}\subset \mathcal{P}(X)\setminus\varnothing$, where $\mathcal{P}(X)$ is the power set of $X$. This means, every element $B\in \mathcal{B}$ is a subset of $X$\footnote{The elements $B\in\mathcal{B}$ are so-called \textit{budget sets}. The budget sets in $\mathcal{B}$ should be thought of as an exhaustive listing of all the choice experiments that can be achieved, but it is possible that some subsets of $X$ are not achievable.}.
@@ -8,7 +8,7 @@ Next, we approach the theory of decision making from choice behavior itself. For
 \end{definition}
 
 Now we discuss the CORE assumption in this section: the Weak Axiom of Revealed Preference (WARP):
-\begin{definition}\label{def_WARP}
+\begin{definition}{WARP}{WARP}
     A choice set $(\mathcal{B},C(\cdot))$ satisfies WARP if:
     \begin{enumerate}
         \item[-] $\forall B,B^{\prime}$ and $x,y\in B\cap B^{\prime}$, $x\in C(B),y\in C(B^{\prime})\Rightarrow x\in C(B^{\prime})$
@@ -19,18 +19,16 @@ Or in words, WARP requires that if $x$ is chosen from some alternatives where $y
 but only $y$ is chosen.
 
 Following WARP, define the \textit{reveal preference relation} $\succsim^*$ as:
-\begin{definition}\label{def_revealed_pref}
+\begin{definition}{revealed preference $\succsim^*$}{revealed_pref}
     Given a choice structure $(\mathcal{B},C(\cdot))$, $x\succsim^*y\Leftrightarrow \exists B\in\mathcal{B}$ s.t. $x,y\in B\land x\in C(B)$
 \end{definition}
 In words, $x$ is revealed at least as good as $y$.
 
 With revealed preference defiend, we can rephrase WARP as: \textit{If x is revealed at least as good as y, then y \textbf{cannot} be revealed preferred to x}. Hence, $\succsim^*$ is not symmetric.
 
-One thing to remember is that $\succsim^*$ need not be either complete or transitive. For $\succsim^*$ to be comparable, for a $B\in\mathcal{B}$ and $x,y\in B$, we must have either $x\in C(B)$, $y\in C(B)$ or both.
-
-An example is:
-\begin{example}
-    Consider a choice structure $(\mathcal{B},C(\cdot))$ from $X=\{x,y,z\}$, where $\mathcal{B}=\{\{x,y\},\{x,y,z\}\}$. Under WARP, $C\{x,y\}=\{x\}\Rightarrow y\notin C\{x,y,z\}$.
+One thing to remember is that $\succsim^*$ need not be either complete or transitive. For $\succsim^*$ to be comparable, for a $B\in\mathcal{B}$ and $x,y\in B$, we must have either $x\in C(B)$, $y\in C(B)$ or both. An example is:
+\begin{example}{revealed preference $\succsim^*$}
+    Consider $(\mathcal{B},C(\cdot))$ from $X=\{x,y,z\}$, where $\mathcal{B}=\{\{x,y\},\{x,y,z\}\}$. Under WARP, $C\{x,y\}=\{x\}\Rightarrow y\notin C\{x,y,z\}$.
     BUT, we can have $z\in C(\{x,y,z\})$.
 \end{example}
 
@@ -51,12 +49,12 @@ For a rational preference relation $\succsim$, its induced choice function $C(\c
 \end{enumerate}
 
 With Sen's $\alpha$ and $\beta$ defined, we have:
-\begin{theorem}
+\begin{theorem}{Sen's $\alpha$ and $\beta$}{}
     For a non-empty $C$, $C$ satisfies $\alpha$ and $\beta$ $\Leftrightarrow$ $C$ satisfies WARP
 \end{theorem}
 
 Now, let's prove this.
 \begin{enumerate}
     \item[-] \textbf{Sen's $\alpha$ and $\beta \Rightarrow$ WARP}: Suppose $x,y\in A\cap B, x\in C(A), y\in C(B)$. Let $\tilde{A}=A\cap B$, since $\tilde{A}\subset A$ and $\tilde{A} \subset B$, Sen's $\alpha$ gives $x,y\in C(\tilde{A})$. Now we have $\tilde{A}\subset B, y\in C(B), x,y\in C(\tilde{A})$, by Sen's $\beta$, $x\in C(B)$. Thus, WARP holds.
-    \item[-] \textbf{WARP $\Rightarrow$ Sen's $\alpha$ and $\beta$}: WARP gives $x,y\in A\cap B,x\in C(B), y\in C(A)\Rightarrow x\in C(A)$, in the special case of $A\subset B$, WARP will be reduced to Sen's $\alpha$ and $\beta$.\footnote{Another way of proving this is to introduce rationalizing preference relation (Def.\ref{def_rationalize_choice}). In fact, for $\mathcal{B}$ includes all subsets of $X$ of up to 3 elements, WARP $\Leftrightarrow$ $C$ is rationalizable $\Leftrightarrow$ Sen's $\alpha$ and $\beta$ are satisfied.}
+    \item[-] \textbf{WARP $\Rightarrow$ Sen's $\alpha$ and $\beta$}: WARP gives $x,y\in A\cap B,x\in C(B), y\in C(A)\Rightarrow x\in C(A)$, in the special case of $A\subset B$, WARP will be reduced to Sen's $\alpha$ and $\beta$.\footnote{Another way of proving this is to introduce rationalizing preference relation (Def.\ref{def:rationalize_choice}). In fact, for $\mathcal{B}$ includes all subsets of $X$ of up to 3 elements, WARP $\Leftrightarrow$ $C$ is rationalizable $\Leftrightarrow$ Sen's $\alpha$ and $\beta$ are satisfied.}
 \end{enumerate}

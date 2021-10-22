@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.1.7)  21 OCT 2021 16:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.1.7)  21 OCT 2021 17:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1433,93 +1433,108 @@ File: ts1zpltlf.fd 2015/01/18 v1.0 fd file for TS1/zpltlf
 )
 LaTeX Font Info:    Font shape `TS1/zpltlf/m/n' will be
 (Font)              scaled to size 12.0pt on input line 155.
- [8])) [9]
+ [8]) (/Users/admin/Desktop/LearningNotes/MicroEconLearning/chapter1/chapter1_sec2.tex
+LaTeX Font Info:    Font shape `T1/zpltlf/m/it' will be
+(Font)              scaled to size 8.8pt on input line 5.
+LaTeX Font Info:    Font shape `OT1/zpltlf/m/n' will be
+(Font)              scaled to size 10.0pt on input line 5.
+LaTeX Font Info:    Font shape `OT1/zpltlf/m/n' will be
+(Font)              scaled to size 7.3pt on input line 5.
+LaTeX Font Info:    Font shape `OT1/zpltlf/m/n' will be
+(Font)              scaled to size 5.5pt on input line 5.
+LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
+(Font)              scaled to size 7.3pt on input line 5.
+LaTeX Font Info:    Font shape `T1/zpltlf/m/it' will be
+(Font)              scaled to size 7.3pt on input line 5.
+LaTeX Font Info:    Font shape `T1/zpltlf/m/it' will be
+(Font)              scaled to size 10.0pt on input line 5.
+ [9]) (/Users/admin/Desktop/LearningNotes/MicroEconLearning/chapter1/chapter1_sec3.tex [10] [11] [12] [13]) [14]) [15]
 Chapter 2.
-[10
+[16
 
 ]
 Chapter 3.
-[11
+[17
 
 ]
 Chapter 4.
-[12
-
-]
-Chapter 5.
-[13
-
-]
-Chapter 6.
-[14
-
-]
-Chapter 7.
-[15
-
-]
-Chapter 8.
-[16
-
-] [17
-
-]
-Chapter 9.
 [18
 
 ]
-Chapter 10.
+Chapter 5.
 [19
 
 ]
-Chapter 11.
+Chapter 6.
 [20
 
 ]
-Chapter 12.
+Chapter 7.
 [21
 
 ]
-Chapter 13.
+Chapter 8.
 [22
 
-]
-Chapter 14.
-[23
-
-] [24
+] [23
 
 ]
-Chapter 15.
+Chapter 9.
+[24
+
+]
+Chapter 10.
 [25
 
 ]
-Chapter 16.
+Chapter 11.
 [26
 
 ]
-Chapter 17.
+Chapter 12.
 [27
 
 ]
-Chapter 18.
+Chapter 13.
 [28
 
 ]
-Chapter 19.
+Chapter 14.
 [29
 
-]
-Chapter 20.
-[30
+] [30
 
 ]
-Chapter 21.
+Chapter 15.
 [31
 
 ]
-Chapter 22.
+Chapter 16.
 [32
+
+]
+Chapter 17.
+[33
+
+]
+Chapter 18.
+[34
+
+]
+Chapter 19.
+[35
+
+]
+Chapter 20.
+[36
+
+]
+Chapter 21.
+[37
+
+]
+Chapter 22.
+[38
 
 ] (/Users/admin/Desktop/LearningNotes/MicroEconLearning/main.bbl
 LaTeX Font Info:    Try loading font information for T1+npxtt on input line 12.
@@ -1540,7 +1555,7 @@ Package minitoc(hints) Warning: W0024
 (minitoc(hints))                Some hints have been written 
 (minitoc(hints))                in the main.log file.
 
-[33
+[39
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 257.
@@ -1553,18 +1568,18 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 257.
  ) 
 Here is how much of TeX's memory you used:
- 26675 strings out of 492649
- 493378 string characters out of 6129623
- 646010 words of memory out of 5000000
- 29664 multiletter control sequences out of 15000+600000
- 110120 words of font info for 156 fonts, out of 8000000 for 9000
+ 26815 strings out of 492649
+ 495379 string characters out of 6129623
+ 645613 words of memory out of 5000000
+ 29727 multiletter control sequences out of 15000+600000
+ 156704 words of font info for 239 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  54i,12n,83p,1018b,1142s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/newpx/ecsups.enc}</usr/local/texlive/2018/texmf-dist/fonts/type1/public/newtx/ntxsyralt.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/newpx/pxsys.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/tex-gyre/qplr.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/pxfonts/rpxmi.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/newtx/txexs.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/txfonts/txsya.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/txfonts/txsyb.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/txfonts/txsyc.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/newpx/zplb.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/newpx/zplbi.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/newpx/zplr.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/newpx/zplri.pfb>
-Output written on /Users/admin/Desktop/LearningNotes/MicroEconLearning/main.pdf (34 pages, 192273 bytes).
+{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/newpx/tgpdiff.enc}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/newpx/ecsups.enc}</usr/local/texlive/2018/texmf-dist/fonts/type1/public/newtx/ntxsyralt.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/newpx/pxsys.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/tex-gyre/qplr.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/pxfonts/rpxmi.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/newtx/txexs.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/txfonts/txsya.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/txfonts/txsyb.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/txfonts/txsyc.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/newpx/zplb.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/newpx/zplbi.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/newpx/zplr.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/newpx/zplri.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/newpx/zplx-regular.pfb>
+Output written on /Users/admin/Desktop/LearningNotes/MicroEconLearning/main.pdf (40 pages, 233413 bytes).
 PDF statistics:
- 491 PDF objects out of 1000 (max. 8388607)
- 435 compressed objects within 5 object streams
- 91 named destinations out of 1000 (max. 500000)
+ 579 PDF objects out of 1000 (max. 8388607)
+ 515 compressed objects within 6 object streams
+ 113 named destinations out of 1000 (max. 500000)
  261 words of extra memory for PDF output out of 10000 (max. 10000000)
 
