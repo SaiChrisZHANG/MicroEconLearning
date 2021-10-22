@@ -179,23 +179,16 @@ it has the following properties, closely related to those of Walrasian demand $\
     \end{enumerate}
 \end{theorem}
 
+The proof of these properties relies on the the properties of $\mathbf{x}(\mathbf{p},w)$:
 \begin{enumerate}
-    \item \textit{\textbf{homogeneity of degree zero}} in $(\mathbf{p},w)$: $\mathbf{x}(\alpha\mathbf{p},\alpha w)=\mathbf{x}(\mathbf{p},w),\forall \mathbf{p}\gg 0,w>0,\alpha>0$
-    
-    \textit{Proof}: it follows the homogeneity of Walrasian demand $\mathbf{x}(\mathbf{p},w)$.
-    \item \textit{\textbf{strictly increasing in $w$, nonincreasing in $p_l,\forall l$}}
-    
-    \textit{Proof}: this follows Walras' law $\mathbf{x}(\mathbf{p},w)\cdot \mathbf{p}=w$ and $v(\mathbf{p},w)=u(\mathbf{x}(\mathbf{p},w))$ where $u(\cdot)$ is increasing.
-    \item \textit{\textbf{quasiconvexity}}: $\forall \bar{v}$, the set $\left\{(\mathbf{p},w):v(\mathbf{p},w)\leq \bar{v}\right\}$ is convex
-    
-    \textit{Proof}: suppose $v(\mathbf{p},w), v(\mathbf{p}',w')\leq \bar{v}$. Then $\forall \alpha\in[0,1]$, consider $(\mathbf{p}'',w'')=\left( \alpha\mathbf{p}+(1-\alpha)\mathbf{p}',\alpha w+(1-\alpha)w' \right)$, 
+    \item \textit{\textbf{homogeneity of degree zero}} in $(\mathbf{p},w)$: it follows the homogeneity of Walrasian demand $\mathbf{x}(\mathbf{p},w)$.
+    \item \textit{\textbf{strictly increasing in $w$, nonincreasing in $p_l,\forall l$}}: this follows Walras' law $\mathbf{x}(\mathbf{p},w)\cdot \mathbf{p}=w$ and $v(\mathbf{p},w)=u(\mathbf{x}(\mathbf{p},w))$ where $u(\cdot)$ is increasing.
+    \item \textit{\textbf{quasiconvexity}}: suppose $v(\mathbf{p},w), v(\mathbf{p}',w')\leq \bar{v}$. Then $\forall \alpha\in[0,1]$, consider $(\mathbf{p}'',w'')=\left( \alpha\mathbf{p}+(1-\alpha)\mathbf{p}',\alpha w+(1-\alpha)w' \right)$, 
     first, we have $$ \mathbf{p}''\cdot\mathbf{x}\leq w''\Rightarrow \alpha \mathbf{p}\cdot\mathbf{x}+(1-\alpha)\mathbf{p}'\cdot \mathbf{x}\leq \alpha w+(1-\alpha)w'$$ hence, either $\mathbf{p}\cdot\mathbf{x}\leq w$ 
     or $\mathbf{p}'\cdot\mathbf{x}\leq w'$ or both. Intuitively, if $\mathbf{x}$ can be afforded at $(\mathbf{p}'',w'')$, it must be affordable at either $(\mathbf{p},w)$ or $(\mathbf{p}',w')$ or both. And $v(\mathbf{p},w)$ 
     is the maximum utility under $(\mathbf{p},w)$ (same for $v(\mathbf{p}',w')$ and $(\mathbf{p}',w')$), hence $u(\mathbf{x})\leq v(\mathbf{p},w)\leq \bar{v}$ or $u(\mathbf{x})\leq v(\mathbf{p}',w')\leq \bar{v}$ must hold. 
     Therefore $ v(\mathbf{p}'',w'')\leq \bar{v}$.
-    \item \textit{\textbf{continuity}}: $v(\mathbf{p},w)$ is continuous in $\mathbf{p}$ and $w$.
-    
-    \textit{Proof}: since $\succsim$ is strictly convex, we have a unique $\mathbf{x}(\mathbf{p},w)$, and $v(\mathbf{p},w)=u(\mathbf{x}(\mathbf{p},w))$. We have proved $\mathbf{x}(\mathbf{p},w)$ is continuous, we know $u(\cdot)$ is continuous. Hence, $v(\mathbf{p},w)$ is continuous.
+    \item \textit{\textbf{continuity}}: since $\succsim$ is strictly convex, we have a unique $\mathbf{x}(\mathbf{p},w)$, and $v(\mathbf{p},w)=u(\mathbf{x}(\mathbf{p},w))$. We have proved $\mathbf{x}(\mathbf{p},w)$ is continuous, we know $u(\cdot)$ is continuous. Hence, $v(\mathbf{p},w)$ is continuous.
 \end{enumerate}
 
 \subsection{EMP (Expenditure Minimizing Problem)}
