@@ -195,4 +195,36 @@ The proof of these properties relies on the the properties of $\mathbf{x}(\mathb
 A consumer's problem can also be to choose the cheapest consumption bundle that achieves a certain level of utility, given a positive price wealth combination $(\mathbf{p},w)$:
 $$\min_{\mathbf{x}\geq 0} \mathbf{p}\cdot\mathbf{x}\ \text{s.t.}\ u(\mathbf{x})\geq u$$
 
-\textbf{EMP} is the dual problem of \textbf{UMP},
+\textbf{EMP} is the dual problem of \textbf{UMP}. Duality will be discussed more elaborately later, here we focus on the relationship between EMP and UMP:
+\begin{theorem}{Relationship between EMP and UMP}{EMP_vs_UMP}
+    For a continuous $u(\cdot)$ representing a locally nonsatiated $\succsim$ on $X=\mathbb{R}^L_+$ and a price vector $\mathbf{p}\gg 0$, we have:
+    \begin{enumerate}
+        \item $\mathbf{x}^*$ is optimal in UMP with wealth $w>0$ $\Rightarrow$ $\mathbf{x}^*$ is optimal in EMP with required utility $u(\mathbf{x}^*)$, and $e(\mathbf{p},u(\mathbf{x}^*))=w$
+        \item $\mathbf{x}^*$ is optimal in EMP with utility $u>u(0)$ $\Rightarrow$ $\mathbf{x}^*$ is optimal in UMP with wealth $\mathbf{p}\cdot\mathbf{x}^*$, and $v(\mathbf{p},\mathbf{p}\cdot\mathbf{x}^*)=u$
+    \end{enumerate}
+\end{theorem}
+
+Here is the proof:
+\begin{enumerate}
+    \item UMP$\Rightarrow$EMP: Suppose $\mathbf{x}^*$ is not optimal in EMP with required utility level u($\mathbf{x}^*$), then $\exists \mathbf{x}'$ s.t. $u(\mathbf{x}')\geq u(\mathbf{x}^*)$ and $\mathbf{p}\cdot\mathbf{x}'<\mathbf{p}\cdot\mathbf{x}^*\leq w$, by local nonsatiation, we can find an affordable $\mathbf{x}''$ that is close to $\mathbf{x}'$ but has strictly higher utility, that is $u(\mathbf{x}'')>u(\mathbf{x}')$ and $\mathbf{p}\mathbf{x}''< w$, this leads to $u(\mathbf{x}'')>u(\mathbf{x}^*)$, contradicting to $\mathbf{x}^*$ maximizing utility. Hence $\mathbf{x}$ is optimal in EMP with $u=u(\mathbf{x}^*)$, and $e(\mathbf{p},u(\mathbf{x}^*))=\mathbf{p}\mathbf{x}^*=w$
+    \item EMP$\Rightarrow$UMP: With $u>u(0)\Rightarrow \mathbf{x}^*\neq 0\Rightarrow \mathbf{p}\mathbf{x}^*$, suppose $\mathbf{x}^*$ is not optimal in UMP with wealth $\mathbf{p}\mathbf{x}^*$, then $\exists \mathbf{x}'$ s.t. $\mathbf{p}\mathbf{x}'\leq \mathbf{p}\mathbf{x}^*$, then consider $\mathbf{x}'$'s scaled-down bundle $\mathbf{x}''=\alpha \mathbf{x}',\alpha\in(0,1)$, by continuity of $u(\cdot)$, if $\alpha$ is close enough to 1, we have $\mathbf{p}\mathbf{x}''<\mathbf{p}\mathbf{x}^*$ and $u(\mathbf{x}'')>u(\mathbf{x}^*)$, contradicting to $\mathbf{p}^*$ minimizing expenditure. Hence $\mathbf{p}^*$ is optimal in UMP with $w=\mathbf{p}\mathbf{x}^*$, and $v(\mathbf{p},\mathbf{p}\mathbf{x}^*)=u(\mathbf{x}^*)=w$
+\end{enumerate}
+
+As UMP, when $\mathbf{p}\gg 0$, only very general conditions are needed for EMP to have a solution, that is, \myhl[blue]{\textbf{nonemptiness}}: $\exists \mathbf{x}$ s.t. $u(\mathbf{x})=u$.
+
+And as UMP, EMP will also induce two objects: Hicksian demand $h(\mathbf{p},u)$ and expenditure function $e(\mathbf{p},u)$.
+
+\subsubsection*{Hicksian demand}
+The optimal commodity vector in EMP is $h(\mathbf{p},u)\subset\mathbb{R}^L_+$, a.k.a., the Hicksian demand correspondence (function, or single-valued ones). Hicksian demand $h(\mathbf{p},u)$ parallels Walrasian demand $\mathbf{x}(\mathbf{p},w)$, hence it has parallel properties as those of $\mathbf{x}(\mathbf{p},w)$ in Thm.\ref{thm:properties_walrasian_demand}:
+\begin{theorem}{properties of $h(\mathbf{p},u)$}{properties_hicksian_demand}
+    \begin{enumerate}
+        \item \textit{\textbf{homogeneity of degree zero}} in $\mathbf{p}$: $\mathbf{x}(\alpha\mathbf{p},\alpha w)=\mathbf{x}(\mathbf{p},w),\forall \mathbf{p}\gg 0,w>0,\alpha>0$
+        \item \textit{\textbf{Walras' law}}: $\mathbf{p}\cdot \mathbf{x}(\mathbf{p},w)=w$
+        \item \textit{\textbf{convexity/uniqueness}}:
+        \begin{enumerate}
+            \item[(a)] if $\succsim$ is convex, then $u(\cdot)$ is quasiconcave, hence $\mathbf{x}(\mathbf{p},w)$ is a convex set
+            \item[(b)] if $\succsim$ is strictly convex, then $u(\cdot)$ is strictly quasiconcave, hence $\mathbf{x}(\mathbf{p},w)$ is single-valued    
+        \end{enumerate}
+        \item \textit{\textbf{continuity}}: Walrasian demand $\mathbf{x}(\mathbf{p},w)$ is continuous (preference is continuous). 
+    \end{enumerate}
+\end{theorem}
