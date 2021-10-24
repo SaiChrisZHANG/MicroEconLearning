@@ -112,40 +112,40 @@ A consumer's problem is to choose a feasible consumption bundle given a positive
 $$\max_{\mathbf{x}\geq 0} u(\mathbf{x}),\ \text{s.t.}\ \mathbf{p}\cdot\mathbf{x}\leq w$$
 if $\mathbf{p}\gg 0$, $u(\cdot)$ is continuous, then this problem has a solution: the Walrasian budget set $B_{\mathbf{p},w}=\left\{\mathbf{x}\in\mathbb{R}^L_+\mid \mathbf{p}\cdot\mathbf{x}\leq w\right\}$ is a compact set, hence a continuous function on it always has a maximum value.
 
-This problem will induce two objects: Walrasian demand correspondence/function $\mathbf{x}(\mathbf{p},w)\in \mathbb{R}^L_+$ and the value function $V(\mathbf{p},w)$.
+This problem will induce two objects: Walrasian demand correspondence/function $ x(\mathbf{p},w)\in \mathbb{R}^L_+$ and the value function $V(\mathbf{p},w)$.
 
-\subsubsection*{Walrasian demand $\mathbf{x}(\mathbf{p},w)$}
-Suppose continuous $u(\cdot)$, representing locally nonsatiated $\succsim$, $\mathbf{x}(\mathbf{p},w)$ has the following properties:
-\begin{theorem}{properties of $\mathbf{x}(\mathbf{p},w)$}{properties_walrasian_demand}
+\subsubsection*{Walrasian demand $ x(\mathbf{p},w)$}
+Suppose continuous $u(\cdot)$, representing locally nonsatiated $\succsim$, $ x(\mathbf{p},w)$ has the following properties:
+\begin{theorem}{properties of $ x(\mathbf{p},w)$}{properties_walrasian_demand}
     \begin{enumerate}
-        \item \textit{\textbf{homogeneity of degree zero}} in $(\mathbf{p},w)$: $\mathbf{x}(\alpha\mathbf{p},\alpha w)=\mathbf{x}(\mathbf{p},w),\forall \mathbf{p}\gg 0,w>0,\alpha>0$
-        \item \textit{\textbf{Walras' law}}: $\mathbf{p}\cdot \mathbf{x}(\mathbf{p},w)=w$
+        \item \textit{\textbf{homogeneity of degree zero}} in $(\mathbf{p},w)$: $ x(\alpha\mathbf{p},\alpha w)= x(\mathbf{p},w),\forall \mathbf{p}\gg 0,w>0,\alpha>0$
+        \item \textit{\textbf{Walras' law}}: $\mathbf{p}\cdot  x(\mathbf{p},w)=w$
         \item \textit{\textbf{convexity/uniqueness}}:
         \begin{enumerate}
-            \item[(a)] if $\succsim$ is convex, then $u(\cdot)$ is quasiconcave, hence $\mathbf{x}(\mathbf{p},w)$ is a convex set
-            \item[(b)] if $\succsim$ is strictly convex, then $u(\cdot)$ is strictly quasiconcave, hence $\mathbf{x}(\mathbf{p},w)$ is single-valued    
+            \item[(a)] if $\succsim$ is convex, then $u(\cdot)$ is quasiconcave, hence $ x(\mathbf{p},w)$ is a convex set
+            \item[(b)] if $\succsim$ is strictly convex, then $u(\cdot)$ is strictly quasiconcave, hence $ x(\mathbf{p},w)$ is single-valued    
         \end{enumerate}
-        \item \textit{\textbf{continuity}}: Walrasian demand $\mathbf{x}(\mathbf{p},w)$ is continuous (preference is continuous). 
+        \item \textit{\textbf{continuity}}: Walrasian demand $ x(\mathbf{p},w)$ is continuous (preference is continuous). 
     \end{enumerate}
 \end{theorem}
 
 We can prove these properties: 
 \begin{enumerate}
-    \item \textit{\textbf{homogeneity of degree zero}} in $(\mathbf{p},w)$: $\forall \alpha >0$, we always have $\left\{\mathbf{x}\mid \alpha\mathbf{p}\cdot\mathbf{x}\leq \alpha w\right\}=\left\{\mathbf{x}\mid \mathbf{p}\cdot\mathbf{x}\leq w\right\}$, this is, the set of feasible $\mathbf{x}$ does NOT change when both $\mathbf{p}$ and $w$ are multiplied by $\alpha$. The utility-maximizing $\mathbf{x}(\mathbf{p},w)$ is in these sets, hence $\mathbf{x}(\mathbf{p},w)=\mathbf{x}(\alpha\mathbf{p},\alpha w)$.
+    \item \textit{\textbf{homogeneity of degree zero}} in $(\mathbf{p},w)$: $\forall \alpha >0$, we always have $\left\{\mathbf{x}\mid \alpha\mathbf{p}\cdot\mathbf{x}\leq \alpha w\right\}=\left\{\mathbf{x}\mid \mathbf{p}\cdot\mathbf{x}\leq w\right\}$, this is, the set of feasible $\mathbf{x}$ does NOT change when both $\mathbf{p}$ and $w$ are multiplied by $\alpha$. The utility-maximizing $ x(\mathbf{p},w)$ is in these sets, hence $ x(\mathbf{p},w)= x(\alpha\mathbf{p},\alpha w)$.
     \item \textit{\textbf{Walras' law}}: This is guaranteed by the local nonsatiation assumption. If $\exists \mathbf{x}$ s.t $\mathbf{p}\cdot \mathbf{x}<w$, then in the sufficiently small neighborhood of $\mathbf{x}$, $\exists\mathbf{y}$ s.t. $\mathbf{p}\mathbf{y}<w$ and $\mathbf{y}\succ \mathbf{x}$, contradicting $\mathbf{x}$ being optimal.
     \item \textit{\textbf{convexity/uniqueness}}:
     \begin{enumerate}
-        \item[(a)] convex $\succsim$ $\Rightarrow$ convex $\mathbf{x}(\mathbf{p},w)$: suppose two maximizers $\mathbf{x}_1,\mathbf{x}_2\in\mathbf{x}(\mathbf{p},w)$, since Walrasian budget set is convex, hence $\alpha \mathbf{x}_1+(1-\alpha)\mathbf{x}_2$ is feasible. $u(\mathbf{x}_1)=u(\mathbf{x}_2)=u_{\max}$, hence by quasiconcavity of $u(\cdot)$, $u(\alpha \mathbf{x}_1+(1-\alpha)\mathbf{x}_2)\geq u_{\max}$, hence $\alpha \mathbf{x}_1+(1-\alpha)\mathbf{x}_2\in \mathbf{x}(\mathbf{p},w)$.
-        \item[(b)] strictly convex $\succsim$ $\Rightarrow$ unique $\mathbf{x}(\mathbf{p},w)$: suppose two maximizers $\mathbf{x}_1,\mathbf{x}_2\in\mathbf{x}(\mathbf{p},w)$, again $\alpha \mathbf{x}_1+(1-\alpha)\mathbf{x}_2$ is feasible. $u(\mathbf{x}_1)=u(\mathbf{x}_2)=u_{\max}$, hence by stirct quasiconcavity of $u(\cdot)$, $u(\alpha \mathbf{x}_1+(1-\alpha)\mathbf{x}_2)> u_{\max}$, hence $\mathbf{x}_1,\mathbf{x}_2$ are not maximizers, i.e., there are at most one maximizer (and there must be a maximizer in the compact Walrasian set).
+        \item[(a)] convex $\succsim$ $\Rightarrow$ convex $ x(\mathbf{p},w)$: suppose two maximizers $\mathbf{x}_1,\mathbf{x}_2\in x(\mathbf{p},w)$, since Walrasian budget set is convex, hence $\alpha \mathbf{x}_1+(1-\alpha)\mathbf{x}_2$ is feasible. $u(\mathbf{x}_1)=u(\mathbf{x}_2)=u_{\max}$, hence by quasiconcavity of $u(\cdot)$, $u(\alpha \mathbf{x}_1+(1-\alpha)\mathbf{x}_2)\geq u_{\max}$, hence $\alpha \mathbf{x}_1+(1-\alpha)\mathbf{x}_2\in  x(\mathbf{p},w)$.
+        \item[(b)] strictly convex $\succsim$ $\Rightarrow$ unique $ x(\mathbf{p},w)$: suppose two maximizers $\mathbf{x}_1,\mathbf{x}_2\in x(\mathbf{p},w)$, again $\alpha \mathbf{x}_1+(1-\alpha)\mathbf{x}_2$ is feasible. $u(\mathbf{x}_1)=u(\mathbf{x}_2)=u_{\max}$, hence by stirct quasiconcavity of $u(\cdot)$, $u(\alpha \mathbf{x}_1+(1-\alpha)\mathbf{x}_2)> u_{\max}$, hence $\mathbf{x}_1,\mathbf{x}_2$ are not maximizers, i.e., there are at most one maximizer (and there must be a maximizer in the compact Walrasian set).
     \end{enumerate}
-    \item \textit{\textbf{continuity}}: Walrasian demand $\mathbf{x}(\mathbf{p},w)$ is the solution of the utility maximizing problem, then by maximum theorem, if the utility function is continuous (preference is continuous), its maximizer $\mathbf{x}(\mathbf{p},w)$ is also continuous. 
+    \item \textit{\textbf{continuity}}: Walrasian demand $ x(\mathbf{p},w)$ is the solution of the utility maximizing problem, then by maximum theorem, if the utility function is continuous (preference is continuous), its maximizer $ x(\mathbf{p},w)$ is also continuous. 
     
-    This property can also be proved in a more "economic" way: If $\mathbf{x}(\mathbf{p},w)$ is not continuous, then $\exists\left\{p^n\right\}\rightarrow p^*$ such that $\mathbf{x}(\mathbf{p}^*,w)=\mathbf{x}^*$, but $\mathbf{x}(p^n,w)\not\rightarrow \mathbf{x}^*$, or in an $\epsilon$ representation: $\exists \epsilon>0$ s.t. $\left\Vert \mathbf{x}(\mathbf{p}^n,w),\mathbf{x}^* \right\Vert >\epsilon$. 
-    We know $\mathbf{x}(\mathbf{p}^n,w)$ is in a compact set ($p^n$ is bounded away from 0 and by wealth $w$), hence we can assume, without loss of generality, $\exists \mathbf{y}^*\neq \mathbf{x}^*, \mathbf{x}(\mathbf{p}^n,w)\rightarrow \mathbf{y}^*$. Since $\forall n,\mathbf{p}^n\mathbf{x}(\mathbf{p}^n,w)\leq w$, $\mathbf{p}^*\mathbf{y}^* \leq w$, at the same time, $\mathbf{x}^*$ is the utility maximizer given the Walrasian budget, hence $\mathbf{x}^*\succ \mathbf{y}^*$.
-    By the continuity of preferences, this $\succ$ is preserved in the small neighborhoods of $\mathbf{x}^*$ and $\mathbf{y}^*$: for sufficiently large $n$, $\mathbf{x}(\mathbf{p}^n,w)$ is in the neighborhodd of $y^*$; we can choose a bundle $\mathbf{z}^*$ in the neighorhood of $\mathbf{x}^*$ s.t. $\mathbf{p}^* \mathbf{z}^*<w$. For sufficiently large $n$, we have $\mathbf{p}^n\mathbf{z}^*<w$; and at the same time $\mathbf{z}^*\succ \mathbf{x}(\mathbf{p}^n,w)$. These two: $\mathbf{p}^n\mathbf{z}^*<w,\mathbf{z}^*\succ \mathbf{x}(\mathbf{p}^n,w)$ are directly contradicting each other (monotonicity).
+    This property can also be proved in a more "economic" way: If $ x(\mathbf{p},w)$ is not continuous, then $\exists\left\{p^n\right\}\rightarrow p^*$ such that $ x(\mathbf{p}^*,w)=\mathbf{x}^*$, but $ x(p^n,w)\not\rightarrow \mathbf{x}^*$, or in an $\epsilon$ representation: $\exists \epsilon>0$ s.t. $\left\Vert  x(\mathbf{p}^n,w),\mathbf{x}^* \right\Vert >\epsilon$. 
+    We know $ x(\mathbf{p}^n,w)$ is in a compact set ($p^n$ is bounded away from 0 and by wealth $w$), hence we can assume, without loss of generality, $\exists \mathbf{y}^*\neq \mathbf{x}^*,  x(\mathbf{p}^n,w)\rightarrow \mathbf{y}^*$. Since $\forall n,\mathbf{p}^n x(\mathbf{p}^n,w)\leq w$, $\mathbf{p}^*\mathbf{y}^* \leq w$, at the same time, $\mathbf{x}^*$ is the utility maximizer given the Walrasian budget, hence $\mathbf{x}^*\succ \mathbf{y}^*$.
+    By the continuity of preferences, this $\succ$ is preserved in the small neighborhoods of $\mathbf{x}^*$ and $\mathbf{y}^*$: for sufficiently large $n$, $ x(\mathbf{p}^n,w)$ is in the neighborhodd of $y^*$; we can choose a bundle $\mathbf{z}^*$ in the neighorhood of $\mathbf{x}^*$ s.t. $\mathbf{p}^* \mathbf{z}^*<w$. For sufficiently large $n$, we have $\mathbf{p}^n\mathbf{z}^*<w$; and at the same time $\mathbf{z}^*\succ  x(\mathbf{p}^n,w)$. These two: $\mathbf{p}^n\mathbf{z}^*<w,\mathbf{z}^*\succ  x(\mathbf{p}^n,w)$ are directly contradicting each other (monotonicity).
 \end{enumerate}
 
-In general, with the Lagrangean $\mathcal{L}=u(\mathbf{x})+\lambda (w-\mathbf{p}\cdot\mathbf{x})$, there are two cases of optimum $\mathbf{x}(\mathbf{p},w)$:
+In general, with the Lagrangean $\mathcal{L}=u(\mathbf{x})+\lambda (w-\mathbf{p}\cdot\mathbf{x})$, there are two cases of optimum $ x(\mathbf{p},w)$:
 \begin{enumerate}
     \item[-] interior optimum ($\forall x_l>0$): by solving the Lagrangean, get FOC: $\partial u(\mathbf{x}^*)/\partial x_l= \lambda p_l,\forall l\in \left\{1,\cdots,L\right\}$. Or, write in matrix notation: $\nabla u(\mathbf{x}^*)=\lambda \mathbf{p}$ where the gradient vector of $u(\cdot)$ at $\mathbf{x}$ is $\nabla u(\mathbf{x})=\left[\partial u(\mathbf{x})/\partial x_1,\cdots, \partial u(\mathbf{x})/\partial x_L\right]$.
     
@@ -153,7 +153,7 @@ In general, with the Lagrangean $\mathcal{L}=u(\mathbf{x})+\lambda (w-\mathbf{p}
     \item[-] border optimum ($\exists x_l=0$): when there is no interior optimum, $\nabla u(\mathbf{x}^*)$ is not proportional to prices, particularly, $\partial u(\mathbf{x}^*)/\partial x_l\begin{cases}\leq 0, & x^*_l=0 \\ =0 , & x^*_l>0\end{cases}$. At the border, due to nonnegativity of consumption, even when the agent wants to decrease the consumption of $x_l$, she won't be able to.
 \end{enumerate}
 
-The Lagrange multiplier $\lambda$ itself is very interesting as well. $\lambda$ gives the marginal value of relaxing the constraint in the UMP, hence it is the consumer's \textbf{marginal utility value of wealth} at the optimum: $$\nabla u(\textbf{x}(\textbf{p},w))\cdot \mathrm{D}_w\mathbf{x}(\mathbf{p},w)=\underbrace{\lambda \mathbf{p}\cdot \mathrm{D}_w\mathbf{x}(\mathbf{p},w)=\lambda}_{\text{By Walras' law: }\mathbf{p}\cdot\mathbf{x}(\mathbf{p},w)=w}$$ where $\mathrm{D}_w\mathbf{x}(\mathbf{p},w)=\left[\partial x_1(\mathbf{p},w)/\partial w,\cdots, \partial x_L(\mathbf{p},w)/\partial w\right]$
+The Lagrange multiplier $\lambda$ itself is very interesting as well. $\lambda$ gives the marginal value of relaxing the constraint in the UMP, hence it is the consumer's \textbf{marginal utility value of wealth} at the optimum: $$\nabla u(\textbf{x}(\textbf{p},w))\cdot \mathrm{D}_w x(\mathbf{p},w)=\underbrace{\lambda \mathbf{p}\cdot \mathrm{D}_w x(\mathbf{p},w)=\lambda}_{\text{By Walras' law: }\mathbf{p}\cdot x(\mathbf{p},w)=w}$$ where $\mathrm{D}_w x(\mathbf{p},w)=\left[\partial x_1(\mathbf{p},w)/\partial w,\cdots, \partial x_L(\mathbf{p},w)/\partial w\right]$
 
 But here we assume the Lagrangean multiplier is fixed across all commodities, which is a very strong assumption. Hence, we could perhaps think of another way to select $\lambda$: 
 Think Lagrangean multiplier as a penalty mechanism such that any deviation from the constraint will decrease utility, hence, $\lambda$ can only be chosen from $\left\{\frac{\partial u(\mathbf{x})}{\partial x_l}\cdot\frac{1}{p_l} \right\}^L_{l=1}$; at the same time, $\lambda$ reflects the marginal utility of wealth, 
@@ -163,37 +163,88 @@ If we choose $t=1$, thus $x'_l=x_l$, we would have Euler's theorem.}, we have
     $$\mathcal{L} = U^* +u(\mathbf{x})- \frac{\partial u(\mathbf{x})}{\partial x_{l^*}}\cdot\frac{1}{p_{l^*}}\cdot \left(\sum_{l=1}^L p_lx_l \right) \leq U^* + u(\mathbf{x})- \left(\sum_{l=1}^L \frac{\partial u(\mathbf{x})}{\partial x_{l}} x_l\right) = U^* +(1-m)u(\mathbf{x})$$
 this will be an upper bound for utility, it is achieved when the agent spends everything on commodity $l^*$, i.e., purchase $\frac{w}{p_{l^*}}$. This is feasible, and achieves the upper bound.
 
-In general, solving for $\mathbf{x}(\mathbf{p},w)$ is a constrained optimization problem, I will discuss it more thoroughly in the later chapter.
+In general, solving for $ x(\mathbf{p},w)$ is a constrained optimization problem, I will discuss it more thoroughly in the later chapter.
 
 \subsubsection*{Indirect utility function $v(\mathbf{p},w)$}
 The indirect utility function $v(\mathbf{p},w)\in \mathbb{R}$ is the maximized utility, i.e., 
-$$v(\mathbf{p},w)=u(\mathbf{x}^*),\forall \mathbf{x}^*\in \mathbf{x}(\mathbf{p},w)$$
-it has the following properties, closely related to those of Walrasian demand $\mathbf{x}(\mathbf{p},w)$ in \ref{thm:properties_walrasian_demand}:
+$$v(\mathbf{p},w)=u(\mathbf{x}^*),\forall \mathbf{x}^*\in  x(\mathbf{p},w)$$
+it has the following properties, closely related to those of Walrasian demand $ x(\mathbf{p},w)$ in \ref{thm:properties_walrasian_demand}:
 
 \begin{theorem}{properties of $v(\mathbf{p},w)$}{properties_indirect_u}
     \begin{enumerate}
-        \item \textit{\textbf{homogeneity of degree zero}} in $(\mathbf{p},w)$: $\mathbf{x}(\alpha\mathbf{p},\alpha w)=\mathbf{x}(\mathbf{p},w),\forall \mathbf{p}\gg 0,w>0,\alpha>0$
+        \item \textit{\textbf{homogeneity of degree zero}} in $(\mathbf{p},w)$: $ x(\alpha\mathbf{p},\alpha w)= x(\mathbf{p},w),\forall \mathbf{p}\gg 0,w>0,\alpha>0$
         \item \textit{\textbf{strictly increasing in $w$, nonincreasing in $p_l,\forall l$}}
         \item \textit{\textbf{quasiconvexity}}: $\forall \bar{v}$, the set $\left\{(\mathbf{p},w):v(\mathbf{p},w)\leq \bar{v}\right\}$ is convex
         \item \textit{\textbf{continuity}}: $v(\mathbf{p},w)$ is continuous in $\mathbf{p}$ and $w$.
     \end{enumerate}
 \end{theorem}
 
-The proof of these properties relies on the the properties of $\mathbf{x}(\mathbf{p},w)$:
+The proof of these properties relies on the the properties of $ x(\mathbf{p},w)$:
 \begin{enumerate}
-    \item \textit{\textbf{homogeneity of degree zero}} in $(\mathbf{p},w)$: it follows the homogeneity of Walrasian demand $\mathbf{x}(\mathbf{p},w)$.
-    \item \textit{\textbf{strictly increasing in $w$, nonincreasing in $p_l,\forall l$}}: this follows Walras' law $\mathbf{x}(\mathbf{p},w)\cdot \mathbf{p}=w$ and $v(\mathbf{p},w)=u(\mathbf{x}(\mathbf{p},w))$ where $u(\cdot)$ is increasing.
+    \item \textit{\textbf{homogeneity of degree zero}} in $(\mathbf{p},w)$: it follows the homogeneity of Walrasian demand $ x(\mathbf{p},w)$.
+    \item \textit{\textbf{strictly increasing in $w$, nonincreasing in $p_l,\forall l$}}: this follows Walras' law $ x(\mathbf{p},w)\cdot \mathbf{p}=w$ and $v(\mathbf{p},w)=u( x(\mathbf{p},w))$ where $u(\cdot)$ is increasing.
     \item \textit{\textbf{quasiconvexity}}: suppose $v(\mathbf{p},w), v(\mathbf{p}',w')\leq \bar{v}$. Then $\forall \alpha\in[0,1]$, consider $(\mathbf{p}'',w'')=\left( \alpha\mathbf{p}+(1-\alpha)\mathbf{p}',\alpha w+(1-\alpha)w' \right)$, 
     first, we have $$ \mathbf{p}''\cdot\mathbf{x}\leq w''\Rightarrow \alpha \mathbf{p}\cdot\mathbf{x}+(1-\alpha)\mathbf{p}'\cdot \mathbf{x}\leq \alpha w+(1-\alpha)w'$$ hence, either $\mathbf{p}\cdot\mathbf{x}\leq w$ 
     or $\mathbf{p}'\cdot\mathbf{x}\leq w'$ or both. Intuitively, if $\mathbf{x}$ can be afforded at $(\mathbf{p}'',w'')$, it must be affordable at either $(\mathbf{p},w)$ or $(\mathbf{p}',w')$ or both. And $v(\mathbf{p},w)$ 
     is the maximum utility under $(\mathbf{p},w)$ (same for $v(\mathbf{p}',w')$ and $(\mathbf{p}',w')$), hence $u(\mathbf{x})\leq v(\mathbf{p},w)\leq \bar{v}$ or $u(\mathbf{x})\leq v(\mathbf{p}',w')\leq \bar{v}$ must hold. 
     Therefore $ v(\mathbf{p}'',w'')\leq \bar{v}$.
-    \item \textit{\textbf{continuity}}: since $\succsim$ is strictly convex, we have a unique $\mathbf{x}(\mathbf{p},w)$, and $v(\mathbf{p},w)=u(\mathbf{x}(\mathbf{p},w))$. We have proved $\mathbf{x}(\mathbf{p},w)$ is continuous, we know $u(\cdot)$ is continuous. Hence, $v(\mathbf{p},w)$ is continuous.
+    \item \textit{\textbf{continuity}}: since $\succsim$ is strictly convex, we have a unique $ x(\mathbf{p},w)$, and $v(\mathbf{p},w)=u( x(\mathbf{p},w))$. We have proved $ x(\mathbf{p},w)$ is continuous, we know $u(\cdot)$ is continuous. Hence, $v(\mathbf{p},w)$ is continuous.
 \end{enumerate}
 
 \subsection{EMP (Expenditure Minimizing Problem)}
 A consumer's problem can also be to choose the cheapest consumption bundle that achieves a certain level of utility, given a positive price wealth combination $(\mathbf{p},w)$:
 $$\min_{\mathbf{x}\geq 0} \mathbf{p}\cdot\mathbf{x}\ \text{s.t.}\ u(\mathbf{x})\geq u$$
+
+As UMP, when $\mathbf{p}\gg 0$, only very general conditions are needed for EMP to have a solution, that is, \myhl[blue]{\textbf{nonemptiness}}: $\exists \mathbf{x}$ s.t. $u(\mathbf{x})=u$.
+
+And as UMP, EMP will also induce two objects: Hicksian demand $h(\mathbf{p},u)$ and expenditure function $e(\mathbf{p},u)$.
+
+\subsubsection*{Hicksian demand}
+The optimal commodity vector in EMP is $h(\mathbf{p},u)\subset\mathbb{R}^L_+$, a.k.a., the Hicksian demand correspondence (function, or single-valued ones). Hicksian demand $h(\mathbf{p},u)$ parallels Walrasian demand $ x(\mathbf{p},w)$, hence it has parallel properties as those of $ x(\mathbf{p},w)$ in Thm.\ref{thm:properties_walrasian_demand}:
+\begin{theorem}{properties of $h(\mathbf{p},u)$}{properties_hicksian_demand}
+    \begin{enumerate}
+        \item \textit{\textbf{homogeneity of degree zero}} in $\mathbf{p}$: $h(\alpha\mathbf{p},u)= x(\mathbf{p},w),\forall \mathbf{p}\gg 0,w>0,\alpha>0$
+        \item \textit{\textbf{No excess utility}}: $\forall \mathbf{x}\in h(\mathbf{p},u), u(\mathbf{x})=u$
+        \item \textit{\textbf{convexity/uniqueness}}:
+        \begin{enumerate}
+            \item[(a)] if $\succsim$ is convex, hence $ h(\mathbf{p},u)$ is a convex set
+            \item[(b)] if $\succsim$ is strictly convex, hence $ h(\mathbf{p},u)$ is single-valued    
+        \end{enumerate}
+        \item \textit{\textbf{continuity}}: $h(\mathbf{p},u)$ is continuous in $\mathbf{p}$ and $u$
+    \end{enumerate}
+\end{theorem}
+Here is the proof:
+\begin{enumerate}
+    \item \textit{\textbf{homogeneity of degree zero}} in $\mathbf{p}$: minimizing $\mathbf{p}\cdot\mathbf{x}$ subject to $u(\mathbf{x})\geq u$ is the same as minimizing $\alpha \mathbf{p}\cdot\mathbf{x}$ since $\alpha >0$
+    \item \textit{\textbf{No excess utility}}: suppose $\exists \mathbf{x}\in h(\mathbf{p},u)$ s.t. $u(\mathbf{x})>u$. 
+    \item \textit{\textbf{convexity/uniqueness}}:
+    \begin{enumerate}
+        \item[(a)] convex $\succsim$ $\Rightarrow$ convex $ h(\mathbf{p},u)$: for $\mathbf{x},\mathbf{x}'\in h(\mathbf{p},u)$, then $u(\mathbf{x}),u(\mathbf{x}')\geq u$ and $\mathbf{p}\cdot\mathbf{x}=\mathbf{p}\cdot\mathbf{x}'$. Then $\forall \alpha\in[0,1]$, let $\alpha\mathbf{x}+(1-\alpha)\mathbf{x}'$, $\mathbf{p}\cdot\mathbf{x}''=\mathbf{p}\cdot\mathbf{x}=\mathbf{p}\cdot\mathbf{x}'$; meanwhile, $\succsim$ is convex, $u(\cdot)$ is quasiconcave, hence $u(\mathbf{x}'')\geq u$, hence $\mathbf{x}''\in h(\mathbf{p},u)$
+        \item[(b)] strictly convex $\succsim$ $\Rightarrow$ single-valued $ h(\mathbf{p},u)$: for $\mathbf{x},\mathbf{x}'\in h(\mathbf{p},u)$, then $u(\mathbf{x}),u(\mathbf{x}')\geq u$ and $\mathbf{p}\cdot\mathbf{x}=\mathbf{p}\cdot\mathbf{x}'$. Then $\forall \alpha\in[0,1]$, let $\alpha\mathbf{x}+(1-\alpha)\mathbf{x}'$, $\mathbf{p}\cdot\mathbf{x}''=\mathbf{p}\cdot\mathbf{x}=\mathbf{p}\cdot\mathbf{x}'$; meanwhile, $\succsim$ is strictly convex, $u(\cdot)$ is strictly quasiconcave, hence $u(\mathbf{x}'')> u$, then we could find a $\beta$ close enough to 1 s.t. $u(\beta\mathbf{x}'')>u$ and $\mathbf{p}\cdot(\beta \mathbf{x}'')<\mathbf{p}\cdot \mathbf{x}=\mathbf{p}\cdot \mathbf{x}'$, hence neither $\mathbf{x}$ nor $\mathbf{x}'$ is EMP optimizer, therefore, $h(\mathbf{p},u)$ must be a singleton.
+    \end{enumerate}
+    \item \textit\textbf{continuity}: continuity of h($\mathbf{p},u)$ follows the continuity of $u(\cdot)$.
+\end{enumerate}
+
+And again, just like UMP, we use the $\mathcal{L}=\mathbf{p}\cdot\mathbf{x}$ Lagrangean to solve EMP. The FOC is: $\exists \lambda \geq 0$ s.t.
+$$\mathbf{p}\geq \lambda\nabla u(\mathbf{x}^*)\text{ and }\mathbf{x}^*\cdot[\mathbf{p}-\lambda \nabla u(\mathbf{x}^*)]=0$$
+this result comes from the Kuhn-Tucker condition, which will be discussed later.
+
+A very important property of Hicksian demand is that it satisfies \myhl[blue]{\textbf{compensated law of demand}}:
+\begin{theorem}{$h(\mathbf{p},u)$ satisfies compensated law of demand}{hicksian_lawofdemand}
+    For a continuous $u(\cdot)$ representing a locally nonsatiated $\succsim$, and a single-valued Hicksian demand $h(\mathbf{p},u),\forall \mathbf{p}\gg 0$, then $\forall \mathbf{p}',\mathbf{p}''$:
+    $$(\mathbf{p}''-\mathbf{p}')\cdot [h(\mathbf{p}'',u)-h(\mathbf{p}',u)]\leq 0$$
+    The proof is extremely easy: since $h(\mathbf{p},u)$ is the expenditure minimizer, hence, we have
+    $$
+    \begin{cases}
+        \mathbf{p}''\cdot h(\mathbf{p}'',u) \leq \mathbf{p}''\cdot h(\mathbf{p}',u) &(1)\\
+        \mathbf{p}'\cdot h(\mathbf{p}'',u) \geq \mathbf{p}'\cdot h(\mathbf{p}',u)&(2)
+    \end{cases}\xRightarrow{(1)-(2)}(\mathbf{p}''-\mathbf{p}')\cdot [h(\mathbf{p}'',u)-h(\mathbf{p}',u)]\leq 0
+    $$
+\end{theorem}
+An immediate implication of Thm.\ref{thm:hicksian_lawofdemand} is that own-price effects are always nonpositive: $(\mathbf{p}''_l-\mathbf{p}'_l)[h_l(\mathbf{p}'',u)-h_l(\mathbf{p}',u)]\leq 0$.
+Although this looks familiar, as in Thm.\ref{thm:compensated_lawofdemand} and Thm.\ref{thm:compensated_lawofdemand_general} for Walrasian demand. However, Walrasian demand 
+
+\subsubsection*{Duality: EMP and UMP}
 
 \textbf{EMP} is the dual problem of \textbf{UMP}. Duality will be discussed more elaborately later, here we focus on the relationship between EMP and UMP:
 \begin{theorem}{Relationship between EMP and UMP}{EMP_vs_UMP}
@@ -209,22 +260,3 @@ Here is the proof:
     \item UMP$\Rightarrow$EMP: Suppose $\mathbf{x}^*$ is not optimal in EMP with required utility level u($\mathbf{x}^*$), then $\exists \mathbf{x}'$ s.t. $u(\mathbf{x}')\geq u(\mathbf{x}^*)$ and $\mathbf{p}\cdot\mathbf{x}'<\mathbf{p}\cdot\mathbf{x}^*\leq w$, by local nonsatiation, we can find an affordable $\mathbf{x}''$ that is close to $\mathbf{x}'$ but has strictly higher utility, that is $u(\mathbf{x}'')>u(\mathbf{x}')$ and $\mathbf{p}\mathbf{x}''< w$, this leads to $u(\mathbf{x}'')>u(\mathbf{x}^*)$, contradicting to $\mathbf{x}^*$ maximizing utility. Hence $\mathbf{x}$ is optimal in EMP with $u=u(\mathbf{x}^*)$, and $e(\mathbf{p},u(\mathbf{x}^*))=\mathbf{p}\mathbf{x}^*=w$
     \item EMP$\Rightarrow$UMP: With $u>u(0)\Rightarrow \mathbf{x}^*\neq 0\Rightarrow \mathbf{p}\mathbf{x}^*$, suppose $\mathbf{x}^*$ is not optimal in UMP with wealth $\mathbf{p}\mathbf{x}^*$, then $\exists \mathbf{x}'$ s.t. $\mathbf{p}\mathbf{x}'\leq \mathbf{p}\mathbf{x}^*$, then consider $\mathbf{x}'$'s scaled-down bundle $\mathbf{x}''=\alpha \mathbf{x}',\alpha\in(0,1)$, by continuity of $u(\cdot)$, if $\alpha$ is close enough to 1, we have $\mathbf{p}\mathbf{x}''<\mathbf{p}\mathbf{x}^*$ and $u(\mathbf{x}'')>u(\mathbf{x}^*)$, contradicting to $\mathbf{p}^*$ minimizing expenditure. Hence $\mathbf{p}^*$ is optimal in UMP with $w=\mathbf{p}\mathbf{x}^*$, and $v(\mathbf{p},\mathbf{p}\mathbf{x}^*)=u(\mathbf{x}^*)=w$
 \end{enumerate}
-
-As UMP, when $\mathbf{p}\gg 0$, only very general conditions are needed for EMP to have a solution, that is, \myhl[blue]{\textbf{nonemptiness}}: $\exists \mathbf{x}$ s.t. $u(\mathbf{x})=u$.
-
-And as UMP, EMP will also induce two objects: Hicksian demand $h(\mathbf{p},u)$ and expenditure function $e(\mathbf{p},u)$.
-
-\subsubsection*{Hicksian demand}
-The optimal commodity vector in EMP is $h(\mathbf{p},u)\subset\mathbb{R}^L_+$, a.k.a., the Hicksian demand correspondence (function, or single-valued ones). Hicksian demand $h(\mathbf{p},u)$ parallels Walrasian demand $\mathbf{x}(\mathbf{p},w)$, hence it has parallel properties as those of $\mathbf{x}(\mathbf{p},w)$ in Thm.\ref{thm:properties_walrasian_demand}:
-\begin{theorem}{properties of $h(\mathbf{p},u)$}{properties_hicksian_demand}
-    \begin{enumerate}
-        \item \textit{\textbf{homogeneity of degree zero}} in $\mathbf{p}$: $\mathbf{x}(\alpha\mathbf{p},\alpha w)=\mathbf{x}(\mathbf{p},w),\forall \mathbf{p}\gg 0,w>0,\alpha>0$
-        \item \textit{\textbf{Walras' law}}: $\mathbf{p}\cdot \mathbf{x}(\mathbf{p},w)=w$
-        \item \textit{\textbf{convexity/uniqueness}}:
-        \begin{enumerate}
-            \item[(a)] if $\succsim$ is convex, then $u(\cdot)$ is quasiconcave, hence $\mathbf{x}(\mathbf{p},w)$ is a convex set
-            \item[(b)] if $\succsim$ is strictly convex, then $u(\cdot)$ is strictly quasiconcave, hence $\mathbf{x}(\mathbf{p},w)$ is single-valued    
-        \end{enumerate}
-        \item \textit{\textbf{continuity}}: Walrasian demand $\mathbf{x}(\mathbf{p},w)$ is continuous (preference is continuous). 
-    \end{enumerate}
-\end{theorem}

@@ -22,29 +22,29 @@ Of course, it is perfectly possible that a consumer's budget is NOT convex (and 
 \subsection{Walrasian Demand Function}
 With Walrasian budgets defined, we can define \textit{Walrasian demand correspondence} and \textit{Walrasian demand function} as:
 \begin{definition}{Walrasian demand correspondence/function}{}
-    For each \textit{price-wealth} pair $(\mathbf{p},w)$, Walrasian demand correspondence is the set of chosen consumption bundles, written as $\mathbf{x}(\mathbf{p},w)$. When $\mathbf{x}(\mathbf{p},w)$ is single-valued, it will be referred to as a \textbf{Walrasian demand function}.
+    For each \textit{price-wealth} pair $(\mathbf{p},w)$, Walrasian demand correspondence is the set of chosen consumption bundles, written as $ x(\mathbf{p},w)$. When $ x(\mathbf{p},w)$ is single-valued, it will be referred to as a \textbf{Walrasian demand function}.
 \end{definition}
 
-The two main assumptions of $\mathbf{x}(\mathbf{p},w)$ are:
+The two main assumptions of $ x(\mathbf{p},w)$ are:
 \begin{definition}{homogeneity of degree zero and Walras' law}{}
-    For a Walrasian demand correspondence $\mathbf{x}(\mathbf{p},w)$, we assume it is:
+    For a Walrasian demand correspondence $ x(\mathbf{p},w)$, we assume it is:
     \begin{enumerate}
-        \item[1.] \textbf{Homogeneous of degree zero}: $\forall \mathbf{p},w$ and $\alpha >0$, $\mathbf{x}(\alpha \mathbf{p},\alpha w)=\mathbf{x}(\mathbf{p},w)$. This means that if wealth and prices change in the same proportion at the same time, consumer would not change her choice. 
+        \item[1.] \textbf{Homogeneous of degree zero}: $\forall \mathbf{p},w$ and $\alpha >0$, $ x(\alpha \mathbf{p},\alpha w)= x(\mathbf{p},w)$. This means that if wealth and prices change in the same proportion at the same time, consumer would not change her choice. 
         
         There are two implications of homogeneous of degree zero assumption:
         \begin{enumerate}
-            \item[-] \textbf{Dimension reduction}: With this assumption, we can reduce $\mathbf{x}(\mathbf{p},w)$ to $\mathbf{x}(\tilde{\mathbf{p}},1)$ where $\tilde{\mathbf{p}}=\frac{1}{w}\mathbf{p}$, hence to a $L$-argument problem.
-            \item[-] \textbf{Choice structure}: By homogeneity of degree zero, $\mathbf{x}(\mathbf{p},w)$ depends only on $\mathbf{p}$ and $w$, i.e. the budget set, then for the family of Walrasian budget sets $\mathcal{B}^*=\{B_{\mathbf{p},w}:\mathbf{p}\gg 0,w>0\}$, $(\mathcal{B}^*,\mathbf{x}(\cdot))$ is a choice structure. This choice structure does NOT include all possible subsets of $X$\sidenotes{$\leftarrow X$ is the set of all possible bundles}, in particular, not all two- and three-element subsets of $X$\footnote{This relates to the argument that when one consumption bundle $\mathbf{x^*}$ is infeasible, it not being chosen does NOT mean it is less preferred. This will be dealt with more carefully with more assumptions of preference-based demand.}, therefore, requires more assumptions to have a rationalizing preference.
+            \item[-] \textbf{Dimension reduction}: With this assumption, we can reduce $ x(\mathbf{p},w)$ to $ x(\tilde{\mathbf{p}},1)$ where $\tilde{\mathbf{p}}=\frac{1}{w}\mathbf{p}$, hence to a $L$-argument problem.
+            \item[-] \textbf{Choice structure}: By homogeneity of degree zero, $ x(\mathbf{p},w)$ depends only on $\mathbf{p}$ and $w$, i.e. the budget set, then for the family of Walrasian budget sets $\mathcal{B}^*=\{B_{\mathbf{p},w}:\mathbf{p}\gg 0,w>0\}$, $(\mathcal{B}^*, x(\cdot))$ is a choice structure. This choice structure does NOT include all possible subsets of $X$\sidenotes{$\leftarrow X$ is the set of all possible bundles}, in particular, not all two- and three-element subsets of $X$\footnote{This relates to the argument that when one consumption bundle $\mathbf{x^*}$ is infeasible, it not being chosen does NOT mean it is less preferred. This will be dealt with more carefully with more assumptions of preference-based demand.}, therefore, requires more assumptions to have a rationalizing preference.
         \end{enumerate}
              
-        \item[2.] \textbf{Walras' law}: $\forall \gg 0,w>0$, $\mathbf{p}\cdot\mathbf{x}=w$ for every $\mathbf{x}\in \mathbf{x}(\mathbf{p},w)$. Walras' law means that a consumer want to spend all her wealth for consumption, every consumption bundle hence will exhaust $w$. Walras' law implies that goods are continuous.
+        \item[2.] \textbf{Walras' law}: $\forall \gg 0,w>0$, $\mathbf{p}\cdot\mathbf{x}=w$ for every $\mathbf{x}\in  x(\mathbf{p},w)$. Walras' law means that a consumer want to spend all her wealth for consumption, every consumption bundle hence will exhaust $w$. Walras' law implies that goods are continuous.
         
         Notice that this is implicitly intertemporal, meaning that Walras' law consider lifetime resource allocation.
     \end{enumerate}
 \end{definition}
 
 Next, we disucess several basic definitions induced from the Walrasian demand function. For a demand function 
-$$\mathbf{x}(\mathbf{p},w)=\left[x_1 (\mathbf{p},w),x_2 (\mathbf{p},w),\cdots, x_L(\mathbf{p},w) \right]^T$$ we have the following two effects:
+$$ x(\mathbf{p},w)=\left[x_1 (\mathbf{p},w),x_2 (\mathbf{p},w),\cdots, x_L(\mathbf{p},w) \right]^T$$ we have the following two effects:
 
 \begin{description}
     \item[Wealth effects] \underline{Fix $\mathbf{p}$, get a function of $x(w)$}.
@@ -75,25 +75,25 @@ For most goods, the price effects would be negative: you would buy more if the p
 Regarding wealth effects $\partial x_l(\mathbf{p},w)/\partial w$ and price effects $\partial x_l(\mathbf{p},w)/\partial p_k$, we have the following two theorems:
 
 \begin{theorem}{price effect and wealth effect cancel out}{homo_waldemand_thm1}
-    If the Walrasian demand function $\mathbf{x}(\mathbf{p},w)$ is \textbf{homogeneous of degree zero}, the $\forall \mathbf{p},w$:
+    If the Walrasian demand function $ x(\mathbf{p},w)$ is \textbf{homogeneous of degree zero}, the $\forall \mathbf{p},w$:
     $$\sum^L_{k=1}\frac{\partial x_l(\mathbf{p},w)}{\partial p_k}p_k +\frac{\partial x_l(\mathbf{p},w)}{\partial w}w=0,\forall l=1,\cdots,L$$
 \end{theorem}
 
-This is easy to proof: homogeneity of degree zero gives $\mathbf{x}(\alpha \mathbf{p},\alpha w)-\mathbf{x}(\mathbf{p},w)=0$, differentiating with respect to $\alpha$, get:
-$$\mathrm{D}_{\alpha \mathbf{p}}\mathbf{x}(\alpha \mathbf{p},\alpha w)\cdot \mathbf{p} + \mathrm{D}_{\alpha w} \mathbf{x}(\alpha \mathbf{p},\alpha w)w=0$$
-this is true for any $\alpha$, if we take $\alpha=1$, we get $\mathrm{D}_{\mathbf{p}}\mathbf{x}(\mathbf{p}, w)\cdot \mathbf{p} + \mathrm{D}_{w} \mathbf{x}( \mathbf{p}, w)w=\mathbf{0}$, which is just the matrix notation of Thm.\ref{thm:homo_waldemand_thm1}.
+This is easy to proof: homogeneity of degree zero gives $ x(\alpha \mathbf{p},\alpha w)- x(\mathbf{p},w)=0$, differentiating with respect to $\alpha$, get:
+$$\mathrm{D}_{\alpha \mathbf{p}} x(\alpha \mathbf{p},\alpha w)\cdot \mathbf{p} + \mathrm{D}_{\alpha w}  x(\alpha \mathbf{p},\alpha w)w=0$$
+this is true for any $\alpha$, if we take $\alpha=1$, we get $\mathrm{D}_{\mathbf{p}} x(\mathbf{p}, w)\cdot \mathbf{p} + \mathrm{D}_{w}  x( \mathbf{p}, w)w=\mathbf{0}$, which is just the matrix notation of Thm.\ref{thm:homo_waldemand_thm1}.
 
 Intuitively, this implies the price (substitution) effects and wealth (income) effects induced by the price change of one commodity, when weighted by the prices of other commodities and wealth, will cancel out.
 
 Another theorem is induced from Walras' law:
 \begin{theorem}{change of total expenditure}{walraslaw_waldemand_thm2}
-    If the Walrasian demand function $\mathbf{x}(\mathbf{p},w)$ satisfies \textbf{Walras' law}, then for all $\mathbf{p},w$:
+    If the Walrasian demand function $ x(\mathbf{p},w)$ satisfies \textbf{Walras' law}, then for all $\mathbf{p},w$:
     $$\sum^L_{l=1}p_l\frac{\partial x_l(\mathbf{p},w)}{\partial p_k}+x_k(\mathbf{p},w)=0,\forall k=1,\cdots,L$$
     and
     $$\sum^L_{l=1}p_l\frac{\partial x_l(\mathbf{p},w)}{\partial w}=1$$
 \end{theorem}
 
-The proof is also easy: Walras' law gives $\mathbf{p}\cdot \mathbf{x}(\mathbf{p},w)=w$, take derivatives with respect to $\mathbf{p}$, get $\mathbf{p}\cdot \mathrm{D}_{\mathbf{p}}\mathbf{x}(\mathbf{p},w)+\mathbf{x}(\mathbf{p},w)^T=\mathbf{0}^T$\footnote{This will give: $\mathbf{p}\cdot \mathrm{D}_{\mathbf{p}}\mathbf{x}(\mathbf{p},w)\mathbf{p}+\mathbf{x}(\mathbf{p},w)^T\mathbf{p}=\mathbf{0}^T\Rightarrow \mathbf{p}\cdot \mathrm{D}_{\mathbf{p}}\mathbf{x}(\mathbf{p},w)\mathbf{p}=-w$}; take derivatives with repsect to $w$, get $\mathbf{p}\cdot \mathrm{D}_{w}(\mathbf{p},w)=1$. 
+The proof is also easy: Walras' law gives $\mathbf{p}\cdot  x(\mathbf{p},w)=w$, take derivatives with respect to $\mathbf{p}$, get $\mathbf{p}\cdot \mathrm{D}_{\mathbf{p}} x(\mathbf{p},w)+ x(\mathbf{p},w)^T=\mathbf{0}^T$\footnote{This will give: $\mathbf{p}\cdot \mathrm{D}_{\mathbf{p}} x(\mathbf{p},w)\mathbf{p}+ x(\mathbf{p},w)^T\mathbf{p}=\mathbf{0}^T\Rightarrow \mathbf{p}\cdot \mathrm{D}_{\mathbf{p}} x(\mathbf{p},w)\mathbf{p}=-w$}; take derivatives with repsect to $w$, get $\mathbf{p}\cdot \mathrm{D}_{w}(\mathbf{p},w)=1$. 
 The intuition is: a change in prices do NOT change the total expenditure, and the total expenditure will change by the same amount with the change in wealth.
 
 If we define elasticities as:
@@ -108,106 +108,106 @@ And we can rewrite the two equations in Thm.\ref{thm:walraslaw_waldemand_thm2} a
 \subsection{WARP and Law of Demand}
 Since for the family of Walrasian budget sets $\mathcal{B}^*=\{B_{\mathbf{p},w}:\mathbf{p}\gg 0,w>0\}$, $(\mathcal{B}^*,\mathbf{p}(\cdot))$ is a choice structure, naturally, we would like to check when WARP holds for this choice structure.
 
-\begin{definition}{WARP of $\mathbf{x}(\mathbf{p},w)$}{walrasian_WARP}
-    A Walrasian demand function $\mathbf{x}(\mathbf{p},w)$ satisfies WARP if any two price-wealth conditions $(\mathbf{p},w)$ and $(\mathbf{p}',w')$ satisfies:
-    $$\mathbf{p}\cdot \mathbf{x}(\mathbf{p}',w')\leq w\text{ and }\mathbf{x}(\mathbf{p}',w')\neq \mathbf{x}(\mathbf{p},w)\Rightarrow \mathbf{p}'\cdot\mathbf{x}(\mathbf{p},w)>w'$$
+\begin{definition}{WARP of $ x(\mathbf{p},w)$}{walrasian_WARP}
+    A Walrasian demand function $ x(\mathbf{p},w)$ satisfies WARP if any two price-wealth conditions $(\mathbf{p},w)$ and $(\mathbf{p}',w')$ satisfies:
+    $$\mathbf{p}\cdot  x(\mathbf{p}',w')\leq w\text{ and } x(\mathbf{p}',w')\neq  x(\mathbf{p},w)\Rightarrow \mathbf{p}'\cdot x(\mathbf{p},w)>w'$$
 \end{definition}
 
-The intuition is quite straightforward: If $\mathbf{p}\cdot \mathbf{x}(\mathbf{p}',w')\leq w$ and $\mathbf{x}(\mathbf{p}',w')\neq \mathbf{x}(\mathbf{p},w)$, the consumer chooses $\mathbf{x}(\mathbf{p},w)$ even when $\mathbf{x}(\mathbf{p}',w')$ is affordable. Hence, $\mathbf{x}(\mathbf{p},w)$ is preferred over $\mathbf{x}(\mathbf{p}',w')$, which means that the only reason why she chooses $\mathbf{x}(\mathbf{p},w)$ instead of $\mathbf{x}(\mathbf{p}',w')$ is that she can not afford $\mathbf{x}(\mathbf{p},w)$ at $(\mathbf{p}',w')$, i.e. $\mathbf{p}'\mathbf{x}(\mathbf{p},w)>w'$. An easier way to understand WARP is that we \textbf{CANNOT} have both $\mathbf{p}'\cdot \mathbf{x}(\mathbf{p},w)\leq w'$ and $\mathbf{p}\cdot \mathbf{x}(\mathbf{p}',w')\leq w$, unless $\mathbf{x}(\mathbf{p}',w')=\mathbf{x}(\mathbf{p},w)$.
+The intuition is quite straightforward: If $\mathbf{p}\cdot  x(\mathbf{p}',w')\leq w$ and $ x(\mathbf{p}',w')\neq  x(\mathbf{p},w)$, the consumer chooses $ x(\mathbf{p},w)$ even when $ x(\mathbf{p}',w')$ is affordable. Hence, $ x(\mathbf{p},w)$ is preferred over $ x(\mathbf{p}',w')$, which means that the only reason why she chooses $ x(\mathbf{p},w)$ instead of $ x(\mathbf{p}',w')$ is that she can not afford $ x(\mathbf{p},w)$ at $(\mathbf{p}',w')$, i.e. $\mathbf{p}' x(\mathbf{p},w)>w'$. An easier way to understand WARP is that we \textbf{CANNOT} have both $\mathbf{p}'\cdot  x(\mathbf{p},w)\leq w'$ and $\mathbf{p}\cdot  x(\mathbf{p}',w')\leq w$, unless $ x(\mathbf{p}',w')= x(\mathbf{p},w)$.
 
-It is easy to show that this definition is a special case of Def.\ref{def:WARP}: here we consider single-valued $C(\cdot)$ (function), then Def.\ref{def:WARP} gives that $\forall B,B'$ and $x,y\in B\cap B'$, $x=C(B),y=C(B')\Rightarrow x\in C(B')\Rightarrow x=y$. Rewrite this in the context of Walrasian demand functions, we have: for any $(\mathbf{p},w),(\mathbf{p}',w')$, if $\mathbf{p}\cdot\mathbf{x}(\mathbf{p}',w')\leq w$ and $\mathbf{p}'\cdot \mathbf{x}(\mathbf{p},w)\leq w'$, then $\mathbf{x}(\mathbf{p},w)=\mathbf{x}(\mathbf{p'},w')$. This is the contrapositive statement of Def.\ref{def:walrasian_WARP}. Hence the two definitions are equivalent.
+It is easy to show that this definition is a special case of Def.\ref{def:WARP}: here we consider single-valued $C(\cdot)$ (function), then Def.\ref{def:WARP} gives that $\forall B,B'$ and $x,y\in B\cap B'$, $x=C(B),y=C(B')\Rightarrow x\in C(B')\Rightarrow x=y$. Rewrite this in the context of Walrasian demand functions, we have: for any $(\mathbf{p},w),(\mathbf{p}',w')$, if $\mathbf{p}\cdot x(\mathbf{p}',w')\leq w$ and $\mathbf{p}'\cdot  x(\mathbf{p},w)\leq w'$, then $ x(\mathbf{p},w)= x(\mathbf{p'},w')$. This is the contrapositive statement of Def.\ref{def:walrasian_WARP}. Hence the two definitions are equivalent.
 
 \subsubsection*{WARP and compensated price changes}
-WARP can also be stated in terms of compensated price changes. At $(\mathbf{p},w)$, the consumer chooses $\mathbf{x}(\mathbf{p},w)$, if she still want to afford $\mathbf{x}(\mathbf{p},w)$ at a new price $\mathbf{p}'$, she would need to adjust her wealth to $w'=\mathbf{p}'\cdot \mathbf{x}(\mathbf{p},w)$, this gives \textit{Slutsky wealth compensation} $\Delta w=w'-w=\Delta \mathbf{p}\cdot\mathbf{x}(\mathbf{p},w)=(\mathbf{p}'-\mathbf{p})\mathbf{x}(\mathbf{p},w)$, $\Delta \mathbf{p}$ is referred to as \textit{compensated price changes}. With these concepts defined, WARP implies:
+WARP can also be stated in terms of compensated price changes. At $(\mathbf{p},w)$, the consumer chooses $ x(\mathbf{p},w)$, if she still want to afford $ x(\mathbf{p},w)$ at a new price $\mathbf{p}'$, she would need to adjust her wealth to $w'=\mathbf{p}'\cdot  x(\mathbf{p},w)$, this gives \textit{Slutsky wealth compensation} $\Delta w=w'-w=\Delta \mathbf{p}\cdot x(\mathbf{p},w)=(\mathbf{p}'-\mathbf{p}) x(\mathbf{p},w)$, $\Delta \mathbf{p}$ is referred to as \textit{compensated price changes}. With these concepts defined, WARP implies:
 \begin{theorem}{WARP $\Rightarrow$ law of demand}{WARP_to_lawofdemand}
     For any $\Delta \mathbf{p}$ from initial situation $(\mathbf{p},w)$ to $(\mathbf{p}',w')=(\mathbf{p}',\mathbf{p}'\cdot(\mathbf{x},w))$, if WARP holds, we have
-    $$(\mathbf{p}'-\mathbf{p})\cdot[\mathbf{x}(\mathbf{p}',w')-\mathbf{x}(\mathbf{p},w)]\leq 0$$
-    with strict inequality unless $\mathbf{x}(\mathbf{p},w)=\mathbf{x}(\mathbf{p}',w')$.
+    $$(\mathbf{p}'-\mathbf{p})\cdot[ x(\mathbf{p}',w')- x(\mathbf{p},w)]\leq 0$$
+    with strict inequality unless $ x(\mathbf{p},w)= x(\mathbf{p}',w')$.
 \end{theorem}
 
 Here is a proof: rewrite the left-side, get
-$$(\mathbf{p}'-\mathbf{p})\cdot[\mathbf{x}(\mathbf{p}',w')-\mathbf{x}(\mathbf{p},w)]=\mathbf{p}'\cdot[\mathbf{x}(\mathbf{p}',w')-\mathbf{x}(\mathbf{p},w)]-\mathbf{p}\cdot[\mathbf{x}(\mathbf{p}',w')-\mathbf{x}(\mathbf{p},w)]$$
-By Walras' law, $\mathbf{p}'\cdot\mathbf{x}(\mathbf{p}',w')=w'$, $\mathbf{p}\cdot \mathbf{x}(\mathbf{p},w)=w$, also by assumption of compensated price changes, $\mathbf{p}'\cdot\mathbf{x}(\mathbf{p},w)=w'$, if if WARP holds, since $\mathbf{x}(\mathbf{p},w)$ is affordable at $(\mathbf{p}',w')$, $\mathbf{x}(\mathbf{p}',w')$ must NOT be affordable at $(\mathbf{p},w)$, i.e., $\mathbf{p}\cdot \mathbf{x}(\mathbf{p}',w')>w$, therefore, we have:
-$$(\mathbf{p}'-\mathbf{p})\cdot[\mathbf{x}(\mathbf{p}',w')-\mathbf{x}(\mathbf{p},w)]= \underbrace{\mathbf{p}'\cdot[\mathbf{x}(\mathbf{p}',w')-\mathbf{x}(\mathbf{p},w)]}_{=0} - \underbrace{\mathbf{p}\cdot[\mathbf{x}(\mathbf{p}',w')-\mathbf{x}(\mathbf{p},w)]}_{>0}<0$$
+$$(\mathbf{p}'-\mathbf{p})\cdot[ x(\mathbf{p}',w')- x(\mathbf{p},w)]=\mathbf{p}'\cdot[ x(\mathbf{p}',w')- x(\mathbf{p},w)]-\mathbf{p}\cdot[ x(\mathbf{p}',w')- x(\mathbf{p},w)]$$
+By Walras' law, $\mathbf{p}'\cdot x(\mathbf{p}',w')=w'$, $\mathbf{p}\cdot  x(\mathbf{p},w)=w$, also by assumption of compensated price changes, $\mathbf{p}'\cdot x(\mathbf{p},w)=w'$, if if WARP holds, since $ x(\mathbf{p},w)$ is affordable at $(\mathbf{p}',w')$, $ x(\mathbf{p}',w')$ must NOT be affordable at $(\mathbf{p},w)$, i.e., $\mathbf{p}\cdot  x(\mathbf{p}',w')>w$, therefore, we have:
+$$(\mathbf{p}'-\mathbf{p})\cdot[ x(\mathbf{p}',w')- x(\mathbf{p},w)]= \underbrace{\mathbf{p}'\cdot[ x(\mathbf{p}',w')- x(\mathbf{p},w)]}_{=0} - \underbrace{\mathbf{p}\cdot[ x(\mathbf{p}',w')- x(\mathbf{p},w)]}_{>0}<0$$
 
 This Theorem goes both way, that is
 \begin{theorem}{law of demand $\Rightarrow$ WARP}{lawofdemand_to_WARP}
-    If for any compensated price changes, $(\mathbf{p}'-\mathbf{p})\cdot[\mathbf{x}(\mathbf{p}',w')-\mathbf{x}(\mathbf{p},w)]\leq 0$ holds, the WARP is satisfied.
+    If for any compensated price changes, $(\mathbf{p}'-\mathbf{p})\cdot[ x(\mathbf{p}',w')- x(\mathbf{p},w)]\leq 0$ holds, the WARP is satisfied.
 \end{theorem}
-We proof the contrapositive: if WARP is violated, there exists a compensated price change such that $(\mathbf{p}'-\mathbf{p})\cdot[\mathbf{x}(\mathbf{p}',w')-\mathbf{x}(\mathbf{p},w)]>0$. A violation of WARP gives that for $(\mathbf{p},w)$ and $(\mathbf{\mathbf{p}',w'})$ such that $\mathbf{x}(\mathbf{p},w)\neq \mathbf{x}(\mathbf{p}',w')$, $\mathbf{p}'\cdot \mathbf{x}(\mathbf{p},w)\leq w'$ and $\mathbf{p}\cdot \mathbf{x}(\mathbf{p}',w')\leq w$ can both be satisfied. The proof is done in 2 steps:
+We proof the contrapositive: if WARP is violated, there exists a compensated price change such that $(\mathbf{p}'-\mathbf{p})\cdot[ x(\mathbf{p}',w')- x(\mathbf{p},w)]>0$. A violation of WARP gives that for $(\mathbf{p},w)$ and $(\mathbf{\mathbf{p}',w'})$ such that $ x(\mathbf{p},w)\neq  x(\mathbf{p}',w')$, $\mathbf{p}'\cdot  x(\mathbf{p},w)\leq w'$ and $\mathbf{p}\cdot  x(\mathbf{p}',w')\leq w$ can both be satisfied. The proof is done in 2 steps:
 \begin{description}
     \item[Step 1] Prove the fact that: 
     
-    If any two price-wealth pairs $(\mathbf{p},w),(\mathbf{p}',w')$, $\mathbf{p}\cdot\mathbf{x}(\mathbf{p}',w')=w,\mathbf{x}(\mathbf{p}',w')\neq \mathbf{x}(\mathbf{p},w)\Rightarrow \mathbf{p}'\cdot \mathbf{x}(\mathbf{p},w)>w'$, then WARP holds. 
+    If for any two price-wealth pairs $(\mathbf{p},w),(\mathbf{p}',w')$, $\mathbf{p}\cdot x(\mathbf{p}',w')=w, x(\mathbf{p}',w')\neq  x(\mathbf{p},w)\Rightarrow \mathbf{p}'\cdot  x(\mathbf{p},w)>w'$, then WARP holds. 
     
-    Again, we prove the contrapositive of this proposition: If WARP is violated, there exists a compensated price change violating WARP. Let $(\mathbf{p}',w')$ and $(\mathbf{p}'',w'')$ violates WARP such that $\mathbf{x}(\mathbf{p}',w')\neq \mathbf{x}(\mathbf{p}'',w''),\mathbf{p}'\cdot\mathbf{x}(\mathbf{p}'',w'')\leq w'$ and $\mathbf{p}''\cdot\mathbf{x}(\mathbf{p}',w')\leq w''$. We have two scenarios:
+    Again, we prove the contrapositive of this proposition: If WARP is violated, there exists a compensated price change violating WARP. Let $(\mathbf{p}',w')$ and $(\mathbf{p}'',w'')$ violates WARP such that $ x(\mathbf{p}',w')\neq  x(\mathbf{p}'',w''),\mathbf{p}'\cdot x(\mathbf{p}'',w'')\leq w'$ and $\mathbf{p}''\cdot x(\mathbf{p}',w')\leq w''$. We have two scenarios:
     \begin{enumerate}
-        \item[-] $\mathbf{p}'\cdot\mathbf{x}(\mathbf{p}'',w'')= w'$ or $\mathbf{p}''\cdot\mathbf{x}(\mathbf{p}',w')= w''$ or both: It is easy to show that the condition of the price-wealth pairs are violated.
-        \item[-] $\mathbf{p}'\cdot\mathbf{x}(\mathbf{p}'',w'')> w'$ and $\mathbf{p}''\cdot\mathbf{x}(\mathbf{p}',w')>w''$: we can construct a price-wealth pair $(\mathbf{p},w)$ such that both $\mathbf{x}(\mathbf{p}',x')$ and $\mathbf{x}(\mathbf{p}'',x'')$ are affordable. By picking an $\alpha \in (0,1)$ to linearly combine $p'$ and $p''$, we can have:
-        $$(\alpha \mathbf{p}'+(1-\alpha)\mathbf{p}'')\cdot \mathbf{x}(\mathbf{p}',w')= (\alpha \mathbf{p}'+(1-\alpha)\mathbf{p}'')\cdot \mathbf{x}(\mathbf{p}'',w'')$$
-        let $\mathbf{p}=\alpha \mathbf{p}'+(1-\alpha)\mathbf{p}''$, $w=(\alpha \mathbf{p}'+(1-\alpha)\mathbf{p}'')\cdot \mathbf{x}(\mathbf{p}',w')$\footnote{Why this construction works? Since $A = \mathbf{p}'\cdot \mathbf{x}(\mathbf{p}',w')= w'> \mathbf{p}'\cdot \mathbf{x}(\mathbf{p}'',w'')=A'$, $B=\mathbf{p}''\cdot \mathbf{x}(\mathbf{p}',w')<w''= \mathbf{p}''\cdot \mathbf{x}(\mathbf{p}'',w'')=B'$, therefore if $\alpha$ is properly chosen, we can achieve $\alpha A+(1-\alpha)B = \alpha A'+(1-\alpha) B'$ with $A>A',B<B'$.}.
-         Now, both $\mathbf{x}(\mathbf{p},w)$ and $\mathbf{x}'(\mathbf{p}',w')$ are on the constructed budget line $(\mathbf{p},w)$. It is easy to show that
+        \item[-] $\mathbf{p}'\cdot x(\mathbf{p}'',w'')= w'$ or $\mathbf{p}''\cdot x(\mathbf{p}',w')= w''$ or both: It is easy to show that the condition of the price-wealth pairs are violated.
+        \item[-] $\mathbf{p}'\cdot x(\mathbf{p}'',w'')> w'$ and $\mathbf{p}''\cdot x(\mathbf{p}',w')>w''$: we can construct a price-wealth pair $(\mathbf{p},w)$ such that both $ x(\mathbf{p}',x')$ and $ x(\mathbf{p}'',x'')$ are affordable. By picking an $\alpha \in (0,1)$ to linearly combine $p'$ and $p''$, we can have:
+        $$(\alpha \mathbf{p}'+(1-\alpha)\mathbf{p}'')\cdot  x(\mathbf{p}',w')= (\alpha \mathbf{p}'+(1-\alpha)\mathbf{p}'')\cdot  x(\mathbf{p}'',w'')$$
+        let $\mathbf{p}=\alpha \mathbf{p}'+(1-\alpha)\mathbf{p}''$, $w=(\alpha \mathbf{p}'+(1-\alpha)\mathbf{p}'')\cdot  x(\mathbf{p}',w')$\footnote{Why this construction works? Since $A = \mathbf{p}'\cdot  x(\mathbf{p}',w')= w'> \mathbf{p}'\cdot  x(\mathbf{p}'',w'')=A'$, $B=\mathbf{p}''\cdot  x(\mathbf{p}',w')<w''= \mathbf{p}''\cdot  x(\mathbf{p}'',w'')=B'$, therefore if $\alpha$ is properly chosen, we can achieve $\alpha A+(1-\alpha)B = \alpha A'+(1-\alpha) B'$ with $A>A',B<B'$.}.
+         Now, both $ x(\mathbf{p},w)$ and $\mathbf{x}'(\mathbf{p}',w')$ are on the constructed budget line $(\mathbf{p},w)$. It is easy to show that
         \begin{align*}
-            \alpha w'+(1-\alpha)w'' &> \alpha \mathbf{p}'\cdot\mathbf{x}(\mathbf{p}',w')+(1-\alpha) \mathbf{p}''\cdot \mathbf{x}(\mathbf{p}',w') \\
-            & = w=\mathbf{p}\cdot \mathbf{x}(\mathbf{p},w)\\
-            & = \left[ \alpha \mathbf{p}+(1-\alpha) \mathbf{p}''\right]\cdot \mathbf{x}(\mathbf{p},w)
+            \alpha w'+(1-\alpha)w'' &> \alpha \mathbf{p}'\cdot x(\mathbf{p}',w')+(1-\alpha) \mathbf{p}''\cdot  x(\mathbf{p}',w') \\
+            & = w=\mathbf{p}\cdot  x(\mathbf{p},w)\\
+            & = \left[ \alpha \mathbf{p}+(1-\alpha) \mathbf{p}''\right]\cdot  x(\mathbf{p},w)
         \end{align*}
-        hence, either $\mathbf{p}'\cdot \mathbf{x}(\mathbf{p},w)<w'$ or $\mathbf{p}''\cdot \mathbf{x}(\mathbf{p},w)<w''$. If $\mathbf{p}'\cdot\mathbf{x}(\mathbf{p},w)<w'$, we know $\mathbf{x}(\mathbf{p}',w')$ is on the constructed line $(\mathbf{p},w)$, therefore, $\mathbf{p}\cdot \mathbf{x}(\mathbf{p}',w')=w$. However, we already have $\mathbf{p}'\cdot \mathbf{x}(\mathbf{p},w)<w'$, the two conditions constitute a violation of WARP.
+        hence, either $\mathbf{p}'\cdot  x(\mathbf{p},w)<w'$ or $\mathbf{p}''\cdot  x(\mathbf{p},w)<w''$. If $\mathbf{p}'\cdot x(\mathbf{p},w)<w'$, we know $ x(\mathbf{p}',w')$ is on the constructed line $(\mathbf{p},w)$, therefore, $\mathbf{p}\cdot  x(\mathbf{p}',w')=w$. However, we already have $\mathbf{p}'\cdot  x(\mathbf{p},w)<w'$, the two conditions constitute a violation of WARP.
     \end{enumerate} 
 
     Now we know, we can only consider compensated price changes to test WARP, we can move to Step 2.
-    \item[Step 2] With Step 1 done, we know that if WARP does NOT hold, there exists a compensated price change from $(\mathbf{p}',w')$ to $(\mathbf{p},w)$ such that $\mathbf{x}(\mathbf{p},w)\neq \mathbf{x}(\mathbf{p}',w')$, $\mathbf{p}\cdot \mathbf{x}(\mathbf{p}',w')=w$ and $\mathbf{p'}\cdot \mathbf{x}(\mathbf{p},w)\leq w'$. 
-    Meanwhile, Walras' law gives $w= \mathbf{p}\cdot\mathbf{x}(\mathbf{p},w),w'=\mathbf{p}'\cdot\mathbf{x}(\mathbf{p}',w')$, leading to 
-    $$\mathbf{p}\cdot\left[\mathbf{x}(\mathbf{p}',w')-\mathbf{x}(\mathbf{p},w)\right]=0,\ \mathbf{p}'\cdot\left[\mathbf{x}(\mathbf{p}',w')-\mathbf{x}(\mathbf{p},w)\right]\geq 0$$
-    Hence, combined with the condition $\mathbf{x}(\mathbf{p},w)\neq \mathbf{x}(\mathbf{p}',w')$, we have
-    $$(\mathbf{p}'-\mathbf{p})\cdot\left[\mathbf{x}(\mathbf{p}',w')-\mathbf{x}(\mathbf{p},w)\right]> 0$$ 
+    \item[Step 2] With Step 1 done, we know that if WARP does NOT hold, there exists a compensated price change from $(\mathbf{p}',w')$ to $(\mathbf{p},w)$ such that $ x(\mathbf{p},w)\neq  x(\mathbf{p}',w')$, $\mathbf{p}\cdot  x(\mathbf{p}',w')=w$ and $\mathbf{p'}\cdot  x(\mathbf{p},w)\leq w'$. 
+    Meanwhile, Walras' law gives $w= \mathbf{p}\cdot x(\mathbf{p},w),w'=\mathbf{p}'\cdot x(\mathbf{p}',w')$, leading to 
+    $$\mathbf{p}\cdot\left[ x(\mathbf{p}',w')- x(\mathbf{p},w)\right]=0,\ \mathbf{p}'\cdot\left[ x(\mathbf{p}',w')- x(\mathbf{p},w)\right]\geq 0$$
+    Hence, combined with the condition $ x(\mathbf{p},w)\neq  x(\mathbf{p}',w')$, we have
+    $$(\mathbf{p}'-\mathbf{p})\cdot\left[ x(\mathbf{p}',w')- x(\mathbf{p},w)\right]> 0$$ 
 \end{description}
 Now we have completed the prove of the contrapositive of Thm.\ref{thm:lawofdemand_to_WARP}.
 
-Notice that so far, we have only linked WARP to \textbf{compensated} price changes, which means that we are focusing on the case that the budget line rotates through one point (not the end point) $\mathbf{x}(\mathbf{p},w)$ from $(\mathbf{p},w)$ to $(\mathbf{p}',w')$. 
+Notice that so far, we have only linked WARP to \textbf{compensated} price changes, which means that we are focusing on the case that the budget line rotates through one point (not the end point) $ x(\mathbf{p},w)$ from $(\mathbf{p},w)$ to $(\mathbf{p}',w')$. 
 A brilliant graphic presentation can be found in Figure 2.F.4 on \citet[Page 33]{mas1995microeconomic}: after a compensated price change, WARP requires that the demand for the commodity that experiences a price drop must increase, which is exactly the law of demand:
 \begin{theorem}{compensated law of demand}{compensated_lawofdemand}
-    For a compensated price change from $\mathbf{p}$ to $\mathbf{p}'$ (wealth changing accordingly from $w$ to $w'$ s.t. $\mathbf{p}'\mathbf{x}(\mathbf{p},w)=w'$), the law of demand requires demand and price move in opposite directions, i.e.
-    $$\Delta \mathbf{x}\cdot \Delta \mathbf{p} = (\mathbf{p}'-\mathbf{p})\cdot [\mathbf{x}(\mathbf{p}',w')-\mathbf{x}(\mathbf{p},w)]\leq 0$$
+    For a compensated price change from $\mathbf{p}$ to $\mathbf{p}'$ (wealth changing accordingly from $w$ to $w'$ s.t. $\mathbf{p}' x(\mathbf{p},w)=w'$), the law of demand requires demand and price move in opposite directions, i.e.
+    $$\Delta \mathbf{x}\cdot \Delta \mathbf{p} = (\mathbf{p}'-\mathbf{p})\cdot [ x(\mathbf{p}',w')- x(\mathbf{p},w)]\leq 0$$
 \end{theorem}
 
 And of course, if the price changes are NOT compensated, meaning that wealth does NOT change accordingly, in this case \citep[Figure 2.F.5, Page 33]{mas1995microeconomic}, the new budget line would be either completely above the original one (more generous) or completetly below (less generous), and WARP would impose NO restrictions on the new consumption bundle.\footnote{In
-In fact, if $\mathbf{x}(\cdot,\cdot)$ is homogeneous of degree one w.r.t. $w$, then the law of demand actually still holds for \textit{uncompensated} price changes: $\mathrm{d}p\cdot\mathrm{D}_\mathbf{p}\mathbf{x}(p,w)\mathrm{d}\mathbf{p}\leq 0,\forall \mathrm{d}\mathbf{p}$. A brief proof is: by homogeneity of degree one w.r.t. w, $\mathbf{x}(\mathbf{p},\alpha w)=\alpha \mathbf{x}(\mathbf{p},w)$,
-differentiate w.r.t. $\alpha$ and evaluate at $\alpha =1$, get $\mathrm{D}_w \mathbf{x}(\mathbf{p}, w)w =\mathbf{x}(\mathbf{p},w)$, then the Slutsky matrix is $S(\mathbf{p},w)=\mathrm{D}_{\mathbf{p}}\mathbf{x}(\mathbf{p},w)+\mathrm{D}_w\mathbf{x}(\mathbf{p},w)\cdot \mathbf{x}(\mathbf{p},w)^T=\mathrm{D}_{\mathbf{p}}\mathbf{x}(\mathbf{p},w)+\frac{1}{w}\mathbf{x}(\mathbf{p},w)\mathbf{x}(\mathbf{p},w)^T$.
-Hence $\mathrm{D}_{\mathbf{p}}\mathbf{x}(\mathbf{p},w)=S(\mathbf{p},w)-\frac{1}{w}\mathbf{x}(\mathbf{p},w)\mathbf{x}(\mathbf{p},w)^T$ is a negative semidefinite matrix, the proof is complete.}
+In fact, if $ x(\cdot,\cdot)$ is homogeneous of degree one w.r.t. $w$, then the law of demand actually still holds for \textit{uncompensated} price changes: $\mathrm{d}p\cdot\mathrm{D}_\mathbf{p} x(p,w)\mathrm{d}\mathbf{p}\leq 0,\forall \mathrm{d}\mathbf{p}$. A brief proof is: by homogeneity of degree one w.r.t. w, $ x(\mathbf{p},\alpha w)=\alpha  x(\mathbf{p},w)$,
+differentiate w.r.t. $\alpha$ and evaluate at $\alpha =1$, get $\mathrm{D}_w  x(\mathbf{p}, w)w = x(\mathbf{p},w)$, then the Slutsky matrix is $S(\mathbf{p},w)=\mathrm{D}_{\mathbf{p}} x(\mathbf{p},w)+\mathrm{D}_w x(\mathbf{p},w)\cdot  x(\mathbf{p},w)^T=\mathrm{D}_{\mathbf{p}} x(\mathbf{p},w)+\frac{1}{w} x(\mathbf{p},w) x(\mathbf{p},w)^T$.
+Hence $\mathrm{D}_{\mathbf{p}} x(\mathbf{p},w)=S(\mathbf{p},w)-\frac{1}{w} x(\mathbf{p},w) x(\mathbf{p},w)^T$ is a negative semidefinite matrix, the proof is complete.}
 
 \subsubsection*{WARP and multivalued $\mathrm{x}(\mathrm{p},w)$}
-Here, we (briefly) extended WARP into multivalued $\mathbf{x}(\mathbf{p},w)$, Walrasian demand \textbf{correspondences}, which is a generalization of single-valued demand functions.
+Here, we (briefly) extended WARP into multivalued $ x(\mathbf{p},w)$, Walrasian demand \textbf{correspondences}, which is a generalization of single-valued demand functions.
 
 First, we have the generalized version of WARP:
-\begin{definition}{generalized WARP of $\mathbf{x}(\mathbf{p},w)$}{walrasian_WARP_general}
-    (Generalizing \ref{def:walrasian_WARP}) For any $(\mathbf{p},w)$ and $(\mathbf{p'},w')$, if $\mathbf{x}\in\mathbf{x}(\mathbf{p},w)$, $\mathbf{x}'\in\mathbf{x}(\mathbf{p}',w'), \mathbf{p}'\cdot \mathbf{x}\leq w'$ and $\mathbf{x}'\notin \mathbf{x}(\mathbf{p},w)$ lead to $\mathbf{p}\cdot\mathbf{x}' > w$, then the Walrasian demand correspondence satisfies WARP.
+\begin{definition}{generalized WARP of $ x(\mathbf{p},w)$}{walrasian_WARP_general}
+    (Generalizing \ref{def:walrasian_WARP}) For any $(\mathbf{p},w)$ and $(\mathbf{p'},w')$, if $\mathbf{x}\in x(\mathbf{p},w)$, $\mathbf{x}'\in x(\mathbf{p}',w'), \mathbf{p}'\cdot \mathbf{x}\leq w'$ and $\mathbf{x}'\notin  x(\mathbf{p},w)$ lead to $\mathbf{p}\cdot\mathbf{x}' > w$, then the Walrasian demand correspondence satisfies WARP.
 \end{definition}
 
 and we have a generalized version of the compensated law of demand:
 \begin{theorem}{generalized compensated law of demand}{compensated_lawofdemand_general}
-    (Generalizing \ref{thm:compensated_lawofdemand}) From any initial position $(\mathbf{p},w)$ with demand $\mathbf{x}\in \mathbf{x}(\mathbf{p},w)$ for compensated price change to new prices $\mathbf{p}'$ and wealth level $w'=\mathbf{p}'\cdots \mathbf{x}$, we have
+    (Generalizing \ref{thm:compensated_lawofdemand}) From any initial position $(\mathbf{p},w)$ with demand $\mathbf{x}\in  x(\mathbf{p},w)$ for compensated price change to new prices $\mathbf{p}'$ and wealth level $w'=\mathbf{p}'\cdots \mathbf{x}$, we have
     $$ (\mathbf{p}'-\mathbf{p})\cdot(\mathbf{x}'-\mathbf{x})\begin{cases}
-        < 0, & \mathbf{x}'\notin\mathbf{x}(\mathbf{p},w)\\
-        =0, & \mathbf{x}'\in\mathbf{x}(\mathbf{p},w)
+        < 0, & \mathbf{x}'\notin x(\mathbf{p},w)\\
+        =0, & \mathbf{x}'\in x(\mathbf{p},w)
     \end{cases}$$
 \end{theorem}
 
-Again, if the multivalued demand correspondence $\mathbf{x}(\mathbf{p},w)$ satisfies Walras' law and compensated law of demand (Def.\ref{thm:compensated_lawofdemand_general}), this $\mathbf{x}(\mathbf{p},w)$ satisfies the generalized WARP (Def.\ref{def:walrasian_WARP_general}), the proof follows the same logic of the single-valued version:
-We only need to show for all compensated price changes, generalized WARP holds. We can prove its contrapositive, if WARP does not hold, there exists a compensated price violates the generalized compensated law of demand. Suppose $\mathbf{x}\in \mathbf{x}(\mathbf{p},w),\mathbf{x}'\in \mathbf{x}(\mathbf{p}',w')$, $\mathbf{p}'\cdot\mathbf{x}=w'$ and $\mathbf{p}\cdot\mathbf{x}'\leq w$, then it is easy to show that $(\mathbf{p}'-\mathbf{p})\cdot (\mathbf{x}'-\mathbf{x})=w-\mathbf{p}\cdot \mathbf{x}'\geq 0$, it violates the compensated law of demand, except for the case that $\mathbf{x}'\in \mathbf{x}(\mathbf{p},w)$, where $(\mathbf{p}'-\mathbf{p})\cdot (\mathbf{x}'-\mathbf{x})=0$.
+Again, if the multivalued demand correspondence $ x(\mathbf{p},w)$ satisfies Walras' law and compensated law of demand (Def.\ref{thm:compensated_lawofdemand_general}), this $ x(\mathbf{p},w)$ satisfies the generalized WARP (Def.\ref{def:walrasian_WARP_general}), the proof follows the same logic of the single-valued version:
+We only need to show for all compensated price changes, generalized WARP holds. We can prove its contrapositive, if WARP does not hold, there exists a compensated price violates the generalized compensated law of demand. Suppose $\mathbf{x}\in  x(\mathbf{p},w),\mathbf{x}'\in  x(\mathbf{p}',w')$, $\mathbf{p}'\cdot\mathbf{x}=w'$ and $\mathbf{p}\cdot\mathbf{x}'\leq w$, then it is easy to show that $(\mathbf{p}'-\mathbf{p})\cdot (\mathbf{x}'-\mathbf{x})=w-\mathbf{p}\cdot \mathbf{x}'\geq 0$, it violates the compensated law of demand, except for the case that $\mathbf{x}'\in  x(\mathbf{p},w)$, where $(\mathbf{p}'-\mathbf{p})\cdot (\mathbf{x}'-\mathbf{x})=0$.
 
 \subsection{Slutsky Matrix}
-When consumer demand $\mathbf{x}(\mathbf{p},w)$ is differentiable with respect to both prices and wealth, we can rewrite the inequality in Thm.\ref{thm:compensated_lawofdemand}: $\diff \mathbf{p}\cdot \diff \mathbf{x}\leq 0$. In the spirit of compensated price changes, we know the change in wealth related to $\diff \mathbf{p}$ is $\diff w=\mathbf{x}(\mathbf{p},w)\cdot \diff \mathbf{p}$.
+When consumer demand $ x(\mathbf{p},w)$ is differentiable with respect to both prices and wealth, we can rewrite the inequality in Thm.\ref{thm:compensated_lawofdemand}: $\diff \mathbf{p}\cdot \diff \mathbf{x}\leq 0$. In the spirit of compensated price changes, we know the change in wealth related to $\diff \mathbf{p}$ is $\diff w= x(\mathbf{p},w)\cdot \diff \mathbf{p}$.
 Use the chain rule, we can get
-$$\diff \mathbf{x}= \mdiff_{\mathbf{p}}\mathbf{x}(\mathbf{p},w)\diff \mathbf{p} + \mdiff_w \mathbf{x}(\mathbf{p},w)\diff w$$
-and we can plug in the induced wealth difference $\diff w=\mathbf{x}(\mathbf{p},w)\diff \mathbf{p}$, get
+$$\diff \mathbf{x}= \mdiff_{\mathbf{p}} x(\mathbf{p},w)\diff \mathbf{p} + \mdiff_w  x(\mathbf{p},w)\diff w$$
+and we can plug in the induced wealth difference $\diff w= x(\mathbf{p},w)\diff \mathbf{p}$, get
 \begin{align*}
-    \diff \mathbf{x} & = \mdiff_{\mathbf{p}}\mathbf{x}(\mathbf{p},w)\diff \mathbf{p} + \mdiff_w \mathbf{x}(\mathbf{p},w) \cdot \left[\mathbf{x}(\mathbf{p},w)\diff \mathbf{p}\right]\\
-    & =\left[ \mdiff_{\mathbf{p}}\mathbf{x}(\mathbf{p},w) + \mdiff_w \mathbf{x}(\mathbf{p},w)\mathbf{x}(\mathbf{p},w)^T\right] \diff \mathbf{p}
+    \diff \mathbf{x} & = \mdiff_{\mathbf{p}} x(\mathbf{p},w)\diff \mathbf{p} + \mdiff_w  x(\mathbf{p},w) \cdot \left[ x(\mathbf{p},w)\diff \mathbf{p}\right]\\
+    & =\left[ \mdiff_{\mathbf{p}} x(\mathbf{p},w) + \mdiff_w  x(\mathbf{p},w) x(\mathbf{p},w)^T\right] \diff \mathbf{p}
 \end{align*}
 and, plug this back into the law of demand $ \diff \mathbf{p}\cdot \diff \mathbf{x}\leq 0$, we will have a very important expression:
 $$
-\diff \mathbf{p} \underbrace{\left[ \mdiff_{\mathbf{p}}\mathbf{x}(\mathbf{p},w) + \mdiff_w \mathbf{x}(\mathbf{p},w)\mathbf{x}(\mathbf{p},w)^T\right]}_{\equiv \mathbf{S}(\mathbf{p},w)} \diff \mathbf{p}\leq 0
+\diff \mathbf{p} \underbrace{\left[ \mdiff_{\mathbf{p}} x(\mathbf{p},w) + \mdiff_w  x(\mathbf{p},w) x(\mathbf{p},w)^T\right]}_{\equiv \mathbf{S}(\mathbf{p},w)} \diff \mathbf{p}\leq 0
 $$
 where $\mathbf{S}(\mathbf{p},w)$ is the \textbf{Slutsky} matrix, or \textit{substitution} matrix. 
 
@@ -230,7 +230,7 @@ In short, the price change of $k$ influences the demand of $l$ in 2 ways: direct
 
 Here, we have the core feature of Slutsky matrix: 
 \begin{theorem}{Slutsky matrix is negative semidefinite}{}
-    If a differentiable Walrasian demand function $\mathbf{x}(\mathbf{p},w)$ satisfies Walras' law, homogeneity of degree 0, and the weak axiom, then at any $(\mathbf{p},w)$, $S(\mathbf{p},w)$ satisfies
+    If a differentiable Walrasian demand function $ x(\mathbf{p},w)$ satisfies Walras' law, homogeneity of degree 0, and the weak axiom, then at any $(\mathbf{p},w)$, $S(\mathbf{p},w)$ satisfies
     $$\mathbf{v}\cdot S(\mathbf{p},w)\mathbf{v}\leq 0, \forall \mathbf{v}\in\mathbb{R}^L$$
     i.e., Slutsky matrix is negative semidefinite\footnote{Notice that "semidefnite" is an abbreviation, in fact, Slutsky is not required to be symmetric here. Symmetry of $S(\mathbf{p},w)$ has more meanings later. See }.
 \end{theorem}
@@ -241,12 +241,12 @@ If $S(\mathbf{p},w)$ is negative semidefinite, then
     \begin{enumerate}
         \item[(a)] $s_{ll}(\mathbf{p},w)\leq 0$: the \textit{substitution effect} of good $l$ with respect to its own price is always \textbf{non-positive}.
         \item[(b)] Giffen good must be inferior: $s_{ll}(\mathbf{p},w)=\frac{\partial x_l(\mathbf{p},w)}{\partial p_l}+\frac{\partial x_l(\mathbf{p},w)}{\partial w}x_l(\mathbf{p},w)\leq 0$, then it is easy to see that at $(\mathbf{p},w)$, $\frac{\partial x_l(\mathbf{p},w)}{\partial p_l}>0\Rightarrow \frac{\partial x_l(\mathbf{p},w)}{\partial w}<0$.
-        \item[(c)] If $\mathbf{x}(\mathbf{p},w)$ is differentiable, homogeneous of degree 0 and satisfies Walras' law, then $\forall (\mathbf{p},w), \mathbf{p}\cdot S(\mathbf{p},w)=0, S(\mathbf{p},w)\mathbf{p}=0$. This means that $S(\mathbf{p},w)$ is always singular (its rank is less than $L$).
+        \item[(c)] If $ x(\mathbf{p},w)$ is differentiable, homogeneous of degree 0 and satisfies Walras' law, then $\forall (\mathbf{p},w), \mathbf{p}\cdot S(\mathbf{p},w)=0, S(\mathbf{p},w)\mathbf{p}=0$. This means that $S(\mathbf{p},w)$ is always singular (its rank is less than $L$).
         
         It is easy to prove:
 
-        Thm.\ref{thm:walraslaw_waldemand_thm2} gives $\mathbf{p}\cdot S(\mathbf{p},w)=\mathbf{p}\cdot \mdiff_{\mathbf{p}}\mathbf{x}(\mathbf{p},w)+\mathbf{p}\cdot \mdiff_w \mathbf{x}(\mathbf{p},w)\mathbf{x}(\mathbf{p},w)^T =\mathbf{p}\mdiff_{\mathbf{p}}\mathbf{x}(\mathbf{p},w)+\mathbf{x}(\mathbf{p},w)^T=0$;
-        Thm.\ref{thm:homo_waldemand_thm1} gives $S(\mathbf{p},w)\mathbf{p}=\mdiff_{\mathbf{p}}\mathbf{x}(\mathbf{p},w)\mathbf{p}+\mdiff_w\mathbf{x}(\mathbf{p},w)\mathbf{x}(\mathbf{p},w)^T\mathbf{p}=\mdiff_{\mathbf{p}}\mathbf{x}(\mathbf{p},w)\mathbf{p}+\mdiff_w\mathbf{x}(\mathbf{p},w)w=0$.
+        Thm.\ref{thm:walraslaw_waldemand_thm2} gives $\mathbf{p}\cdot S(\mathbf{p},w)=\mathbf{p}\cdot \mdiff_{\mathbf{p}} x(\mathbf{p},w)+\mathbf{p}\cdot \mdiff_w  x(\mathbf{p},w) x(\mathbf{p},w)^T =\mathbf{p}\mdiff_{\mathbf{p}} x(\mathbf{p},w)+ x(\mathbf{p},w)^T=0$;
+        Thm.\ref{thm:homo_waldemand_thm1} gives $S(\mathbf{p},w)\mathbf{p}=\mdiff_{\mathbf{p}} x(\mathbf{p},w)\mathbf{p}+\mdiff_w x(\mathbf{p},w) x(\mathbf{p},w)^T\mathbf{p}=\mdiff_{\mathbf{p}} x(\mathbf{p},w)\mathbf{p}+\mdiff_w x(\mathbf{p},w)w=0$.
     \end{enumerate}
 \end{theorem}
 
@@ -265,8 +265,8 @@ Finally, we can have a little discussion on WARP and the negative semidefinitene
 
 For the 5 conditions:
     \begin{enumerate}
-        \item[(1)] \textbf{WARP}: $\mathbf{p}\cdot \mathbf{x}(\mathbf{p}',w')\leq w\text{ and }\mathbf{x}(\mathbf{p}',w')\neq \mathbf{x}(\mathbf{p},w)\Rightarrow \mathbf{p}'\cdot\mathbf{x}(\mathbf{p},w)>w'$
-        \item[(2)] \textbf{WWARP} (weaker WARP): $\mathbf{p}\cdot \mathbf{x}(\mathbf{p}',w')< w\text{ and }\mathbf{x}(\mathbf{p}',w')\neq \mathbf{x}(\mathbf{p},w)\Rightarrow \mathbf{p}'\cdot\mathbf{x}(\mathbf{p},w)>w'$
+        \item[(1)] \textbf{WARP}: $\mathbf{p}\cdot  x(\mathbf{p}',w')\leq w\text{ and } x(\mathbf{p}',w')\neq  x(\mathbf{p},w)\Rightarrow \mathbf{p}'\cdot x(\mathbf{p},w)>w'$
+        \item[(2)] \textbf{WWARP} (weaker WARP): $\mathbf{p}\cdot  x(\mathbf{p}',w')< w\text{ and } x(\mathbf{p}',w')\neq  x(\mathbf{p},w)\Rightarrow \mathbf{p}'\cdot x(\mathbf{p},w)>w'$
         \item[(3)] Slutsky matrix being \textbf{negative semidefinite} (NSD): $\mathbf{v}\cdot S(\mathbf{p},w)\mathbf{v}\leq 0, \forall \mathbf{v}\in\mathbb{R}^L$
         \item[(4)] Slutsky matrix being \textbf{negative definite} (ND): $\mathbf{v}\cdot S(\mathbf{p},w)\mathbf{v}< 0, \forall \mathbf{v}\in\mathbb{R}^L$
         \item[(5)] Slutksy matrix being \textbf{symmetric} 
