@@ -220,7 +220,7 @@ Here is the proof:
     \item \textit{\textbf{convexity/uniqueness}}:
     \begin{enumerate}
         \item[(a)] convex $\succsim$ $\Rightarrow$ convex $ h(\mathbf{p},u)$: for $\mathbf{x},\mathbf{x}'\in h(\mathbf{p},u)$, then $u(\mathbf{x}),u(\mathbf{x}')\geq u$ and $\mathbf{p}\cdot\mathbf{x}=\mathbf{p}\cdot\mathbf{x}'$. Then $\forall \alpha\in[0,1]$, let $\alpha\mathbf{x}+(1-\alpha)\mathbf{x}'$, $\mathbf{p}\cdot\mathbf{x}''=\mathbf{p}\cdot\mathbf{x}=\mathbf{p}\cdot\mathbf{x}'$; meanwhile, $\succsim$ is convex, $u(\cdot)$ is quasiconcave, hence $u(\mathbf{x}'')\geq u$, hence $\mathbf{x}''\in h(\mathbf{p},u)$
-        \item[(b)] strictly convex $\succsim$ $\Rightarrow$ single-valued $ h(\mathbf{p},u)$: for $\mathbf{x},\mathbf{x}'\in h(\mathbf{p},u)$, then $u(\mathbf{x}),u(\mathbf{x}')\geq u$ and $\mathbf{p}\cdot\mathbf{x}=\mathbf{p}\cdot\mathbf{x}'$. Then $\forall \alpha\in[0,1]$, let $\alpha\mathbf{x}+(1-\alpha)\mathbf{x}'$, $\mathbf{p}\cdot\mathbf{x}''=\mathbf{p}\cdot\mathbf{x}=\mathbf{p}\cdot\mathbf{x}'$; meanwhile, $\succsim$ is strictly convex, $u(\cdot)$ is strictly quasiconcave, hence $u(\mathbf{x}'')> u$, then we could find a $\beta$ close enough to 1 s.t. $u(\beta\mathbf{x}'')>u$ and $\mathbf{p}\cdot(\beta \mathbf{x}'')<\mathbf{p}\cdot \mathbf{x}=\mathbf{p}\cdot \mathbf{x}'$, hence neither $\mathbf{x}$ nor $\mathbf{x}'$ is EMP optimizer, therefore, $h(\mathbf{p},u)$ must be a singleton.
+        \item[(b)] strictly convex $\succsim$ $\Rightarrow$ single-valued $ h(\mathbf{p},u)$: for $\mathbf{x},\mathbf{x}'\in h(\mathbf{p},u)$, then again $u(\mathbf{x}),u(\mathbf{x}')\geq u$ and $\mathbf{p}\cdot\mathbf{x}=\mathbf{p}\cdot\mathbf{x}'$. Then $\forall \alpha\in[0,1]$, let $\alpha\mathbf{x}+(1-\alpha)\mathbf{x}'$, $\mathbf{p}\cdot\mathbf{x}''=\mathbf{p}\cdot\mathbf{x}=\mathbf{p}\cdot\mathbf{x}'$; meanwhile, $\succsim$ is strictly convex, $u(\cdot)$ is strictly quasiconcave, hence $u(\mathbf{x}'')> u$, then we could find a $\beta$ close enough to 1 s.t. $u(\beta\mathbf{x}'')>u$ and $\mathbf{p}\cdot(\beta \mathbf{x}'')<\mathbf{p}\cdot \mathbf{x}=\mathbf{p}\cdot \mathbf{x}'$, hence neither $\mathbf{x}$ nor $\mathbf{x}'$ is EMP optimizer, therefore, $h(\mathbf{p},u)$ must be a singleton.
     \end{enumerate}
     \item \textit\textbf{continuity}: continuity of h($\mathbf{p},u)$ follows the continuity of $u(\cdot)$.
 \end{enumerate}
@@ -229,7 +229,7 @@ And again, just like UMP, we use the $\mathcal{L}=\mathbf{p}\cdot\mathbf{x}$ Lag
 $$\mathbf{p}\geq \lambda\nabla u(\mathbf{x}^*)\text{ and }\mathbf{x}^*\cdot[\mathbf{p}-\lambda \nabla u(\mathbf{x}^*)]=0$$
 this result comes from the Kuhn-Tucker condition, which will be discussed later.
 
-A very important property of Hicksian demand is that it satisfies \myhl[blue]{\textbf{compensated law of demand}}:
+A very important property of Hicksian demand is that it satisfies \textbf{compensated law of demand}:
 \begin{theorem}{$h(\mathbf{p},u)$ satisfies compensated law of demand}{hicksian_lawofdemand}
     For a continuous $u(\cdot)$ representing a locally nonsatiated $\succsim$, and a single-valued Hicksian demand $h(\mathbf{p},u),\forall \mathbf{p}\gg 0$, then $\forall \mathbf{p}',\mathbf{p}''$:
     $$(\mathbf{p}''-\mathbf{p}')\cdot [h(\mathbf{p}'',u)-h(\mathbf{p}',u)]\leq 0$$
@@ -244,11 +244,8 @@ A very important property of Hicksian demand is that it satisfies \myhl[blue]{\t
 An immediate implication of Thm.\ref{thm:hicksian_lawofdemand} is that own-price effects are always nonpositive: $(\mathbf{p}''_l-\mathbf{p}'_l)[h_l(\mathbf{p}'',u)-h_l(\mathbf{p}',u)]\leq 0$.
 Although this looks familiar, as in Thm.\ref{thm:compensated_lawofdemand} and Thm.\ref{thm:compensated_lawofdemand_general} for Walrasian demand. However, Walrasian demand does NOT necessarily satisfy the law of demand: for Walrasian demand to do so, it must satisfy WARP as well.
 
-\subsubsection*{Duality: EMP and UMP}
-
-We will discuss duality more thoroughly and in more aspects in Chapter , here, we focus on the duality of EMP and UMP.
-
-\textbf{EMP} is the dual problem of \textbf{UMP}. Duality will be discussed more elaborately later, here we focus on the relationship between EMP and UMP:
+\subsection{Duality: EMP and UMP}
+\textbf{EMP} is the dual problem of \textbf{UMP}. Duality will be discussed more elaborately later in Chapter , here we focus on the relationship between EMP and UMP:
 \begin{theorem}{Relationship between EMP and UMP}{EMP_vs_UMP}
     For a continuous $u(\cdot)$ representing a locally nonsatiated $\succsim$ on $X=\mathbb{R}^L_+$ and a price vector $\mathbf{p}\gg 0$, we have:
     \begin{enumerate}
