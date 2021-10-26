@@ -245,7 +245,7 @@ An immediate implication of Thm.\ref{thm:hicksian_lawofdemand} is that own-price
 This looks familiar, as in Thm.\ref{thm:compensated_lawofdemand} and Thm.\ref{thm:compensated_lawofdemand_general} for Walrasian demand, however, notice that Walrasian demand does \myhl[blue]{\textbf{NOT}} necessarily satisfy the law of demand: for Walrasian demand to do so, it must satisfy WARP as well\sidenotes{$\leftarrow$ See the discussion of Thm.\ref{thm:WARP_to_lawofdemand} and Thm.\ref{thm:lawofdemand_to_WARP}.}.
 
 \subsection{Duality: EMP and UMP}
-\textbf{EMP} is the dual problem of \textbf{UMP}. Duality will be discussed more elaborately later in Chapter , here we focus on the relationship between EMP and UMP:
+\textbf{EMP} is the dual problem of \textbf{UMP}. Duality, an extremely fanscinating topic, will be discussed more elaborately later in Chapter , here we focus on the relationship between EMP and UMP:
 \begin{theorem}{Relationship between EMP and UMP}{EMP_vs_UMP}
     For a continuous $u(\cdot)$ representing a locally nonsatiated $\succsim$ on $X=\mathbb{R}^L_+$ and a price vector $\mathbf{p}\gg 0$, we have:
     \begin{enumerate}
@@ -259,3 +259,13 @@ Here is the proof:
     \item UMP$\Rightarrow$EMP: Suppose $\mathbf{x}^*$ is not optimal in EMP with required utility level u($\mathbf{x}^*$), then $\exists \mathbf{x}'$ s.t. $u(\mathbf{x}')\geq u(\mathbf{x}^*)$ and $\mathbf{p}\cdot\mathbf{x}'<\mathbf{p}\cdot\mathbf{x}^*\leq w$, by local nonsatiation, we can find an affordable $\mathbf{x}''$ that is close to $\mathbf{x}'$ but has strictly higher utility, that is $u(\mathbf{x}'')>u(\mathbf{x}')$ and $\mathbf{p}\mathbf{x}''< w$, this leads to $u(\mathbf{x}'')>u(\mathbf{x}^*)$, contradicting to $\mathbf{x}^*$ maximizing utility. Hence $\mathbf{x}$ is optimal in EMP with $u=u(\mathbf{x}^*)$, and $e(\mathbf{p},u(\mathbf{x}^*))=\mathbf{p}\mathbf{x}^*=w$
     \item EMP$\Rightarrow$UMP: With $u>u(0)\Rightarrow \mathbf{x}^*\neq 0\Rightarrow \mathbf{p}\mathbf{x}^*$, suppose $\mathbf{x}^*$ is not optimal in UMP with wealth $\mathbf{p}\mathbf{x}^*$, then $\exists \mathbf{x}'$ s.t. $\mathbf{p}\mathbf{x}'\leq \mathbf{p}\mathbf{x}^*$, then consider $\mathbf{x}'$'s scaled-down bundle $\mathbf{x}''=\alpha \mathbf{x}',\alpha\in(0,1)$, by continuity of $u(\cdot)$, if $\alpha$ is close enough to 1, we have $\mathbf{p}\mathbf{x}''<\mathbf{p}\mathbf{x}^*$ and $u(\mathbf{x}'')>u(\mathbf{x}^*)$, contradicting to $\mathbf{p}^*$ minimizing expenditure. Hence $\mathbf{p}^*$ is optimal in UMP with $w=\mathbf{p}\mathbf{x}^*$, and $v(\mathbf{p},\mathbf{p}\mathbf{x}^*)=u(\mathbf{x}^*)=w$
 \end{enumerate}
+
+With this duality between UMP and EMP established, and the basic assumption of continuous $u(\cdot)$ representing locally nonsatiated, strictly convex $\succsim$, and $\mathbf{p}\gg 0$, we can further establish the relationships between the four induced objects:  $x(\mathbf{p},w)$, $v(\mathbf{p},w)$ from UMP; $h(\mathbf{p},u)$, $e(\mathbf{p},u)$ from EMP.
+
+\subsubsection*{$h(\mathbf{p},u)$ and $e(\mathbf{p},u)$}
+By definition, the expenditure function can be naturally written as $$e(\mathbf{p},u)=\mathbf{p}\cdot h(\mathbf{p},u)$$, hence, in the opposite direction, we have:
+\begin{theorem}
+    With a continuous $u(\cdot)$ representing a locally nonsatiated and strictly convex $\succsim$, the \myhl[blue]{Hicksian demand $h(\mathbf{p},u)$} is the derivative vector of $e(\mathbf{p},u)$ w.r.t. prices $\mathbf{p}$:
+    $$h(\mathbf{p},u)=\nabla_{\mathbf{p}}e(\mathbf{p},u)$$
+    that is, $h_l(\mathbf{p},u)=\partial e(\mathbf{p},u)/\partial p_l,\forall l=1,\cdots,L$
+\end{theorem}
