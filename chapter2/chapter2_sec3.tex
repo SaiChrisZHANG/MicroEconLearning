@@ -245,8 +245,8 @@ An immediate implication of Thm.\ref{thm:hicksian_lawofdemand} is that own-price
 This looks familiar, as in Thm.\ref{thm:compensated_lawofdemand} and Thm.\ref{thm:compensated_lawofdemand_general} for Walrasian demand, however, notice that Walrasian demand does \myhl[blue]{\textbf{NOT}} necessarily satisfy the law of demand: for Walrasian demand to do so, it must satisfy WARP as well\sidenotes{$\leftarrow$ See the discussion of Thm.\ref{thm:WARP_to_lawofdemand} and Thm.\ref{thm:lawofdemand_to_WARP}.}.
 
 \subsection{Duality: EMP and UMP}
-\textbf{EMP} is the dual problem of \textbf{UMP}. Duality, an extremely fanscinating topic, will be discussed more elaborately later in Chapter , here we focus on the relationship between EMP and UMP:
-\begin{theorem}{Relationship between EMP and UMP}{EMP_vs_UMP}
+Here, we try to establish the link between UMP and EMP:
+\begin{theorem}{Relationship between UMP and EMP}{EMP_vs_UMP}
     For a continuous $u(\cdot)$ representing a locally nonsatiated $\succsim$ on $X=\mathbb{R}^L_+$ and a price vector $\mathbf{p}\gg 0$, we have:
     \begin{enumerate}
         \item $\mathbf{x}^*$ is optimal in UMP with wealth $w>0$ $\Rightarrow$ $\mathbf{x}^*$ is optimal in EMP with required utility $u(\mathbf{x}^*)$, and $e(\mathbf{p},u(\mathbf{x}^*))=w$
@@ -260,12 +260,33 @@ Here is the proof:
     \item EMP$\Rightarrow$UMP: With $u>u(0)\Rightarrow \mathbf{x}^*\neq 0\Rightarrow \mathbf{p}\mathbf{x}^*$, suppose $\mathbf{x}^*$ is not optimal in UMP with wealth $\mathbf{p}\mathbf{x}^*$, then $\exists \mathbf{x}'$ s.t. $\mathbf{p}\mathbf{x}'\leq \mathbf{p}\mathbf{x}^*$, then consider $\mathbf{x}'$'s scaled-down bundle $\mathbf{x}''=\alpha \mathbf{x}',\alpha\in(0,1)$, by continuity of $u(\cdot)$, if $\alpha$ is close enough to 1, we have $\mathbf{p}\mathbf{x}''<\mathbf{p}\mathbf{x}^*$ and $u(\mathbf{x}'')>u(\mathbf{x}^*)$, contradicting to $\mathbf{p}^*$ minimizing expenditure. Hence $\mathbf{p}^*$ is optimal in UMP with $w=\mathbf{p}\mathbf{x}^*$, and $v(\mathbf{p},\mathbf{p}\mathbf{x}^*)=u(\mathbf{x}^*)=w$
 \end{enumerate}
 
+\myhl[blue]{\textbf{EMP} is the dual problem of \textbf{UMP}}. For the discussion of their relationships, we need the Duality Theorem:
+\begin{theorem*}{Duality Theorem}{}
+    For a nonempty closed set $K\subset\mathbb{R}^L$ and its support function $\mu_{K}(\cdot)$\footnote{The support function is defined as: $\mu_K(\mathbf{p})=\inf\left\{\mathbf{p}\cdot\mathbf{x}:\mathbf{x}\in K\right\}$}, there exists a unique $\bar{\mathbf{x}}\in K$ s.t. $\bar{\mathbf{p}}\cdot\bar{\mathbf{x}}=\mu_K(\bar{\mathbf{p}})$ if and only if $\mu_K(\cdot)$ is differentiable at $\bar{\mathbf{p}}$, and $$ \nabla\mu_K(\bar{\mathbf{p}})=\bar{\mathbf{x}} $$
+\end{theorem*}
+
+The proof of this theorem, and more about duality, will be discussed more elaborately in Chap.\ref{chap3}.
+
 With this duality between UMP and EMP established, and the basic assumption of continuous $u(\cdot)$ representing locally nonsatiated, strictly convex $\succsim$, and $\mathbf{p}\gg 0$, we can further establish the relationships between the four induced objects:  $x(\mathbf{p},w)$, $v(\mathbf{p},w)$ from UMP; $h(\mathbf{p},u)$, $e(\mathbf{p},u)$ from EMP.
 
 \subsubsection*{$h(\mathbf{p},u)$ and $e(\mathbf{p},u)$}
 By definition, the expenditure function can be naturally written as $e(\mathbf{p},u)=\mathbf{p}\cdot h(\mathbf{p},u)$, hence, in the opposite direction, we have:
-\begin{theorem}
+\begin{theorem}{$h(\mathbf{p},u)=\nabla e(\mathbf{p},u)$}{hdemand_and_exp}
     With a continuous $u(\cdot)$ representing a locally nonsatiated and strictly convex $\succsim$, the \myhl[blue]{Hicksian demand $h(\mathbf{p},u)$} is the derivative vector of $e(\mathbf{p},u)$ w.r.t. prices $\mathbf{p}$:
     $$h(\mathbf{p},u)=\nabla_{\mathbf{p}}e(\mathbf{p},u)$$
     that is, $h_l(\mathbf{p},u)=\partial e(\mathbf{p},u)/\partial p_l,\forall l=1,\cdots,L$
 \end{theorem}
+This theorem (and others below) will be proved with 3 different approaches:
+\begin{enumerate}
+    \item[\textit{\textbf{Proof 1}}] duality argument: by the Duality Theorem, for the set $K=\left\{\mathbf{x}\in\mathbb{R}^L_+:u(\mathbf{x})\geq u \right\}$, $e(\mathbf{p},u)=\min\mathbf{p}\cdot\mathbf{x}$ is exactly its support function and $h(\mathbf{p},u)$ is the optimizer of $e(\mathbf{p},u)$, by the Duality Theorem, $h(\mathbf{p},u)=\nabla_{\mathbf{p}}e(\mathbf{p},u)$.
+    \item[\textit{\textbf{Proof 2}}] FOC argument: assume $h(\mathbf{p},u)\gg 0$ and differentiable at $(\mathbf{p},u)$, then by the chain rule, we have 
+    \begin{align*}
+        \nabla_{\mathbf{p}}e(\mathbf{p},u)&=\nabla_{\mathbf{p}}\left[\mathbf{p}\cdot h(\mathbf{p},u)\right]=h(\mathbf{p},u)+\left[\mathbf{p}\cdot \mathrm{D}_{\mathbf{p}}h(\mathbf{p},u)\right]^T\\
+        &=h(\mathbf{p},u)+\underbrace{\left[\underbrace{\lambda\nabla u(h(\mathbf{p},u))}_{\text{by FOC of EMP: }\mathbf{p}=\lambda\nabla u(h(\mathbf{p},u))} \cdot \mathrm{D}_{\mathbf{p}}h(\mathbf{p},u)\right]^T}_{\xRightarrow{\forall \mathbf{p},u(h(\mathbf{p},u))=u}=0}\\
+        & = h(\mathbf{p},u)
+    \end{align*}
+    \item[\textit{\textbf{Proof 3}}] Envelope Theorem argument: assume $h(\mathbf{p},u)\gg 0$ and differentiable at $(\mathbf{p},u)$, then by the Envelope Theorem, we have 
+    $$\nabla_{\mathbf{p}}e(\mathbf{p},u)=\nabla_{\mathbf{p}}(\mathbf{p}\cdot \mathbf{x}^{\text{optimal}})=\mathbf{x}^{\text{optimal}}=h(\mathbf{p},u)$$
+\end{enumerate}
+
+The same idea is behind all three proofs:
