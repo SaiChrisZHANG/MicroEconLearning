@@ -23,8 +23,8 @@
 \contentsline {subsection}{\numberline {2.3.3}UMP (Utility Maximizing Problem)}{36}{subsection.2.3.3}
 \contentsline {subsection}{\numberline {2.3.4}EMP (Expenditure Minimizing Problem)}{39}{subsection.2.3.4}
 \contentsline {subsection}{\numberline {2.3.5}Duality: EMP and UMP}{41}{subsection.2.3.5}
-\contentsline {section}{\numberline {2.4}Introducing Utility}{42}{section.2.4}
-\contentsline {section}{\numberline {2.5}Commentary}{42}{section.2.5}
+\contentsline {section}{\numberline {2.4}Introducing Utility}{43}{section.2.4}
+\contentsline {section}{\numberline {2.5}Commentary}{43}{section.2.5}
 \contentsline {chapter}{\numberline {3}Optimization and Duality}{44}{chapter.3}
 \contentsline {chapter}{\numberline {4}Stochastic Choice}{45}{chapter.4}
 \contentsline {chapter}{\numberline {5}Monotone Comparative Statics}{46}{chapter.5}
