@@ -168,7 +168,7 @@ In general, solving for $ x(\mathbf{p},w)$ is a constrained optimization problem
 \subsubsection*{Indirect utility function $v(\mathbf{p},w)$}
 The indirect utility function $v(\mathbf{p},w)\in \mathbb{R}$ is the maximized utility, i.e., 
 $$v(\mathbf{p},w)=u(\mathbf{x}^*),\forall \mathbf{x}^*\in  x(\mathbf{p},w)$$
-it has the following properties, closely related to those of Walrasian demand $ x(\mathbf{p},w)$ in \ref{thm:properties_walrasian_demand}:
+it has the following properties, closely related to those of Walrasian demand $ x(\mathbf{p},w)$ in Thm.\ref{thm:properties_walrasian_demand}:
 
 \begin{theorem}{properties of $v(\mathbf{p},w)$}{properties_indirect_u}
     \begin{enumerate}
@@ -293,3 +293,5 @@ The same idea is behind all three proofs: \textbf{the changes in demand caused b
 If see breakdown the FOC proof:
 $$ \nabla_{\mathbf{p}}e(\mathbf{p},u) = \underbrace{h(\mathbf{p},u)}_{\text{direct effect}} + \underbrace{\left[\lambda\nabla u(h(\mathbf{p},u))\cdot \mathrm{D}_{\mathbf{p}}h(\mathbf{p},u)\right]^T}_{\text{indirect effect induced by change in demand}}$$
 the indirect effect is just the marginal utility w.r.t. price changes, which should be 0 since each optimal prices in EMP should achieve the same utility $u$.
+
+From the FOC proof, we have $\nabla_{\mathbf{p}}e(\mathbf{p},u)=h(\mathbf{p},u)+\left[\mathbf{p}\cdot \mathrm{D}_{\mathbf{p}}h(\mathbf{p},u)\right]^T$, 
