@@ -294,4 +294,13 @@ If see breakdown the FOC proof:
 $$ \nabla_{\mathbf{p}}e(\mathbf{p},u) = \underbrace{h(\mathbf{p},u)}_{\text{direct effect}} + \underbrace{\left[\lambda\nabla u(h(\mathbf{p},u))\cdot \mathrm{D}_{\mathbf{p}}h(\mathbf{p},u)\right]^T}_{\text{indirect effect induced by change in demand}}$$
 the indirect effect is just the marginal utility w.r.t. price changes, which should be 0 since each optimal prices in EMP should achieve the same utility $u$.
 
-From the FOC proof, we have $\nabla_{\mathbf{p}}e(\mathbf{p},u)=h(\mathbf{p},u)+\left[\mathbf{p}\cdot \mathrm{D}_{\mathbf{p}}h(\mathbf{p},u)\right]^T$, 
+From the FOC proof, we have $\nabla_{\mathbf{p}}e(\mathbf{p},u)=h(\mathbf{p},u)+\left[\mathbf{p}\cdot \mathrm{D}_{\mathbf{p}}h(\mathbf{p},u)\right]^T$, this leads to some interesting properties of the price derivatives of the Hicksian demand $\mathrm{D}_{\mathbf{p}}h(\mathbf{p},u)$:
+\begin{theorem}{properties of $\mathrm{D}_{\mathbf{p}}h(\mathbf{p},u)$}{prop_hick_pricederive}
+    For a continuous $u(\cdot)$ representing a locally nonsatiated and strictly convex $\succsim$ defined on $\mathbb{R}^L_{+}$, suppose $h(\cdot,u)$ is continuously differentiable at $\mathbf{p}$, then its $L\times L$ derivative matrix $\mathrm{D}_{\mathbf{p}}h(\mathbf{p},u)$ has the following properties:
+    \begin{itemize}
+        \item[(i)] $\mathrm{D}_{\mathbf{p}}h(\mathbf{p},u)=\mathrm{D}^2_{\mathbf{p}}e(\mathbf{p},u)$
+        \item[(ii)] $\mathrm{D}_{\mathbf{p}}h(\mathbf{p},u)$ is a \textbf{negative semidefinite} matrix
+        \item[(iii)] $\mathrm{D}_{\mathbf{p}}h(\mathbf{p},u)$ is a \textbf{symmetric} matrix
+        \item[(iv)]  $\mathrm{D}_{\mathbf{p}}h(\mathbf{p},u)\cdot \mathbf{p}=0$
+    \end{itemize}
+\end{theorem}
