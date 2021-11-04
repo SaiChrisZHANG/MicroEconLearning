@@ -244,6 +244,10 @@ A very important property of Hicksian demand is that it satisfies \textbf{compen
 An immediate implication of Thm.\ref{thm:hicksian_lawofdemand} is that own-price effects are always nonpositive: $(\mathbf{p}''_l-\mathbf{p}'_l)[h_l(\mathbf{p}'',u)-h_l(\mathbf{p}',u)]\leq 0$.
 This looks familiar, as in Thm.\ref{thm:compensated_lawofdemand} and Thm.\ref{thm:compensated_lawofdemand_general} for Walrasian demand, however, notice that Walrasian demand does \myhl[blue]{\textbf{NOT}} necessarily satisfy the law of demand: for Walrasian demand to do so, it must satisfy WARP as well\sidenotes{$\leftarrow$ See the discussion of Thm.\ref{thm:WARP_to_lawofdemand} and Thm.\ref{thm:lawofdemand_to_WARP}.}.
 
+\subsubsection*{Expenditure function}
+Given $\mathbf{p}\gg 0$ and target utility level $u> u(0)$, we can write the value of EMP as $e(\mathbf{p},u)$, which is the expenditure of the EMP solving bundle $\mathbf{x}^*$, i.e., the Hicksian demand: $e(\mathbf{p},u) = \mathbf{p}\cdot h(\mathbf{p},u)$.
+Parelleling Thm.\ref{thm:properties_indirect_u},
+
 \subsection{Duality: EMP and UMP}
 Here, we try to establish the link between UMP and EMP:
 \begin{theorem}{Relationship between UMP and EMP}{EMP_vs_UMP}
@@ -259,6 +263,8 @@ Here is the proof:
     \item UMP$\Rightarrow$EMP: Suppose $\mathbf{x}^*$ is not optimal in EMP with required utility level u($\mathbf{x}^*$), then $\exists \mathbf{x}'$ s.t. $u(\mathbf{x}')\geq u(\mathbf{x}^*)$ and $\mathbf{p}\cdot\mathbf{x}'<\mathbf{p}\cdot\mathbf{x}^*\leq w$, by local nonsatiation, we can find an affordable $\mathbf{x}''$ that is close to $\mathbf{x}'$ but has strictly higher utility, that is $u(\mathbf{x}'')>u(\mathbf{x}')$ and $\mathbf{p}\mathbf{x}''< w$, this leads to $u(\mathbf{x}'')>u(\mathbf{x}^*)$, contradicting to $\mathbf{x}^*$ maximizing utility. Hence $\mathbf{x}$ is optimal in EMP with $u=u(\mathbf{x}^*)$, and $e(\mathbf{p},u(\mathbf{x}^*))=\mathbf{p}\mathbf{x}^*=w$
     \item EMP$\Rightarrow$UMP: With $u>u(0)\Rightarrow \mathbf{x}^*\neq 0\Rightarrow \mathbf{p}\mathbf{x}^*$, suppose $\mathbf{x}^*$ is not optimal in UMP with wealth $\mathbf{p}\mathbf{x}^*$, then $\exists \mathbf{x}'$ s.t. $\mathbf{p}\mathbf{x}'\leq \mathbf{p}\mathbf{x}^*$, then consider $\mathbf{x}'$'s scaled-down bundle $\mathbf{x}''=\alpha \mathbf{x}',\alpha\in(0,1)$, by continuity of $u(\cdot)$, if $\alpha$ is close enough to 1, we have $\mathbf{p}\mathbf{x}''<\mathbf{p}\mathbf{x}^*$ and $u(\mathbf{x}'')>u(\mathbf{x}^*)$, contradicting to $\mathbf{p}^*$ minimizing expenditure. Hence $\mathbf{p}^*$ is optimal in UMP with $w=\mathbf{p}\mathbf{x}^*$, and $v(\mathbf{p},\mathbf{p}\mathbf{x}^*)=u(\mathbf{x}^*)=w$
 \end{enumerate}
+
+
 
 \myhl[blue]{\textbf{EMP} is the dual problem of \textbf{UMP}}. For the discussion of their relationships, we need the Duality Theorem:
 \begin{theorem*}{Duality Theorem}{}
