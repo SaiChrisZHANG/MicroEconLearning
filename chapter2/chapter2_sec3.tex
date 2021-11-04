@@ -307,3 +307,12 @@ From the FOC proof, we have $\nabla_{\mathbf{p}}e(\mathbf{p},u)=h(\mathbf{p},u)+
 These properties are quite straight forward, since we have $h(\mathbf{p},u)=\nabla_{\mathbf{p}}e(\mathbf{p},u)$, and $e(\mathbf{p},u)$ is \myhl[blue]{\textbf{twice continuously}} \textbf{differentiable}, and \myhl[blue]{\textbf{concave}}, its second derivative matrix, i.e. Hessian matrix, 
 is negative semidefinite\footnote{This is the differential analog of Thm.\ref{thm:hicksian_lawofdemand}: $\mathrm{d}\mathbf{p}\cdot \mathrm{d}h(\mathbf{p},u)\leq 0 \xRightarrow{\mathrm{d}h(\mathbf{p},u)=\mathrm{D}_{\mathbf{p}}h(\mathbf{p},u)\mathrm{d}p} \mathrm{d}\mathbf{p}\cdot \mathrm{D}_{\mathbf{p}}h(\mathbf{p},u)\mathrm{d}\mathbf{p}\leq 0$, which means that $\mathrm{D}_{\mathbf{p}}h(\mathbf{p},u)$ is negative semidefinite.} 
 and \textit{symmetric}\footnote{The symmetry of $\mathrm{D}_{\mathbf{p}}h(\mathbf{p},u)$ is less intuitive economically, it is closely linked to non-cycling of rational preferences.}.
+
+\subsubsection*{$h(\mathbf{p},u)$ and $x(\mathbf{p},w)$}
+Hicksian demand $h(\mathbf{p},u)$ is \myhl[blue]{\textbf{not directly observable}} (utility is one of its arguments), but it can be computed from the observable Walrasian demand $x(\mathbf{p},w)$, with the \textbf{Slutsky Equation}:
+\begin{theorem}{the Slutsky equation}{slutsky_equation}
+    For a continuous $u(\cdot)$ representing a locally nonsatiated and strictly convex $\succsim$ defined on $X=\mathbb{R}^L_+$, then $\forall (\mathbf{p},w)$ and $u=v(\mathbf{p},w)$, we have:
+    $$ \frac{\partial h_l(\mathbf{p},u)}{\partial p_k} = \frac{\partial x_l(\mathbf{p},w)}{\partial p_k} +\frac{\partial x_l(\mathbf{p},w)}{\partial w}x_k(\mathbf{p},w), \forall l,k $$
+    or in matrix notation:
+    $$ \mathrm{D}_{\mathbf{p}} h(\mathbf{p},u) = \mathrm{D}_{\mathbf{p}} w(\mathbf{p},w)+\mathrm{D}_w (\mathbf{p},w)\cdot x(\mathbf{p},w)^T$$
+\end{theorem}
