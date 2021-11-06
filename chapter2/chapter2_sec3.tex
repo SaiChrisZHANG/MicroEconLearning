@@ -263,7 +263,12 @@ Here is the proof:
         \item[-] \textit{\textbf{strictly increasing}} in $u$: suppose $e(\mathbf{p},u)$ were not strictly increasing in $u$, then let $\mathbf{x}^1$ be the optimizer for $u^1$ and $\mathbf{x}^2$ for $u^2$, where $u^2>u^1$ and $\mathbf{p}\cdot\mathbf{x}^1\geq \mathbf{p}\cdot\mathbf{x}^2>0$. Then we can find a bundle $\alpha \mathbf{x}^2$ ($\alpha \in (0,1)$) that is close enough to $\mathbf{x}^2$ s.t. $\mathbf{p}\cdot\alpha \mathbf{x}^2<\mathbf{p}\cdot \mathbf{x}^1$ and $u(\alpha\mathbf{x}^2)>u(\mathbf{x}^1)=u^1$, this contradicts the premise of $\mathbf{x}^1$ being the EMP optimizer.
         \item[-] \textit{\textbf{non-decreasing in}} in $p_l,\forall l$: suppose two price vectors $\mathbf{p}^1$ and $\mathbf{p}^2$ where $\exists l,p^1_l\geq p^2_l$ and $\forall k, p^1_k=p^2_k$. Let $\mathbf{x}^2$ be the EMP optimizer for $(\mathbf{p}^2,u)$, then, $e(\mathbf{p}^2,u)=\mathbf{p}^2\cdot \mathbf{x}^2\geq \underbrace{\mathbf{p}^1\cdot \mathbf{x}^2\geq e(\mathbf{p}^1,u)}_{\text{definition of }e(\mathbf{p},u)}$.
     \end{enumerate}
-    \item \textit{\textbf{concave}} in $\mathbf{p}$:
+    \item \textit{\textbf{concave}} in $\mathbf{p}$: for a fixed utility level $\bar{u}$, then for a price vector $\mathbf{p}=\alpha\mathbf{p}^1+(1-\alpha)\mathbf{p}^2$, suppose that $\mathbf{x}$ is the EMP optimizer with $(\mathbf{p},\bar{u})$, hence 
+    \begin{align*}
+        e(\mathbf{p},\bar{u}) & = \mathbf{p}\cdot\mathbf{x} = \left(\alpha\mathbf{p}^1+(1-\alpha)\mathbf{p}^2\right)\cdot \mathbf{x}\\
+        & = \alpha \mathbf{p}^1\cdot \mathbf{x} + (1-\alpha)\mathbf{p}^2\cdot \mathbf{x}\\
+        & \geq \alpha e(\mathbf{p}^1,u)+(1-\alpha) e(\mathbf{p}^2,u)
+    \end{align*}
 \end{enumerate}
 
 \subsection{Duality: EMP and UMP}
