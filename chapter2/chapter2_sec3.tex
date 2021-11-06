@@ -260,8 +260,10 @@ Here is the proof:
     \item \textit{\textbf{homogeneity of degree one}} in $\mathbf{p}$: The constraint set of EMP, $u(\mathbf{x})\geq u$ has \textbf{nothing} to do with $price changes$, therefore, $\alpha\mathbf{p}\cdot \mathbf{x}$ and $\mathbf{p}\cdot \mathbf{x}$ have the same optimizer $\mathbf{x}^*$, hence the expenditures in $\alpha\mathbf{p}$ and $\mathbf{p}$ at $\mathbf{x}^*$ are: $e(\alpha\mathbf{p},u)=\alpha\mathbf{p}\cdot\mathbf{x}=\alpha e(\mathbf{p},u)$.
     \item first-order properties:
     \begin{enumerate}
-        \item[-] \textit{\textbf{strictly increasing}} in $u$: suppose $e(\mathbf{p},u)$ were not strictly increasing in $u$, the let $\mathbf{x}^1$ be the optimizer for $u^1$ and $\mathbf{x}^2$ for $u^2$, where $u^1>u^2$ and $\mathbf{p}\cdot\mathbf{x}^1\geq \mathbf{p}\cdot\mathbf{x}^2>0$
+        \item[-] \textit{\textbf{strictly increasing}} in $u$: suppose $e(\mathbf{p},u)$ were not strictly increasing in $u$, then let $\mathbf{x}^1$ be the optimizer for $u^1$ and $\mathbf{x}^2$ for $u^2$, where $u^2>u^1$ and $\mathbf{p}\cdot\mathbf{x}^1\geq \mathbf{p}\cdot\mathbf{x}^2>0$. Then we can find a bundle $\alpha \mathbf{x}^2$ ($\alpha \in (0,1)$) that is close enough to $\mathbf{x}^2$ s.t. $\mathbf{p}\cdot\alpha \mathbf{x}^2<\mathbf{p}\cdot \mathbf{x}^1$ and $u(\alpha\mathbf{x}^2)>u(\mathbf{x}^1)=u^1$, this contradicts the premise of $\mathbf{x}^1$ being the EMP optimizer.
+        \item[-] \textit{\textbf{non-decreasing in}} in $p_l,\forall l$: suppose two price vectors $\mathbf{p}^1$ and $\mathbf{p}^2$ where $\exists l,p^1_l\geq p^2_l$ and $\forall k, p^1_k=p^2_k$. Let $\mathbf{x}^2$ be the EMP optimizer for $(\mathbf{p}^2,u)$, then, $e(\mathbf{p}^2,u)=\mathbf{p}^2\cdot \mathbf{x}^2\geq \underbrace{\mathbf{p}^1\cdot \mathbf{x}^2\geq e(\mathbf{p}^1,u)}_{\text{definition of }e(\mathbf{p},u)}$.
     \end{enumerate}
+    \item \textit{\textbf{concave}} in $\mathbf{p}$:
 \end{enumerate}
 
 \subsection{Duality: EMP and UMP}
