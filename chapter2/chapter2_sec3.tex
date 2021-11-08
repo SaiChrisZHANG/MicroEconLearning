@@ -222,7 +222,7 @@ Here is the proof:
         \item[(a)] convex $\succsim$ $\Rightarrow$ convex $ h(\mathbf{p},u)$: for $\mathbf{x},\mathbf{x}'\in h(\mathbf{p},u)$, then $u(\mathbf{x}),u(\mathbf{x}')\geq u$ and $\mathbf{p}\cdot\mathbf{x}=\mathbf{p}\cdot\mathbf{x}'$. Then $\forall \alpha\in[0,1]$, let $\alpha\mathbf{x}+(1-\alpha)\mathbf{x}'$, $\mathbf{p}\cdot\mathbf{x}''=\mathbf{p}\cdot\mathbf{x}=\mathbf{p}\cdot\mathbf{x}'$; meanwhile, $\succsim$ is convex, $u(\cdot)$ is quasiconcave, hence $u(\mathbf{x}'')\geq u$, hence $\mathbf{x}''\in h(\mathbf{p},u)$
         \item[(b)] strictly convex $\succsim$ $\Rightarrow$ single-valued $ h(\mathbf{p},u)$: for $\mathbf{x},\mathbf{x}'\in h(\mathbf{p},u)$, then again $u(\mathbf{x}),u(\mathbf{x}')\geq u$ and $\mathbf{p}\cdot\mathbf{x}=\mathbf{p}\cdot\mathbf{x}'$. Then $\forall \alpha\in[0,1]$, let $\alpha\mathbf{x}+(1-\alpha)\mathbf{x}'$, $\mathbf{p}\cdot\mathbf{x}''=\mathbf{p}\cdot\mathbf{x}=\mathbf{p}\cdot\mathbf{x}'$; meanwhile, $\succsim$ is strictly convex, $u(\cdot)$ is strictly quasiconcave, hence $u(\mathbf{x}'')> u$, then we could find a $\beta$ close enough to 1 s.t. $u(\beta\mathbf{x}'')>u$ and $\mathbf{p}\cdot(\beta \mathbf{x}'')<\mathbf{p}\cdot \mathbf{x}=\mathbf{p}\cdot \mathbf{x}'$, hence neither $\mathbf{x}$ nor $\mathbf{x}'$ is EMP optimizer, therefore, $h(\mathbf{p},u)$ must be a singleton.
     \end{enumerate}
-    \item \textit\textbf{continuity}: continuity of h($\mathbf{p},u)$ follows the continuity of $u(\cdot)$.
+    \item \textit\textbf{continuity}: continuity of $h(\mathbf{p},u)$ follows the continuity of $u(\cdot)$.
 \end{enumerate}
 
 And again, just like UMP, we use the $\mathcal{L}=\mathbf{p}\cdot\mathbf{x}$ Lagrangean to solve EMP. The FOC is: $\exists \lambda \geq 0$ s.t.
@@ -270,6 +270,7 @@ Here is the proof:
         & \geq \alpha e(\mathbf{p}^1,u)+(1-\alpha) e(\mathbf{p}^2,u)
     \end{align*}
     A graphic way of understanding the concavity of $e(\mathbf{p},u)$ w.r.t. $\mathbf{p}$ is: for any given $\bar{\mathbf{p}}$ and its EMP optimizer $\bar{\mathbf{x}}$, if prices changes while holding consumption fixed at $\bar{\mathbf{x}}$, the expenditure would be linear in $\mathbf{p}$: $\mathbf{p}\cdot\bar{\mathbf{x}}$. But by the nature of EMP, we know the expenditure function must be the minimum expenditure, i.e. $e(\mathbf{p},u)\leq p\cdot \bar{\mathbf{x}}$, hence the expenditure function lies under the straight line $\mathbf{p}\cdot\bar{\mathbf{x}}$ and touching it only at the EMP optimizers. And this has to be true for any $\mathbf{x}$, therefore, $e(\mathbf{p},u)$ is concave in $\mathbf{p}$ \citep[Figure 3.E.2, Page 60]{mas1995microeconomic}.
+    \item \textit{\textbf{continuous}}: again, continuity of $e(\mathbf{p},u)$ follows the continuity of $u(\cdot)$.
 \end{enumerate}
 
 \subsection{Duality: EMP and UMP}
