@@ -289,7 +289,12 @@ Here is the proof:
     \item EMP$\Rightarrow$UMP: With $u>u(0)\Rightarrow \mathbf{x}^*\neq 0\Rightarrow \mathbf{p}\mathbf{x}^*$, suppose $\mathbf{x}^*$ is not optimal in UMP with wealth $\mathbf{p}\mathbf{x}^*$, then $\exists \mathbf{x}'$ s.t. $\mathbf{p}\mathbf{x}'\leq \mathbf{p}\mathbf{x}^*$, then consider $\mathbf{x}'$'s scaled-down bundle $\mathbf{x}''=\alpha \mathbf{x}',\alpha\in(0,1)$, by continuity of $u(\cdot)$, if $\alpha$ is close enough to 1, we have $\mathbf{p}\mathbf{x}''<\mathbf{p}\mathbf{x}^*$ and $u(\mathbf{x}'')>u(\mathbf{x}^*)$, contradicting to $\mathbf{p}^*$ minimizing expenditure. Hence $\mathbf{p}^*$ is optimal in UMP with $w=\mathbf{p}\mathbf{x}^*$, and $v(\mathbf{p},\mathbf{p}\mathbf{x}^*)=u(\mathbf{x}^*)=w$
 \end{enumerate}
 
+A very important and direct connection between the two problem is 
+\begin{proposition}{EMP and UMP: between $e(\mathbf{p},u)$ and $v(\mathbf{p},w)$}{expenditure_and_indirectuility}
+    $\forall \mathbf{p}\gg 0,w>0,u>u(0)$, we have $$e(\mathbf{p},v(\mathbf{p},w))=w,\ v(\mathbf{p},e(\mathbf{p},u))=w$$
+\end{proposition}
 
+With this link, we can establish a direct correspondence between the properties of 
 
 \myhl[blue]{\textbf{EMP} is the dual problem of \textbf{UMP}}. For the discussion of their relationships, we need the Duality Theorem:
 \begin{theorem*}{Duality Theorem}{}
