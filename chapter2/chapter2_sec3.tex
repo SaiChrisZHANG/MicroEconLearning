@@ -298,19 +298,29 @@ With this link, we can establish a direct correspondence between the properties 
 \begin{enumerate}
     \item[-] Properties of \myhl[blue]{$v(\mathbf{p},w)$} $\Rightarrow$ Properties of \myhl[red]{$e(\mathbf{p},u)$} 
     \begin{enumerate}
-        \item[i] \myhl[red]{\underline{\textbf{Homogeneity}}}: $e(\mathbf{p},u)$ is \textit{\textbf{homogeneous of degree one}} in $\mathbf{p}$: define $w=e(\mathbf{p},u)$, then $u=v(\mathbf{p},w)$. Let $\alpha >0$, then $e(\alpha\mathbf{p},u)= e(\alpha\mathbf{p},v(\mathbf{p},w))$, since $v(\cdot,\cdot)$ is \textit{\textbf{homogeneous of degree zero}} in $(\mathbf{p},w)$,
+        \item[i] \myhl[red]{\underline{\textbf{Homogeneity}}}. $e(\mathbf{p},u)$ is \textit{\textbf{homogeneous of degree one}} in $\mathbf{p}$: define $w=e(\mathbf{p},u)$, then $u=v(\mathbf{p},w)$. Let $\alpha >0$, then $e(\alpha\mathbf{p},u)= e(\alpha\mathbf{p},v(\mathbf{p},w))$, since $v(\cdot,\cdot)$ is \textit{\textbf{homogeneous of degree zero}} in $(\mathbf{p},w)$,
         hence $e(\alpha\mathbf{p},v(\mathbf{p},w))=e(\alpha\mathbf{p},v(\alpha\mathbf{p},\alpha w))=\alpha w =\alpha e(\mathbf{p},u)$.
-        \item[ii] \myhl[red]{\underline{\textbf{Monotonicity}}}: $e(\mathbf{p},u)$ is 
+        \item[ii] \myhl[red]{\underline{\textbf{Monotonicity}}}. $e(\mathbf{p},u)$ is 
         \begin{enumerate}
             \item[-] \textit{\textbf{strictly increasing}} in $u$: let $u'>u$, define $w=e(\mathbf{p},u),w'=e(\mathbf{p},u')$, then $u=v(\mathbf{p},w),u'=v(\mathbf{p},w')$. Since $v(\cdot,\cdot)$ is strictly increasing in $w$, $u'>u\Rightarrow w'>w\Leftrightarrow e(\mathbf{p}',u)>e(\mathbf{p},u)$.
             \item[-] \textit{\textbf{non-decreasing in}} in $\mathbf{p}$: let $\mathbf{p}'\geq \mathbf{p}$, define $w=e(\mathbf{p},u),w'=e(\mathbf{p}',u)$, then $u=v(\mathbf{p},w)=v(\mathbf{p}',w')$. Again, since $v(\cdot,\cdot)$ is non-increasing in $p$, that is, $\mathbf{p}'\geq \mathbf{p}\Rightarrow v(\mathbf{p}',w)\leq v(\mathbf{p},w)$, for $v(\mathbf{p},w)=v(\mathbf{p}',w')$ to hold, $w'\geq w$, that is $e(\mathbf{p}',u)\geq e(\mathbf{p},u)$.
         \end{enumerate}
             
-        \item[iii] \myhl[red]{\underline{\textbf{Concavity}}}: $e(\mathbf{p},u)$ is \textit{\textbf{concave}} in $\mathbf{p}$: let $\alpha\in[0,1]$, define $w=e(\mathbf{p},u)$ and $w'=e(\mathbf{p}',u)$, then $u=v(\mathbf{p},w)=v(\mathbf{p}',w')$. Define $\mathbf{p}''=\alpha \mathbf{p}+(1-\alpha)\mathbf{p}'$ and $w''=\alpha w+(1-\alpha) w'$, since $v(\cdot,\cdot)$ is \textit{\textbf{quasiconvex}}, $v(\mathbf{p}'',w'')\leq u$. By the \textit{\textbf{monotonicity}} of $v(\cdot,\cdot)$ in $w$, we get $w''\leq e(\mathbf{p}'',u)$, that is $e(\alpha \mathbf{p}+(1-\alpha)\mathbf{p}',u)\geq \alpha w +(1-\alpha)w'=\alpha e(\mathbf{p},u)+(1-\alpha)e(\mathbf{p}',u)$.
-        \item[iv] \myhl[red]{\underline{\textbf{Continuity}}}: $e(\mathbf{p},u)$ is \textit{\textbf{continuous}} in $\mathbf{p}$ and $u$: to prove continuity, we need to prove that $\forall \left\{\left(\mathbf{p}^n,u^n\right)\right\}^{\infty}_{n=1}\right (\mathbf{p},u)$, $\forall w$, we can show that if $e(\mathbf{p}^n,u^n)\leq w$, by the \textit{\textbf{monotonicity}} of $v(\cdot,\cdot)$, we know $e^n\leq v(\mathbf{p}^n,w)$, then by the \textit{\textbf{continuity}} of $v(\cdot,\cdot)$, $e\leq v(\mathbf{p},w)$; by the same logic, we can show $e(\mathbf{p}^n,u^n)\geq w\Rightarrow e(\mathbf{p},u)\geq w$. Hence, $e(\mathbf{p},u)$ is continuous.
+        \item[iii] \myhl[red]{\underline{\textbf{Concavity}}}. $e(\mathbf{p},u)$ is \textit{\textbf{concave}} in $\mathbf{p}$: let $\alpha\in[0,1]$, define $w=e(\mathbf{p},u)$ and $w'=e(\mathbf{p}',u)$, then $u=v(\mathbf{p},w)=v(\mathbf{p}',w')$. Define $\mathbf{p}''=\alpha \mathbf{p}+(1-\alpha)\mathbf{p}'$ and $w''=\alpha w+(1-\alpha) w'$, since $v(\cdot,\cdot)$ is \textit{\textbf{quasiconvex}}, $v(\mathbf{p}'',w'')\leq u$. By the \textit{\textbf{monotonicity}} of $v(\cdot,\cdot)$ in $w$, we get $w''\leq e(\mathbf{p}'',u)$, that is $e(\alpha \mathbf{p}+(1-\alpha)\mathbf{p}',u)\geq \alpha w +(1-\alpha)w'=\alpha e(\mathbf{p},u)+(1-\alpha)e(\mathbf{p}',u)$.
+        \item[iv] \myhl[red]{\underline{\textbf{Continuity}}}. $e(\mathbf{p},u)$ is \textit{\textbf{continuous}} in $\mathbf{p}$ and $u$: to prove continuity, we need to prove that $\forall \left\{\left(\mathbf{p}^n,u^n\right)\right\}^{\infty}_{n=1}\right (\mathbf{p},u)$, $\forall w$, we can show that if $e(\mathbf{p}^n,u^n)\leq w$, by the \textit{\textbf{monotonicity}} of $v(\cdot,\cdot)$, we know $e^n\leq v(\mathbf{p}^n,w)$, then by the \textit{\textbf{continuity}} of $v(\cdot,\cdot)$, $e\leq v(\mathbf{p},w)$; by the same logic, we can show $e(\mathbf{p}^n,u^n)\geq w\Rightarrow e(\mathbf{p},u)\geq w$. Hence, $e(\mathbf{p},u)$ is continuous.
     \end{enumerate} 
 
     \item[-] Properties \myhl[red]{$e(\mathbf{p},u)$} of $\Rightarrow$ Properties of \myhl[blue]{$v(\mathbf{p},w)$} 
+    \begin{enumerate}
+        \item[i] \myhl[blue]{\underline{\textbf{Homogeneity}}}. $v(\mathbf{p},w)$ is \textit{\textbf{homogeneous of degree zero}} in $(\mathbf{p},w)$: 
+        \item[ii] \myhl[blue]{\underline{\textbf{Monotonicity}}}. $v(\mathbf{p},w)$ is 
+        \begin{enumerate}
+            \item[-] \textit{\textbf{strictly increasing}} in $w$:
+            \item[-] \textit{\textbf{non-increasing}} in $\mathbf{p}$:
+        \end{enumerate}
+        \item[iii] \textit{\textbf{Quasiconvexity}}. $\forall \bar{v}$, the set $\left\{(\mathbf{p},w):v(\mathbf{p},w)\leq \bar{v}\right\}$ is \textit{\textbf{convex}}.
+        \item[iv] \textit{\textbf{Continuity}}. $v(\mathbf{p},w)$ is \textit{\textbf{continuous}} in $\mathbf{p}$ and $w$.
+    \end{enumerate} 
 \end{enumerate}
 
 
