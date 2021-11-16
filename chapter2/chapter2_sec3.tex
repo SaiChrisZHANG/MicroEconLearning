@@ -296,7 +296,7 @@ A very important and direct connection between the two problem is
 
 With this link, we can establish a direct correspondence between the properties of the indirect utility function $v(\mathbf{p},w)$ (Thm.\ref{thm:properties_indirect_u}) and the expenditure function $e(\mathbf{p},u)$ (Thm.\ref{thm:properties_expenditure_func}). Here, assume $\mathbf{p},\mathbf{p}'\gg 0,u,u'\in\mathbb{R}$:
 \begin{enumerate}
-    \item[-] Properties of $v(\mathbf{p},w)\Rightarrow$ Properties of $e(\mathbf{p},u)$ 
+    \item[-] Properties of \myhl[blue]{$v(\mathbf{p},w)$} $\Rightarrow$ Properties of \myhl[red]{$e(\mathbf{p},u)$} 
     \begin{enumerate}
         \item[i] \myhl[red]{\underline{\textbf{Homogeneity}}}: $e(\mathbf{p},u)$ is \textit{\textbf{homogeneous of degree one}} in $\mathbf{p}$: define $w=e(\mathbf{p},u)$, then $u=v(\mathbf{p},w)$. Let $\alpha >0$, then $e(\alpha\mathbf{p},u)= e(\alpha\mathbf{p},v(\mathbf{p},w))$, since $v(\cdot,\cdot)$ is \textit{\textbf{homogeneous of degree zero}} in $(\mathbf{p},w)$,
         hence $e(\alpha\mathbf{p},v(\mathbf{p},w))=e(\alpha\mathbf{p},v(\alpha\mathbf{p},\alpha w))=\alpha w =\alpha e(\mathbf{p},u)$.
@@ -309,6 +309,8 @@ With this link, we can establish a direct correspondence between the properties 
         \item[iii] \myhl[red]{\underline{\textbf{Concavity}}}: $e(\mathbf{p},u)$ is \textit{\textbf{concave}} in $\mathbf{p}$: let $\alpha\in[0,1]$, define $w=e(\mathbf{p},u)$ and $w'=e(\mathbf{p}',u)$, then $u=v(\mathbf{p},w)=v(\mathbf{p}',w')$. Define $\mathbf{p}''=\alpha \mathbf{p}+(1-\alpha)\mathbf{p}'$ and $w''=\alpha w+(1-\alpha) w'$, since $v(\cdot,\cdot)$ is \textit{\textbf{quasiconvex}}, $v(\mathbf{p}'',w'')\leq u$. By the \textit{\textbf{monotonicity}} of $v(\cdot,\cdot)$ in $w$, we get $w''\leq e(\mathbf{p}'',u)$, that is $e(\alpha \mathbf{p}+(1-\alpha)\mathbf{p}',u)\geq \alpha w +(1-\alpha)w'=\alpha e(\mathbf{p},u)+(1-\alpha)e(\mathbf{p}',u)$.
         \item[iv] \myhl[red]{\underline{\textbf{Continuity}}}: $e(\mathbf{p},u)$ is \textit{\textbf{continuous}} in $\mathbf{p}$ and $u$: to prove continuity, we need to prove that $\forall \left\{\left(\mathbf{p}^n,u^n\right)\right\}^{\infty}_{n=1}\right (\mathbf{p},u)$, $\forall w$, we can show that if $e(\mathbf{p}^n,u^n)\leq w$, by the \textit{\textbf{monotonicity}} of $v(\cdot,\cdot)$, we know $e^n\leq v(\mathbf{p}^n,w)$, then by the \textit{\textbf{continuity}} of $v(\cdot,\cdot)$, $e\leq v(\mathbf{p},w)$; by the same logic, we can show $e(\mathbf{p}^n,u^n)\geq w\Rightarrow e(\mathbf{p},u)\geq w$. Hence, $e(\mathbf{p},u)$ is continuous.
     \end{enumerate} 
+
+    \item[-] Properties \myhl[red]{$e(\mathbf{p},u)$} of $\Rightarrow$ Properties of \myhl[blue]{$v(\mathbf{p},w)$} 
 \end{enumerate}
 
 
