@@ -316,9 +316,9 @@ With this link, we can establish a direct correspondence between the properties 
         \item[ii] \myhl[blue]{\underline{\textbf{Monotonicity}}}. $v(\mathbf{p},w)$ is
         \begin{enumerate}
             \item[-] \textit{\textbf{strictly increasing}} in $w$: let $w'>w$, and $u=v(\mathbf{p},w),u'=v(\mathbf{p},w')$, then $e(\mathbf{p},u)=w,e(\mathbf{p},u')=w'$, since $e(\cdot,\cdot)$ is strictly increasing in $u$, $w'>w\Rightarrow u>u'\Rightarrow v(\mathbf{p},w')>v(\mathbf{p},w)$.
-            \item[-] \textit{\textbf{non-increasing}} in $\mathbf{p}$:
+            \item[-] \textit{\textbf{non-increasing}} in $\mathbf{p}$: let $\mathbf{p}'\geq \mathbf{p}$, and again $u=v(\mathbf{p}',w),u'=v(\mathbf{p}',w)$, then $e(\mathbf{p},u)=e(\mathbf{p}',u')=w$, and again, since $e(\cdot,\cdot)$ is non-decreasing in $\mathbf{p}$, $\mathbf{p}'\geq \mathbf{p}\Rightarrow u'\leq u\Rightarrow v(\mathbf{p},w)\geq v(\mathbf{p}',w)$
         \end{enumerate}
-        \item[iii] \myhl[blue]{\underline{\textbf{Quasiconvexity}}}. $\forall \bar{v}$, the set $\left\{(\mathbf{p},w):v(\mathbf{p},w)\leq \bar{v}\right\}$ is \textit{\textbf{convex}}.
+        \item[iii] \myhl[blue]{\underline{\textbf{Quasiconvexity}}}. $\forall \bar{v}$, the set $\left\{(\mathbf{p},w):v(\mathbf{p},w)\leq \bar{v}\right\}$ is \textit{\textbf{convex}}. Let $\alpha \in[0,1]$, let $u=v(\mathbf{p},w),u'=v(\mathbf{p}',w')$, then $v(\mathbf{p},u)=w,v(\mathbf{p},u')=w'$. Without lossing generality, assume $u'\geq u$, then by the \textit{\textbf{concavity}} of $e(\cdot,u)$, we have $e(\alpha\mathbf{p}+(1-\alpha)\mathbf{p}',u')\geq \alpha e(\mathbf{p},u')+(1-\alpha)e(\mathbf{p}',u')\geq \alpha e(\mathbf{p},u)$
         \item[iv] \myhl[blue]{\underline{\textbf{Continuity}}}. $v(\mathbf{p},w)$ is \textit{\textbf{continuous}} in $\mathbf{p}$ and $w$.
     \end{enumerate} 
 \end{enumerate}
