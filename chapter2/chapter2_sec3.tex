@@ -324,7 +324,16 @@ With this link, we can establish a direct correspondence between the properties 
     \end{enumerate}
 \end{enumerate}
 
-For continuity and concavity/quasi-convexity, an simpler alternative is to use the idea of \textbf{epigraph}. 
+For continuity and concavity/quasi-convexity, an simpler alternative is to use the idea of \textbf{epigraph}:
+\begin{enumerate}
+    \item[-] Concavity-quasiconvexity: For any $u$
+    \begin{enumerate} 
+        \item[-] the concavity of $e(\cdot,u)$ is equivalent to the convexity of $\left\{ (\mathbf{p},w)\mid e(\mathbf{p},u)\geq w \right\}$
+        \item[-] the quasi-convexity of $v(\cdot)$ is equivalent to the convexity of the set $\left\{(\mathbf{p},w)\mid v(\mathbf{p},w)\leq u \}$ 
+    \end{enumerate}
+    By \ref{prop:expenditure_and_indirectuility} and monotonicity, $v(\mathbf{p},w)\leq u \Leftrightarrow e(\mathbf{p},u)\geq w$, hence, the two sets are equivalent for any $u$.
+    \item[-] Continuity:
+\end{enumerate}
 
 \textbf{EMP} is the dual problem of \textbf{UMP}. For the discussion of their relationships, we need the Duality Theorem:
 \begin{theorem*}{Duality Theorem}{}
