@@ -332,7 +332,12 @@ For continuity and concavity/quasi-convexity, an simpler alternative is to use t
         \item[-] the quasi-convexity of $v(\cdot)$ is equivalent to the convexity of the set $\left\{(\mathbf{p},w)\mid v(\mathbf{p},w)\leq u \}$ 
     \end{enumerate}
     By \ref{prop:expenditure_and_indirectuility} and monotonicity, $v(\mathbf{p},w)\leq u \Leftrightarrow e(\mathbf{p},u)\geq w$, hence, the two sets are equivalent for any $u$.
-    \item[-] Continuity:
+    \item[-] Continuity: For any $u$
+    \begin{enumerate}
+        \item[-] the continuity of $e(\cdot)$ is equivalent to both $\left\{(\mathbf{p},w,u)\mid e(\mathbf{p},u)\leq w\right\}$ and $\left\{(\mathbf{p},w,u)\mid e(\mathbf{p},u)\geq w\right\}$ being closed sets
+        \item[-] the continuity of $v(\cdot)$ is equivalent to both $\left\{(\mathbf{p},w,u)\mid v(\mathbf{p},u)\geq u\right\}$ and $\left\{(\mathbf{p},w,u)\mid v(\mathbf{p},u)\leq u\right\}$ being closed sets
+    \end{enumerate} 
+    again, by \ref{prop:expenditure_and_indirectuility} and monotonicity, $v(\mathbf{p},w)\leq u \Leftrightarrow e(\mathbf{p},u)\geq w$ and $v(\mathbf{p},w)\geq u \Leftrightarrow e(\mathbf{p},u)\leq w$, hence the two continuity conditions are equivalent.
 \end{enumerate}
 
 \textbf{EMP} is the dual problem of \textbf{UMP}. For the discussion of their relationships, we need the Duality Theorem:
