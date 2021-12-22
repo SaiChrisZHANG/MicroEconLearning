@@ -331,13 +331,13 @@ For continuity and concavity/quasi-convexity, an simpler alternative is to use t
         \item[-] concavity of $e(\cdot,u)$ is equivalent to convexity of $\left\{ (\mathbf{p},w)\mid e(\mathbf{p},u)\geq w \right\}$
         \item[-] quasi-convexity of $v(\cdot)$ is equivalent to convexity of $\left\{(\mathbf{p},w)\mid v(\mathbf{p},w)\leq u \right\}$ 
     \end{enumerate}
-    By \ref{prop:expenditure_and_indirectuility} and monotonicity, $v(\mathbf{p},w)\leq u \Leftrightarrow e(\mathbf{p},u)\geq w$, hence, the two sets are equivalent for any $u$.
+    By Prop.\ref{prop:expenditure_and_indirectuility} and monotonicity, $v(\mathbf{p},w)\leq u \Leftrightarrow e(\mathbf{p},u)\geq w$, hence, the two sets are equivalent for any $u$.
     \item[-] Continuity: For any $u$
     \begin{enumerate}
         \item[-] the continuity of $e(\cdot)$ is equivalent to both $\left\{(\mathbf{p},w,u)\mid e(\mathbf{p},u)\leq w\right\}$ and $\left\{(\mathbf{p},w,u)\mid e(\mathbf{p},u)\geq w\right\}$ being closed sets
         \item[-] the continuity of $v(\cdot)$ is equivalent to both $\left\{(\mathbf{p},w,u)\mid v(\mathbf{p},u)\geq u\right\}$ and $\left\{(\mathbf{p},w,u)\mid v(\mathbf{p},u)\leq u\right\}$ being closed sets
     \end{enumerate} 
-    again, by \ref{prop:expenditure_and_indirectuility} and monotonicity, $v(\mathbf{p},w)\leq u \Leftrightarrow e(\mathbf{p},u)\geq w$ and $v(\mathbf{p},w)\geq u \Leftrightarrow e(\mathbf{p},u)\leq w$, hence the two continuity conditions are equivalent.
+    again, by Prop.\ref{prop:expenditure_and_indirectuility} and monotonicity, $v(\mathbf{p},w)\leq u \Leftrightarrow e(\mathbf{p},u)\geq w$ and $v(\mathbf{p},w)\geq u \Leftrightarrow e(\mathbf{p},u)\leq w$, hence the two continuity conditions are equivalent.
 \end{enumerate}
 
 \textbf{EMP} is the dual problem of \textbf{UMP}. For the discussion of their relationships, we need the Duality Theorem:
@@ -389,6 +389,13 @@ is negative semidefinite\footnote{This is the differential analog of Thm.\ref{th
 and \textit{symmetric}\footnote{The symmetry of $\mathrm{D}_{\mathbf{p}}h(\mathbf{p},u)$ is less intuitive economically, it is closely linked to non-cycling of rational preferences.}.
 
 \subsubsection*{$h(\mathbf{p},u)$ and $x(\mathbf{p},w)$}
+Mirroring \ref{prop:expenditure_and_indirectuility}, Hicksian demand $h(\mathbf{p},u)$ and Walrasian demand $x(\mathbf{p},w)$ can be linked directly as
+\begin{proposition}{link between $h(\mathbf{p},u)$ and $x(\mathbf{p},w)$}{hicksian_and_walrasian}
+    $\forall \mathbf{p}\gg 0,w>0,u>u(0)$, we have $$h(\mathbf{p},u)=x(\mathbf{p},e(\mathbf{p},u)),\ x(\mathbf{p},w)=h(\mathbf{p},v(\mathbf{p},w))$$
+\end{proposition}
+
+The interpretations of Prop.\ref{prop:hicksian_and_walrasian}
+
 Hicksian demand $h(\mathbf{p},u)$ is \myhl[blue]{\textbf{not directly observable}} (utility is one of its arguments), but it can be computed from the observable Walrasian demand $x(\mathbf{p},w)$, with the \textbf{Slutsky Equation}:
 \begin{theorem}{the Slutsky equation}{slutsky_equation}
     For a continuous $u(\cdot)$ representing a locally nonsatiated and strictly convex $\succsim$ defined on $X=\mathbb{R}^L_+$, then $\forall (\mathbf{p},w)$ and $u=v(\mathbf{p},w)$, we have:
