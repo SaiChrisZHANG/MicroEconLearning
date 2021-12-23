@@ -396,15 +396,19 @@ Mirroring Prop.\ref{prop:expenditure_and_indirectuility}, Hicksian demand $h(\ma
 
 The interpretations of Prop.\ref{prop:hicksian_and_walrasian} are:
 \begin{enumerate}
-    \item[-] $h(\mathbf{p},u)=x(\mathbf{p},e(\mathbf{p},u))$:
+    \item[-] \myhl[blue]{$h(\mathbf{p},u)=x(\mathbf{p},e(\mathbf{p},u))$}
     
     $h(\mathbf{p},u)$, \textbf{compensated demand correspondence}, gives how much the demand would change if the consumer's wealth were adjusted to keep the utility level at $u$ (i.e., $h(\mathbf{p}',u)-h(\mathbf{p},u)=x(\mathbf{p}',e(\mathbf{p}',u))-x(\mathbf{p},e(\mathbf{p},u))$).
     The wealth change required to keep utility at $u$, \textbf{Hicksian wealth compensation}, is then $\Delta w_{\text{Hicksian}}=e(\mathbf{p}',u)-e(\mathbf{p},u) = e(\mathbf{p}',u)-w$. This is reflected in Fig.\ref{fig:hicksian_wealth_comp}
-    \item[-] $x(\mathbf{p},w)=h(\mathbf{p},v(\mathbf{p},w))$:
+    \item[-] \myhl[blue]{$x(\mathbf{p},w)=h(\mathbf{p},v(\mathbf{p},w))$}
+    
+    $x(\mathbf{p},w)$, in contrast, gives how much the utility would change if the consumer's wealth level $w$ stays the same while the price changes from $\mathbf{p}$ to $\mathbf{p}'$.
 \end{enumerate}
 
 \begin{figure}[h]
     \centering
+    \caption{Hicksian wealth compensation}
+    \label{fig:hicksian_wealth_comp}
     \begin{tikzpicture}[scale=1.5]
         % basics
         \draw [-stealth,color=black,thick] (-0.2,0) -- (3.5,0) node[below=2pt] {$x_1$};
@@ -447,9 +451,10 @@ The interpretations of Prop.\ref{prop:hicksian_and_walrasian} are:
             h(\mathbf{p}',u)&=x(\mathbf{p}',w+\Delta w_{Hicks})\\
             &=x(\mathbf{p}',e(\mathbf{p}',u))
         \end{aligned}$} (1.1+0.4,1.1^2/1.1+0.4);
+        
+        %%% new bundle
+        \draw[-stealth,thick,blue!45!black,dashed] (0.75625-0.4,0.75625-0.4) -- node[below=4pt,xshift=0pt] {$x(\mathbf{p}',w)$} (0.75625-0.05,0.75625-0.05);
     \end{tikzpicture}
-    \caption{Hicksian wealth compensation}
-    \label{fig:hicksian_wealth_comp}
 \end{figure}
 
 Hicksian demand $h(\mathbf{p},u)$ is \myhl[blue]{\textbf{not directly observable}} (utility is one of its arguments), but it can be computed from the observable Walrasian demand $x(\mathbf{p},w)$, with the \textbf{Slutsky Equation}:
