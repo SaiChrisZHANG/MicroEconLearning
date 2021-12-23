@@ -215,14 +215,14 @@ The optimal commodity vector in EMP is $h(\mathbf{p},u)\subset\mathbb{R}^L_+$, a
 \end{theorem}
 Here is the proof:
 \begin{enumerate}
-    \item \textit{\textbf{homogeneity of degree zero}} in $\mathbf{p}$: minimizing $\mathbf{p}\cdot\mathbf{x}$ subject to $u(\mathbf{x})\geq u$ is the same as minimizing $\alpha \mathbf{p}\cdot\mathbf{x}$ since $\alpha >0$
-    \item \textit{\textbf{No excess utility}}: suppose $\exists \mathbf{x}\in h(\mathbf{p},u)$ s.t. $u(\mathbf{x})>u$. 
-    \item \textit{\textbf{convexity/uniqueness}}:
+    \item[-] \textit{\textbf{homogeneity of degree zero}} in $\mathbf{p}$: minimizing $\mathbf{p}\cdot\mathbf{x}$ subject to $u(\mathbf{x})\geq u$ is the same as minimizing $\alpha \mathbf{p}\cdot\mathbf{x}$ since $\alpha >0$
+    \item[-] \textit{\textbf{No excess utility}}: suppose $\exists \mathbf{x}\in h(\mathbf{p},u)$ s.t. $u(\mathbf{x})>u$. 
+    \item[-] \textit{\textbf{convexity/uniqueness}}:
     \begin{enumerate}
         \item[(a)] convex $\succsim$ $\Rightarrow$ convex $ h(\mathbf{p},u)$: for $\mathbf{x},\mathbf{x}'\in h(\mathbf{p},u)$, then $u(\mathbf{x}),u(\mathbf{x}')\geq u$ and $\mathbf{p}\cdot\mathbf{x}=\mathbf{p}\cdot\mathbf{x}'$. Then $\forall \alpha\in[0,1]$, let $\alpha\mathbf{x}+(1-\alpha)\mathbf{x}'$, $\mathbf{p}\cdot\mathbf{x}''=\mathbf{p}\cdot\mathbf{x}=\mathbf{p}\cdot\mathbf{x}'$; meanwhile, $\succsim$ is convex, $u(\cdot)$ is quasiconcave, hence $u(\mathbf{x}'')\geq u$, hence $\mathbf{x}''\in h(\mathbf{p},u)$
         \item[(b)] strictly convex $\succsim$ $\Rightarrow$ single-valued $ h(\mathbf{p},u)$: for $\mathbf{x},\mathbf{x}'\in h(\mathbf{p},u)$, then again $u(\mathbf{x}),u(\mathbf{x}')\geq u$ and $\mathbf{p}\cdot\mathbf{x}=\mathbf{p}\cdot\mathbf{x}'$. Then $\forall \alpha\in[0,1]$, let $\alpha\mathbf{x}+(1-\alpha)\mathbf{x}'$, $\mathbf{p}\cdot\mathbf{x}''=\mathbf{p}\cdot\mathbf{x}=\mathbf{p}\cdot\mathbf{x}'$; meanwhile, $\succsim$ is strictly convex, $u(\cdot)$ is strictly quasiconcave, hence $u(\mathbf{x}'')> u$, then we could find a $\beta$ close enough to 1 s.t. $u(\beta\mathbf{x}'')>u$ and $\mathbf{p}\cdot(\beta \mathbf{x}'')<\mathbf{p}\cdot \mathbf{x}=\mathbf{p}\cdot \mathbf{x}'$, hence neither $\mathbf{x}$ nor $\mathbf{x}'$ is EMP optimizer, therefore, $h(\mathbf{p},u)$ must be a singleton.
     \end{enumerate}
-    \item \textit\textbf{continuity}: continuity of $h(\mathbf{p},u)$ follows the continuity of $u(\cdot)$.
+    \item[-] \textit{\textbf{continuity}}: continuity of $h(\mathbf{p},u)$ follows the continuity of $u(\cdot)$.
 \end{enumerate}
 
 And again, just like UMP, we use the $\mathcal{L}=\mathbf{p}\cdot\mathbf{x}$ Lagrangean to solve EMP. The FOC is: $\exists \lambda \geq 0$ s.t.
@@ -257,20 +257,20 @@ Parelleling Thm.\ref{thm:properties_indirect_u}, $e(\mathbf{p},u)$ has the follo
 \end{theorem}
 Here is the proof:
 \begin{enumerate}
-    \item \textit{\textbf{homogeneity of degree one}} in $\mathbf{p}$: The constraint set of EMP, $u(\mathbf{x})\geq u$ has \textbf{nothing} to do with $price changes$, therefore, $\alpha\mathbf{p}\cdot \mathbf{x}$ and $\mathbf{p}\cdot \mathbf{x}$ have the same optimizer $\mathbf{x}^*$, hence the expenditures in $\alpha\mathbf{p}$ and $\mathbf{p}$ at $\mathbf{x}^*$ are: $e(\alpha\mathbf{p},u)=\alpha\mathbf{p}\cdot\mathbf{x}=\alpha e(\mathbf{p},u)$.
-    \item first-order properties:
+    \item[-] \textit{\textbf{homogeneity of degree one}} in $\mathbf{p}$: The constraint set of EMP, $u(\mathbf{x})\geq u$ has \textbf{nothing} to do with $price changes$, therefore, $\alpha\mathbf{p}\cdot \mathbf{x}$ and $\mathbf{p}\cdot \mathbf{x}$ have the same optimizer $\mathbf{x}^*$, hence the expenditures in $\alpha\mathbf{p}$ and $\mathbf{p}$ at $\mathbf{x}^*$ are: $e(\alpha\mathbf{p},u)=\alpha\mathbf{p}\cdot\mathbf{x}=\alpha e(\mathbf{p},u)$.
+    \item[-] first-order properties:
     \begin{enumerate}
         \item[-] \textit{\textbf{strictly increasing}} in $u$: suppose $e(\mathbf{p},u)$ were not strictly increasing in $u$, then let $\mathbf{x}^1$ be the optimizer for $u^1$ and $\mathbf{x}^2$ for $u^2$, where $u^2>u^1$ and $\mathbf{p}\cdot\mathbf{x}^1\geq \mathbf{p}\cdot\mathbf{x}^2>0$. Then we can find a bundle $\alpha \mathbf{x}^2$ ($\alpha \in (0,1)$) that is close enough to $\mathbf{x}^2$ s.t. $\mathbf{p}\cdot\alpha \mathbf{x}^2<\mathbf{p}\cdot \mathbf{x}^1$ and $u(\alpha\mathbf{x}^2)>u(\mathbf{x}^1)=u^1$, this contradicts the premise of $\mathbf{x}^1$ being the EMP optimizer.
         \item[-] \textit{\textbf{non-decreasing in}} in $p_l,\forall l$: suppose two price vectors $\mathbf{p}^1$ and $\mathbf{p}^2$ where $\exists l,p^1_l\geq p^2_l$ and $\forall k, p^1_k=p^2_k$. Let $\mathbf{x}^2$ be the EMP optimizer for $(\mathbf{p}^2,u)$, then, $e(\mathbf{p}^2,u)=\mathbf{p}^2\cdot \mathbf{x}^2\geq \underbrace{\mathbf{p}^1\cdot \mathbf{x}^2\geq e(\mathbf{p}^1,u)}_{\text{definition of }e(\mathbf{p},u)}$.
     \end{enumerate}
-    \item \textit{\textbf{concave}} in $\mathbf{p}$: for a fixed utility level $\bar{u}$, then for a price vector $\mathbf{p}=\alpha\mathbf{p}^1+(1-\alpha)\mathbf{p}^2$, suppose that $\mathbf{x}$ is the EMP optimizer with $(\mathbf{p},\bar{u})$, hence 
+    \item[-] \textit{\textbf{concave}} in $\mathbf{p}$: for a fixed utility level $\bar{u}$, then for a price vector $\mathbf{p}=\alpha\mathbf{p}^1+(1-\alpha)\mathbf{p}^2$, suppose that $\mathbf{x}$ is the EMP optimizer with $(\mathbf{p},\bar{u})$, hence 
     \begin{align*}
         e(\mathbf{p},\bar{u}) & = \mathbf{p}\cdot\mathbf{x} = \left(\alpha\mathbf{p}^1+(1-\alpha)\mathbf{p}^2\right)\cdot \mathbf{x}\\
         & = \alpha \mathbf{p}^1\cdot \mathbf{x} + (1-\alpha)\mathbf{p}^2\cdot \mathbf{x}\\
         & \geq \alpha e(\mathbf{p}^1,u)+(1-\alpha) e(\mathbf{p}^2,u)
     \end{align*}
     A graphic way of understanding the concavity of $e(\mathbf{p},u)$ w.r.t. $\mathbf{p}$ is: for any given $\bar{\mathbf{p}}$ and its EMP optimizer $\bar{\mathbf{x}}$, if prices changes while holding consumption fixed at $\bar{\mathbf{x}}$, the expenditure would be linear in $\mathbf{p}$: $\mathbf{p}\cdot\bar{\mathbf{x}}$. But by the nature of EMP, we know the expenditure function must be the minimum expenditure, i.e. $e(\mathbf{p},u)\leq p\cdot \bar{\mathbf{x}}$, hence the expenditure function lies under the straight line $\mathbf{p}\cdot\bar{\mathbf{x}}$ and touching it only at the EMP optimizers. And this has to be true for any $\mathbf{x}$, therefore, $e(\mathbf{p},u)$ is concave in $\mathbf{p}$ \citep[Figure 3.E.2, Page 60]{mas1995microeconomic}.
-    \item \textit{\textbf{continuous}}: again, continuity of $e(\mathbf{p},u)$ follows the continuity of $u(\cdot)$.
+    \item[-] \textit{\textbf{continuous}}: again, continuity of $e(\mathbf{p},u)$ follows the continuity of $u(\cdot)$.
 \end{enumerate}
 
 \subsection{Duality: EMP and UMP}
@@ -389,7 +389,7 @@ is negative semidefinite\footnote{This is the differential analog of Thm.\ref{th
 and \textit{symmetric}\footnote{The symmetry of $\mathrm{D}_{\mathbf{p}}h(\mathbf{p},u)$ is less intuitive economically, it is closely linked to non-cycling of rational preferences.}.
 
 \subsubsection*{$h(\mathbf{p},u)$ and $x(\mathbf{p},w)$}
-Mirroring \ref{prop:expenditure_and_indirectuility}, Hicksian demand $h(\mathbf{p},u)$ and Walrasian demand $x(\mathbf{p},w)$ can be linked directly as
+Mirroring Prop.\ref{prop:expenditure_and_indirectuility}, Hicksian demand $h(\mathbf{p},u)$ and Walrasian demand $x(\mathbf{p},w)$ can be linked directly as
 \begin{proposition}{link between $h(\mathbf{p},u)$ and $x(\mathbf{p},w)$}{hicksian_and_walrasian}
     $\forall \mathbf{p}\gg 0,w>0,u>u(0)$, we have $$h(\mathbf{p},u)=x(\mathbf{p},e(\mathbf{p},u)),\ x(\mathbf{p},w)=h(\mathbf{p},v(\mathbf{p},w))$$
 \end{proposition}
@@ -403,7 +403,7 @@ The interpretations of Prop.\ref{prop:hicksian_and_walrasian} are:
     \item[-] $x(\mathbf{p},w)=h(\mathbf{p},v(\mathbf{p},w))$:
 \end{enumerate}
 
-\begin{figure}
+\begin{figure}[h]
     \centering
     \begin{tikzpicture}[scale=1.5]
         % basics
