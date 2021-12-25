@@ -465,4 +465,10 @@ Hicksian demand $h(\mathbf{p},u)$ is \myhl[red]{\textbf{not directly observable}
     $$ \mathrm{D}_{\mathbf{p}} h(\mathbf{p},u) = \underbrace{\mathrm{D}_{\mathbf{p}} w(\mathbf{p},w)+\mathrm{D}_w x(\mathbf{p},w)\cdot x(\mathbf{p},w)^T}_{\equiv S(\mathbf{p},w) \text{ in Def.\ref{def:slutsky_matrix}}}$$
 \end{theorem}
 
-\textbf{Here is the proof}: Consider the price-wealth pair $(\bar{p},\bar{w})$ and the target utility level $\bar{u}$
+\textbf{Here is the proof}: Consider the price-wealth pair $(\bar{\mathbf{p}},\bar{w})$ and the target utility level $\bar{u}$, naturally, $\bar{w}=e(\bar{\mathbf{p}},\bar{u})$. By Prop.\ref{prop:hicksian_and_walrasian}, we know $h_l(\mathbf{p},u)=x_l(\mathbf{p},e(\mathbf{p},u)),\forall (\mathbf{p},u)$.
+Differentiate this w.r.t. $p_k$ at $(\bar{\mathbf{p}},\bar{u})$, get
+\begin{align*}
+    & \left.\frac{\partial h_l(\mathbf{p},u)}{\partial p_k}\right\vert_{(\bar{\mathbf{p}},\bar{u})}=\frac{\partial x_l(\bar{\mathbf{p}},e(\bar{\mathbf{p}},\bar{u}))}{\partial p_k} + \frac{\partial x_l (\bar{\mathbf{p}},e(\bar{\mathbf{p}},\bar{u}))}{\partial w}\cdot \frac{\partial e(\bar{\mathbf{p}},\bar{u})}{\partial p_k} \\
+    \xRightarrow{\text{Thm.\ref{thm:hdemand_and_exp}}} & \frac{\partial h_l(\bar{\mathbf{p}},\bar{u})}{\partial p_k} =\frac{\partial x_l(\bar{\mathbf{p}},e(\bar{\mathbf{p}},\bar{u}))}{\partial p_k} + \frac{\partial x_l (\bar{\mathbf{p}},e(\bar{\mathbf{p}},\bar{u}))}{\partial w}\cdot h_k(\bar{\mathbf{p}},\bar{u})\\
+    \xRightarrow{\bar{w}=(\bar{\mathbf{p}},\bar{u})} & \frac{\partial h_l(\bar{\mathbf{p}},\bar{u})}{\partial p_k} =\frac{\partial x_l(\bar{\mathbf{p}},\bar{w})}{\partial p_k} + \frac{\partial x_l (\bar{\mathbf{p}},\bar{w})}{\partial w}\cdot w_k(\bar{\mathbf{p}},\bar{w})
+\end{align*}
