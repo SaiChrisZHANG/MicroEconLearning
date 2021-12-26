@@ -472,3 +472,60 @@ Differentiate this w.r.t. $p_k$ at $(\bar{\mathbf{p}},\bar{u})$, get
     \xRightarrow{\text{Thm.\ref{thm:hdemand_and_exp}}} & \frac{\partial h_l(\bar{\mathbf{p}},\bar{u})}{\partial p_k} =\frac{\partial x_l(\bar{\mathbf{p}},e(\bar{\mathbf{p}},\bar{u}))}{\partial p_k} + \frac{\partial x_l (\bar{\mathbf{p}},e(\bar{\mathbf{p}},\bar{u}))}{\partial w}\cdot h_k(\bar{\mathbf{p}},\bar{u})\\
     \xRightarrow{\bar{w}=(\bar{\mathbf{p}},\bar{u})} & \frac{\partial h_l(\bar{\mathbf{p}},\bar{u})}{\partial p_k} =\frac{\partial x_l(\bar{\mathbf{p}},\bar{w})}{\partial p_k} + \frac{\partial x_l (\bar{\mathbf{p}},\bar{w})}{\partial w}\cdot w_k(\bar{\mathbf{p}},\bar{w})
 \end{align*}
+
+Here, Walrasian demand function is \myhl[blue]{observable}\sidenotes{observable in principle, since $\mathbf{p}$ and $w$ are both observable}, and the Slutsky matrix is calculable, we can therefore use this equation to calculate $\mathrm{D}_{\mathbf{p}}h(\mathbf{p},u)$. And for an arbitrary good $l$, its demand curve w.r.t. $p_l$ given prices of other goods $p_{-l}$ fixed is depicted in Fig.\ref{fig:hick_wal_demand_curves}.
+
+\begin{figure}[ht]
+\centering
+\caption{Hicksian and Walrasian demand curve}
+\label{fig:hick_wal_demand_curves}
+\begin{minipage}[b]{0.45\textwidth}
+    \begin{tikzpicture}[scale=1.4]
+        % basics
+        \draw [-stealth,color=black,thick] (-0.2,0) -- (3.5,0) node[below=2pt] {$x_l$};
+        \draw [-stealth,color=black,thick] (0,-0.2) -- (0,3.5) node[left=2pt] {$p_l$};
+        
+        % walrasian
+        \draw[domain=0.2:3.1, blue!45!black, thick, variable=\x] plot ({\x}, {3.3-\x});
+        % hicksian
+        \draw[domain=0.8:2.3, red!55!black, thick, variable=\x] plot ({\x}, {4.8-2*\x});
+        % intersection: \bar{p}
+        \filldraw[black] (1.5,1.8) circle (2pt); 
+        % label
+        \draw[densely dashed, thick, black] (0,1.8) node[left=2pt] {$\bar{p}_l$} (0,1.8) -- (1.5,1.8);
+        
+        % text
+        \draw[-stealth,thick,densely dashed,blue!45!black] (2.5,1.3) -- node[above=7pt] {$x_l(\mathbf{p},\bar{w})$} (2.5,0.8); % walrasian
+        \draw[-stealth,thick,densely dashed,red!55!black] (1.5,0.8) -- node[left=7pt] {$h_l(\mathbf{p},\bar{u})$} (2,0.8); % walrasian
+    \end{tikzpicture}
+    \caption*{Normal good}
+\end{minipage}
+\hfill
+\begin{minipage}[b]{0.45\textwidth}
+    \begin{tikzpicture}[scale=1.4]
+        % basics
+        \draw [-stealth,color=black,thick] (-0.2,0) -- (3.5,0) node[below=2pt] {$x_l$};
+        \draw [-stealth,color=black,thick] (0,-0.2) -- (0,3.5) node[left=2pt] {$p_l$};
+        
+        % walrasian
+        \draw[domain=0.2:3.1, blue!45!black, thick, variable=\x] plot ({\x}, {3.3-\x});
+        % hicksian
+        \draw[domain=0.2:3.1, red!55!black, thick, variable=\x] plot ({\x}, {2.55-0.5*\x});
+        % intersection: \bar{p}
+        \filldraw[black] (1.5,1.8) circle (2pt); 
+        % label
+        \draw[densely dashed, thick, black] (0,1.8) node[left=2pt] {$\bar{p}_l$} (0,1.8) -- (1.5,1.8);
+        
+        % text
+        \draw[-stealth,thick,densely dashed,red!45!black] (2.5,1.8) -- node[above=7pt] {$h_l(\mathbf{p},\bar{u})$} (2.5,1.3); % walrasian
+        \draw[-stealth,thick,densely dashed,blue!45!black] (2.0,0.8) -- node[left=7pt] {$x_l(\mathbf{p},\bar{w})$} (2.5,0.8); % walrasian
+    \end{tikzpicture}
+    \caption*{Inferior good}
+\end{minipage}
+\end{figure}
+
+When we focus on one good $l$, it is clear the relationship between the Hicksian demand and the Walrasian demand:
+\begin{enumerate}
+    \item[-] 
+    \item[-]  
+\end{enumerate}
