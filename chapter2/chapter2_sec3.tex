@@ -494,7 +494,7 @@ Here, Walrasian demand function is \myhl[blue]{observable}\sidenotes{observable 
         \draw[densely dashed, thick, black] (1.5,0) node[below=0pt] {$\bar{p}_l$} (1.5,0) -- (1.5,1.8);
         
         % text
-        \draw[-stealth,thick,densely dashed,red!45!black] (2.5,1.8) -- node[above=7pt] {$h_l(\mathbf{p},\bar{u})$} (2.5,1.3); % walrasian
+        \draw[-stealth,thick,densely dashed,red!45!black] (2.5,1.8) -- node[above=7pt] {$h_l(\mathbf{p},v(\bar{\mathbf{p}},\bar{w}))$} (2.5,1.3); % walrasian
         \draw[stealth-,thick,densely dashed,blue!45!black] (0.8,2.5) -- node[right=7pt] {$x_l(\mathbf{p},\bar{w})$} (1.3,2.5); % walrasian
     \end{tikzpicture}
     \caption*{Normal good}
@@ -517,7 +517,7 @@ Here, Walrasian demand function is \myhl[blue]{observable}\sidenotes{observable 
         
         % text
         \draw[-stealth,thick,densely dashed,blue!45!black] (2.5,1.3) -- node[above=7pt] {$x_l(\mathbf{p},\bar{w})$} (2.5,0.8); % walrasian
-        \draw[stealth-,thick,densely dashed,red!55!black] (1.15,2.5) -- node[right=7pt] {$h_l(\mathbf{p},\bar{u})$} (1.65,2.5); % walrasian
+        \draw[stealth-,thick,densely dashed,red!55!black] (1.15,2.5) -- node[right=7pt] {$h_l(\mathbf{p},v(\bar{\mathbf{p}},\bar{w}))$} (1.65,2.5); % walrasian
     \end{tikzpicture}
     \caption*{Inferior good}
 \end{minipage}
@@ -525,6 +525,8 @@ Here, Walrasian demand function is \myhl[blue]{observable}\sidenotes{observable 
 
 When we focus on one good $l$, we have $\frac{\partial h_l(\bar{\mathbf{p}},\bar{u})}{\partial p_l} =\frac{\partial x_l(\bar{\mathbf{p}},\bar{w})}{\partial p_l} + \frac{\partial x_l (\bar{\mathbf{p}},\bar{w})}{\partial w}\cdot w_l(\bar{\mathbf{p}},\bar{w})$, the relationship between the Hicksian demand and the Walrasian demand becomes much more clear:
 \begin{enumerate}
-    \item[-] If good $l$ is normal good, Walrasian demand has a positive income effect, i.e. $\partial x_l (\bar{\mathbf{p}},\bar{w})/\partial w>0$,
-    \item[-]  
+    \item[-] If good $l$ is normal good, then $\partial x_l (\bar{\mathbf{p}},\bar{w})/\partial w>0$, this means that if its price $p_l$ increases, Hicksian demand (with wealth increased accordingly to match the initial utility level $\bar{u}=v(\bar{\mathbf{p}},\bar{w})$) for good $l$ will decrease, but by a lower amount than the decrease of Walrasian demand (without wealth adjustment).
+    \item[-] If good $l$ is inferior good, then $\partial x_l (\bar{\mathbf{p}},\bar{w})/\partial w<0$, the opposite logic follows. 
 \end{enumerate}
+
+Here, Slutsky (substitution) matrix appears once again. However, different from 
