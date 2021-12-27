@@ -529,7 +529,7 @@ When we focus on one good $l$, we have $\frac{\partial h_l(\bar{\mathbf{p}},\bar
     \item[-] If good $l$ is inferior good, then $\partial x_l (\bar{\mathbf{p}},\bar{w})/\partial w<0$, the opposite logic follows. 
 \end{enumerate}
 
-Here, Slutsky (substitution) matrix appears once again. However, different from the choice-based, WARP-regulated demand, which requires the Slutsky matrix to be \textbf{negative semidefinite} and \textbf{symmetric} (see Thm.\ref{thm:slutksy_matrix_negativesemidef}), one extra condition is required for preference maximization: $S(\mathbf{p},w)\mathbf{p}=0$.
+Here, Slutsky (substitution) matrix appears once again. However, different from the choice-based, WARP-regulated demand, which requires the Slutsky matrix to be \textbf{negative semidefinite} and $S(\mathbf{p},w)\mathbf{p}=0$ (see Thm.\ref{thm:slutksy_matrix_negativesemidef}), one extra condition is required for preference maximization: S being \textbf{symmetric}.
 The more essential distinction between these two approaches is that they adopt two different wealth compensation approaches: For an initial price-wealth pair $(\bar{\mathbf{p}},\bar{w})$ and its corresponding utility level $\bar{u}=u(\bar{x})$, and the price after change $\mathbf{p}'$:
 \begin{enumerate}
     \item[-] Slutsky wealth compensation (Section\ref{chap2:sec2:ssec4}): wealth is adjusted from $\bar{w}$ to $w^S$ s.t. $\bar{x}$ could still be afforded, $w^S=\bar{x}\cdot \mathbf{p}'$, giving: $\Delta w_{\text{Slutsky}}=\mathbf{p}'\cdot x(\bar{\mathbf{p}},\bar{w})-\bar{w}$
@@ -538,5 +538,8 @@ The more essential distinction between these two approaches is that they adopt t
 The two compensation approaches are closely linked: $\Delta w_{\text{Hicks}}\leq \Delta w_{\text{Slutsky}}$, and since $\nabla_{\mathbf{p}}e(\bar{\mathbf{p}},\bar{u}) = h(\bar{\mathbf{p}},\bar{u})=x(\bar{\mathbf{p}},\bar{w})$, the equality holds \textbf{only} when the price change is a differential change ($\mathrm{d}p$):
 \begin{align*}
     \Delta w_{\text{Slutsky}} &= \mathbf{p}'\cdot x(\bar{\mathbf{p}},\bar{w})-\bar{w} \\
-    & = \mathbf{p}'\cdot h(\bar{\mathbf{p}},\bar{u})-\bar{w} = \mathbf{p}'\cdot \nabla_{\mathbf{p}}e(\bar{\mathbf{p}},\bar{u})
+    & \mathbf{p}'\cdot x(\bar{\mathbf{p}},\bar{w})-\bar{\mathbf{p}}\cdot x(\bar{\mathbf{p}},\bar{w})= x(\bar{\mathbf{p}},\bar{w})\cdot(\mathbf{p}'-\bar{\mathbf{p}}) \\
+    & = \nabla_{\mathbf{p}}e(\bar{\mathbf{p}},\bar{u})\cdot(\mathbf{p}'-\bar{\mathbf{p}}) = e(\mathbf{p}',\bar{u})-e(\bar{\mathbf{p}},\bar{u})\\
+    & = e(\mathbf{p}',\bar{u})-\bar{w} = \Delta w_{\text{Hicks}}
 \end{align*}
+the intuition is, for a very small change of price for good $l$, the total effect on the expenditure required to still achieve $\bar{u}$ is just the direct effect of the price change. But if the price change is not sufficiently small (discrete price changes), we would always have $\Delta w_{\text{Hicks}}< \Delta w_{\text{Slutsky}}$ (see Fig.).
