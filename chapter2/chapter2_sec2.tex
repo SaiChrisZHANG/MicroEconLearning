@@ -1,4 +1,4 @@
-\subsection{Walrasian Budgets}
+\subsection{Walrasian Budgets}\label{chap2:sec2:ssec1}
 We have already defined the economic-affordability constraint of consumers, if we also limit consumption bundle $x$ to be non-negative, we would have the Walrasian, or competitive budget:
 
 \begin{definition}{Walrasian budget}{}
@@ -19,7 +19,7 @@ Notice that the Walrasian budget set is not automatically convex. Its convexity 
 
 Of course, it is perfectly possible that a consumer's budget is NOT convex (and not Walrasian, in that sense), the brilliant work of \citet{deaton1980economics} has documented and discussed many complicated consumption sets that are not convex.
 
-\subsection{Walrasian Demand Function}
+\subsection{Walrasian Demand Function}\label{chap2:sec2:ssec2}
 With Walrasian budgets defined, we can define \textit{Walrasian demand correspondence} and \textit{Walrasian demand function} as:
 \begin{definition}{Walrasian demand correspondence/function}{}
     For each \textit{price-wealth} pair $(\mathbf{p},w)$, Walrasian demand correspondence is the set of chosen consumption bundles, written as $ x(\mathbf{p},w)$. When $ x(\mathbf{p},w)$ is single-valued, it will be referred to as a \textbf{Walrasian demand function}.
@@ -105,7 +105,7 @@ If we define elasticities as:
 We can rewrite Thm.\ref{thm:homo_waldemand_thm1} as $\sum^L_{k=1}\epsilon_{lk}(\mathbf{p},w)+\epsilon_{lw}(\mathbf{p},w)=0$ for $l=1,\cdots,L$: this directly expresses that an equal \% change in all prices and wealth leads to no change in demand, i.e., the homogeneity of degree zero.
 And we can rewrite the two equations in Thm.\ref{thm:walraslaw_waldemand_thm2} as $\sum^L_{l=1}\frac{p_lx_l(\mathbf{p},w)}{w}\epsilon_{lk}(\mathbf{p},w)+\frac{p_kx_k(\mathbf{p},w)}{w}=0$ for $k=1,\cdots,L$ and $\sum^L_{l=1}\frac{p_lx_l(\mathbf{p},w)}{w}\epsilon_{lw}(\mathbf{p},w)=1$.
 
-\subsection{WARP and Law of Demand}
+\subsection{WARP and Law of Demand}\label{chap2:sec2:ssec3}
 Since for the family of Walrasian budget sets $\mathcal{B}^*=\{B_{\mathbf{p},w}:\mathbf{p}\gg 0,w>0\}$, $(\mathcal{B}^*,\mathbf{p}(\cdot))$ is a choice structure, naturally, we would like to check when WARP holds for this choice structure.
 
 \begin{definition}{WARP of $ x(\mathbf{p},w)$}{walrasian_WARP}
@@ -196,7 +196,7 @@ and we have a generalized version of the compensated law of demand:
 Again, if the multivalued demand correspondence $ x(\mathbf{p},w)$ satisfies Walras' law and compensated law of demand (Def.\ref{thm:compensated_lawofdemand_general}), this $ x(\mathbf{p},w)$ satisfies the generalized WARP (Def.\ref{def:walrasian_WARP_general}), the proof follows the same logic of the single-valued version:
 We only need to show for all compensated price changes, generalized WARP holds. We can prove its contrapositive, if WARP does not hold, there exists a compensated price violates the generalized compensated law of demand. Suppose $\mathbf{x}\in  x(\mathbf{p},w),\mathbf{x}'\in  x(\mathbf{p}',w')$, $\mathbf{p}'\cdot\mathbf{x}=w'$ and $\mathbf{p}\cdot\mathbf{x}'\leq w$, then it is easy to show that $(\mathbf{p}'-\mathbf{p})\cdot (\mathbf{x}'-\mathbf{x})=w-\mathbf{p}\cdot \mathbf{x}'\geq 0$, it violates the compensated law of demand, except for the case that $\mathbf{x}'\in  x(\mathbf{p},w)$, where $(\mathbf{p}'-\mathbf{p})\cdot (\mathbf{x}'-\mathbf{x})=0$.
 
-\subsection{Slutsky Matrix}
+\subsection{Slutsky Matrix}\label{chap2:sec2:ssec4}
 When consumer demand $ x(\mathbf{p},w)$ is differentiable with respect to both prices and wealth, we can rewrite the inequality in Thm.\ref{thm:compensated_lawofdemand}: $\mathrm{d}\mathbf{p}\cdot\mathrm{d} \mathbf{x}\leq 0$. In the spirit of compensated price changes, we know the change in wealth related to $\mathrm{d} \mathbf{p}$ is $\mathrm{d} w= x(\mathbf{p},w)\cdot \mathrm{d} \mathbf{p}$.
 Use the chain rule, we can get
 $$\mathrm{d} \mathbf{x}= \mathrm{D}_{\mathbf{p}} x(\mathbf{p},w)\mathrm{d}\mathbf{p} + \mathrm{D}_w  x(\mathbf{p},w)\mathrm{d} w$$
