@@ -197,17 +197,17 @@ Again, if the multivalued demand correspondence $ x(\mathbf{p},w)$ satisfies Wal
 We only need to show for all compensated price changes, generalized WARP holds. We can prove its contrapositive, if WARP does not hold, there exists a compensated price violates the generalized compensated law of demand. Suppose $\mathbf{x}\in  x(\mathbf{p},w),\mathbf{x}'\in  x(\mathbf{p}',w')$, $\mathbf{p}'\cdot\mathbf{x}=w'$ and $\mathbf{p}\cdot\mathbf{x}'\leq w$, then it is easy to show that $(\mathbf{p}'-\mathbf{p})\cdot (\mathbf{x}'-\mathbf{x})=w-\mathbf{p}\cdot \mathbf{x}'\geq 0$, it violates the compensated law of demand, except for the case that $\mathbf{x}'\in  x(\mathbf{p},w)$, where $(\mathbf{p}'-\mathbf{p})\cdot (\mathbf{x}'-\mathbf{x})=0$.
 
 \subsection{Slutsky Matrix}
-When consumer demand $ x(\mathbf{p},w)$ is differentiable with respect to both prices and wealth, we can rewrite the inequality in Thm.\ref{thm:compensated_lawofdemand}: $\diff \mathbf{p}\cdot \diff \mathbf{x}\leq 0$. In the spirit of compensated price changes, we know the change in wealth related to $\diff \mathbf{p}$ is $\diff w= x(\mathbf{p},w)\cdot \diff \mathbf{p}$.
+When consumer demand $ x(\mathbf{p},w)$ is differentiable with respect to both prices and wealth, we can rewrite the inequality in Thm.\ref{thm:compensated_lawofdemand}: $\mathrm{d}\mathbf{p}\cdot\mathrm{d} \mathbf{x}\leq 0$. In the spirit of compensated price changes, we know the change in wealth related to $\mathrm{d} \mathbf{p}$ is $\mathrm{d} w= x(\mathbf{p},w)\cdot \mathrm{d} \mathbf{p}$.
 Use the chain rule, we can get
-$$\diff \mathbf{x}= \mdiff_{\mathbf{p}} x(\mathbf{p},w)\diff \mathbf{p} + \mdiff_w  x(\mathbf{p},w)\diff w$$
-and we can plug in the induced wealth difference $\diff w= x(\mathbf{p},w)\diff \mathbf{p}$, get
+$$\mathrm{d} \mathbf{x}= \mathrm{D}_{\mathbf{p}} x(\mathbf{p},w)\mathrm{d}\mathbf{p} + \mathrm{D}_w  x(\mathbf{p},w)\mathrm{d} w$$
+and we can plug in the induced wealth difference $\mathrm{d}w= x(\mathbf{p},w)\mathrm{d} \mathbf{p}$, get
 \begin{align*}
-    \diff \mathbf{x} & = \mdiff_{\mathbf{p}} x(\mathbf{p},w)\diff \mathbf{p} + \mdiff_w  x(\mathbf{p},w) \cdot \left[ x(\mathbf{p},w)\diff \mathbf{p}\right]\\
-    & =\left[ \mdiff_{\mathbf{p}} x(\mathbf{p},w) + \mdiff_w  x(\mathbf{p},w) x(\mathbf{p},w)^T\right] \diff \mathbf{p}
+    \mathrm{d} \mathbf{x} & = \mathrm{D}_{\mathbf{p}} x(\mathbf{p},w)\mathrm{d} \mathbf{p} + \mathrm{D}_w  x(\mathbf{p},w) \cdot \left[ x(\mathbf{p},w)\mathrm{d} \mathbf{p}\right]\\
+    & =\left[ \mathrm{D}_{\mathbf{p}} x(\mathbf{p},w) + \mathrm{D}_w  x(\mathbf{p},w) x(\mathbf{p},w)^T\right] \mathrm{d} \mathbf{p}
 \end{align*}
-and, plug this back into the law of demand $ \diff \mathbf{p}\cdot \diff \mathbf{x}\leq 0$, we will have a very important expression:
+and, plug this back into the law of demand $ \mathrm{d} \mathbf{p}\cdot \mathrm{d} \mathbf{x}\leq 0$, we will have a very important expression:
 $$
-\diff \mathbf{p} \underbrace{\left[ \mdiff_{\mathbf{p}} x(\mathbf{p},w) + \mdiff_w  x(\mathbf{p},w) x(\mathbf{p},w)^T\right]}_{\equiv S(\mathbf{p},w)} \diff \mathbf{p}\leq 0
+\mathrm{d} \mathbf{p} \underbrace{\left[ \mathrm{D}_{\mathbf{p}} x(\mathbf{p},w) + \mathrm{D}_w  x(\mathbf{p},w) x(\mathbf{p},w)^T\right]}_{\equiv S(\mathbf{p},w)} \mathrm{d}\mathbf{p}\leq 0
 $$
 where $S(\mathbf{p},w)$ is the \textbf{Slutsky} matrix, or \textit{substitution} matrix. 
 
@@ -222,13 +222,13 @@ S(\mathbf{p},w)=
     s_{L1}(\mathbf{p},w) & \cdots & s_{LL}(\mathbf{p},w)
 \end{bmatrix}
 $$
-where $$s_{lk}(\mathbf{p},w)=\underbrace{\frac{\partial x_l(\mathbf{p},w)}{\partial p_k}}_{\text{direct effect of }\diff p_k} +\underbrace{\frac{\partial x_l (p,w)}{\partial w}x_k(\mathbf{p},w)}_{\text{effect through wealth compensation due to }\diff p_k}$$
+where $$s_{lk}(\mathbf{p},w)=\underbrace{\frac{\partial x_l(\mathbf{p},w)}{\partial p_k}}_{\text{direct effect of }\mathrm{d} p_k} +\underbrace{\frac{\partial x_l (p,w)}{\partial w}x_k(\mathbf{p},w)}_{\text{effect through wealth compensation due to }\mathrm{d} p_k}$$
 \end{definition}
 
 This term measures the differential change in $x_l$ (consumption of $l$) due to a differential change in $p_k$ (the price of $k$), when wealth is adjusted so that the consumer can still afford the pre-change consumption bundle. We can interpret the two sub-terms as:
 \begin{enumerate}
-    \item[-] $\frac{\partial x_l(\mathbf{p},w)}{\partial p_k}$: the change in demand for $l$ due to the change of $k$'s price is $\frac{\partial x_l(\mathbf{p},w)}{\partial p_k}\diff p_k$
-    \item[-] $\frac{\partial x_l (p,w)}{\partial w}x_k(\mathbf{p},w)$: the wealth change that makes the consumer able to just afford the original consumption bundle is $x_k(\mathbf{p},w)\diff p_k$, the effect of this wealth change on the demand for $l$ is $\frac{\partial x_l (p,w)}{\partial w}x_k(\mathbf{p},w)\diff p_k$
+    \item[-] $\frac{\partial x_l(\mathbf{p},w)}{\partial p_k}$: the change in demand for $l$ due to the change of $k$'s price is $\frac{\partial x_l(\mathbf{p},w)}{\partial p_k}\mathrm{d} p_k$
+    \item[-] $\frac{\partial x_l (p,w)}{\partial w}x_k(\mathbf{p},w)$: the wealth change that makes the consumer able to just afford the original consumption bundle is $x_k(\mathbf{p},w)\mathrm{d} p_k$, the effect of this wealth change on the demand for $l$ is $\frac{\partial x_l (p,w)}{\partial w}x_k(\mathbf{p},w)\mathrm{d} p_k$
 \end{enumerate}
 In short, the price change of $k$ influences the demand of $l$ in 2 ways: directly (through partial derivatives) and indirectly (through wealth compensation). Slutsky matrix documents this influence, i.e., \textbf{substitution effect}, for each possible pair of goods. 
 
@@ -240,7 +240,7 @@ Here, we have the core feature of Slutsky matrix:
 \end{theorem}
 
 There are several implications worth noticing:
-\begin{theorem}{features induced by negative semidefinite Slutksy matrix}{}
+\begin{theorem}{features induced by negative semidefinite Slutksy matrix}{slutksy_matrix_negativesemidef}
 If $S(\mathbf{p},w)$ is negative semidefinite, then
     \begin{enumerate}
         \item[(a)] $s_{ll}(\mathbf{p},w)\leq 0$: the \textit{substitution effect} of good $l$ with respect to its own price is always \textbf{non-positive}.
@@ -249,8 +249,8 @@ If $S(\mathbf{p},w)$ is negative semidefinite, then
         
         It is easy to prove:
 
-        Thm.\ref{thm:walraslaw_waldemand_thm2} gives $\mathbf{p}\cdot S(\mathbf{p},w)=\mathbf{p}\cdot \mdiff_{\mathbf{p}} x(\mathbf{p},w)+\mathbf{p}\cdot \mdiff_w  x(\mathbf{p},w) x(\mathbf{p},w)^T =\mathbf{p}\mdiff_{\mathbf{p}} x(\mathbf{p},w)+ x(\mathbf{p},w)^T=0$;
-        Thm.\ref{thm:homo_waldemand_thm1} gives $S(\mathbf{p},w)\mathbf{p}=\mdiff_{\mathbf{p}} x(\mathbf{p},w)\mathbf{p}+\mdiff_w x(\mathbf{p},w) x(\mathbf{p},w)^T\mathbf{p}=\mdiff_{\mathbf{p}} x(\mathbf{p},w)\mathbf{p}+\mdiff_w x(\mathbf{p},w)w=0$.
+        Thm.\ref{thm:walraslaw_waldemand_thm2} gives $\mathbf{p}\cdot S(\mathbf{p},w)=\mathbf{p}\cdot \mathrm{D}_{\mathbf{p}} x(\mathbf{p},w)+\mathbf{p}\cdot \mathrm{D}_w  x(\mathbf{p},w) x(\mathbf{p},w)^T =\mathbf{p}\mathrm{D}_{\mathbf{p}} x(\mathbf{p},w)+ x(\mathbf{p},w)^T=0$;
+        Thm.\ref{thm:homo_waldemand_thm1} gives $S(\mathbf{p},w)\mathbf{p}=\mathrm{D}_{\mathbf{p}} x(\mathbf{p},w)\mathbf{p}+\mathrm{D}_w x(\mathbf{p},w) x(\mathbf{p},w)^T\mathbf{p}=\mathrm{D}_{\mathbf{p}} x(\mathbf{p},w)\mathbf{p}+\mathrm{D}_w x(\mathbf{p},w)w=0$.
     \end{enumerate}
 \end{theorem}
 
