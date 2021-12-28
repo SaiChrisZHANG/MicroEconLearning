@@ -529,7 +529,7 @@ When we focus on one good $l$, we have $\frac{\partial h_l(\bar{\mathbf{p}},\bar
     \item[-] If good $l$ is inferior good, then $\partial x_l (\bar{\mathbf{p}},\bar{w})/\partial w<0$, the opposite logic follows. 
 \end{enumerate}
 
-Here, Slutsky (substitution) matrix appears once again. However, different from the choice-based, WARP-regulated demand, which requires the Slutsky matrix to be \textbf{negative semidefinite} and $S(\mathbf{p},w)\mathbf{p}=0$ (see Thm.\ref{thm:slutksy_matrix_negativesemidef}), one extra condition is required for preference maximization: S being \textbf{symmetric}.
+Here, Slutsky (substitution) matrix appears once again. However, different from the choice-based, WARP-regulated demand, which requires the Slutsky matrix to be \textbf{negative semidefinite} and to satisfy $S(\mathbf{p},w)\mathbf{p}=0$ (see Thm.\ref{thm:slutksy_matrix_negativesemidef}), one extra condition is required for preference maximization: $S$ being \textbf{symmetric}.
 The more essential distinction between these two approaches is that they adopt two different wealth compensation approaches: For an initial price-wealth pair $(\bar{\mathbf{p}},\bar{w})$ and its corresponding utility level $\bar{u}=u(\bar{x})$, and the price after change $\mathbf{p}'$:
 \begin{enumerate}
     \item[-] Slutsky wealth compensation (Section\ref{chap2:sec2:ssec4}): wealth is adjusted from $\bar{w}$ to $w^S$ s.t. $\bar{x}$ could still be afforded, $w^S=\bar{x}\cdot \mathbf{p}'$, giving: $\Delta w_{\text{Slutsky}}=\mathbf{p}'\cdot x(\bar{\mathbf{p}},\bar{w})-\bar{w}$
@@ -587,6 +587,13 @@ the intuition is, for a very small change of price for good $l$, the total effec
          %%% Slutsky
         \draw[stealth-,thick,blue!45!black] (1.4,0.95625) -- node[right=4pt,yshift=8pt] {Slutsky compensation} (1.8,1.35625);
         
-        
     \end{tikzpicture}
 \end{figure}
+
+\subsubsection*{$x(\mathbf{p},w)$ and $v(\mathbf{p},w)$}
+Mirroring Thm.\ref{hdemand_and_exp}, we can link the Walrasian demand $x(\mathbf{p},w)$ and indirect utility function $v(\mathbf{p},w)$ through \textbf{Roy's identity}:
+\begin{theorem}{Roy's identity}{roy_identity}
+    With a continuous $u(\cdot)$ representing a locally nonsatiated and strictly convex $\succsim$, the \myhl[blue]{Hicksian demand $h(\mathbf{p},u)$} is the derivative vector of $e(\mathbf{p},u)$ w.r.t. prices $\mathbf{p}$:
+    $$h(\mathbf{p},u)=\nabla_{\mathbf{p}}e(\mathbf{p},u)$$
+    that is, $h_l(\mathbf{p},u)=\partial e(\mathbf{p},u)/\partial p_l,\forall l=1,\cdots,L$
+\end{theorem}
