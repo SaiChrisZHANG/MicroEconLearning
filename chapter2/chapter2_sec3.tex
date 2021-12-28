@@ -600,7 +600,14 @@ Mirroring Thm.\ref{hdemand_and_exp}, we can link the Walrasian demand $x(\mathbf
 
 Again, Roy's identity will be proved with 3 different approaches:
 \begin{enumerate}
-    \item[\textit{\textbf{Proof 1}}] duality argument: Let $\bar{u} = v(\bar{\mathbf{p}},\bar{w})$ by the Duality Theorem, for the set $K=\left\{\mathbf{x}\in\mathbb{R}^L_+:u(\mathbf{x})\geq u \right\}$, $e(\mathbf{p},u)=\min\mathbf{p}\cdot\mathbf{x}$ is exactly its support function and $h(\mathbf{p},u)$ is the optimizer of $e(\mathbf{p},u)$, by the Duality Theorem, $h(\mathbf{p},u)=\nabla_{\mathbf{p}}e(\mathbf{p},u)$.
+    \item[\textit{\textbf{Proof 1}}]: Let $\bar{u} = v(\bar{\mathbf{p}},\bar{w})$. Since $v(\mathbf{p},e(\mathbf{p},\bar{u}))=\bar{u},\forall \mathbf{p}$, differentiate the equation w.r.t. $\mathbf{p}$ and evaluating at $\mathbf{p}=\bar{\mathbf{p}}$, get
+    \begin{align*}
+        & \nabla_{\mathbf{p}} v(\bar{\mathbf{p}},e(\bar{\mathbf{p}},\bar{u})) + \frac{\partial v(\bar{\mathbf{p}},e(\bar{\mathbf{p}},\bar{u}))}{\partial w} \nabla_{\mathbf{p}}e(\bar{\mathbf{p}},\bar{u})=0 \\
+        \xRightarrow{\text{Thm.\ref{thm:hdemand_and_exp}}} & \nabla_{\mathbf{p}} v(\bar{\mathbf{p}},e(\bar{\mathbf{p}},\bar{u})) + \frac{\partial v(\bar{\mathbf{p}},e(\bar{\mathbf{p}},\bar{u}))}{\partial w} h(\bar{\mathbf{p}},\bar{u})=0\\
+        \xRightarrow[\bar{w}=e(\bar{\mathbf{p}},\bar{u})]{h(\bar{\mathbf{p}},\bar{u})=x(\bar{\mathbf{p}},\bar{w})} & \nabla_{\mathbf{p}} v(\bar{\mathbf{p}},\bar{w}) + \frac{\partial v(\bar{\mathbf{p}},\bar{w})}{\partial w} x(\bar{\mathbf{p}},\bar{w})=0\\
+        \Rightarrow & x(\bar{\mathbf{p}},\bar{w})=-\frac{1}{\nabla_w v(\bar{\mathbf{p}},\bar{w})}\nabla_{\mathbf{p}}v(\bar{\mathbf{p}},\bar{w})
+    \end{align*}
+    
     \item[\textit{\textbf{Proof 2}}] FOC argument: assume $h(\mathbf{p},u)\gg 0$ and differentiable at $(\mathbf{p},u)$, then by the chain rule, we have 
     \begin{align*}
         \nabla_{\mathbf{p}}e(\mathbf{p},u)&=\nabla_{\mathbf{p}}\left[\mathbf{p}\cdot h(\mathbf{p},u)\right]=h(\mathbf{p},u)+\left[\mathbf{p}\cdot \mathrm{D}_{\mathbf{p}}h(\mathbf{p},u)\right]^T\\
