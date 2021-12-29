@@ -607,10 +607,10 @@ Again, Roy's identity will be proved with 3 different approaches:
         \xRightarrow[\bar{w}=e(\bar{\mathbf{p}},\bar{u})]{h(\bar{\mathbf{p}},\bar{u})=x(\bar{\mathbf{p}},\bar{w})} & \nabla_{\mathbf{p}} v(\bar{\mathbf{p}},\bar{w}) + \frac{\partial v(\bar{\mathbf{p}},\bar{w})}{\partial w} x(\bar{\mathbf{p}},\bar{w})=0\\
         \Rightarrow & x(\bar{\mathbf{p}},\bar{w})=-\frac{1}{\nabla_w v(\bar{\mathbf{p}},\bar{w})}\nabla_{\mathbf{p}}v(\bar{\mathbf{p}},\bar{w})
     \end{align*}
-    
-    \item[\textit{\textbf{Proof 2}}] FOC argument: assume $h(\mathbf{p},u)\gg 0$ and differentiable at $(\mathbf{p},u)$, then by the chain rule, we have 
+
+    \item[\textit{\textbf{Proof 2}}] FOC argument: assume $x(\mathbf{p},w)\gg 0$ and differentiable at $(\bar(\mathbf{p}),\bar{u})$, then by the chain rule, we have 
     \begin{align*}
-        \nabla_{\mathbf{p}}e(\mathbf{p},u)&=\nabla_{\mathbf{p}}\left[\mathbf{p}\cdot h(\mathbf{p},u)\right]=h(\mathbf{p},u)+\left[\mathbf{p}\cdot \mathrm{D}_{\mathbf{p}}h(\mathbf{p},u)\right]^T\\
+        \left.\nabla_{\mathbf{p}}v(\mathbf{p},u)\right\vert_{(\bar{\mathbf{p}},\bar{w})}&=\nabla_{\mathbf{p}} u(x(\bar{\mathbf{p}},\bar{w}))=h(\mathbf{p},u)+\left[\mathbf{p}\cdot \mathrm{D}_{\mathbf{p}}h(\mathbf{p},u)\right]^T\\
         &=h(\mathbf{p},u)+\underbrace{\left[\underbrace{\lambda\nabla u(h(\mathbf{p},u))}_{\text{by FOC of EMP: }\mathbf{p}=\lambda\nabla u(h(\mathbf{p},u))} \cdot \mathrm{D}_{\mathbf{p}}h(\mathbf{p},u)\right]^T}_{\xRightarrow{\forall \mathbf{p},u(h(\mathbf{p},u))=u}=0}\\
         & = h(\mathbf{p},u)
     \end{align*}
