@@ -34,7 +34,7 @@
 \usepackage{tikz}
 \usepackage{pgfplots}
 \pgfplotsset{compat = newest}
-\usetikzlibrary{patterns,decorations.pathreplacing}
+\usetikzlibrary{patterns,decorations.pathreplacing,decorations.markings}
 
 \hypersetup{
     colorlinks,
@@ -137,6 +137,10 @@
 \usepackage{etoolbox}
 \AtBeginEnvironment{quote}{\vspace{1pt}}
 \AtEndEnvironment{quote}{\vspace{1pt}}
+
+\tikzset{-stealth-/.style={decoration={
+  markings,
+  mark=at position #1 with {\arrow{stealth}}},postaction={decorate}}}
 
 \begin{document}
 

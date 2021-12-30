@@ -1,4 +1,4 @@
-\subsection{Properties of Preferences Required}
+\subsection{Properties of Preferences Required}\label{chap2:sec3:ssec1}
 To analyze demand with preferences (and later, utility), we first need some assumptions on preferences $\succsim$:
 
 \paragraph*{$\succsim$ is rational}
@@ -59,7 +59,7 @@ Continuity can also be expressed as: $\forall \mathbf{x}$, the upper contour set
     Another way of proving this is to assume $\succsim$ to be monotone.
 \end{enumerate}
 
-\subsection{Utility representing preference}
+\subsection{Utility representing preference}\label{chap2:sec3:ssec2}
 Given the assumption of continuity, we can finally have the following thoerem (Debreu representation theorem):
 \begin{theorem}{rational and continuous $\succsim$ $\Leftrightarrow$ continuous $u(\cdot)$}{}
     If a preference relation $\succsim$ is rational and \textbf{continuous}, then there is a continuous utility function $u(x)$ that represents $\succsim$.
@@ -107,7 +107,7 @@ Now a continuous utility function can represent a continuous preference relation
 \end{enumerate}
 Increasingness and quasiconcavity are both ordinal properties of $u(\cdot)$, preserved for any increasing transformation.
 
-\subsection{UMP (Utility Maximizing Problem)}
+\subsection{UMP (Utility Maximizing Problem)}\label{chap2:sec3:ssec3}
 A consumer's problem is to choose a feasible consumption bundle given a positive price-wealth combination $(\mathbf{p},w)$ to maximize her utility:
 $$\max_{\mathbf{x}\geq 0} u(\mathbf{x}),\ \text{s.t.}\ \mathbf{p}\cdot\mathbf{x}\leq w$$
 if $\mathbf{p}\gg 0$, $u(\cdot)$ is continuous, then this problem has a solution: the Walrasian budget set $B_{\mathbf{p},w}=\left\{\mathbf{x}\in\mathbb{R}^L_+\mid \mathbf{p}\cdot\mathbf{x}\leq w\right\}$ is a compact set, hence a continuous function on it always has a maximum value.
@@ -191,7 +191,7 @@ The proof of these properties relies on the the properties of $ x(\mathbf{p},w)$
     \item \textit{\textbf{continuity}}: since $\succsim$ is strictly convex, we have a unique $ x(\mathbf{p},w)$, and $v(\mathbf{p},w)=u( x(\mathbf{p},w))$. We have proved $ x(\mathbf{p},w)$ is continuous, we know $u(\cdot)$ is continuous. Hence, $v(\mathbf{p},w)$ is continuous.
 \end{enumerate}
 
-\subsection{EMP (Expenditure Minimizing Problem)}
+\subsection{EMP (Expenditure Minimizing Problem)}\label{chap2:sec3:ssec4}
 A consumer's problem can also be to choose the cheapest consumption bundle that achieves a certain level of utility, given a positive price wealth combination $(\mathbf{p},w)$:
 $$\min_{\mathbf{x}\geq 0} \mathbf{p}\cdot\mathbf{x}\ \text{s.t.}\ u(\mathbf{x})\geq u$$
 
@@ -273,7 +273,7 @@ Here is the proof:
     \item[-] \textit{\textbf{continuous}}: again, continuity of $e(\mathbf{p},u)$ follows the continuity of $u(\cdot)$.
 \end{enumerate}
 
-\subsection{Duality: EMP and UMP}
+\subsection{Duality: EMP and UMP}\label{chap2:sec3:ssec5}
 Here, we try to establish the link between UMP and EMP:
 \begin{theorem}{Relationship between UMP and EMP}{EMP_vs_UMP}
     For a continuous $u(\cdot)$ representing a locally nonsatiated $\succsim$ on $X=\mathbb{R}^L_+$ and a price vector $\mathbf{p}\gg 0$, we have:
@@ -622,3 +622,36 @@ Again, Roy's identity will be proved with 3 different approaches:
 With Roy's identity, it will be much easier to compute Walrasian demand from indirect utility, one only need to take derivatives instead of solving the system of FOC equations.
 
 In summary, the duality between UMP and EMP have been established, and the four objects are interlinked with each other through the aforementioned properties:
+\begin{figure}
+    \centering
+    \caption{Duality of UMP and EMP}
+    \label{fig:duality_relations}
+    \begin{tikzpicture}[scale=1]
+        \node (UMP) at (0,6.5) {\color{blue!45!black}\textbf{UMP}};
+        \node (EMP) at (10,6.5) {\color{red!55!black}\textbf{EMP}};
+        \node (wal) at (0,5) [draw,color=blue!45!black,fill=blue!45!black] {\color{white}$x(\mathbf{p},w)$};
+        \node (val) at (0,0) [draw,color=blue!45!black] {$v(\mathbf{p},w)$};
+        \node (hic) at (10,5) [draw,color=red!55!black,fill=red!55!black] {\color{white}$h(\mathbf{p},u)$};
+        \node (exp) at (10,0) [draw,color=red!55!black] {$e(\mathbf{p},u)$};
+        
+        % UMP and EMP
+        \draw[-stealth,thick,color=blue!45!black] (UMP.5) to node[above] {\small \color{black}Duality (Thm.\ref{thm:EMP_vs_UMP})} (EMP.175);
+        \draw[stealth-,thick,color=red!55!black] (UMP.-5) to (EMP.185);
+        
+        % walrasian and hicksian
+        \draw[-stealth,thick,color=blue!45!black] (wal.5) to node[above] {\small $\frac{\partial h_l(\mathbf{p},u)}{\partial p_k} = \frac{\partial x_l(\mathbf{p},w)}{\partial p_k} +\frac{\partial x_l(\mathbf{p},w)}{\partial w}x_k(\mathbf{p},w)$} (hic.175);
+        
+        \draw[stealth-stealth,thick,color=blue!45!black] (wal.260) to node[above,rotate=90] {\small $x(\mathbf{p},w)=-\frac{\nabla_{\mathbf{p}}v(\mathbf{p},w)}{\nabla_w v(\mathbf{p},w)}$} (val.100);
+        
+        \draw[stealth-stealth,thick,color=red!55!black] (hic.280) to node[above,rotate=270] {$h(\mathbf{p},u)=\nabla_{\mathbf{p}}e(\mathbf{p},u)$} (exp.80);
+        
+        \draw[-stealth,thick,color=blue!45!black] (val.5) to node[above] {\small $u=v(\mathbf{p},e(\mathbf{p},u))$} (exp.175);
+        \draw[stealth-,thick,color=red!55!black] (val.-5) to node[below] {\small $w=e(\mathbf{p},v(\mathbf{p},w)$} (exp.185);
+        
+        \draw[-stealth-=.4,thick,color=red!55!black] (hic.260) to (val.80);
+        \draw[-stealth,thick,color=blue!45!black] (val.80) to node[above,rotate=-90] {\small $x(\mathbf{p},w)=h(\mathbf{p},v(\mathbf{p},w))$} (wal.280);
+        
+        \draw[-stealth-=.4,thick,color=blue!45!black] (wal.280) to (exp.100);
+        \draw[-stealth,thick,color=red!55!black] (exp.100) to node[above,rotate=90] {\small $h(\mathbf{p},u)=x(\mathbf{p},e(\mathbf{p},u))$} (hic.260);
+    \end{tikzpicture}
+\end{figure}
