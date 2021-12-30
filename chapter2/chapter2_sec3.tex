@@ -613,8 +613,8 @@ Again, Roy's identity will be proved with 3 different approaches:
         \left. \frac{\partial v(\mathbf{p},w)}{\partial p_l} \right\vert_{(\bar{\mathbf{p}},\bar{w})}&=\sum^L_{k=1} \underbrace{\frac{\partial u\left(x(\bar{\mathbf{p}},\bar{w})\right)}{\partial x_k}}_{\equiv \lambda p_k \text{ (Lagrange)}} \frac{\partial x_k(\bar{\mathbf{p}},\bar{w})}{\partial p_l}\\
         &= \underbrace{\lambda}_{=\frac{\partial v(\bar{\mathbf{p}},\bar{w})}{\partial w}} \underbrace{\sum^L_{k=1}p_k \frac{\partial x_k(\bar{\mathbf{p}},\bar{w})}{\partial p_l}}_{\text{by Thm.\ref{thm:walraslaw_waldemand_thm2} }=-x_l(\bar{\mathbf{p}},\bar{w})}\\
         & = -\frac{\partial v(\bar{\mathbf{p}},\bar{w})}{\partial w} \cdot x_l(\bar{\mathbf{p}},\bar{w})\\
-        \Rightarrow x_l(\bar{\mathbf{p}},\bar{w}) = -\frac{\partial v(\bar{\mathbf{p}},\bar{w})/\partial p_l}{\partial v(\bar{\mathbf{p}},\bar{w})/\partial w}
+        \Rightarrow x_l(\bar{\mathbf{p}},\bar{w}) &= -\frac{\partial v(\bar{\mathbf{p}},\bar{w})/\partial p_l}{\partial v(\bar{\mathbf{p}},\bar{w})/\partial w}
     \end{align*}
-    \item[\textit{\textbf{Proof 3}}] Envelope Theorem argument: assume $h(\mathbf{p},u)\gg 0$ and differentiable at $(\mathbf{p},u)$, then by the Envelope Theorem, we have 
+    \item[\textit{\textbf{Proof 3}}] Envelope Theorem argument: by the Envelope Theorem, we have $\partial v(\bar{\mathbf{p}},\bar{w})/\partial p_l = -\lambda x_l(\bar{\mathbf{p}},\bar{w})$, and $\partial v(\bar{\mathbf{p}},\bar{w})/\partial w=\lambda$, combining the two equations yields the proposition.
     $$\nabla_{\mathbf{p}}e(\mathbf{p},u)=\nabla_{\mathbf{p}}(\mathbf{p}\cdot \mathbf{x}^{\text{optimal}})=\mathbf{x}^{\text{optimal}}=h(\mathbf{p},u)$$
 \end{enumerate}
