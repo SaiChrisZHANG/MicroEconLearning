@@ -473,7 +473,7 @@ Differentiate this w.r.t. $p_k$ at $(\bar{\mathbf{p}},\bar{u})$, get
     \xRightarrow{\bar{w}=(\bar{\mathbf{p}},\bar{u})} & \frac{\partial h_l(\bar{\mathbf{p}},\bar{u})}{\partial p_k} =\frac{\partial x_l(\bar{\mathbf{p}},\bar{w})}{\partial p_k} + \frac{\partial x_l (\bar{\mathbf{p}},\bar{w})}{\partial w}\cdot w_k(\bar{\mathbf{p}},\bar{w})
 \end{align*}
 
-Here, Walrasian demand function is \myhl[blue]{observable}\sidenotes{observable in principle, since $\mathbf{p}$ and $w$ are both observable}, and the Slutsky matrix is calculable, we can therefore use this equation to calculate $\mathrm{D}_{\mathbf{p}}h(\mathbf{p},u)$. And for an arbitrary good $l$, its demand curve w.r.t. $p_l$ given prices of other goods $p_{-l}$ fixed is depicted in Fig.\ref{fig:hick_wal_demand_curves}\footnote{Here, I plot prices on the x-axis as it makes more sense to me in this context :)}.
+Here, Walrasian demand function is \myhl[blue]{observable}\sidenotes{$\leftarrow$ observable in principle, since $\mathbf{p}$ and $w$ are both observable}, and the Slutsky matrix is calculable, we can therefore use this equation to calculate $\mathrm{D}_{\mathbf{p}}h(\mathbf{p},u)$. And for an arbitrary good $l$, its demand curve w.r.t. $p_l$ given prices of other goods $p_{-l}$ fixed is depicted in Fig.\ref{fig:hick_wal_demand_curves}\footnote{Here, I plot prices on the x-axis as it makes more sense to me in this context :)}.
 
 \begin{figure}[ht]
 \centering
@@ -617,7 +617,6 @@ Again, Roy's identity will be proved with 3 different approaches:
         \Rightarrow x_l(\bar{\mathbf{p}},\bar{w}) &= -\frac{\partial v(\bar{\mathbf{p}},\bar{w})/\partial p_l}{\partial v(\bar{\mathbf{p}},\bar{w})/\partial w}
     \end{align*}
     \item[\textit{\textbf{Proof 3}}] Envelope Theorem argument: by the Envelope Theorem, we have $\partial v(\bar{\mathbf{p}},\bar{w})/\partial p_l$ $= -\lambda x_l(\bar{\mathbf{p}},\bar{w})$, and $\partial v(\bar{\mathbf{p}},\bar{w})/\partial w=\lambda$, combining the two equations yields the proposition.
-    $$\nabla_{\mathbf{p}}e(\mathbf{p},u)=\nabla_{\mathbf{p}}(\mathbf{p}\cdot \mathbf{x}^{\text{optimal}})=\mathbf{x}^{\text{optimal}}=h(\mathbf{p},u)$$
 \end{enumerate}
 
 With Roy's identity, it will be much easier to compute Walrasian demand from indirect utility, one only need to take derivatives instead of solving the system of FOC equations.
