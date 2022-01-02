@@ -8,11 +8,28 @@ The recovering $\succsim$ from $x(\mathbf{p},w)$ will be done in 2 steps:
     \item[-] \textbf{Step 1}: recover $e(\mathbf{p},u)$ from $x(\mathbf{p},w)$
     \item[-] \textbf{Step 2}: recover $\succsim$ from $e(\mathbf{p},u)$  
 \end{enumerate}
-Here, demand is assumed to be single-valued.
 
 \subsubsection*{Recover $e(\mathbf{p},u)$ from $x(\mathbf{p},w)$}
 The first step is to recover $e(\mathbf{p},u)$ given a Walrasian demand function $x(\mathbf{p},w)$ that has the assumed properties: satisfies Walras' law, homogeneous of degree 0(see Thm.\ref{thm:properties_walrasian_demand}).
 And, demand is assumed to be single-valued.
+
+The recovering of $e(\mathbf{p},u)$ relies on the duality property $h(\mathbf{p},u)=x(\mathbf{p},e(\mathbf{p},u))$ and the proposition $h(\mathbf{p},u)=\nabla_{\mathbf{p}}e(\mathbf{p},u)$, combine these two, get:
+$$
+    \frac{\partial e(\mathbf{p})}{\partial p_i}=x_i(\mathbf{p},e(\mathbf{p})),\forall i=1,\cdots,L
+$$
+or, in a familiar form of expression
+$$
+\nabla_{\mathbf{p}}e(\mathbf{p})=x(\mathbf{p},e(\mathbf{p}))
+$$
+
+For this system of differential equations to have a solution, we must have $e(\mathbf{p})$ to be \textbf{twice continuously differentiable}, i.e., $e(\mathbf{p})$'s Hessian matrix is \myhl[blue]{\textbf{symmetric}}, do the twice differentiation of $e(\mathbf{p})$:
+\begin{align*}
+    \mathrm{D}^2_{\mathbf{p}}e(\mathbf{p}) &= \mathrm{D}_{\mathbf{p}}x(\mathbf{p},e(\mathbf{p})) +\mathrm{D}_w x(\mathbf{p},e(\mathbf{p}))\cdot x(\mathbf{p},e(\mathbf{p}))^T\\
+    & = S(\mathbf{p},e(\mathbf{p}))
+\end{align*}
+hence, the Slutsky matrix $S(\mathbf{p},w)$ being symmetric is \textbf{necessary} for the existence of a solution. And, in Thm.\ref{thm:prop_hick_pricederive}, it is shown that the Slutsky matrix being symmetric is also the \textbf{sufficient} condition for recovering $e(\mathbf{p},u)$.
+
+see \hyperref[ssec:frobenius_theorem]{below} for details.
 
 \subsubsection*{Recover $\succsim$ from $e(\mathbf{p},u)$}
 The second step is to recover $\succsim$ given an expenditure function $e(\mathbf{p},u)$ that has the assumed properties: continuous, strictly increasing in $u$, non-decreasing, homogeneous of degree 1, and concave in $\mathbf{p}$ (see Thm.\ref{thm:properties_expenditure_func}).
@@ -130,3 +147,6 @@ $$
 e(\mathbf{p},u) \text{ is differentiable}\Rightarrow \succsim \text{ is convex}
 $$
 
+\subsection{Discussion on Integrability}
+
+\subsubsection*{Frobenius' theorem}\label{ssec:frobenius_theorem}
