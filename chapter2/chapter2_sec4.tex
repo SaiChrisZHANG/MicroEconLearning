@@ -22,14 +22,27 @@ $$
 \nabla_{\mathbf{p}}e(\mathbf{p})=x(\mathbf{p},e(\mathbf{p}))
 $$
 
-For this system of differential equations to have a solution, we must have $e(\mathbf{p})$ to be \textbf{twice continuously differentiable}, i.e., $e(\mathbf{p})$'s Hessian matrix is \myhl[blue]{\textbf{symmetric}}, do the twice differentiation of $e(\mathbf{p})$:
+For this system of differential equations to have a solution, we must have $e(\mathbf{p})$ to be \textbf{twice continuously differentiable}, i.e., $e(\mathbf{p})$'s Hessian matrix is \myhl[blue]{\textbf{symmetric}}. Do the twice differentiation of $e(\mathbf{p})$:
 \begin{align*}
     \mathrm{D}^2_{\mathbf{p}}e(\mathbf{p}) &= \mathrm{D}_{\mathbf{p}}x(\mathbf{p},e(\mathbf{p})) +\mathrm{D}_w x(\mathbf{p},e(\mathbf{p}))\cdot x(\mathbf{p},e(\mathbf{p}))^T\\
     & = S(\mathbf{p},e(\mathbf{p}))
 \end{align*}
-hence, the Slutsky matrix $S(\mathbf{p},w)$ being symmetric is \textbf{necessary} for the existence of a solution. And, in Thm.\ref{thm:prop_hick_pricederive}, it is shown that the Slutsky matrix being symmetric is also the \textbf{sufficient} condition for recovering $e(\mathbf{p},u)$.
+we actually get the Slutsky matrix again. Now we can conclude
 
-see \hyperref[ssec:frobenius_theorem]{below} for details.
+\begin{enumerate}
+    \item[-] $\nabla_{\mathbf{p}}e(\mathbf{p})=x(\mathbf{p},e(\mathbf{p}))$ has a solution $\Leftrightarrow$ the Slutsky matrix $S(\mathbf{p},w)$ being \textbf{symmetric}
+    \begin{enumerate}
+        \item[-] $\Rightarrow$: proved by the above equation, which requires the Slutsky matrix be the Hessian matrix of $e(\mathbf{p})$, which aligns with Thm.\ref{thm:prop_hick_pricederive}
+        \item[-] $\Leftarrow$: by Frobenius' theorem (see \hyperref[sssec:frobenius_theorem]{below} for details), the symmetry of $\nabla_{\mathbf{p}}$ at all points of its domain is equivalent to the existence of a solution 
+    \end{enumerate}
+    \item[-] the solution $e(\mathbf{p},u)$ has the properties of an expenditure function (Thm.\ref{thm:properties_expenditure_func}) $\Leftrightarrow$ the Slutsky matrix $S(\mathbf{p},w)$ being \textbf{negative semidefinite}
+\end{enumerate}
+
+Together, we have
+\begin{proposition}{conditions of $S(\mathbf{p},w)$ to recover $e(\mathbf{p},u)$}{slutskycondition_recover}
+    $S(\mathbf{p},w)$ being \myhl[blue]{\textbf{symmetric}} and \myhl[blue]{\textbf{negative semidefinite}} is the necessary and sufficient condition to recover $e(\mathbf{p},u)$
+\end{proposition}
+Prop.\ref{prop:slutskycondition_recover} is generally true regardless of the length of the good vector ($L$), when $L=2$, the situation 
 
 \subsubsection*{Recover $\succsim$ from $e(\mathbf{p},u)$}
 The second step is to recover $\succsim$ given an expenditure function $e(\mathbf{p},u)$ that has the assumed properties: continuous, strictly increasing in $u$, non-decreasing, homogeneous of degree 1, and concave in $\mathbf{p}$ (see Thm.\ref{thm:properties_expenditure_func}).
@@ -131,7 +144,7 @@ at-least-as-good-as set, as shown in Fig.\ref{fig:recover_pref_from_exp_nonconve
         
         % notes
         %%% actual
-        \draw[stealth-,dashed thick,red!55!black] (1.36,1.36) -- node[right=5pt,yshift=10pt,align=left] {Boundary of \textbf{actual} \\ at-least-as-good-as set} (1.7,1.7);
+        \draw[stealth-,dashed, thick,red!55!black] (1.36,1.36) -- node[right=5pt,yshift=10pt,align=left] {Boundary of \textbf{actual} \\ at-least-as-good-as set} (1.7,1.7);
          %%% Slutsky
         \draw[-stealth,thick,black] (1.125-0.4,1.125-0.4) -- node[left=5pt,yshift=-10pt] {Boundary of $V_u$} (1.12,1.12);
         %%% price-utility
@@ -149,4 +162,4 @@ $$
 
 \subsection{Discussion on Integrability}
 
-\subsubsection*{Frobenius' theorem}\label{ssec:frobenius_theorem}
+\subsubsection*{Frobenius' theorem}\label{sssec:frobenius_theorem}
