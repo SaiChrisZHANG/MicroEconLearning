@@ -11,9 +11,11 @@ The recovering $\succsim$ from $x(\mathbf{p},w)$ will be done in 2 steps:
 Here, demand is assumed to be single-valued.
 
 \subsubsection*{Recover $e(\mathbf{p},u)$ from $x(\mathbf{p},w)$}
+The first step is to recover $e(\mathbf{p},u)$ given a Walrasian demand function $x(\mathbf{p},w)$ that has the assumed properties: satisfies Walras' law, homogeneous of degree 0(see Thm.\ref{thm:properties_walrasian_demand}).
+And, demand is assumed to be single-valued.
 
 \subsubsection*{Recover $\succsim$ from $e(\mathbf{p},u)$}
-The second step is to recover $\succsim$ given a function $e(\mathbf{p},u)$ that has the assumed properties: continuous, strictly increasing in $u$, non-decreasing, homogeneous of degree 1, and concave in $\mathbf{p}$ (see Thm.\ref{thm:properties_expenditure_func}).
+The second step is to recover $\succsim$ given an expenditure function $e(\mathbf{p},u)$ that has the assumed properties: continuous, strictly increasing in $u$, non-decreasing, homogeneous of degree 1, and concave in $\mathbf{p}$ (see Thm.\ref{thm:properties_expenditure_func}).
 Since demand is single-valued, $e(\mathbf{p},u)$ is also differentiable.
 
 Here, let $V_u\subset \mathbb{R}^L$  be an at-least-as-good-as set for each utility level $u$ s.t. $e(\mathbf{p},u)$ is the minimal expenditure required for a bundle in $V_u$ at price $\mathbf{p}\gg  0$, i.e. 
@@ -88,11 +90,8 @@ preference $\succsim$ (represented by utility levels $u$) that has $e(\mathbf{p}
     \end{tikzpicture}
 \end{figure}
 
-This conclusion can be extended (with some changes) to two cases that violates the assumptions on $e(\mathbf{p},u)$:
-\begin{enumerate}
-    \item[-] $e(\mathbf{p})$ is \textbf{not} differentiable in $\mathbf{p}$
-    \item[-] $\succsim$ that generates $e(\mathbf{p},u)$ is \textbf{not} convex
-\end{enumerate}
+This conclusion can be extended to the case that the underlying preferences of $e(\mathbf{p},u)$ is \textbf{non-convex}. A non-convex $\succsim$ will generate a non-convex 
+at-least-as-good-as set, as shown in Fig.\ref{fig:recover_pref_from_exp_nonconvex}.
 
 \begin{figure}[ht]
     \centering
@@ -115,9 +114,19 @@ This conclusion can be extended (with some changes) to two cases that violates t
         
         % notes
         %%% actual
-        \draw[stealth-,thick,red!55!black] (1.36,1.36) -- node[right=5pt,yshift=10pt,align=left] {Boundary of \textbf{actual} \\ at-least-as-good-as set $V_u$} (1.7,1.7);
+        \draw[stealth-,dashed thick,red!55!black] (1.36,1.36) -- node[right=5pt,yshift=10pt,align=left] {Boundary of \textbf{actual} \\ at-least-as-good-as set} (1.7,1.7);
          %%% Slutsky
-        \draw[-stealth,thick,blue!45!black] (1.125-0.4,1.125-0.4) -- node[left=5pt,yshift=-10pt] {Boundary of $V_u$} (1.12,1.12);
-        
+        \draw[-stealth,thick,black] (1.125-0.4,1.125-0.4) -- node[left=5pt,yshift=-10pt] {Boundary of $V_u$} (1.12,1.12);
+        %%% price-utility
+        \draw[stealth-,thick,black] (2.05,0.2) -- node[right=5pt] {\scriptsize $\left\{\mathbf{x}\in\mathbb{R}^L_+\mid \mathbf{p}^*\cdot\mathbf{x}=e(\mathbf{p}^*,u^*)\right\}$} (2.4,0.2);
     \end{tikzpicture}
 \end{figure}
+
+For this non-convex at-least-as-good-as set, we can always find its convex hull (the solid line) that also generates the
+expenditure function $e(\mathbf{p}),u)$. 
+Here we have the correspondence between the differentiability of $e(\mathbf{p},u)$ and the , for a specific price-utility pair $(\mathbf{p}^*,u^*)$, there would be more than one expenditure minimizers, and at this price-utility pair $(\mathbf{p}^*,u^*)$,
+ the generated $e(\mathbf{p},u)$ would \textbf{NOT} be differentiable. This can be summarized as:
+$$
+e(\mathbf{p},u) \text{ is differentiable}\Rightarrow \succsim \text{ is convex}
+$$
+
