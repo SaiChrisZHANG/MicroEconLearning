@@ -42,7 +42,22 @@ Together, we have
 \begin{proposition}{conditions of $S(\mathbf{p},w)$ to recover $e(\mathbf{p},u)$}{slutskycondition_recover}
     $S(\mathbf{p},w)$ being \myhl[blue]{\textbf{symmetric}} and \myhl[blue]{\textbf{negative semidefinite}} is the necessary and sufficient condition to recover $e(\mathbf{p},u)$
 \end{proposition}
-Prop.\ref{prop:slutskycondition_recover} is generally true regardless of the length of the good vector ($L$), when $L=2$, the situation 
+
+Prop.\ref{prop:slutskycondition_recover} is always true, and it can be linked to the discussion of WARP in the following way:
+\begin{enumerate}
+    \item[$L=2$] when there are only 2 goods, the Slutsky matrix is automatically symmetric, hence as long as the demand function $x(p_1,p_2,w)$ satisfies WARP (negative semidefiniteness guaranteed), $e(\mathbf{p},u)$ will be recovered:
+    
+    \begin{enumerate}
+        \item[-] step 1: normalize $p_2=1$, pick an arbitrary price-wealth point $(p_1^0,1,w^0)$ and assign utility value $u^0$ to 
+        \item[-] step 2: solve the differential equation 
+        $$
+        \frac{\mathrm{d}e(p_1)}{\mathrm{p_1}}=x_1(p_1,e(p_1))
+        $$
+        where $e(p_1)=e(p_1,1,u^0)$, $x_1(p_1,w)=x_1(p_1,1,w)$, with the initial condition $e(p_1^0)=w^0$
+    \end{enumerate}
+    Fig. illustrates the essence of this procedure intuitively: for any $(p_1,w)$, the demand function at the point $x_1(p_1,w)$ is the slope of some expenditure function, and for any given initial condition $(p_1^0,w^0)$, there will be an expenditure curve starts at it.
+    \item[$L>2$] 
+\end{enumerate} 
 
 \subsubsection*{Recover $\succsim$ from $e(\mathbf{p},u)$}
 The second step is to recover $\succsim$ given an expenditure function $e(\mathbf{p},u)$ that has the assumed properties: continuous, strictly increasing in $u$, non-decreasing, homogeneous of degree 1, and concave in $\mathbf{p}$ (see Thm.\ref{thm:properties_expenditure_func}).
