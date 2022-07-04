@@ -232,6 +232,10 @@ The Forbenius's theorem is one of the fundamental theorems in differential topol
 
 \begin{definition}{Basic definitions of differntial geometry}{def}
     \begin{enumerate}
-        \item[I] \textbf{Smooth differentiable manifold}: $M$ is countable 
+        \item[I] \textbf{Smooth differentiable manifold} $M$ is a collection of \textbf{open} sets $U_{\alpha}\subset M$ and a collection of homeomorphisms $\varphi_{\alpha}:U_{\alpha}\rightarrow\mathbb{R}^N$ that satisfies
+        \begin{enumerate}
+            \item[-] $\bigcup_{\alpha}U_{\alpha}=M$
+            \item[-] when $U_{\alpha}\cap U_{\beta}\neq \varnothing$, the mapping $\varphi_{\alpha}\circ \varphi_{\beta}^{-1}:\varphi_{\beta}(U_{\alpha}\cap U_{\beta})\rightarrow \varphi_{\alpha}(U_{\alpha}\cap U_{\beta})$ is $C^{\infty}$ 
+        \end{enumerate}
     \end{enumerate}
 \end{definition}
