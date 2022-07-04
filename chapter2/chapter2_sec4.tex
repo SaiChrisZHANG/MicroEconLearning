@@ -232,10 +232,16 @@ The Forbenius's theorem is one of the fundamental theorems in differential topol
 
 \begin{definition}{Basic definitions of differntial geometry}{def}
     \begin{enumerate}
-        \item[I] \textbf{Smooth differentiable manifold} $M$ is a collection of \textbf{open} sets $U_{\alpha}\subset M$ and a collection of homeomorphisms $\varphi_{\alpha}:U_{\alpha}\rightarrow\mathbb{R}^N$ that satisfies
+        \item[1] \textbf{smooth differentiable manifold} $M$ is a collection of \textbf{open} sets $U_{\alpha}\subset M$ and a collection of homeomorphisms $\varphi_{\alpha}:U_{\alpha}\rightarrow\mathbb{R}^N$ that satisfies
         \begin{enumerate}
-            \item[-] $\bigcup_{\alpha}U_{\alpha}=M$
-            \item[-] when $U_{\alpha}\cap U_{\beta}\neq \varnothing$, the mapping $\varphi_{\alpha}\circ \varphi_{\beta}^{-1}:\varphi_{\beta}(U_{\alpha}\cap U_{\beta})\rightarrow \varphi_{\alpha}(U_{\alpha}\cap U_{\beta})$ is $C^{\infty}$ 
+            \item[-] $\bigcup_{\alpha}U_{\alpha}=M$ {(\color{red!55!black}$U_{\alpha}$\textit{ are the coordinate neighborhoods})}
+            \item[-] when $U_{\alpha}\cap U_{\beta}\neq \varnothing$, the mapping $\varphi_{\alpha}\circ \varphi_{\beta}^{-1}:\varphi_{\beta}(U_{\alpha}\cap U_{\beta})\rightarrow \varphi_{\alpha}(U_{\alpha}\cap U_{\beta})$ is $C^{\infty}$ {\color{red!55!black}($M$ has a countable base)}
         \end{enumerate}
+        \item[2] \textbf{coordinates}: define the $k-$th coordinate projection by $r^k\left(x^1,\cdots,x^N\right)=x^k$, then the coordinates on $M$ is 
+        $$
+        x^k = r^k\circ \varphi_{\alpha}: U_{\alpha}\rightarrow \mathbb{R}
+        $$
+        if $x\in U_{\alpha}$, $x$ is uniquely determined by its coordinates $\left(x^1(x),\cdots,x^m(x)\right)$
+        \item[3] \textbf{tangent vectors}
     \end{enumerate}
 \end{definition}
