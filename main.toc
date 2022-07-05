@@ -25,7 +25,7 @@
 \contentsline {subsection}{\numberline {2.3.5}Duality: EMP and UMP}{42}{subsection.2.3.5}
 \contentsline {section}{\numberline {2.4}Problems of Revealed Preferences}{51}{section.2.4}
 \contentsline {subsection}{\numberline {2.4.1}Recover Preferences from Demand Functions}{51}{subsection.2.4.1}
-\contentsline {section}{\numberline {2.5}Welfare Analysis and Money Metrics}{55}{section.2.5}
+\contentsline {section}{\numberline {2.5}Welfare Analysis and Money Metrics}{56}{section.2.5}
 \contentsline {chapter}{\numberline {3}Optimization and Duality}{57}{chapter.3}
 \contentsline {chapter}{\numberline {4}Stochastic Choice}{58}{chapter.4}
 \contentsline {chapter}{\numberline {5}Monotone Comparative Statics}{59}{chapter.5}

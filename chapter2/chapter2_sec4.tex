@@ -242,12 +242,12 @@ The Forbenius's theorem is one of the fundamental theorems in differential topol
         x^k = r^k\circ \varphi_{\alpha}: U_{\alpha}\rightarrow \mathbb{R}
         $$
         if $x\in U_{\alpha}$, $x$ is uniquely determined by its coordinates $\left(x^1(x),\cdots,x^m(x)\right)$
-        \item[3] \textbf{tangent vectors} for a curve $\gamma:(-a,a)\rightarrow M$, its tangent vector $X$ maps a smooth function $f:M\rightarrow \mathbb{R}$ to its \underline{\textbf{directional derivative} $X(f)$} \sidenotes{$\leftarrow$ derivative of $f$ in the direction $X$}. At a point $x\in M$, the tangent vector is $$ X(f)_x\in \mathbb{R} $$ and it follows the rules of derivations (for smooth $f,g$)
+        \item[3] \textbf{tangent vectors} for a curve $\gamma:(-a,a)\rightarrow M$, its tangent vector $X$ maps a smooth function $f:M\rightarrow \mathbb{R}$ to its \underline{\textbf{directional derivative} $X(f)$} \footnote{derivative of $f$ in the direction $X$}. At a point $x\in M$, the tangent vector is $$ X(f)_x\in \mathbb{R} $$ and it follows the rules of derivations (for smooth $f,g$)
         \begin{align*}
             X(fg)_x&=X(f)_xg(x)+f(x)X(g)_x & (aX+bY)(f)=aX(f)+bY(f)
         \end{align*} 
         denote the collection of tangent vectors at $x$ as $\mathrm{T}_x(M)$
-        \item[4] \textbf{vector field}: for every $x\in M$, and the coordinates $x^k = r^k\circ \varphi$, the vector field is defined as
+        \item[4] \textbf{vector field} $\frac{\partial}{\partial x^k}$: for every $x\in M$, and the coordinates $x^k = r^k\circ \varphi$, the vector field is defined as
         $$
         \frac{\partial}{\partial x^k}(f)_x = \left.\frac{\partial (f\circ \varphi^{-1})}{\partial r^k}\right\vert_{\varphi(x)},\ k=1,\cdots,m
         $$
@@ -255,7 +255,22 @@ The Forbenius's theorem is one of the fundamental theorems in differential topol
         $$
         X = \sum^m_{k=1}X^k\frac{\partial}{\partial x^k},\ \forall X\in\mathrm{T}_x(M)
         $$
-        where $X^k = X(x^k)$
+        where $X^k = X(x^k)$\footnote{This is given by:
+        \begin{align*}
+            \frac{\partial}{\partial x^k}(x^j) = \left.\frac{\partial (x^j \circ \varphi^{-1})}{\partial r^k}\right\vert_{\varphi(x)} = \left.\frac{\partial (r^j\circ \varphi \circ \varphi^{-1})}{\partial r^k}\right\vert_{\varphi(x)} = \left.\frac{\partial r^j}{\partial r^k}\right\vert_{\varphi(x)} = \delta ^j_k \Rightarrow X(x^j)=\sum^m_{k=1}X^k\delta^j_k=X^j
+        \end{align*}}.
+        \item[5] \textbf{Integral curves}: the solution to the ODE system
+        $$
+        X(x^k) = X^k  = \frac{\mathrm{d}(x^k\circ\gamma)}{\mathrm{d}t}
+        $$
+        \item[6] \textbf{Dual space}: for the vector field $\frac{\partial}{\partial x^k}$, its dual form is $\mathrm{d}x^j$
+        $$
+        \mathrm{d}x^j\left(\frac{\partial}{\partial x^k}\right) = \frac{\partial}{\partial x^k}(x^j) = \left.\frac{\partial (r^j \circ \varphi \circ \varphi^{-1})}{\partial r^k}\right\vert_{\varphi(x)} = \delta^j_k
+        $$
+        and $\mathrm{d}x^j$ forms the differential $\mathrm{d}f$ where $f\in C^{\infty}(M)$ s.t. $\mathrm{d}f(X)=X(f)$:
+        \begin{align*}
+            \mathrm{d}f = \sum^m_{j=1}\lambda_j\mathrm{d}x^j
+        \end{align*}
         
     \end{enumerate}
 \end{definition}
