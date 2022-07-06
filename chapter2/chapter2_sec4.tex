@@ -320,3 +320,9 @@ Meanwhile for \textbf{Case 2}:
 \begin{align*}
     \varphi_t(x,y,z) &= \begin{bmatrix}x+t & y & z+yt\end{bmatrix}^{\prime} & \eta_s(x,y,z)&= \begin{bmatrix}x & y+s & z-xs\end{bmatrix}^{\prime}
 \end{align*}
+It's easy to verify that 
+\begin{align*}
+    \varphi_t\circ \eta_s(x,y,z) &= \begin{bmatrix}x+t & y+s & z+yt-(x+t)s\end{bmatrix}^{\prime}\\
+    \eta_s \circ\varphi_t(x,y,z) &= \begin{bmatrix}x+t & y+s & z-xs+(y+s)t\end{bmatrix}^{\prime}
+\end{align*}
+they are \textbf{different}. Hence for Case 2, the two 1-dimensional solutions can not generate an integral submanifold.
