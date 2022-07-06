@@ -228,7 +228,9 @@ With the two steps, $\succsim$ can be recovered from demand function $x(\mathbf{
 \subsubsection*{Discussion on integrability}\label{sssec:integrability}
 
 \subsubsection*{Frobenius' theorem}\label{sssec:frobenius_theorem}
-The Forbenius's theorem is one of the fundamental theorems in differential topology. It is the foundation for the disucssion of the integrability problem, which I think it's worth spending some time understanding the basics. The discussion below is by no means thorough or rigorous\footnote{For more math, check \cite{sternberg1999lectures}, \cite{warner1983foundations}, \cite{mccleary2013geometry}}, but my own interpretation of this topic.
+The Frobenius's theorem is one of the fundamental theorems in differential topology. It is the foundation for the disucssion of the integrability problem, which I think it's worth spending some time understanding the basics. The discussion below is by no means thorough or rigorous\footnote{For more math, check \cite{sternberg1999lectures}, \cite{warner1983foundations}, \cite{mccleary2013geometry}}, but my own interpretation of this topic.
+
+\underline{\textbf{Frobenius' theorem (vector field version)}}: Frobenius' theorem can be illustrated with the language of vector fields, for which some basic definitions need to be introduced.
 
 \begin{definition}{Basic definitions of differntial geometry}{def}
     \begin{enumerate}
@@ -278,3 +280,43 @@ The Forbenius's theorem is one of the fundamental theorems in differential topol
         }.
     \end{enumerate}
 \end{definition}
+
+To illustrate the idea of integrability and Frobenius' theorem, consider the following example:
+\begin{example}{Frobenius' theorem and integrability}
+    For the manifold $M=\mathbb{R}^3$, and a point $(x,y,z)\in \mathbb{R}^3$. Consider two basis $X,Y$, they are the tangent vector of curve $\gamma$ and $\sigma$ respectively, and they satisfy $\varphi(\gamma(0))=(x,y,z)$, $\eta(\sigma(0))=(x,y,z)$. We evaluate the two cases below:
+    \begin{enumerate}
+        \item[-] Case 1: 
+        \begin{align*}
+            X(x,y,z) &= \frac{\partial}{\partial x}+x\frac{\partial}{\partial z} = [1,0,x]^{\prime}\\
+            Y(x,y,z) &= \frac{\partial}{\partial y}+y\frac{\partial}{\partial z} = [0,1,y]^{\prime}
+        \end{align*} 
+        \item[-] Case 2:  
+        \begin{align*}
+            X(x,y,z) &= \frac{\partial}{\partial x}+y\frac{\partial}{\partial z} = [1,0,y]^{\prime}\\
+            Y(x,y,z) &= \frac{\partial}{\partial y}-x\frac{\partial}{\partial z} = [0,1,-x]^{\prime}
+        \end{align*}  
+    \end{enumerate}
+\end{example}
+The goal here is to find a 2-dimensional surface $N$ that has tangent spaces formed by the basis $X,Y$. To find $N$, we must solve $\varphi_t(x,y,z)$ and $\eta_s(x,y,z)$ s.t. the point $(x,y,z)$ will be transformed in the same way through $\varphi_t\rightarrow \eta_s\rightarrow \varphi_{-t}$ and through $\eta_s$\footnote{That is, \underline{integrating along $X$ by $t$ then along $Y$ by $s$} and \underline{integrating along $Y$ by $s$ then along $X$ by $t$}} should give the same result.
+
+Now, focus on \textbf{Case 1}: To solve $\varphi_t(x,y,z)$ (same logic for $\eta_s(x,y,z)$) is to solve the following system of differential equations (for $X=[1,0,x]'$):
+\begin{align*}
+    \frac{\mathrm{d}(x\circ \gamma)}{\mathrm{d}t} &=1 & \frac{\mathrm{d}y\circ\gamma }{\mathrm{d} t}&=0 & \frac{\mathrm{d}(z\circ\gamma)}{\mathrm{d}t}&=x
+\end{align*}
+combined with $\gamma(0)=(x,y,z)$, gives
+$$
+\varphi_t(x,y,z) = \begin{bmatrix}x+t & y & z+xt+\frac{1}{2}t^2\end{bmatrix}^{\prime}
+$$
+similarly
+$$
+\eta_s(x,y,z) = \begin{bmatrix}x & x+y & z+ys+\frac{1}{2}s^2\end{bmatrix}^{\prime}
+$$
+together
+$$
+\Sigma_{t,s}(x,y,z) = \begin{bmatrix}t+x & s+y & z+xt+\frac{1}{2}t^2 + ys+\frac{1}{2}s^2\end{bmatrix}^{\prime} \equiv \varphi_t\circ\eta_s(x,y,z) \equiv \eta_s\circ\varphi_t(x,y,z)
+$$
+
+Meanwhile for \textbf{Case 2}:
+\begin{align*}
+    \varphi_t(x,y,z) &= \begin{bmatrix}x+t & y & z+yt\end{bmatrix}^{\prime} & \eta_s(x,y,z)&= \begin{bmatrix}x & y+s & z-xs\end{bmatrix}^{\prime}
+\end{align*}
