@@ -340,5 +340,9 @@ Several definitions are crucial to the theorem:
     
     And, for a sub-manifold $N\subset M$ to be an integral manifold, the tangent space of $N$ at $x$ should correspond to the distribution $\mathcal{D}(x)$, which is the plane at $x$.
     
-    \item[-] \underline{\myhl[teal]{\textbf{involutive}}}: A smooth $\mathcal{D}$ is involutive if $[X,Y]\in \mathcal{D}$, where the Lie Bracket is defined as $[X,Y](f)=X(Y(f))-Y(X(f))$. The 
+    \item[-] \underline{\myhl[teal]{\textbf{involutive}}}: A smooth $\mathcal{D}$ is involutive if $[X,Y]\in \mathcal{D}$ whenever $X$ and $Y$ are smooth vector fields that lie in $\mathcal{D}$, where the Lie Bracket is defined as $[X,Y](f)=X(Y(f))-Y(X(f))$\footnote{The Lie Bracket measures the extent to which the derivatives in the directions $X$ and $Y$ do not commute. Let $\varphi_t$ be a local flow of $X$ around $x$, then 
+    $$
+    [X,Y]_x = \frac{\mathrm{d}}{\mathrm{d}t}\left. \left(D_x\varphi_t\right)^{-1} Y_{\varphi_t(x)} \right\vert_{t=0}
+    $$}
+    the idea is $\varphi_t$ moves from $x$ in the direction of $X$, and for $Y$ in this direction, 
 \end{enumerate}
