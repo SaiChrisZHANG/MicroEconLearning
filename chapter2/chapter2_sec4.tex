@@ -33,7 +33,7 @@ we actually get the Slutsky matrix again. Now we can conclude
     \item[-] $\nabla_{\mathbf{p}}e(\mathbf{p})=x(\mathbf{p},e(\mathbf{p}))$ has a solution $\Leftrightarrow$ the Slutsky matrix $S(\mathbf{p},w)$ being \textbf{symmetric}
     \begin{enumerate}
         \item[-] $\Rightarrow$: proved by the above equation, which requires the Slutsky matrix be the Hessian matrix of $e(\mathbf{p})$, which aligns with Thm.\ref{thm:prop_hick_pricederive}
-        \item[-] $\Leftarrow$: by Frobenius' theorem (see \hyperref[sssec:frobenius_theorem]{below} for details), the symmetry of $\nabla_{\mathbf{p}}$ at all points of its domain is equivalent to the existence of a solution 
+        \item[-] $\Leftarrow$: by Frobenius theorem (see \hyperref[sssec:frobenius_theorem]{below} for details), the symmetry of $\nabla_{\mathbf{p}}$ at all points of its domain is equivalent to the existence of a solution 
     \end{enumerate}
     \item[-] the solution $e(\mathbf{p},u)$ has the properties of an expenditure function (Thm.\ref{thm:properties_expenditure_func}) $\Leftrightarrow$ the Slutsky matrix $S(\mathbf{p},w)$ being \textbf{negative semidefinite}
 \end{enumerate}
@@ -225,12 +225,12 @@ $$
 
 With the two steps, $\succsim$ can be recovered from demand function $x(\mathbf{p},w)$ through expenditure function $e(\mathbf{p},u)$. This problem, especially the problem of recovering $e(\mathbf{p},u)$ from $x(\mathbf{p},u)$, which involves the differential equation $h(\mathbf{p},u)=\nabla_{\mathbf{p}}e(\mathbf{p},u)$, is the \textbf{integrability} problem.
 
-\subsubsection*{Discussion on integrability}\label{sssec:integrability}
+\subsection{Discussion on integrability}\label{sssec:integrability}
 
-\subsubsection*{Frobenius' theorem}\label{sssec:frobenius_theorem}
-The Frobenius's theorem is one of the fundamental theorems in differential topology. It is the foundation for the disucssion of the integrability problem, which I think it's worth spending some time understanding the basics. The discussion below is by no means thorough or rigorous\footnote{For more math, check \cite{sternberg1999lectures}, \cite{warner1983foundations}, \cite{mccleary2013geometry}}, but my own interpretation of this topic.
+\subsection{Frobenius theorem}\label{sssec:frobenius_theorem}
+The Frobeniuss theorem is one of the fundamental theorems in differential topology. It is the foundation for the disucssion of the integrability problem, which I think it's worth spending some time understanding the basics. The discussion below is by no means thorough or rigorous\footnote{For more math, check \cite{sternberg1999lectures}, \cite{warner1983foundations}, \cite{mccleary2013geometry}}, but my own interpretation of this topic.
 
-\underline{\textbf{Frobenius' theorem (vector field version)}}: Frobenius' theorem can be illustrated with the language of vector fields, for which some basic definitions need to be introduced.
+\underline{\textbf{Frobenius theorem (vector field version)}}: Frobenius theorem can be illustrated with the language of vector fields, for which some basic definitions need to be introduced.
 
 \begin{definition}{Basic definitions of differntial geometry}{def}
     \begin{enumerate}
@@ -281,8 +281,8 @@ The Frobenius's theorem is one of the fundamental theorems in differential topol
     \end{enumerate}
 \end{definition}
 
-To illustrate the idea of integrability and Frobenius' theorem, consider the following example:
-\begin{example}{Frobenius' theorem and integrability}
+To illustrate the idea of integrability and Frobenius theorem, consider the following example:
+\begin{example}{Frobenius theorem and integrability}
     For the manifold $M=\mathbb{R}^3$, and a point $(x,y,z)\in \mathbb{R}^3$. Consider two basis $X,Y$, they are the tangent vector of curve $\gamma$ and $\sigma$ respectively, and they satisfy $\varphi(\gamma(0))=(x,y,z)$, $\eta(\sigma(0))=(x,y,z)$. We evaluate the two cases below:
     \begin{enumerate}
         \item[-] Case 1: 
@@ -326,4 +326,19 @@ It's easy to verify that
     \varphi_t\circ \eta_s(x,y,z) &= \begin{bmatrix}x+t & y+s & z+yt-(x+t)s\end{bmatrix}^{\prime}\\
     \eta_s \circ\varphi_t(x,y,z) &= \begin{bmatrix}x+t & y+s & z-xs+(y+s)t\end{bmatrix}^{\prime}
 \end{align*}
-they are \textbf{different}. Hence for Case 2, the two 1-dimensional solutions can not generate an integral submanifold.
+they are \textbf{different}. Hence for Case 2, the two 1-dimensional solutions can not generate an integral submanifold. This example illustrates the idea of Frobenius theorem. Now we discuss the theorem in more general terms:
+\begin{theorem}{Frobenius Theorem (vector fields)}{frobenius_vectorfield}
+    Let $M$ be a manifold of dimension $m$, and $\mathcal{D}$ a $p-$dimensional $C^{\infty}$ distribution, if $\mathcal{D}$ is \myhl[teal]{\textbf{involutive}}, then $\forall x\in M$, $\exists$ an \textbf{integral} sub-manifold $N$ that contains $x$. Centered at $x$, there exists a coordinate neighborhood $U$ s.t. the slices
+    $$
+    x_i=K_i,\forall i\in\{ p+1,\cdots,N\}
+    $$
+    are integral sub-manifolds of $\mathcal{D}$. If $N$ is a connected integral sub-manifold of $U$, then $i(N)\cap U$ corresponds to one of these slices.
+\end{theorem}
+Several definitions are crucial to the theorem:
+\begin{enumerate}
+    \item[-] \underline{\myhl[teal]{\textbf{distribution}}}: for $M$ ($m-$dimension), a $p-$dimensional distribution $\mathcal{D}$ ($p\leq m$) is a choice of a $p-$dimensional subspace of the tangent space $\mathrm{T}_x(M),\forall x\in M$. In the examples, only in \textbf{Case 1} the 2-dimensional distribution is the tangent bundle of a sub-manifold.
+    
+    And, for a sub-manifold $N\subset M$ to be an integral manifold, the tangent space of $N$ at $x$ should correspond to the distribution $\mathcal{D}(x)$, which is the plane at $x$.
+    
+    \item[-] \underline{\myhl[teal]{\textbf{involutive}}}: A smooth $\mathcal{D}$ is involutive if $[X,Y]\in \mathcal{D}$, where the Lie Bracket is defined as $[X,Y](f)=X(Y(f))-Y(X(f))$. The 
+\end{enumerate}
