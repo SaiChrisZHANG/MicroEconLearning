@@ -342,7 +342,7 @@ Several definitions are crucial to the theorem:
     
     \item[-] \underline{\myhl[teal]{\textbf{involutive}}}: A smooth $\mathcal{D}$ is involutive if $[X,Y]\in \mathcal{D}$ whenever $X$ and $Y$ are smooth vector fields that lie in $\mathcal{D}$, where the Lie Bracket is defined as $[X,Y](f)=X(Y(f))-Y(X(f))$\footnote{The Lie Bracket measures the extent to which the derivatives in the directions $X$ and $Y$ do not commute. Let $\varphi_t$ be a local flow of $X$ around $x$, then 
     $$
-    [X,Y]_x = \frac{\mathrm{d}}{\mathrm{d}t} \left. \left(D_x\varphi_t\right)^{-1} Y_{\varphi_t(x)} \right\vert_{t=0}
+    [X,Y]_x = \frac{\mathrm{d}}{\mathrm{d}t} \left.\left(D_x\varphi_t\right)^{-1} Y_{\varphi_t(x)} \right\vert_{t=0}
     $$
     the idea is $\varphi_t$ moves from $x$ in the direction of $X$, and for $Y$ in this direction, the mapping $D_x\varphi_t: \mathrm{T}_{x}(M)\rightarrow \mathrm{T}_{\varphi(x)}$ bring $Y$ back to $T_{x}(M)$. This means that, $[X,Y]$ will vanish if and only if $Y$ is \textbf{invariant} under the flow of $X$. Therefore, Lie Bracket can be seen as a \textbf{derivative}: $\mathcal{L}_XY$
     .}.
@@ -356,18 +356,30 @@ Several definitions are crucial to the theorem:
 The detailed proof of Frobenius Theorem is not the focus of this notebook, but the intuition is that involution is the key to integrability. Here are two interesting examples illustrating the idea of involution.
 \begin{example}{Involutive and non-involutive distributions}
     \begin{enumerate}
-        \item[-] \underline{\textbf{Non-involutive}}: The Heisenberg group of matrices ($3\times 3$ for simlicity) $$ \begin{bmatrix}
+        \item[-] \underline{\textbf{Non-involutive}}: The Heisenberg group of matrices ($3\times 3$ for simlicity) $$ H =\begin{bmatrix}
             1 & x_1 & x_3 \\
             0 & 1 & x_2 \\
             0 & 0 & 1
         \end{bmatrix} $$
-        and the standard basic
+        and the standard basis at the identity $\mathbf{0}\in\mathbb{R}^3$
         \begin{align*}
-            e_1 = \begin{bmatrix}
-                1 & x_1 & x_3 \\
-                0 & 1 & x_2 \\
-                0 & 0 & 1
+            e_1 &= \begin{bmatrix}
+                0 & 1 & 0 \\
+                0 & 0 & 0 \\
+                0 & 0 & 0
+            \end{bmatrix} & e_2 &=\begin{bmatrix}
+                0 & 0 & 0 \\
+                0 & 0 & 1 \\
+                0 & 0 & 0
+            \end{bmatrix} & e_3 &=\begin{bmatrix}
+                0 & 0 & 1 \\
+                0 & 0 & 0 \\
+                0 & 0 & 0
             \end{bmatrix}
+        \end{align*}
+        consider the (left-invariant) vector fields 
+        \begin{align*}
+            E_1 &= H e_1 \simeq e_1 & E_2 &= He_2 \simeq e_2+x_1e_3 & E_3 &= H e_3 \simeq e_3
         \end{align*}
         \item[-] \underline{\textbf{Involutive}}:
     \end{enumerate}
