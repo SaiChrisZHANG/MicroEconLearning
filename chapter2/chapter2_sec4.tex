@@ -342,10 +342,10 @@ Several definitions are crucial to the theorem:
     
     \item[-] \underline{\myhl[teal]{\textbf{involutive}}}: A smooth $\mathcal{D}$ is involutive if $[X,Y]\in \mathcal{D}$ whenever $X$ and $Y$ are smooth vector fields that lie in $\mathcal{D}$, where the Lie Bracket is defined as $[X,Y](f)=X(Y(f))-Y(X(f))$\footnote{The Lie Bracket measures the extent to which the derivatives in the directions $X$ and $Y$ do not commute. Let $\varphi_t$ be a local flow of $X$ around $x$, then 
     $$
-    [X,Y]_x = \frac{\mathrm{d}}{\mathrm{d}t}\left. \left(D_x\varphi_t\right)^{-1} Y_{\varphi_t(x)} \right\vert_{t=0}
+    [X,Y]_x = \frac{\mathrm{d}}{\mathrm{d}t} \left. \left(D_x\varphi_t\right)^{-1} Y_{\varphi_t(x)} \right\vert_{t=0}
     $$
     the idea is $\varphi_t$ moves from $x$ in the direction of $X$, and for $Y$ in this direction, the mapping $D_x\varphi_t: \mathrm{T}_{x}(M)\rightarrow \mathrm{T}_{\varphi(x)}$ bring $Y$ back to $T_{x}(M)$. This means that, $[X,Y]$ will vanish if and only if $Y$ is \textbf{invariant} under the flow of $X$. Therefore, Lie Bracket can be seen as a \textbf{derivative}: $\mathcal{L}_XY$
-    .}. 
+    .}.
     
     Involution gives that: if $X_1,\cdots,X_p$ are smooth vector fields that span $\mathcal{D}$ in a neighborhood $U$,
     $$
@@ -363,7 +363,11 @@ The detailed proof of Frobenius Theorem is not the focus of this notebook, but t
         \end{bmatrix} $$
         and the standard basic
         \begin{align*}
-            e_1 =
+            e_1 = \begin{bmatrix}
+                1 & x_1 & x_3 \\
+                0 & 1 & x_2 \\
+                0 & 0 & 1
+            \end{bmatrix}
         \end{align*}
         \item[-] \underline{\textbf{Involutive}}:
     \end{enumerate}

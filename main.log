@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.1.7)  9 JUL 2022 23:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.1.7)  10 JUL 2022 00:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1308,21 +1308,10 @@ LaTeX Font Info:    Try loading font information for T1+ppl on input line 198.
  (/usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/t1ppl.fd
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
 )
-LaTeX Font Info:    Font shape `T1/zpltlf/bx/n' in size <12> not available
-(Font)              Font shape `T1/zpltlf/b/n' tried instead on input line 211.
-LaTeX Font Info:    Font shape `T1/zpltlf/b/n' will be
-(Font)              scaled to size 12.0pt on input line 211.
-
-
-Package natbib Warning: Citation `mas1995microeconomic' on page 1 undefined on input line 211.
-
 LaTeX Font Info:    Font shape `T1/zpltlf/m/it' will be
 (Font)              scaled to size 12.0pt on input line 211.
-
-Package natbib Warning: Citation `mailath2018modeling' on page 1 undefined on input line 211.
-
 LaTeX Font Info:    Try loading font information for T1+zplsups on input line 211.
-(/usr/local/texlive/2018/texmf-dist/tex/latex/newpx/t1zplsups.fd
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/newpx/t1zplsups.fd
 File: t1zplsups.fd 2015/01/17 v1.0
 )
 LaTeX Font Info:    Font shape `T1/zplsups/m/n' will be
@@ -1331,22 +1320,6 @@ LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
 (Font)              scaled to size 10.0pt on input line 211.
 LaTeX Font Info:    Font shape `T1/zplsups/m/n' will be
 (Font)              scaled to size 10.0pt on input line 211.
-
-
-Package natbib Warning: Citation `tirole1991game' on page 1 undefined on input line 212.
-
-
-Package natbib Warning: Citation `myerson1991game' on page 1 undefined on input line 212.
-
-
-Package natbib Warning: Citation `bolton2005contract' on page 1 undefined on input line 212.
-
-
-Package natbib Warning: Citation `Mailath2006repeated' on page 1 undefined on input line 213.
-
-
-Package natbib Warning: Citation `martin1994acourse' on page 1 undefined on input line 213.
-
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -1440,24 +1413,32 @@ Package minitoc Info: I0033
 (minitoc)             Writing main.mtc21.
 \openout6 = `main.mtc21'.
 
-
-
-Package hyperref Warning: old toc file detected, not used; run LaTeX again.
-
-\tf@toc=\write8
-\openout8 = `main.toc'.
-
-[2] [3
-
-]
-Chapter 1.
-LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 231.
-LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <20.74> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 231.
-(/Users/admin/Desktop/LearningNotes/MicroEconLearning/chapter1/chapter1.tex
-\openout6 = `main.mtc'.
-r U/npxmia.
+ (/Users/admin/Desktop/LearningNotes/MicroEconLearning/main.toc
+LaTeX Font Info:    Font shape `T1/zpltlf/bx/n' in size <14.4> not available
+(Font)              Font shape `T1/zpltlf/b/n' tried instead on input line 2.
+LaTeX Font Info:    Font shape `T1/zpltlf/b/n' will be
+(Font)              scaled to size 14.4pt on input line 2.
+LaTeX Font Info:    Try loading font information for OT1+zpltlf on input line 2.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/newpx/ot1zpltlf.fd
+File: ot1zpltlf.fd 2015/01/17 v1.0 font definition file for OT1/zpl/tlf
+)
+LaTeX Font Info:    Font shape `OT1/zpltlf/m/n' will be
+(Font)              scaled to size 14.4pt on input line 2.
+LaTeX Font Info:    Font shape `OT1/zpltlf/m/n' will be
+(Font)              scaled to size 10.5pt on input line 2.
+LaTeX Font Info:    Font shape `OT1/zpltlf/m/n' will be
+(Font)              scaled to size 7.9pt on input line 2.
+LaTeX Font Info:    Try loading font information for U+msa on input line 2.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 2.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for U+npxmia on input line 2.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/newpx/unpxmia.fd
+File: unpxmia.fd 2013/03/24 Fontinst v1.933 font definitions for U/npxmia.
 )
 LaTeX Font Info:    Try loading font information for U+npxsym on input line 2.
  (/usr/local/texlive/2018/texmf-dist/tex/latex/newpx/unpxsym.fd
@@ -1565,9 +1546,11 @@ LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
 LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
 (Font)              scaled to size 6.6pt on input line 5.
  [24]
+Package marginnote Info: Margin note 26.1 is on absolute page 26
+(marginnote)              on input line 37.
 Package marginnote Info: right page because not two side mode on input line 37.
-Package marginnote Info: xpos not known,
-(marginnote)             using \marginnoterightadjust on input line 37.
+Package marginnote Info: xpos seems to be 492.00597pt,
+(marginnote)             \marginnoterightadjust ignored on input line 37.
 LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
 (Font)              scaled to size 8.0pt on input line 37.
 LaTeX Font Info:    Font shape `OT1/zpltlf/m/n' will be
@@ -1712,547 +1695,18 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 286.
  ) 
 Here is how much of TeX's memory you used:
- 39476 strings out of 492649
- 882620 string characters out of 6129623
- 1114070 words of memory out of 5000000
- 41994 multiletter control sequences out of 15000+600000
+ 39475 strings out of 492649
+ 882608 string characters out of 6129623
+ 1114064 words of memory out of 5000000
+ 41993 multiletter control sequences out of 15000+600000
  214196 words of font info for 363 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  78i,23n,136p,1018b,1150s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/newpx/tgpdiff.enc}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/newpx/ecsups.enc}</usr/local/texlive/2018/texmf-dist/fonts/type1/public/newtx/ntxsyralt.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/pxfonts/pxmia.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/newpx/pxsys.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/tex-gyre/qplr.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/pxfonts/rpxmi.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/newtx/txexas.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/newtx/txexs.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/txfonts/txsya.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/txfonts/txsyb.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/txfonts/txsyc.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/newpx/zplb.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/newpx/zplbi.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/newpx/zplr.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/newpx/zplri.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/newpx/zplx-regular.pfb>
-Output written on /Users/admin/Desktop/LearningNotes/MicroEconLearning/main.pdf (81 pages, 485489 bytes).
+Output written on /Users/admin/Desktop/LearningNotes/MicroEconLearning/main.pdf (81 pages, 485556 bytes).
 PDF statistics:
  1241 PDF objects out of 1440 (max. 8388607)
  1089 compressed objects within 11 object streams
  263 named destinations out of 1000 (max. 500000)
  405 words of extra memory for PDF output out of 10000 (max. 10000000)
-
-   Font shape `OT1/zpltlf/m/n' will be
-(Font)              scaled to size 6.2pt on input line 37.
-LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
-(Font)              scaled to size 8.0pt on input line 37.
-LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
-(Font)              scaled to size 6.2pt on input line 37.
-LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
-(Font)              scaled to size 5.5pt on input line 37.
-LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
-(Font)              scaled to size 10.0pt on input line 37.
-LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
-(Font)              scaled to size 7.3pt on input line 37.
-
-LaTeX Warning: Hyper reference `ToC-first-page' on page 24 undefined on input line 44.
-
-[24]
-
-LaTeX Warning: Reference `thm:homo_waldemand_thm1' on page 25 undefined on input line 84.
-
-
-LaTeX Warning: Hyper reference `ToC-first-page' on page 25 undefined on input line 94.
-
-[25]
-
-LaTeX Warning: Reference `thm:homo_waldemand_thm1' on page 26 undefined on input line 105.
-
-
-LaTeX Warning: Reference `thm:walraslaw_waldemand_thm2' on page 26 undefined on input line 106.
-
-
-LaTeX Warning: Hyper reference `ToC-first-page' on page 26 undefined on input line 117.
-
-[26]
-
-LaTeX Warning: Reference `def:WARP' on page 27 undefined on input line 118.
-
-
-LaTeX Warning: Reference `def:WARP' on page 27 undefined on input line 118.
-
-
-LaTeX Warning: Reference `def:walrasian_WARP' on page 27 undefined on input line 118.
-
-
-LaTeX Warning: Hyper reference `ToC-first-page' on page 27 undefined on input line 141.
-
-[27]
-
-LaTeX Warning: Reference `thm:lawofdemand_to_WARP' on page 28 undefined on input line 165.
-
-
-Package natbib Warning: Citation `mas1995microeconomic' on page 28 undefined on input line 168.
-
-
-LaTeX Warning: Hyper reference `ToC-first-page' on page 28 undefined on input line 172.
-
-[28]
-
-Package natbib Warning: Citation `mas1995microeconomic' on page 29 undefined on input line 174.
-
-
-LaTeX Warning: Reference `def:walrasian_WARP' on page 29 undefined on input line 184.
-
-
-LaTeX Warning: Reference `thm:compensated_lawofdemand' on page 29 undefined on input line 189.
-
-
-LaTeX Warning: Reference `thm:compensated_lawofdemand_general' on page 29 undefined on input line 196.
-
-
-LaTeX Warning: Reference `def:walrasian_WARP_general' on page 29 undefined on input line 196.
-
-
-LaTeX Warning: Hyper reference `ToC-first-page' on page 29 undefined on input line 198.
-
-[29]
-
-LaTeX Warning: Reference `thm:compensated_lawofdemand' on page 30 undefined on input line 200.
-
-
-LaTeX Warning: Hyper reference `ToC-first-page' on page 30 undefined on input line 234.
-
-[30]
-
-LaTeX Warning: Reference `thm:walraslaw_waldemand_thm2' on page 31 undefined on input line 252.
-
-
-LaTeX Warning: Reference `thm:homo_waldemand_thm1' on page 31 undefined on input line 253.
-
-
-LaTeX Warning: Hyper reference `ToC-first-page' on page 31 undefined on input line 274.
-
-[31]
-
-Package natbib Warning: Citation `kihlstrom1976demand' on page 32 undefined on input line 286.
-
-) (/Users/admin/Desktop/LearningNotes/MicroEconLearning/chapter2/chapter2_sec3.tex
-
-LaTeX Warning: Hyper reference `ToC-first-page' on page 32 undefined on input line 35.
-
-[32]
-
-LaTeX Warning: Hyper reference `ToC-first-page' on page 33 undefined on input line 66.
-
-[33]
-
-LaTeX Warning: Hyper reference `ToC-first-page' on page 34 undefined on input line 96.
-
-[34]
-
-LaTeX Warning: Hyper reference `ToC-first-page' on page 35 undefined on input line 134.
-
-[35]
-
-LaTeX Warning: Hyper reference `ToC-first-page' on page 36 undefined on input line 154.
-
-[36]
-
-LaTeX Warning: Reference `thm:properties_walrasian_demand' on page 37 undefined on input line 171.
-
-
-LaTeX Warning: Hyper reference `ToC-first-page' on page 37 undefined on input line 180.
-
-[37]
-
-LaTeX Warning: Reference `thm:properties_walrasian_demand' on page 38 undefined on input line 203.
-
-
-LaTeX Warning: Hyper reference `ToC-first-page' on page 38 undefined on input line 215.
-
-[38]
-
-LaTeX Warning: Reference `thm:hicksian_lawofdemand' on page 39 undefined on input line 244.
-
-
-LaTeX Warning: Reference `thm:compensated_lawofdemand' on page 39 undefined on input line 245.
-
-
-LaTeX Warning: Reference `thm:compensated_lawofdemand_general' on page 39 undefined on input line 245.
-
-Package marginnote Info: right page because not two side mode on input line 245.
-Package marginnote Info: xpos not known,
-(marginnote)             using \marginnoterightadjust on input line 245.
-LaTeX Font Info:    Font shape `T1/zpltlf/bx/n' in size <8> not available
-(Font)              Font shape `T1/zpltlf/b/n' tried instead on input line 245.
-LaTeX Font Info:    Font shape `T1/zpltlf/b/n' will be
-(Font)              scaled to size 8.0pt on input line 245.
-
-LaTeX Warning: Reference `thm:WARP_to_lawofdemand' on page 39 undefined on input line 245.
-
-
-LaTeX Warning: Reference `thm:lawofdemand_to_WARP' on page 39 undefined on input line 245.
-
-
-LaTeX Warning: Hyper reference `ToC-first-page' on page 39 undefined on input line 246.
-
-[39]
-
-LaTeX Warning: Reference `thm:properties_indirect_u' on page 40 undefined on input line 249.
-
-
-Package natbib Warning: Citation `mas1995microeconomic' on page 40 undefined on input line 272.
-
-
-LaTeX Warning: Hyper reference `ToC-first-page' on page 40 undefined on input line 274.
-
-[40]
-
-LaTeX Warning: Reference `thm:properties_indirect_u' on page 41 undefined on input line 297.
-
-
-LaTeX Warning: Reference `thm:properties_expenditure_func' on page 41 undefined on input line 297.
-
-
-LaTeX Warning: Hyper reference `ToC-first-page' on page 41 undefined on input line 307.
-
-[41]
-
-LaTeX Warning: Reference `prop:expenditure_and_indirectuility' on page 42 undefined on input line 334.
-
-
-LaTeX Warning: Hyper reference `ToC-first-page' on page 42 undefined on input line 335.
-
-[42]
-
-LaTeX Warning: Reference `prop:expenditure_and_indirectuility' on page 43 undefined on input line 340.
-
-
-LaTeX Warning: Reference `chap3' on page 43 undefined on input line 348.
-
-
-LaTeX Warning: Hyper reference `ToC-first-page' on page 43 undefined on input line 367.
-
-[43]
-
-LaTeX Warning: Reference `thm:hicksian_lawofdemand' on page 44 undefined on input line 388.
-
-
-LaTeX Warning: Reference `prop:expenditure_and_indirectuility' on page 44 undefined on input line 392.
-
-
-LaTeX Warning: Hyper reference `ToC-first-page' on page 44 undefined on input line 395.
-
-[44]
-
-LaTeX Warning: Reference `prop:hicksian_and_walrasian' on page 45 undefined on input line 397.
-
-
-LaTeX Warning: Reference `fig:hicksian_wealth_comp' on page 45 undefined on input line 402.
-
-
-LaTeX Warning: Reference `def:slutsky_matrix' on page 45 undefined on input line 465.
-
-
-LaTeX Warning: Hyper reference `ToC-first-page' on page 45 undefined on input line 466.
-
-[45]
-
-LaTeX Warning: Reference `prop:hicksian_and_walrasian' on page 46 undefined on input line 468.
-
-
-LaTeX Warning: Reference `thm:hdemand_and_exp' on page 46 undefined on input line 474.
-
-
-LaTeX Warning: Reference `thm:hdemand_and_exp' on page 46 undefined on input line 474.
-
-
-LaTeX Warning: Reference `thm:hdemand_and_exp' on page 46 undefined on input line 474.
-
-
-LaTeX Warning: Reference `thm:hdemand_and_exp' on page 46 undefined on input line 474.
-
-Package marginnote Info: right page because not two side mode on input line 476.
-Package marginnote Info: xpos not known,
-(marginnote)             using \marginnoterightadjust on input line 476.
-
-LaTeX Warning: Reference `fig:hick_wal_demand_curves' on page 46 undefined on input line 476.
-
-
-LaTeX Warning: Hyper reference `ToC-first-page' on page 46 undefined on input line 531.
-
-[46]
-
-LaTeX Warning: Reference `thm:slutksy_matrix_negativesemidef' on page 47 undefined on input line 533.
-
-
-LaTeX Warning: Reference `chap2:sec2:ssec4' on page 47 undefined on input line 536.
-
-
-LaTeX Warning: Reference `fig:hicksian_slutsky_comp' on page 47 undefined on input line 546.
-
-
-LaTeX Warning: Reference `thm:hdemand_and_exp' on page 47 undefined on input line 595.
-
-
-LaTeX Warning: Hyper reference `ToC-first-page' on page 47 undefined on input line 600.
-
-[47]
-
-LaTeX Warning: Reference `thm:hdemand_and_exp' on page 48 undefined on input line 610.
-
-
-LaTeX Warning: Reference `thm:hdemand_and_exp' on page 48 undefined on input line 610.
-
-
-LaTeX Warning: Reference `thm:hdemand_and_exp' on page 48 undefined on input line 610.
-
-
-LaTeX Warning: Reference `thm:hdemand_and_exp' on page 48 undefined on input line 610.
-
-
-LaTeX Warning: Reference `thm:walraslaw_waldemand_thm2' on page 48 undefined on input line 618.
-
-
-LaTeX Warning: Reference `thm:walraslaw_waldemand_thm2' on page 48 undefined on input line 618.
-
-
-LaTeX Warning: Reference `fig:duality_relations' on page 48 undefined on input line 624.
-
-
-LaTeX Warning: Hyper reference `ToC-first-page' on page 48 undefined on input line 625.
-
-[48]
-
-LaTeX Warning: Reference `thm:EMP_vs_UMP' on page 49 undefined on input line 639.
-
-LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
-(Font)              scaled to size 10.95pt on input line 643.
-LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
-(Font)              scaled to size 6.1pt on input line 643.
-) (/Users/admin/Desktop/LearningNotes/MicroEconLearning/chapter2/chapter2_sec4.tex
-
-LaTeX Warning: Reference `thm:properties_walrasian_demand' on page 49 undefined on input line 2.
-
-
-LaTeX Warning: Reference `thm:properties_walrasian_demand' on page 49 undefined on input line 13.
-
-
-LaTeX Warning: Hyper reference `ToC-first-page' on page 49 undefined on input line 15.
-
-[49]
-
-LaTeX Warning: Reference `thm:prop_hick_pricederive' on page 50 undefined on input line 35.
-
-
-LaTeX Warning: Hyper reference `sssec:frobenius_theorem' on page 50 undefined on input line 36.
-
-
-LaTeX Warning: Reference `thm:properties_expenditure_func' on page 50 undefined on input line 38.
-
-
-LaTeX Warning: Reference `prop:slutskycondition_recover' on page 50 undefined on input line 46.
-
-
-LaTeX Warning: Hyper reference `ToC-first-page' on page 50 undefined on input line 57.
-
-[50]
-
-LaTeX Warning: Reference `fig:recover_exp_from_wal' on page 51 undefined on input line 58.
-
-
-LaTeX Warning: Reference `thm:properties_expenditure_func' on page 51 undefined on input line 111.
-
-
-LaTeX Warning: Hyper reference `ToC-first-page' on page 51 undefined on input line 129.
-
-[51]
-
-LaTeX Warning: Reference `prop:atleastasgoodasset_exp' on page 52 undefined on input line 135.
-
-
-LaTeX Warning: Reference `fig:recover_pref_from_exp' on page 52 undefined on input line 136.
-
-
-LaTeX Warning: Reference `fig:recover_pref_from_exp_nonconvex' on page 52 undefined on input line 187.
-
-
-LaTeX Warning: Hyper reference `ToC-first-page' on page 52 undefined on input line 222.
-
-[52]
-
-Package natbib Warning: Citation `sternberg1999lectures' on page 53 undefined on input line 231.
-
-
-Package natbib Warning: Citation `warner1983foundations' on page 53 undefined on input line 231.
-
-
-Package natbib Warning: Citation `mccleary2013geometry' on page 53 undefined on input line 231.
-
-
-LaTeX Warning: Hyper reference `ToC-first-page' on page 53 undefined on input line 282.
-
-[53]
-
-LaTeX Warning: Hyper reference `ToC-first-page' on page 54 undefined on input line 299.
-
-[54]
-
-LaTeX Warning: Hyper reference `ToC-first-page' on page 55 undefined on input line 336.
-
-[55]
-
-LaTeX Warning: Hyper reference `ToC-first-page' on page 56 undefined on input line 370.
-
-[56])
-
-Package natbib Warning: Citation `mas1995microeconomic' on page 57 undefined on input line 47.
-
-
-Package natbib Warning: Citation `kreps1990acourse' on page 57 undefined on input line 47.
-
-
-Package natbib Warning: Citation `mas1995microeconomic' on page 57 undefined on input line 48.
-
-
-Package natbib Warning: Citation `kreps2013microeconomic' on page 57 undefined on input line 48.
-
-
-Package natbib Warning: Citation `ariel2012lecture' on page 57 undefined on input line 48.
-
-)
-
-LaTeX Warning: Hyper reference `ToC-first-page' on page 57 undefined on input line 237.
-
-[57]
-Chapter 3.
-[58
-
-]
-Chapter 4.
-[59
-
-]
-Chapter 5.
-[60
-
-]
-Chapter 6.
-[61
-
-]
-Chapter 7.
-[62
-
-] [63
-
-]
-Chapter 8.
-[64
-
-]
-Chapter 9.
-[65
-
-]
-Chapter 10.
-[66
-
-]
-Chapter 11.
-[67
-
-]
-Chapter 12.
-[68
-
-]
-Chapter 13.
-[69
-
-] [70
-
-]
-Chapter 14.
-[71
-
-]
-Chapter 15.
-[72
-
-]
-Chapter 16.
-[73
-
-]
-Chapter 17.
-[74
-
-]
-Chapter 18.
-[75
-
-]
-Chapter 19.
-[76
-
-]
-Chapter 20.
-[77
-
-] (/Users/admin/Desktop/LearningNotes/MicroEconLearning/main.bbl
-LaTeX Font Info:    Try loading font information for T1+npxtt on input line 12.
- (/usr/local/texlive/2018/texmf-dist/tex/latex/newpx/t1npxtt.fd
-File: t1npxtt.fd 2000/12/14 v1.0
-)
-LaTeX Font Info:    Font shape `T1/npxtt/m/n' will be
-(Font)              scaled to size 12.0pt on input line 12.
- [78
-
-])
-
-Package natbib Warning: There were undefined citations.
-
-Package minitoc Info: I0009
-(minitoc)             Listing minitoc auxiliary files. 
-(minitoc)             Creating the main.maf file.
-\openout6 = `main.maf'.
-
-
-Package minitoc(hints) Warning: W0024
-(minitoc(hints))                Some hints have been written 
-(minitoc(hints))                in the main.log file.
-
-
-LaTeX Warning: Hyper reference `ToC-first-page' on page 79 undefined on input line 286.
-
-[79]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 286.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 286.
- (/Users/admin/Desktop/LearningNotes/MicroEconLearning/main.aux
-
-Package natbib Warning: Citation(s) may have changed.
-(natbib)                Rerun to get citations correct.
-
-)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 286.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 286.
-
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
-(rerunfilecheck)             After:  F3D9E8E6C8A63E53395C1BEB0F9DDF41;3524.
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 286.
- ) 
-Here is how much of TeX's memory you used:
- 39427 strings out of 492649
- 881888 string characters out of 6129623
- 1111070 words of memory out of 5000000
- 41948 multiletter control sequences out of 15000+600000
- 217087 words of font info for 364 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 78i,23n,136p,1018b,1150s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/newpx/tgpdiff.enc}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/newpx/ecsups.enc}</usr/local/texlive/2018/texmf-dist/fonts/type1/public/newtx/ntxsyralt.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/pxfonts/pxmia.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/newpx/pxsys.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/tex-gyre/qplr.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/pxfonts/rpxmi.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/newtx/txexas.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/newtx/txexs.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/txfonts/txsya.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/txfonts/txsyb.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/txfonts/txsyc.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/newpx/zplb.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/newpx/zplbi.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/newpx/zplr.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/newpx/zplri.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/newpx/zplx-regular.pfb>
-Output written on /Users/admin/Desktop/LearningNotes/MicroEconLearning/main.pdf (80 pages, 470422 bytes).
-PDF statistics:
- 793 PDF objects out of 1000 (max. 8388607)
- 686 compressed objects within 7 object streams
- 262 named destinations out of 1000 (max. 500000)
- 13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
