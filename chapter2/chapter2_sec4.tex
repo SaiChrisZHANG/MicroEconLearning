@@ -381,6 +381,32 @@ The detailed proof of Frobenius Theorem is not the focus of this notebook, but t
         \begin{align*}
             E_1 &= H e_1 \simeq e_1 & E_2 &= He_2 \simeq e_2+x_1e_3 & E_3 &= H e_3 \simeq e_3
         \end{align*}
-        \item[-] \underline{\textbf{Involutive}}:
+        It is easy to see that for a distribution $\mathcal{D}$ on $\mathbb{R}^3$ spanned by $E_1,E_2$ 
+        $$
+            [E_1,E_2] = E_1E_2-E_2E_1 = e_3 \simeq E_3 \neq 0
+        $$
+        hence $\mathcal{D}$ is not involutive.
+        \item[-] \underline{\textbf{Involutive}}: $\forall y\in \mathbb{R}^3$, there exists a \textbf{smooth} $\gamma:[0,1]\rightarrow \mathbb{R}^3$ with $\gamma'(t)\in \mathcal{D}_{\gamma(t)}, \forall t$ s.t. $$\gamma(0)=0,\gamma(1)=y$$ Since $\gamma'(t) \in \mathcal{D}_{\gamma(t)}$, we have 
+        $$
+        \gamma'(t) = \alpha(t)E_1 + \beta(t)E_2
+        $$
+        which gives the system of equations
+        $$
+        \begin{aligned}
+            x'=\alpha &\Rightarrow x(t)=\int^t_0 \alpha(s)\mathrm{d}s\\
+            y'=\beta  &\Rightarrow y(t)=\int^t_0 \beta(s)\mathrm{d}s\\
+            z' = x\beta &\Rightarrow \int^t_0 \beta(s) \int^s_0 \alpha(s')\mathrm{d}s' \mathrm{d}s
+        \end{aligned} \xRightarrow{y=(X,Y,Z)} \begin{aligned}
+            \alpha(t) &= X+af(t)\\
+            \beta(t)  &= Y+bf(t)
+        \end{aligned}
+        $$
+        and $f$ satisfies $\int^1_0 f(t)\mathrm{d}t =0$, $\int^1_0 tf(t)\mathrm{d}t = 0$, $ \Gamma \equiv \int^1_0 \int^t_0 f(t)f(s)\mathrm{d}s\mathrm{d}t\neq 0$, therefore, we have 
+        \begin{align*}
+            x(1) &= X & y(1)&=Y & z(1)=\frac{XY}{2}+ab\Gamma = Z
+        \end{align*}
+        which pin down $a$ and $b$.
     \end{enumerate}
 \end{example}
+
+The first example is an extreme case: if there were a submanifold tangent to the distribution, then \myhl[blue!45!black]{only points \textbf{in that submanifold}} could be reached along curves \textbf{tangent} to the distribution. Meanwhile, the second example is its contrast, by following curves \textbf{tangent} to the distribution, \myhl[blue!45!black]{\textbf{every}} point can be reached.
