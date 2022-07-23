@@ -236,6 +236,17 @@ The discussion on recovering preferences from demand functions is based on Hurwi
 \end{enumerate}
 
 These assumptions are required for the process of recovering preferences from demand functions discussed above: If all 5 of Hurwicz-Uzawa assumptions are satisfied, then $\exists u$ s.t. $\forall (\mathbf{p},w)$, $x(\mathbf{p},w)$ is the \myhl[blue!45!black]{\textbf{unique}} maximizer of $u$ over the budget set $\left\{ \mathbf{x}: \mathbf{p}\cdot \mathbf{x}\leq w\right\}$.
+
+To integrate from demand $x(\mathbf{p},w)$ to a utility function, it is sufficient to integrate from $x(\mathbf{p},w)$ to the indirect utility function $v(\mathbf{p},w)$, then $x(\cdot)$ and $v(\cdot)$ must satisfy:
+$$
+-\frac{v_{\mathbf{p}}(\mathbf{p},w)}{v_{w}(\mathbf{p},w)} = \mathbf{x}(\mathbf{p},w)
+$$
+From this, we have two separate aspects to understand integrability: 
+\begin{enumerate}
+    \item[-] \textit{mathematical} integrability:
+    \item[-] \textit{economic} integrability:
+\end{enumerate}
+
 This result is quite general and is one of the fundamental results, some recent work seeks to extend it to reflect the nuance of empirical observations. I have searched some papers on this topic and will briefly discussed the results here.
 
 \subsubsection*{Incomplete systems of demand functions}
@@ -253,6 +264,8 @@ existence of a utility function for incomplete demand functions. Instead, they p
     \item[3.] The $n\times n$ matrix $x_{\mathbf{p}}(w,\mathbf{p},\mathbf{q}) + x(w,\mathbf{p},\mathbf{q})\cdot x_w (w,\mathbf{p},\mathbf{q})$ (Slutsky matrix for observed demands) is \textbf{negative \myhl[red!55!black]{definite}}
 \end{enumerate}
 Then there exists a \textbf{continuous, non-decreasing and \myhl[red!55!black]{quasiconcave}} utility function $u$ and a \myhl[red!55!black]{\textbf{neighborhood}} $N$ of $(w^0,\mathbf{p}^0,\mathbf{q}^0)$ s.t. $\forall (w,\mathbf{p},\mathbf{q})\in N$, $x(w,\mathbf{p},\mathbf{q})$ is the unique solver of the aforementioned utility maximizing problem.
+
+The key argument of \cite{epstein1982integrability} is the \textbf{negative \myhl[red!55!black]{definiteness}} of the Slutsky matrix of the observed demands, and one thing very important about this result is that it is a \myhl[red!55!black]{\textbf{local}} result. 
 
 \subsection{Frobenius theorem}\label{sssec:frobenius_theorem}
 The Frobeniuss theorem is one of the fundamental theorems in differential topology. It is the foundation for the disucssion of the integrability problem, which I think it's worth spending some time understanding the basics. The discussion below is by no means thorough or rigorous\footnote{For more math, check \cite{sternberg1999lectures}, \cite{warner1983foundations}, \cite{mccleary2013geometry}}, but my own interpretation of this topic.

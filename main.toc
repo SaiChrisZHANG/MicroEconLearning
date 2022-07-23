@@ -26,8 +26,8 @@
 \contentsline {section}{\numberline {2.4}Problems of Revealed Preferences}{51}{section.2.4}
 \contentsline {subsection}{\numberline {2.4.1}Recover Preferences from Demand Functions}{51}{subsection.2.4.1}
 \contentsline {subsection}{\numberline {2.4.2}Discussion on integrability}{54}{subsection.2.4.2}
-\contentsline {subsection}{\numberline {2.4.3}Frobenius theorem}{55}{subsection.2.4.3}
-\contentsline {section}{\numberline {2.5}Welfare Analysis and Money Metrics}{61}{section.2.5}
+\contentsline {subsection}{\numberline {2.4.3}Frobenius theorem}{56}{subsection.2.4.3}
+\contentsline {section}{\numberline {2.5}Welfare Analysis and Money Metrics}{62}{section.2.5}
 \contentsline {chapter}{\numberline {3}Optimization and Duality}{63}{chapter.3}
 \contentsline {chapter}{\numberline {4}Stochastic Choice}{64}{chapter.4}
 \contentsline {chapter}{\numberline {5}Monotone Comparative Statics}{65}{chapter.5}
