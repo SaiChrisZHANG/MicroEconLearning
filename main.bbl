@@ -1,4 +1,4 @@
-\begin{thebibliography}{17}
+\begin{thebibliography}{18}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -49,6 +49,12 @@ David~M Kreps.
 \newblock \emph{Microeconomic foundations I: choice and competitive markets},
   volume~1.
 \newblock Princeton university press, 2013.
+
+\bibitem[LaFrance and Hanemann(1989)]{lafrance1989dual}
+Jeffrey~T LaFrance and W~Michael Hanemann.
+\newblock The dual structure of incomplete demand systems.
+\newblock \emph{American Journal of Agricultural Economics}, 71\penalty0
+  (2):\penalty0 262--274, 1989.
 
 \bibitem[Mailath(2018)]{mailath2018modeling}
 George~J Mailath.
