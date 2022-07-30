@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.1.7)  29 JUL 2022 23:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.1.7)  29 JUL 2022 23:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1308,10 +1308,21 @@ LaTeX Font Info:    Try loading font information for T1+ppl on input line 198.
  (/usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/t1ppl.fd
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
 )
+LaTeX Font Info:    Font shape `T1/zpltlf/bx/n' in size <12> not available
+(Font)              Font shape `T1/zpltlf/b/n' tried instead on input line 211.
+LaTeX Font Info:    Font shape `T1/zpltlf/b/n' will be
+(Font)              scaled to size 12.0pt on input line 211.
+
+
+Package natbib Warning: Citation `mas1995microeconomic' on page 1 undefined on input line 211.
+
 LaTeX Font Info:    Font shape `T1/zpltlf/m/it' will be
 (Font)              scaled to size 12.0pt on input line 211.
+
+Package natbib Warning: Citation `mailath2018modeling' on page 1 undefined on input line 211.
+
 LaTeX Font Info:    Try loading font information for T1+zplsups on input line 211.
- (/usr/local/texlive/2018/texmf-dist/tex/latex/newpx/t1zplsups.fd
+(/usr/local/texlive/2018/texmf-dist/tex/latex/newpx/t1zplsups.fd
 File: t1zplsups.fd 2015/01/17 v1.0
 )
 LaTeX Font Info:    Font shape `T1/zplsups/m/n' will be
@@ -1320,6 +1331,22 @@ LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
 (Font)              scaled to size 10.0pt on input line 211.
 LaTeX Font Info:    Font shape `T1/zplsups/m/n' will be
 (Font)              scaled to size 10.0pt on input line 211.
+
+
+Package natbib Warning: Citation `tirole1991game' on page 1 undefined on input line 212.
+
+
+Package natbib Warning: Citation `myerson1991game' on page 1 undefined on input line 212.
+
+
+Package natbib Warning: Citation `bolton2005contract' on page 1 undefined on input line 212.
+
+
+Package natbib Warning: Citation `Mailath2006repeated' on page 1 undefined on input line 213.
+
+
+Package natbib Warning: Citation `martin1994acourse' on page 1 undefined on input line 213.
+
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -1409,10 +1436,6 @@ Package minitoc Info: I0033
 (minitoc)             Writing main.mtc20.
 \openout6 = `main.mtc20'.
 
-Package minitoc Info: I0033
-(minitoc)             Writing main.mtc21.
-\openout6 = `main.mtc21'.
-
  (/Users/admin/Desktop/LearningNotes/MicroEconLearning/main.toc
 LaTeX Font Info:    Font shape `T1/zpltlf/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/zpltlf/b/n' tried instead on input line 2.
@@ -1448,10 +1471,6 @@ LaTeX Font Info:    Try loading font information for U+npxsyc on input line 2.
  (/usr/local/texlive/2018/texmf-dist/tex/latex/newpx/unpxsyc.fd
 File: unpxsyc.fd 2013/03/24 Fontinst v1.933 font definitions for U/npxsyc.
 )
-LaTeX Font Info:    Font shape `T1/zpltlf/bx/n' in size <12> not available
-(Font)              Font shape `T1/zpltlf/b/n' tried instead on input line 4.
-LaTeX Font Info:    Font shape `T1/zpltlf/b/n' will be
-(Font)              scaled to size 12.0pt on input line 4.
 LaTeX Font Info:    Font shape `OT1/zpltlf/m/n' will be
 (Font)              scaled to size 12.0pt on input line 4.
 LaTeX Font Info:    Font shape `OT1/zpltlf/m/n' will be
@@ -1489,35 +1508,27 @@ LaTeX Font Info:    Font shape `T1/zpltlf/bx/n' in size <10.95> not available
 LaTeX Font Info:    Font shape `T1/zpltlf/b/n' will be
 (Font)              scaled to size 10.95pt on input line 1.
 )
+
+Package natbib Warning: Citation `mas1995microeconomic' on page 5 undefined on input line 4.
+
 LaTeX Font Info:    Font shape `T1/zpltlf/bx/it' in size <12> not available
 (Font)              Font shape `T1/zpltlf/b/it' tried instead on input line 24.
 LaTeX Font Info:    Font shape `T1/zpltlf/b/it' will be
 (Font)              scaled to size 12.0pt on input line 24.
- [5
-
-]
 LaTeX Font Info:    Font shape `T1/zpltlf/bx/n' in size <17.28> not available
 (Font)              Font shape `T1/zpltlf/b/n' tried instead on input line 27.
 LaTeX Font Info:    Font shape `T1/zpltlf/b/n' will be
 (Font)              scaled to size 17.28pt on input line 27.
- (/Users/admin/Desktop/LearningNotes/MicroEconLearning/chapter1/chapter1_sec1.tex [6]
-LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
-(Font)              scaled to size 8.8pt on input line 85.
-LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
-(Font)              scaled to size 6.6pt on input line 85.
- [7]
-LaTeX Font Info:    Try loading font information for TS1+zpltlf on input line 155.
- (/usr/local/texlive/2018/texmf-dist/tex/latex/newpx/ts1zpltlf.fd
-File: ts1zpltlf.fd 2015/01/18 v1.0 fd file for TS1/zpltlf
-)
-LaTeX Font Info:    Font shape `TS1/zpltlf/m/n' will be
-(Font)              scaled to size 12.0pt on input line 155.
- [8]) (/Users/admin/Desktop/LearningNotes/MicroEconLearning/chapter1/chapter1_sec2.tex
-LaTeX Font Info:    Font shape `T1/zpltlf/m/it' will be
-(Font)              scaled to size 8.8pt on input line 5.
-LaTeX Font Info:    Font shape `OT1/zpltlf/m/n' will be
-(Font)              scaled to size 10.0pt on input line 5.
-LaTeX Font Info:    Font shape `OT1/zpltlf/m/n' will be
-(Font)              scaled to size 7.3pt on input line 5.
-LaTeX Font Info:    Font shape `OT1/zpltlf/m/n' will be
-(Font)              scaled to size 5.5pt on input 
+(/Users/admin/Desktop/LearningNotes/MicroEconLearning/chapter1/chapter1_sec1.tex [5
+
+]
+LaTeX Font Info:    Font shape `T1/zpltlf/bx/n' in size <10> not available
+(Font)              Font shape `T1/zpltlf/b/n' tried instead on input line 31.
+LaTeX Font Info:    Font shape `T1/zpltlf/b/n' will be
+(Font)              scaled to size 10.0pt on input line 31.
+
+
+Package natbib Warning: Citation `mas1995microeconomic' on page 6 undefined on input line 31.
+
+
+Package natbib Warning: Citation `ariel2012lecture' on page 6 undefine

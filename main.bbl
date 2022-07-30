@@ -1,4 +1,4 @@
-\begin{thebibliography}{18}
+\begin{thebibliography}{19}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -26,6 +26,13 @@ Larry~G Epstein.
 Drew Fudenberg and Jean Tirole.
 \newblock \emph{Game Theory}.
 \newblock MIT Press, 1991.
+
+\bibitem[Hands(2006)]{hands2006integrability}
+D~Wade Hands.
+\newblock Integrability, rationalizability, and path-dependency in the history
+  of demand theory.
+\newblock \emph{History of Political Economy}, 38\penalty0 (Suppl\_1):\penalty0
+  153--185, 2006.
 
 \bibitem[Kahneman and Tversky(1979)]{kai1979prospect}
 Daniel Kahneman and Amos Tversky.
