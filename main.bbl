@@ -1,4 +1,4 @@
-\begin{thebibliography}{19}
+\begin{thebibliography}{20}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -92,6 +92,11 @@ Roger~B. Myerson.
 \newblock Harvard University Press, 1991.
 \newblock ISBN 9780674341166.
 \newblock URL \url{http://www.jstor.org/stable/j.ctvjsf522}.
+
+\bibitem[Nocke and Schutz(2017)]{nocke2017quasi}
+Volker Nocke and Nicolas Schutz.
+\newblock Quasi-linear integrability.
+\newblock \emph{Journal of Economic Theory}, 169:\penalty0 603--628, 2017.
 
 \bibitem[Osborne and Rubinstein(1994)]{martin1994acourse}
 Martin~J. Osborne and Ariel Rubinstein.
