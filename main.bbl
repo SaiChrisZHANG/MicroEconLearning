@@ -1,9 +1,15 @@
-\begin{thebibliography}{20}
+\begin{thebibliography}{21}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Amir et~al.(2017)Amir, Erickson, and Jin]{amir2017microeconomic}
+Rabah Amir, Philip Erickson, and Jim Jin.
+\newblock On the microeconomic foundations of linear demand for differentiated
+  products.
+\newblock \emph{Journal of Economic Theory}, 169:\penalty0 641--665, 2017.
 
 \bibitem[Bolton and Dewatripont(2005)]{bolton2005contract}
 Patrick Bolton and Mathias Dewatripont.
