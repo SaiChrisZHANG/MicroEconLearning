@@ -1222,4 +1222,302 @@ Package caption Info: End \AtBeginDocument code.
 Package hyperref Info: Link coloring ON on input line 166.
  (/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
- (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/gettitlest
+ (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
+)
+\c@section@level=\count190
+)
+LaTeX Info: Redefining \ref on input line 166.
+LaTeX Info: Redefining \pageref on input line 166.
+LaTeX Info: Redefining \nameref on input line 166.
+ (/Users/admin/Desktop/LearningNotes/MicroEconLearning/main.out) (/Users/admin/Desktop/LearningNotes/MicroEconLearning/main.out)
+\@outlinefile=\write7
+\openout7 = `main.out'.
+
+ ABD: EveryShipout initializing macros
+\c@mv@tabular=\count191
+\c@mv@boldtabular=\count192
+
+Package pgfplots notification 'compat/show suggested version=true': document has been generated with the most recent feature set (\pgfplotsset{compat=1.16}).
+
+\c@minilofdepth=\count193
+\c@minilotdepth=\count194
+\c@partlofdepth=\count195
+\c@partlotdepth=\count196
+\c@sectlofdepth=\count197
+\c@sectlotdepth=\count198
+Package minitoc(hints) Info: I0049
+(minitoc(hints))             ==> You requested the hints option. 
+(minitoc(hints))             Some hints are eventually given below.
+Package minitoc(hints) Info: I0046
+(minitoc(hints))             --- The tocbibind package is loaded. 
+(minitoc(hints))             See the minitoc package documentation 
+(minitoc(hints))             for specific precautions.
+Package minitoc(hints) Info: I0047
+(minitoc(hints))             --- The tocloft package is loaded. 
+(minitoc(hints))             See the minitoc package documentation 
+(minitoc(hints))             for specific precautions.
+
+Package minitoc(hints) Warning: W0099
+(minitoc(hints))                --- The titlesec package is loaded. 
+(minitoc(hints))                It is incompatible 
+(minitoc(hints))                with the minitoc package.
+
+
+Package minitoc(hints) Warning: W0030
+(minitoc(hints))                --- The \part command is altered 
+(minitoc(hints))                after minitoc.
+
+
+Package minitoc(hints) Warning: W0023
+(minitoc(hints))                --- It may be the consequence 
+(minitoc(hints))                of loading the ``hyperref'' package.
+
+
+Package minitoc(hints) Warning: W0028
+(minitoc(hints))                --- The \chapter command is altered 
+(minitoc(hints))                after minitoc.
+
+
+Package minitoc(hints) Warning: W0023
+(minitoc(hints))                --- It may be the consequence 
+(minitoc(hints))                of loading the ``hyperref'' package.
+
+LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
+(Font)              scaled to size 24.88pt on input line 172.
+LaTeX Font Info:    Font shape `T1/zpltlf/bx/n' in size <24.88> not available
+(Font)              Font shape `T1/zpltlf/b/n' tried instead on input line 173.
+LaTeX Font Info:    Font shape `T1/zpltlf/b/n' will be
+(Font)              scaled to size 24.88pt on input line 173.
+LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
+(Font)              scaled to size 17.28pt on input line 175.
+LaTeX Font Info:    Font shape `T1/zpltlf/m/it' will be
+(Font)              scaled to size 17.28pt on input line 176.
+LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
+(Font)              scaled to size 20.74pt on input line 180.
+LaTeX Font Info:    Font shape `T1/zpltlf/bx/n' in size <20.74> not available
+(Font)              Font shape `T1/zpltlf/b/n' tried instead on input line 181.
+LaTeX Font Info:    Font shape `T1/zpltlf/b/n' will be
+(Font)              scaled to size 20.74pt on input line 181.
+LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
+(Font)              scaled to size 14.4pt on input line 185.
+[1
+
+{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+LaTeX Font Info:    Try loading font information for T1+ppl on input line 198.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/t1ppl.fd
+File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
+)
+LaTeX Font Info:    Font shape `T1/zpltlf/m/it' will be
+(Font)              scaled to size 12.0pt on input line 211.
+LaTeX Font Info:    Try loading font information for T1+zplsups on input line 211.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/newpx/t1zplsups.fd
+File: t1zplsups.fd 2015/01/17 v1.0
+)
+LaTeX Font Info:    Font shape `T1/zplsups/m/n' will be
+(Font)              scaled to size 12.0pt on input line 211.
+LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
+(Font)              scaled to size 10.0pt on input line 211.
+LaTeX Font Info:    Font shape `T1/zplsups/m/n' will be
+(Font)              scaled to size 10.0pt on input line 211.
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.221 \newpage
+               [1
+
+]
+Package minitoc Info: I0024
+(minitoc)             PREPARING MINITOCS FROM main.toc on input line 224.
+Package minitoc Info: I0033
+(minitoc)             Writing main.mtc1.
+\openout6 = `main.mtc1'.
+
+Package minitoc Info: I0033
+(minitoc)             Writing main.mtc2.
+\openout6 = `main.mtc2'.
+
+Package minitoc Info: I0033
+(minitoc)             Writing main.mtc3.
+\openout6 = `main.mtc3'.
+
+Package minitoc Info: I0033
+(minitoc)             Writing main.mtc4.
+\openout6 = `main.mtc4'.
+
+Package minitoc Info: I0033
+(minitoc)             Writing main.mtc5.
+\openout6 = `main.mtc5'.
+
+Package minitoc Info: I0033
+(minitoc)             Writing main.mtc6.
+\openout6 = `main.mtc6'.
+
+Package minitoc Info: I0033
+(minitoc)             Writing main.mtc7.
+\openout6 = `main.mtc7'.
+
+Package minitoc Info: I0033
+(minitoc)             Writing main.mtc8.
+\openout6 = `main.mtc8'.
+
+Package minitoc Info: I0033
+(minitoc)             Writing main.mtc9.
+\openout6 = `main.mtc9'.
+
+Package minitoc Info: I0033
+(minitoc)             Writing main.mtc10.
+\openout6 = `main.mtc10'.
+
+Package minitoc Info: I0033
+(minitoc)             Writing main.mtc11.
+\openout6 = `main.mtc11'.
+
+Package minitoc Info: I0033
+(minitoc)             Writing main.mtc12.
+\openout6 = `main.mtc12'.
+
+Package minitoc Info: I0033
+(minitoc)             Writing main.mtc13.
+\openout6 = `main.mtc13'.
+
+Package minitoc Info: I0033
+(minitoc)             Writing main.mtc14.
+\openout6 = `main.mtc14'.
+
+Package minitoc Info: I0033
+(minitoc)             Writing main.mtc15.
+\openout6 = `main.mtc15'.
+
+Package minitoc Info: I0033
+(minitoc)             Writing main.mtc16.
+\openout6 = `main.mtc16'.
+
+Package minitoc Info: I0033
+(minitoc)             Writing main.mtc17.
+\openout6 = `main.mtc17'.
+
+Package minitoc Info: I0033
+(minitoc)             Writing main.mtc18.
+\openout6 = `main.mtc18'.
+
+Package minitoc Info: I0033
+(minitoc)             Writing main.mtc19.
+\openout6 = `main.mtc19'.
+
+Package minitoc Info: I0033
+(minitoc)             Writing main.mtc20.
+\openout6 = `main.mtc20'.
+
+Package minitoc Info: I0033
+(minitoc)             Writing main.mtc21.
+\openout6 = `main.mtc21'.
+
+ (/Users/admin/Desktop/LearningNotes/MicroEconLearning/main.toc
+LaTeX Font Info:    Font shape `T1/zpltlf/bx/n' in size <14.4> not available
+(Font)              Font shape `T1/zpltlf/b/n' tried instead on input line 2.
+LaTeX Font Info:    Font shape `T1/zpltlf/b/n' will be
+(Font)              scaled to size 14.4pt on input line 2.
+LaTeX Font Info:    Try loading font information for OT1+zpltlf on input line 2.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/newpx/ot1zpltlf.fd
+File: ot1zpltlf.fd 2015/01/17 v1.0 font definition file for OT1/zpl/tlf
+)
+LaTeX Font Info:    Font shape `OT1/zpltlf/m/n' will be
+(Font)              scaled to size 14.4pt on input line 2.
+LaTeX Font Info:    Font shape `OT1/zpltlf/m/n' will be
+(Font)              scaled to size 10.5pt on input line 2.
+LaTeX Font Info:    Font shape `OT1/zpltlf/m/n' will be
+(Font)              scaled to size 7.9pt on input line 2.
+LaTeX Font Info:    Try loading font information for U+msa on input line 2.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 2.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for U+npxmia on input line 2.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/newpx/unpxmia.fd
+File: unpxmia.fd 2013/03/24 Fontinst v1.933 font definitions for U/npxmia.
+)
+LaTeX Font Info:    Try loading font information for U+npxsym on input line 2.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/newpx/unpxsym.fd
+File: unpxsym.fd 2015/03/21 Fontinst v1.933 font definitions for U/npxsym.
+)
+LaTeX Font Info:    Try loading font information for U+npxsyc on input line 2.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/newpx/unpxsyc.fd
+File: unpxsyc.fd 2013/03/24 Fontinst v1.933 font definitions for U/npxsyc.
+)
+LaTeX Font Info:    Font shape `T1/zpltlf/bx/n' in size <12> not available
+(Font)              Font shape `T1/zpltlf/b/n' tried instead on input line 4.
+LaTeX Font Info:    Font shape `T1/zpltlf/b/n' will be
+(Font)              scaled to size 12.0pt on input line 4.
+LaTeX Font Info:    Font shape `OT1/zpltlf/m/n' will be
+(Font)              scaled to size 12.0pt on input line 4.
+LaTeX Font Info:    Font shape `OT1/zpltlf/m/n' will be
+(Font)              scaled to size 8.8pt on input line 4.
+LaTeX Font Info:    Font shape `OT1/zpltlf/m/n' will be
+(Font)              scaled to size 6.6pt on input line 4.
+ [2])
+\tf@toc=\write8
+\openout8 = `main.toc'.
+
+LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
+(Font)              scaled to size 10.95pt on input line 229.
+ [3] [4
+
+]
+Chapter 1.
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <24.88> not available
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 231.
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <20.74> not available
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 231.
+(/Users/admin/Desktop/LearningNotes/MicroEconLearning/chapter1/chapter1.tex
+\openout6 = `main.mtc'.
+
+\openout6 = `main.mtc'.
+
+LaTeX Font Info:    Font shape `OT1/zpltlf/m/n' will be
+(Font)              scaled to size 10.95pt on input line 2.
+LaTeX Font Info:    Font shape `OT1/zpltlf/m/n' will be
+(Font)              scaled to size 8.0pt on input line 2.
+LaTeX Font Info:    Font shape `OT1/zpltlf/m/n' will be
+(Font)              scaled to size 6.1pt on input line 2.
+ (/Users/admin/Desktop/LearningNotes/MicroEconLearning/main.mtc1
+LaTeX Font Info:    Font shape `T1/zpltlf/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/zpltlf/b/n' tried instead on input line 1.
+LaTeX Font Info:    Font shape `T1/zpltlf/b/n' will be
+(Font)              scaled to size 10.95pt on input line 1.
+)
+LaTeX Font Info:    Font shape `T1/zpltlf/bx/it' in size <12> not available
+(Font)              Font shape `T1/zpltlf/b/it' tried instead on input line 24.
+LaTeX Font Info:    Font shape `T1/zpltlf/b/it' will be
+(Font)              scaled to size 12.0pt on input line 24.
+ [5
+
+]
+LaTeX Font Info:    Font shape `T1/zpltlf/bx/n' in size <17.28> not available
+(Font)              Font shape `T1/zpltlf/b/n' tried instead on input line 27.
+LaTeX Font Info:    Font shape `T1/zpltlf/b/n' will be
+(Font)              scaled to size 17.28pt on input line 27.
+ (/Users/admin/Desktop/LearningNotes/MicroEconLearning/chapter1/chapter1_sec1.tex [6]
+LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
+(Font)              scaled to size 8.8pt on input line 85.
+LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
+(Font)              scaled to size 6.6pt on input line 85.
+ [7]
+LaTeX Font Info:    Try loading font information for TS1+zpltlf on input line 155.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/newpx/ts1zpltlf.fd
+File: ts1zpltlf.fd 2015/01/18 v1.0 fd file for TS1/zpltlf
+)
+LaTeX Font Info:    Font shape `TS1/zpltlf/m/n' will be
+(Font)              scaled to size 12.0pt on input line 155.
+ [8]) (/Users/admin/Desktop/LearningNotes/MicroEconLearning/chapter1/chapter1_sec2.tex
+LaTeX Font Info:    Font shape `T1/zpltlf/m/it' will be
+(Font)              scaled to size 8.8pt on input line 5.
+LaTeX Font Info:    Font shape `OT1/zpltlf/m/n' will be
+(Font)              scaled to size 10.0pt on input line 5.
+LaTeX Font Info:    Font shape `OT1/zpltlf/m/n' will be
+(Font)              scaled to size 7.3pt on input line 5.
+LaTeX Font Info:    Font shape `OT1/zpltlf/m/n' will be
+(Font)              scaled to size 5.5pt on input l
