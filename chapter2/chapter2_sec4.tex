@@ -315,6 +315,11 @@ Now we look at the case of quadratic utility: $U(x)=\mathbf{a}'\mathbf{x}-\frac{
 $$
 \max \left\{ \mathbf{a}'\mathbf{x}-\frac{1}{2}\mathbf{x}'\mathbf{B}\mathbf{x}+y \right\}\ \text{s.t. }\mathbf{p}'\mathbf{x}+y=w
 $$
+Here, the demand function is linear \sidenotes{The demand function is actually an \textbf{affine} function whenever positive and 0 otherwise, to be precise.}, for the consumer's problem to have an \myhl[blue!45!black]{\textbf{interior}} solution and preserve the \myhl[blue!45!black]{\textbf{linear}} nature of the resulting demand function, we need:
+\begin{align*}
+    \mathbf{B}^{-1}(\mathbf{a}-\mathbf{p})&>0 & \mathbf{p}'\mathbf{B}^{-1}(\mathbf{a}-\mathbf{p})\leq w
+\end{align*}
+so the essential condition here is $\mathbf{B}$ is \myhl[red!55!black]{\textbf{inversible}}
 
 \citet*{nocke2017quasi} extended the integrability problem into the case when observed demand does not vary with income and consumers have quasi-linear preferences. In various applied fields of microeconomics, researchers typically focus on partial equilibrium settings and therefore often make the implicit assumption that preferences are quasi-linear and consumer income is sufficiently high to not be exhausted by the consumption under consideration.
 
