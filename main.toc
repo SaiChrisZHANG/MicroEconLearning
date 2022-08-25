@@ -28,26 +28,26 @@
 \contentsline {subsection}{\numberline {2.4.2}Discussion on integrability}{54}{subsection.2.4.2}
 \contentsline {subsection}{\numberline {2.4.3}Frobenius theorem}{58}{subsection.2.4.3}
 \contentsline {section}{\numberline {2.5}Welfare Analysis and Money Metrics}{64}{section.2.5}
-\contentsline {chapter}{\numberline {3}Optimization and Duality}{65}{chapter.3}
-\contentsline {chapter}{\numberline {4}Stochastic Choice}{66}{chapter.4}
-\contentsline {chapter}{\numberline {5}Monotone Comparative Statics}{67}{chapter.5}
-\contentsline {chapter}{\numberline {6}Expected Utility and Random Choice}{68}{chapter.6}
-\contentsline {chapter}{\numberline {7}Social Choice}{69}{chapter.7}
-\contentsline {part}{II\hspace {1em}Game Theory}{70}{part.2}
-\contentsline {xpart}{Game Theory}{71}{part.2}
-\contentsline {chapter}{\numberline {8}Nash Equilibrium and Bayesian Nash Equilibrium}{71}{chapter.8}
-\contentsline {chapter}{\numberline {9}Rationalizability and DOminant Strategies}{72}{chapter.9}
-\contentsline {chapter}{\numberline {10}Correlated Equilibrium}{73}{chapter.10}
-\contentsline {chapter}{\numberline {11}Dynamic Games and Refinements}{74}{chapter.11}
-\contentsline {chapter}{\numberline {12}Repeated Games/Folk Theorem}{75}{chapter.12}
-\contentsline {chapter}{\numberline {13}Recursive Methods in Repeated Games}{76}{chapter.13}
-\contentsline {part}{III\hspace {1em}Mechanism Design and Contract Theory}{77}{part.3}
-\contentsline {xpart}{Mechanism Design and Contract Theory}{78}{part.3}
-\contentsline {chapter}{\numberline {14}Boundaries of the Firm and Coase's Theorem}{78}{chapter.14}
-\contentsline {chapter}{\numberline {15}Implementation Concepts}{79}{chapter.15}
-\contentsline {chapter}{\numberline {16}The Revelation Principle}{80}{chapter.16}
-\contentsline {chapter}{\numberline {17}Auctions and Optimal Auctions}{81}{chapter.17}
-\contentsline {chapter}{\numberline {18}Efficient Implementation}{82}{chapter.18}
-\contentsline {chapter}{\numberline {19}Moral Hazard}{83}{chapter.19}
-\contentsline {chapter}{\numberline {20}Full Implementation}{84}{chapter.20}
-\contentsline {chapter}{Bibliography}{85}{chapter.20}
+\contentsline {chapter}{\numberline {3}Optimization and Duality}{66}{chapter.3}
+\contentsline {chapter}{\numberline {4}Stochastic Choice}{67}{chapter.4}
+\contentsline {chapter}{\numberline {5}Monotone Comparative Statics}{68}{chapter.5}
+\contentsline {chapter}{\numberline {6}Expected Utility and Random Choice}{69}{chapter.6}
+\contentsline {chapter}{\numberline {7}Social Choice}{70}{chapter.7}
+\contentsline {part}{II\hspace {1em}Game Theory}{71}{part.2}
+\contentsline {xpart}{Game Theory}{72}{part.2}
+\contentsline {chapter}{\numberline {8}Nash Equilibrium and Bayesian Nash Equilibrium}{72}{chapter.8}
+\contentsline {chapter}{\numberline {9}Rationalizability and DOminant Strategies}{73}{chapter.9}
+\contentsline {chapter}{\numberline {10}Correlated Equilibrium}{74}{chapter.10}
+\contentsline {chapter}{\numberline {11}Dynamic Games and Refinements}{75}{chapter.11}
+\contentsline {chapter}{\numberline {12}Repeated Games/Folk Theorem}{76}{chapter.12}
+\contentsline {chapter}{\numberline {13}Recursive Methods in Repeated Games}{77}{chapter.13}
+\contentsline {part}{III\hspace {1em}Mechanism Design and Contract Theory}{78}{part.3}
+\contentsline {xpart}{Mechanism Design and Contract Theory}{79}{part.3}
+\contentsline {chapter}{\numberline {14}Boundaries of the Firm and Coase's Theorem}{79}{chapter.14}
+\contentsline {chapter}{\numberline {15}Implementation Concepts}{80}{chapter.15}
+\contentsline {chapter}{\numberline {16}The Revelation Principle}{81}{chapter.16}
+\contentsline {chapter}{\numberline {17}Auctions and Optimal Auctions}{82}{chapter.17}
+\contentsline {chapter}{\numberline {18}Efficient Implementation}{83}{chapter.18}
+\contentsline {chapter}{\numberline {19}Moral Hazard}{84}{chapter.19}
+\contentsline {chapter}{\numberline {20}Full Implementation}{85}{chapter.20}
+\contentsline {chapter}{Bibliography}{86}{chapter.20}
