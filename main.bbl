@@ -1,0 +1,130 @@
+\begin{thebibliography}{21}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Amir et~al.(2017)Amir, Erickson, and Jin]{amir2017microeconomic}
+Rabah Amir, Philip Erickson, and Jim Jin.
+\newblock On the microeconomic foundations of linear demand for differentiated
+  products.
+\newblock \emph{Journal of Economic Theory}, 169:\penalty0 641--665, 2017.
+
+\bibitem[Bolton and Dewatripont(2005)]{bolton2005contract}
+Patrick Bolton and Mathias Dewatripont.
+\newblock \emph{{Contract Theory}}, volume~1.
+\newblock The MIT Press, 2005.
+\newblock URL \url{https://ideas.repec.org/b/mtp/titles/0262025760.html}.
+
+\bibitem[Deaton and Muellbauer(1980)]{deaton1980economics}
+Angus Deaton and John Muellbauer.
+\newblock \emph{Economics and consumer behavior}.
+\newblock Cambridge university press, 1980.
+
+\bibitem[Epstein(1982)]{epstein1982integrability}
+Larry~G Epstein.
+\newblock Integrability of incomplete systems of demand functions.
+\newblock \emph{The Review of Economic Studies}, 49\penalty0 (3):\penalty0
+  411--425, 1982.
+
+\bibitem[Fudenberg and Tirole(1991)]{tirole1991game}
+Drew Fudenberg and Jean Tirole.
+\newblock \emph{Game Theory}.
+\newblock MIT Press, 1991.
+
+\bibitem[Hands(2006)]{hands2006integrability}
+D~Wade Hands.
+\newblock Integrability, rationalizability, and path-dependency in the history
+  of demand theory.
+\newblock \emph{History of Political Economy}, 38\penalty0 (Suppl\_1):\penalty0
+  153--185, 2006.
+
+\bibitem[Kahneman and Tversky(1979)]{kai1979prospect}
+Daniel Kahneman and Amos Tversky.
+\newblock Prospect theory: An analysis of decision under risk.
+\newblock \emph{Econometrica}, 47\penalty0 (2):\penalty0 363--391, 1979.
+
+\bibitem[Kihlstrom et~al.(1976)Kihlstrom, Mas-Colell, and
+  Sonnenschein]{kihlstrom1976demand}
+Richard Kihlstrom, Andreu Mas-Colell, and Hugo Sonnenschein.
+\newblock The demand theory of the weak axiom of revealed preference.
+\newblock \emph{Econometrica: Journal of the Econometric Society}, pages
+  971--978, 1976.
+
+\bibitem[Kreps(1990)]{kreps1990acourse}
+David~M. Kreps.
+\newblock \emph{A Course in Microeconomic Theory}.
+\newblock Princeton University Press, 1990.
+
+\bibitem[Kreps(2013)]{kreps2013microeconomic}
+David~M Kreps.
+\newblock \emph{Microeconomic foundations I: choice and competitive markets},
+  volume~1.
+\newblock Princeton university press, 2013.
+
+\bibitem[LaFrance and Hanemann(1989)]{lafrance1989dual}
+Jeffrey~T LaFrance and W~Michael Hanemann.
+\newblock The dual structure of incomplete demand systems.
+\newblock \emph{American Journal of Agricultural Economics}, 71\penalty0
+  (2):\penalty0 262--274, 1989.
+
+\bibitem[Mailath(2018)]{mailath2018modeling}
+George~J Mailath.
+\newblock \emph{Modeling Strategic Behavior: A Graduate Introduction to Game
+  Theory and Mechanism Design}, volume~6.
+\newblock World Scientific, 2018.
+
+\bibitem[Mailath and Samuelson(2006)]{Mailath2006repeated}
+George~J. Mailath and Larry Samuelson.
+\newblock \emph{{Repeated Games and Reputations: Long-Run Relationships}}.
+\newblock Oxford University Press, 2006.
+\newblock URL \url{https://ideas.repec.org/b/oxp/obooks/9780195300796.html}.
+
+\bibitem[Mas-Colell et~al.(1995)Mas-Colell, Whinston,
+  et~al.]{mas1995microeconomic}
+Andreu Mas-Colell, Michael~Dennis Whinston, et~al.
+\newblock \emph{Microeconomic theory}, volume~1.
+\newblock New York: Oxford university press, 1995.
+
+\bibitem[McCleary(2013)]{mccleary2013geometry}
+John McCleary.
+\newblock \emph{Geometry from a differentiable viewpoint}.
+\newblock Cambridge University Press, 2013.
+
+\bibitem[Myerson(1991)]{myerson1991game}
+Roger~B. Myerson.
+\newblock \emph{Game Theory: Analysis of Conflict}.
+\newblock Harvard University Press, 1991.
+\newblock ISBN 9780674341166.
+\newblock URL \url{http://www.jstor.org/stable/j.ctvjsf522}.
+
+\bibitem[Nocke and Schutz(2017)]{nocke2017quasi}
+Volker Nocke and Nicolas Schutz.
+\newblock Quasi-linear integrability.
+\newblock \emph{Journal of Economic Theory}, 169:\penalty0 603--628, 2017.
+
+\bibitem[Osborne and Rubinstein(1994)]{martin1994acourse}
+Martin~J. Osborne and Ariel Rubinstein.
+\newblock \emph{{A Course in Game Theory}}.
+\newblock The MIT Press, 1994.
+\newblock URL \url{https://ideas.repec.org/b/mtp/titles/0262650401.html}.
+
+\bibitem[Rubinstein(2012)]{ariel2012lecture}
+Ariel Rubinstein.
+\newblock \emph{Lecture Notes in Microeconomic Theory: The Economic Agent -
+  Second Edition}.
+\newblock Princeton University Press, rev - revised, 2 edition, 2012.
+
+\bibitem[Sternberg(1999)]{sternberg1999lectures}
+Shlomo Sternberg.
+\newblock \emph{Lectures on differential geometry}, volume 316.
+\newblock American Mathematical Soc., 1999.
+
+\bibitem[Warner(1983)]{warner1983foundations}
+Frank~W Warner.
+\newblock \emph{Foundations of differentiable manifolds and Lie groups},
+  volume~94.
+\newblock Springer Science \& Business Media, 1983.
+
+\end{thebibliography}
