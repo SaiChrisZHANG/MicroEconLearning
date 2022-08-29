@@ -354,7 +354,7 @@ The main result is 3, that is, for a \textbf{continuous} demand $D(\cdot)\in C^1
     $$
     \item[(b)] $\forall k\geq 2$ and $\mathbf{p}^{i\in \{1\cdots k\}}\in \left(\mathbb{R}^n_{++}\right)^k$, $$ \left(\mathbf{p}^2-\mathbf{p}^1\right)\cdot D\left(\mathbf{p}^1\right) +\cdots \left(\mathbf{p}^k-\mathbf{p}^{k-1}\right)\cdot + D\left(\mathbf{p}^{k-1}\right) + \left(\mathbf{p}^1-\mathbf{p}^k\right)\cdot D\left(\mathbf{p}^k\right)\geq 0 $$
     \item[(c)] $D(\cdot)$ is conservative $$ \int_C D(\mathbf{p})\mathrm{d}\mathbf{p}=0,\ \forall C$$ where $C$ is a closed and piecewise-continuously differentiable path\footnote{A closed and piecewise-continuously differentiable path is a continuous function $p:[0,1]\rightarrow \mathbb{R}^n_{++}$ s.t. $p$ is piecewise $C^1$ and $p(0)=p(1)$, the line integral $\int_C D(p)\mathrm{d}p=\int^1_0 p'(t)D(p(t))\mathrm{d}t$}; and satisfies the law of demand $$ (\mathbf{p}'-\mathbf{p})\cdot (D(\mathbf{p}')-D(\mathbf{p}))\leq 0, \ \forall \mathbf{p},\mathbf{p}' $$
-    \item[(d)] $\forall \mathbf{p}\gg 0$, the substitution matrix $\left(\frac{\partial D_i}{\partial p_i}(\mathbf{p})\right)_{1\leq i,j\leq n}$ is \myhl[blue!45!black]{\textbf{symmetric}} and \myhl[blue!45!black]{\textbf{negative semi-definite}}.
+    \item[(d)] $\forall \mathbf{p}\gg 0$, the substitution matrix $J(\mathbf{p})\equiv \left(\frac{\partial D_i}{\partial p_i}(\mathbf{p})\right)_{1\leq i,j\leq n}$ is \textbf{symmetric} and \textbf{negative semi-definite}.
 \end{enumerate}
 
 \subsection{Frobenius theorem}\label{sssec:frobenius_theorem}
