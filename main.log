@@ -1003,4 +1003,521 @@ Package: pgfplots 2018/03/28 v1.16 Data Visualization (1.16)
  (/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric.code.tex)) (/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/libs/pgfplotslibrary.code.tex) (/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_loader.code.tex (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.code.tex)
 Package pgfplots: loading complementary arithmetics for your pgf version...
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_pgflibraryfpu.code.tex) (/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_pgfmathfloat.code.tex
-\c@pgfmathroundto@las
+\c@pgfmathroundto@lastzeros=\count173
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_leq.code.tex)) (/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.code.tex (/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsliststructure.code.tex) (/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsliststructureext.code.tex) (/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsarray.code.tex
+\c@pgfplotsarray@tmp=\count174
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsmatrix.code.tex) (/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstableshared.code.tex
+\c@pgfplotstable@counta=\count175
+\t@pgfplotstable@a=\toks55
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsdeque.code.tex) (/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.code.tex (/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.data.code.tex)) (/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.verb.code.tex) (/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplots.surfshading.code.tex
+\c@pgfplotslibrarysurf@no=\count176
+ (/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots.surfshading.pgfsys-pdftex.def))) (/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/util/pgfplotscolormap.code.tex (/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/util/pgfplotscolor.code.tex)) (/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/pgfplotsstackedplots.code.tex) (/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/pgfplotsplothandlers.code.tex (/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplothandler.code.tex (/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplotimage.code.tex))) (/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/pgfplots.scaling.code.tex) (/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/pgfplotscoordprocessing.code.tex) (/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/pgfplots.errorbars.code.tex) (/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/pgfplots.markers.code.tex) (/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/pgfplotsticks.code.tex) (/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/pgfplots.paths.code.tex) (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.code.tex (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorations.code.tex
+\pgfdecoratedcompleteddistance=\dimen357
+\pgfdecoratedremainingdistance=\dimen358
+\pgfdecoratedinputsegmentcompleteddistance=\dimen359
+\pgfdecoratedinputsegmentremainingdistance=\dimen360
+\pgf@decorate@distancetomove=\dimen361
+\pgf@decorate@repeatstate=\count177
+\pgfdecorationsegmentamplitude=\dimen362
+\pgfdecorationsegmentlength=\dimen363
+)
+\tikz@lib@dec@box=\box65
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathmorphing.code.tex (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathmorphing.code.tex)) (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathreplacing.code.tex (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathreplacing.code.tex))
+\pgfplots@numplots=\count178
+\pgfplots@xmin@reg=\dimen364
+\pgfplots@xmax@reg=\dimen365
+\pgfplots@ymin@reg=\dimen366
+\pgfplots@ymax@reg=\dimen367
+\pgfplots@zmin@reg=\dimen368
+\pgfplots@zmax@reg=\dimen369
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryplotmarks.code.tex
+File: tikzlibraryplotmarks.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+ (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/libraries/pgflibraryplotmarks.code.tex
+File: pgflibraryplotmarks.code.tex 2015/08/03 v3.0.1a (rcs-revision 1.14)
+))) (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypatterns.code.tex
+File: tikzlibrarypatterns.code.tex 2008/01/15 v3.0.1a (rcs-revision 1.2)
+ (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/libraries/pgflibrarypatterns.code.tex
+File: pgflibrarypatterns.code.tex 2008/03/03 v3.0.1a (rcs-revision 1.13)
+)) (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.markings.code.tex (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.markings.code.tex))
+Package hyperref Info: Option `colorlinks' set `true' on input line 45.
+\c@defin=\count179
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/minitoc/minitoc.sty
+Package: minitoc 2015/07/13 v61 Package minitoc
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/minitoc/mtcmess.sty
+Package: mtcmess 2006/03/14
+)
+Package minitoc Info: I0001
+(minitoc)             *** minitoc package, version 61 ***.
+\tf@mtc=\write6
+\mtcindent=\skip114
+\mtcskipamount=\skip115
+Package minitoc Info: I0005
+(minitoc)             compatible with hyperref.
+Package minitoc Info: I0023
+(minitoc)             part level macros available.
+Package minitoc Info: I0003
+(minitoc)             chapter level macros available.
+\mtc@toks=\toks56
+\mtc@strutbox=\box66
+\mtc@hstrutbox=\box67
+Package minitoc Info: I0002
+(minitoc)             Autoconfiguration of extensions.
+\openout6 = `main.mtc0'.
+
+\openout6 = `main.mtc'.
+
+ (/Users/admin/Desktop/LearningNotes/MicroEconLearning/main.mtc0)
+Package minitoc Info: I0012
+(minitoc)             Long extensions (Unix-like) will be used.
+Package minitoc Info: I0031
+(minitoc)             ==> this version is configured for UNIX-like 
+(minitoc)                 (long extensions) file names.
+\openout6 = `main.mtc'.
+
+\openout6 = `main.mtc0'.
+
+\c@mtc=\count180
+\c@minitocdepth=\count181
+\c@ptc=\count182
+\c@parttocdepth=\count183
+\ptcindent=\skip116
+Package minitoc Info: I0010
+(minitoc)             The english language is selected.
+(minitoc)              on input line 4909.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/minitoc/english.mld
+File: english.mld 2006/01/13
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/minitoc/english.mld
+File: english.mld 2006/01/13
+)) (/usr/local/texlive/2018/texmf-dist/tex/latex/paralist/paralist.sty
+Package: paralist 2017/01/22 v2.7 Extended list environments
+\pltopsep=\skip117
+\plpartopsep=\skip118
+\plitemsep=\skip119
+\plparsep=\skip120
+\pl@lab=\toks57
+)
+LaTeX Font Info:    Try loading font information for T1+zpltlf on input line 166.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/newpx/t1zpltlf.fd
+File: t1zpltlf.fd 2015/01/17 v1.0 font definition file for T1/zpl/tlf
+)
+LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
+(Font)              scaled to size 12.0pt on input line 166.
+ (/Users/admin/Desktop/LearningNotes/MicroEconLearning/main.aux)
+\openout1 = `main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/npxmi/m/it on input line 166.
+LaTeX Font Info:    Try loading font information for OML+npxmi on input line 166.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/newpx/omlnpxmi.fd
+File: omlnpxmi.fd 2013/03/21 Fontinst v1.933 font definitions for OML/npxmi.
+)
+LaTeX Font Info:    ... okay on input line 166.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 166.
+LaTeX Font Info:    ... okay on input line 166.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 166.
+LaTeX Font Info:    ... okay on input line 166.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 166.
+LaTeX Font Info:    ... okay on input line 166.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 166.
+LaTeX Font Info:    ... okay on input line 166.
+LaTeX Font Info:    Checking defaults for U/npxexa/m/n on input line 166.
+LaTeX Font Info:    Try loading font information for U+npxexa on input line 166.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/newpx/unpxexa.fd
+File: unpxexa.fd 2013/03/24 Fontinst v1.933 font definitions for U/npxexa.
+)
+LaTeX Font Info:    ... okay on input line 166.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 166.
+LaTeX Font Info:    ... okay on input line 166.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 166.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 166.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/base/ts1cmr.fd
+File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 166.
+LaTeX Font Info:    Checking defaults for LMS/npxsy/m/n on input line 166.
+LaTeX Font Info:    Try loading font information for LMS+npxsy on input line 166.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/newpx/lmsnpxsy.fd
+File: lmsnpxsy.fd 2016/08/13 Fontinst v1.933 font definitions for LMS/npxsy.
+)
+LaTeX Font Info:    ... okay on input line 166.
+LaTeX Font Info:    Checking defaults for LMX/npxexx/m/n on input line 166.
+LaTeX Font Info:    Try loading font information for LMX+npxexx on input line 166.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/newpx/lmxnpxexx.fd
+File: lmxnpxexx.fd 2016/08/13 Fontinst v1.933 font definitions for LMX/npxexx.
+)
+LaTeX Font Info:    ... okay on input line 166.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: heightrounded 
+* h-part:(L,W,R)=(72.26999pt, 452.9679pt, 72.26999pt)
+* v-part:(T,H,B)=(72.26999pt, 700.50687pt, 72.26999pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=452.9679pt
+* \textheight=693.5pt
+* \oddsidemargin=0.0pt
+* \evensidemargin=0.0pt
+* \topmargin=-77.0pt
+* \headheight=52.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=56.9055pt
+* \marginparsep=8.53581pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/ucs/ucsencs.def
+File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
+)
+Package marginnote Info: \pdfoutput not 0 or unimportant and
+(marginnote)             \pdflastxpos or \lastxpos available.
+(marginnote)             Extended position detection mode activated.
+ (/usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count184
+\scratchdimen=\dimen370
+\scratchbox=\box68
+\nofMPsegments=\count185
+\nofMParguments=\count186
+\everyMPshowfont=\toks58
+\MPscratchCnt=\count187
+\MPscratchDim=\dimen371
+\MPnumerator=\count188
+\makeMPintoPDFobject=\count189
+\everyMPtoPDFconversion=\toks59
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 438.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: hyperref package is loaded.
+Package caption Info: longtable package is loaded.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/caption/ltcaption.sty
+Package: ltcaption 2013/06/09 v1.4-94 longtable captions (AR)
+)
+Package caption Info: End \AtBeginDocument code.
+\AtBeginShipoutBox=\box69
+Package hyperref Info: Link coloring ON on input line 166.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
+ (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
+)
+\c@section@level=\count190
+)
+LaTeX Info: Redefining \ref on input line 166.
+LaTeX Info: Redefining \pageref on input line 166.
+LaTeX Info: Redefining \nameref on input line 166.
+ (/Users/admin/Desktop/LearningNotes/MicroEconLearning/main.out) (/Users/admin/Desktop/LearningNotes/MicroEconLearning/main.out)
+\@outlinefile=\write7
+\openout7 = `main.out'.
+
+ ABD: EveryShipout initializing macros
+\c@mv@tabular=\count191
+\c@mv@boldtabular=\count192
+
+Package pgfplots notification 'compat/show suggested version=true': document has been generated with the most recent feature set (\pgfplotsset{compat=1.16}).
+
+\c@minilofdepth=\count193
+\c@minilotdepth=\count194
+\c@partlofdepth=\count195
+\c@partlotdepth=\count196
+\c@sectlofdepth=\count197
+\c@sectlotdepth=\count198
+Package minitoc(hints) Info: I0049
+(minitoc(hints))             ==> You requested the hints option. 
+(minitoc(hints))             Some hints are eventually given below.
+Package minitoc(hints) Info: I0046
+(minitoc(hints))             --- The tocbibind package is loaded. 
+(minitoc(hints))             See the minitoc package documentation 
+(minitoc(hints))             for specific precautions.
+Package minitoc(hints) Info: I0047
+(minitoc(hints))             --- The tocloft package is loaded. 
+(minitoc(hints))             See the minitoc package documentation 
+(minitoc(hints))             for specific precautions.
+
+Package minitoc(hints) Warning: W0099
+(minitoc(hints))                --- The titlesec package is loaded. 
+(minitoc(hints))                It is incompatible 
+(minitoc(hints))                with the minitoc package.
+
+
+Package minitoc(hints) Warning: W0030
+(minitoc(hints))                --- The \part command is altered 
+(minitoc(hints))                after minitoc.
+
+
+Package minitoc(hints) Warning: W0023
+(minitoc(hints))                --- It may be the consequence 
+(minitoc(hints))                of loading the ``hyperref'' package.
+
+
+Package minitoc(hints) Warning: W0028
+(minitoc(hints))                --- The \chapter command is altered 
+(minitoc(hints))                after minitoc.
+
+
+Package minitoc(hints) Warning: W0023
+(minitoc(hints))                --- It may be the consequence 
+(minitoc(hints))                of loading the ``hyperref'' package.
+
+LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
+(Font)              scaled to size 24.88pt on input line 172.
+LaTeX Font Info:    Font shape `T1/zpltlf/bx/n' in size <24.88> not available
+(Font)              Font shape `T1/zpltlf/b/n' tried instead on input line 173.
+LaTeX Font Info:    Font shape `T1/zpltlf/b/n' will be
+(Font)              scaled to size 24.88pt on input line 173.
+LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
+(Font)              scaled to size 17.28pt on input line 175.
+LaTeX Font Info:    Font shape `T1/zpltlf/m/it' will be
+(Font)              scaled to size 17.28pt on input line 176.
+LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
+(Font)              scaled to size 20.74pt on input line 180.
+LaTeX Font Info:    Font shape `T1/zpltlf/bx/n' in size <20.74> not available
+(Font)              Font shape `T1/zpltlf/b/n' tried instead on input line 181.
+LaTeX Font Info:    Font shape `T1/zpltlf/b/n' will be
+(Font)              scaled to size 20.74pt on input line 181.
+LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
+(Font)              scaled to size 14.4pt on input line 185.
+[1
+
+{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+LaTeX Font Info:    Try loading font information for T1+ppl on input line 198.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/t1ppl.fd
+File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
+)
+LaTeX Font Info:    Font shape `T1/zpltlf/m/it' will be
+(Font)              scaled to size 12.0pt on input line 211.
+LaTeX Font Info:    Try loading font information for T1+zplsups on input line 211.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/newpx/t1zplsups.fd
+File: t1zplsups.fd 2015/01/17 v1.0
+)
+LaTeX Font Info:    Font shape `T1/zplsups/m/n' will be
+(Font)              scaled to size 12.0pt on input line 211.
+LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
+(Font)              scaled to size 10.0pt on input line 211.
+LaTeX Font Info:    Font shape `T1/zplsups/m/n' will be
+(Font)              scaled to size 10.0pt on input line 211.
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.221 \newpage
+               [1
+
+]
+Package minitoc Info: I0024
+(minitoc)             PREPARING MINITOCS FROM main.toc on input line 224.
+Package minitoc Info: I0033
+(minitoc)             Writing main.mtc1.
+\openout6 = `main.mtc1'.
+
+Package minitoc Info: I0033
+(minitoc)             Writing main.mtc2.
+\openout6 = `main.mtc2'.
+
+Package minitoc Info: I0033
+(minitoc)             Writing main.mtc3.
+\openout6 = `main.mtc3'.
+
+Package minitoc Info: I0033
+(minitoc)             Writing main.mtc4.
+\openout6 = `main.mtc4'.
+
+Package minitoc Info: I0033
+(minitoc)             Writing main.mtc5.
+\openout6 = `main.mtc5'.
+
+Package minitoc Info: I0033
+(minitoc)             Writing main.mtc6.
+\openout6 = `main.mtc6'.
+
+Package minitoc Info: I0033
+(minitoc)             Writing main.mtc7.
+\openout6 = `main.mtc7'.
+
+Package minitoc Info: I0033
+(minitoc)             Writing main.mtc8.
+\openout6 = `main.mtc8'.
+
+Package minitoc Info: I0033
+(minitoc)             Writing main.mtc9.
+\openout6 = `main.mtc9'.
+
+Package minitoc Info: I0033
+(minitoc)             Writing main.mtc10.
+\openout6 = `main.mtc10'.
+
+Package minitoc Info: I0033
+(minitoc)             Writing main.mtc11.
+\openout6 = `main.mtc11'.
+
+Package minitoc Info: I0033
+(minitoc)             Writing main.mtc12.
+\openout6 = `main.mtc12'.
+
+Package minitoc Info: I0033
+(minitoc)             Writing main.mtc13.
+\openout6 = `main.mtc13'.
+
+Package minitoc Info: I0033
+(minitoc)             Writing main.mtc14.
+\openout6 = `main.mtc14'.
+
+Package minitoc Info: I0033
+(minitoc)             Writing main.mtc15.
+\openout6 = `main.mtc15'.
+
+Package minitoc Info: I0033
+(minitoc)             Writing main.mtc16.
+\openout6 = `main.mtc16'.
+
+Package minitoc Info: I0033
+(minitoc)             Writing main.mtc17.
+\openout6 = `main.mtc17'.
+
+Package minitoc Info: I0033
+(minitoc)             Writing main.mtc18.
+\openout6 = `main.mtc18'.
+
+Package minitoc Info: I0033
+(minitoc)             Writing main.mtc19.
+\openout6 = `main.mtc19'.
+
+Package minitoc Info: I0033
+(minitoc)             Writing main.mtc20.
+\openout6 = `main.mtc20'.
+
+Package minitoc Info: I0033
+(minitoc)             Writing main.mtc21.
+\openout6 = `main.mtc21'.
+
+ (/Users/admin/Desktop/LearningNotes/MicroEconLearning/main.toc
+LaTeX Font Info:    Font shape `T1/zpltlf/bx/n' in size <14.4> not available
+(Font)              Font shape `T1/zpltlf/b/n' tried instead on input line 2.
+LaTeX Font Info:    Font shape `T1/zpltlf/b/n' will be
+(Font)              scaled to size 14.4pt on input line 2.
+LaTeX Font Info:    Try loading font information for OT1+zpltlf on input line 2.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/newpx/ot1zpltlf.fd
+File: ot1zpltlf.fd 2015/01/17 v1.0 font definition file for OT1/zpl/tlf
+)
+LaTeX Font Info:    Font shape `OT1/zpltlf/m/n' will be
+(Font)              scaled to size 14.4pt on input line 2.
+LaTeX Font Info:    Font shape `OT1/zpltlf/m/n' will be
+(Font)              scaled to size 10.5pt on input line 2.
+LaTeX Font Info:    Font shape `OT1/zpltlf/m/n' will be
+(Font)              scaled to size 7.9pt on input line 2.
+LaTeX Font Info:    Try loading font information for U+msa on input line 2.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 2.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for U+npxmia on input line 2.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/newpx/unpxmia.fd
+File: unpxmia.fd 2013/03/24 Fontinst v1.933 font definitions for U/npxmia.
+)
+LaTeX Font Info:    Try loading font information for U+npxsym on input line 2.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/newpx/unpxsym.fd
+File: unpxsym.fd 2015/03/21 Fontinst v1.933 font definitions for U/npxsym.
+)
+LaTeX Font Info:    Try loading font information for U+npxsyc on input line 2.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/newpx/unpxsyc.fd
+File: unpxsyc.fd 2013/03/24 Fontinst v1.933 font definitions for U/npxsyc.
+)
+LaTeX Font Info:    Font shape `T1/zpltlf/bx/n' in size <12> not available
+(Font)              Font shape `T1/zpltlf/b/n' tried instead on input line 4.
+LaTeX Font Info:    Font shape `T1/zpltlf/b/n' will be
+(Font)              scaled to size 12.0pt on input line 4.
+LaTeX Font Info:    Font shape `OT1/zpltlf/m/n' will be
+(Font)              scaled to size 12.0pt on input line 4.
+LaTeX Font Info:    Font shape `OT1/zpltlf/m/n' will be
+(Font)              scaled to size 8.8pt on input line 4.
+LaTeX Font Info:    Font shape `OT1/zpltlf/m/n' will be
+(Font)              scaled to size 6.6pt on input line 4.
+ [2])
+\tf@toc=\write8
+\openout8 = `main.toc'.
+
+LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
+(Font)              scaled to size 10.95pt on input line 229.
+ [3] [4
+
+]
+Chapter 1.
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <24.88> not available
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 231.
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <20.74> not available
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 231.
+(/Users/admin/Desktop/LearningNotes/MicroEconLearning/chapter1/chapter1.tex
+\openout6 = `main.mtc'.
+
+\openout6 = `main.mtc'.
+
+LaTeX Font Info:    Font shape `OT1/zpltlf/m/n' will be
+(Font)              scaled to size 10.95pt on input line 2.
+LaTeX Font Info:    Font shape `OT1/zpltlf/m/n' will be
+(Font)              scaled to size 8.0pt on input line 2.
+LaTeX Font Info:    Font shape `OT1/zpltlf/m/n' will be
+(Font)              scaled to size 6.1pt on input line 2.
+ (/Users/admin/Desktop/LearningNotes/MicroEconLearning/main.mtc1
+LaTeX Font Info:    Font shape `T1/zpltlf/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/zpltlf/b/n' tried instead on input line 1.
+LaTeX Font Info:    Font shape `T1/zpltlf/b/n' will be
+(Font)              scaled to size 10.95pt on input line 1.
+)
+LaTeX Font Info:    Font shape `T1/zpltlf/bx/it' in size <12> not available
+(Font)              Font shape `T1/zpltlf/b/it' tried instead on input line 24.
+LaTeX Font Info:    Font shape `T1/zpltlf/b/it' will be
+(Font)              scaled to size 12.0pt on input line 24.
+ [5
+
+]
+LaTeX Font Info:    Font shape `T1/zpltlf/bx/n' in size <17.28> not available
+(Font)              Font shape `T1/zpltlf/b/n' tried instead on input line 27.
+LaTeX Font Info:    Font shape `T1/zpltlf/b/n' will be
+(Font)              scaled to size 17.28pt on input line 27.
+ (/Users/admin/Desktop/LearningNotes/MicroEconLearning/chapter1/chapter1_sec1.tex [6]
+LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
+(Font)              scaled to size 8.8pt on input line 85.
+LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
+(Font)              scaled to size 6.6pt on input line 85.
+ [7]
+LaTeX Font Info:    Try loading font information for TS1+zpltlf on input line 155.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/newpx/ts1zpltlf.fd
+File: ts1zpltlf.fd 2015/01/18 v1.0 fd file for TS1/zpltlf
+)
+LaTeX Font Info:    Font shape `TS1/zpltlf/m/n' will be
+(Font)              scaled to size 12.0pt on input line 155.
+ [8]) (/Users/admin/Desktop/LearningNotes/MicroEconLearning/chapter1/chapter1_sec2.tex
+LaTeX Font Info:    Font shape `T1/zpltlf/m/it' will be
+(Font)              scaled to size 8.8pt on input line 5.
+LaTeX Font Info:    Font shape `OT1/zpltlf/m/n' will be
+(Font)              scaled to size 10.0pt on input line 5.
+LaTeX Font Info:    Font shape `OT1/zpltlf/m/n' will be
+(Font)              scaled to size 7.3pt on input line 5.
+LaTeX Font Info:    Font shape `OT1/zpltlf/m/n' will be
+(Font)              scaled to size 5.5pt on input 
